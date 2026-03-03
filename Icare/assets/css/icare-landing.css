@@ -1,0 +1,460 @@
+/* iCare Landing – consistent academic design. */
+:root {
+  --icare-green: #009248;
+  --icare-green-light: #00a854;
+  --icare-green-dark: #007a3a;
+  --icare-yellow: #febd17;
+  --icare-yellow-light: #ffd700;
+  --icare-yellow-soft: rgba(254, 189, 23, 0.06);
+  --icare-yellow-soft-50: rgba(254, 189, 23, 0.5);
+  /* Consistent backgrounds – plain colors */
+  --icare-bg-page: #f8faf9;
+  --icare-bg-light: #ffffff;
+  --icare-bg-light-alt: #f4f8f6;
+  --icare-bg-green: var(--icare-green);
+  --icare-radius: 1rem;
+  --icare-radius-lg: 1.25rem;
+  --icare-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --icare-shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== PAGE LOADER - same as sample (no gradient; uses bundle .page-loader) ========== */
+/* No overrides: bundle provides background-color: var(--bs-body-bg), fixed position, flex center */
+
+/* ========== PAGE & LAYOUT – consistent base ========== */
+#kt_app_body.app-default,
+#kt_app_root,
+.app-page { background-color: var(--icare-bg-page) !important; }
+
+/* ========== APP HEADER ========== */
+#kt_app_header.app-header {
+  background: var(--icare-bg-light) !important;
+  border-bottom: 1px solid rgba(0, 146, 72, 0.12);
+  box-shadow: var(--icare-shadow);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: var(--icare-bg-light-alt);
+  border-top: 1px solid rgba(0, 146, 72, 0.1);
+}
+
+/* ========== HERO SECTION ========== */
+#hero {
+  background: var(--icare-bg-green) !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+#hero .app-container,
+#hero .container-xxl {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  #hero .app-container, #hero .container-xxl { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  #hero .app-container, #hero .container-xxl { padding-left: 2rem; padding-right: 2rem; }
+}
+#hero .position-relative { position: relative; z-index: 10; }
+#hero .hero-blur-wrap { pointer-events: none; }
+#hero .hero-blur-circle { filter: blur(3rem); }
+#hero .hero-blur-yellow { width: 8rem; height: 8rem; top: 5rem; left: 2.5rem; }
+#hero .hero-blur-white { width: 10rem; height: 10rem; bottom: 5rem; right: 2.5rem; }
+#hero .text-white,
+#hero p,
+#hero h1 { color: #fff !important; }
+#hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
+}
+#hero .text-icare-yellow { color: var(--icare-yellow) !important; font-weight: 700 !important; }
+#hero p { font-size: 1.125rem; line-height: 1.6; opacity: 0.95; max-width: 32rem; }
+#hero .icare-badge {
+  background: var(--icare-yellow) !important;
+  color: #1a1a1a !important;
+  border-radius: 9999px;
+  padding: 0.5rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: var(--icare-shadow);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+#hero .icare-card-hover {
+  background: rgba(255,255,255,0.1) !important;
+  border: 2px solid rgba(255,255,255,0.2) !important;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff !important;
+  transition: all 0.2s;
+}
+#hero .icare-card-hover:hover {
+  background: rgba(255,255,255,0.2) !important;
+  border-color: var(--icare-yellow) !important;
+  transform: scale(1.05);
+}
+#hero .icare-btn-cta {
+  background: var(--icare-yellow) !important;
+  color: #1a1a1a !important;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 9999px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: var(--icare-shadow);
+  transition: box-shadow .2s, transform .15s;
+}
+#hero .icare-btn-cta:hover { color: #1a1a1a; transform: translateY(-1px); box-shadow: var(--icare-shadow-hover); }
+#hero .icare-btn-outline {
+  background: var(--icare-bg-light) !important;
+  color: var(--icare-green) !important;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 9999px;
+  padding: 0.7rem 1.4rem;
+  font-weight: 600;
+  transition: all .2s;
+}
+#hero .icare-btn-outline:hover { background: var(--icare-bg-light-alt) !important; border-color: var(--icare-yellow); color: var(--icare-green) !important; }
+#hero .hero-card-glass {
+  background: rgba(255,255,255,0.2) !important;
+  backdrop-filter: blur(12px);
+  border: 4px solid rgba(255,255,255,0.3) !important;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  overflow: visible !important;
+}
+#hero .hero-card-img {
+  height: 280px;
+  min-height: 280px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(255,255,255,0.2);
+  display: block;
+}
+#hero .hero-badge-no-cost {
+  background: var(--icare-yellow) !important;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #fff;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);
+  transform: rotate(12deg);
+  min-width: 5rem;
+}
+#hero .hero-badge-welcome {
+  background: #fff !important;
+  color: var(--icare-green) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid var(--icare-yellow);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);
+  transform: rotate(-6deg);
+}
+
+/* ========== SECTION BACKGROUNDS – full-width so they don’t look cut ========== */
+.icare-bg-hero { background: var(--icare-bg-green); }
+
+/* Full-width section background pattern (about, services, tutorial, faculties, feedback, faq, learn-more) */
+#about.icare-bg-about,
+#services.icare-bg-services,
+#tutorial.icare-bg-tutorial,
+#faculties.icare-bg-faculties,
+#feedback.icare-bg-feedback,
+#faq.icare-bg-faq,
+#learn-more.icare-bg-learnmore {
+  position: relative;
+  overflow: visible;
+  background: transparent !important;
+}
+#about.icare-bg-about::before,
+#services.icare-bg-services::before,
+#tutorial.icare-bg-tutorial::before,
+#faculties.icare-bg-faculties::before,
+#feedback.icare-bg-feedback::before,
+#faq.icare-bg-faq::before,
+#learn-more.icare-bg-learnmore::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  min-height: 100%;
+}
+#about.icare-bg-about::before,
+#tutorial.icare-bg-tutorial::before,
+#feedback.icare-bg-feedback::before,
+#learn-more.icare-bg-learnmore::before { background: var(--icare-bg-light); }
+#services.icare-bg-services::before,
+#faculties.icare-bg-faculties::before,
+#faq.icare-bg-faq::before { background: var(--icare-bg-green); }
+
+#about .app-container,
+#about .icare-wave-wrap,
+#services .app-container,
+#tutorial .app-container,
+#faculties .app-container,
+#feedback .app-container,
+#faq .app-container,
+#learn-more .app-container { position: relative; z-index: 1; }
+#tutorial .position-relative { position: relative; z-index: 1; }
+
+/* Learn more / CTA strip – same green as sections */
+.icare-cta-yellow {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: var(--icare-bg-green);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: var(--icare-shadow);
+  border-radius: var(--icare-radius-lg);
+}
+.icare-cta-yellow,
+.icare-cta-yellow h3,
+.icare-cta-yellow p { color: #fff !important; }
+.icare-cta-yellow .icare-btn-outline { color: var(--icare-green) !important; background: var(--icare-bg-light) !important; border-color: rgba(255,255,255,0.6); }
+.icare-cta-yellow .icare-btn-outline:hover { background: var(--icare-bg-light-alt) !important; border-color: #fff; color: var(--icare-green) !important; }
+.icare-cta-yellow .btn-success { background: var(--icare-yellow) !important; border-color: var(--icare-yellow) !important; color: #1a1a1a !important; font-weight: 600; }
+.icare-cta-green {
+  background: var(--icare-bg-green);
+  border: 1px solid rgba(254,189,23,0.25);
+  border-radius: var(--icare-radius-lg);
+}
+.icare-cta-green,
+.icare-cta-green h3,
+.icare-cta-green p { color: #fff !important; }
+.icare-cta-green .icare-btn-cta { color: #1a1a1a !important; }
+
+/* ========== UTILITIES (move inline styles into assets) ========== */
+.icare-max-w-sm { max-width: 32rem; }
+.icare-max-w-md { max-width: 48rem; }
+.icare-max-w-lg { max-width: 56rem; }
+.icare-wave-wrap { height: 8rem; pointer-events: none; }
+
+#about .icare-wave-wrap { overflow: visible; z-index: 0; }
+.icare-card-img-h { height: 14rem; }
+.icare-card-img-h-sm { height: 12rem; }
+.icare-card-img-h-lg { height: 16rem; }
+.icare-check-circle { width: 1.5rem; height: 1.5rem; font-size: 0.7rem; }
+.icare-feedback-quote-badge { width: 3rem; height: 3rem; margin: -0.5rem 0 0 -0.5rem; }
+.icare-avatar-sm { width: 3.5rem; height: 3.5rem; }
+.icare-logo-hero { height: 3rem; }
+.icare-corner-ribbon { transform: rotate(45deg) translate(2.5rem, -2.5rem); }
+.icare-svc-icon { max-height: 8rem; width: auto; }
+
+/* ========== GLOBAL ICARE TOKENS ========== */
+.icare-container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+@media (min-width: 640px) { .icare-container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+@media (min-width: 1024px) { .icare-container { padding-left: 2rem; padding-right: 2rem; } }
+
+.text-icare-green { color: var(--icare-green) !important; }
+.text-icare-yellow { color: var(--icare-yellow) !important; }
+.bg-icare-green { background-color: var(--icare-green) !important; }
+.bg-icare-yellow { background-color: var(--icare-yellow) !important; }
+.bg-gradient-icare-yellow { background: var(--icare-yellow) !important; }
+.border-icare-green { border-color: var(--icare-green) !important; }
+.border-icare-yellow { border-color: var(--icare-yellow) !important; }
+
+.icare-badge { background: var(--icare-yellow); color: #1a1a1a; font-weight: 600; border-radius: 9999px; padding: 0.5rem 1.25rem; display: inline-block; box-shadow: var(--icare-shadow); border: 1px solid rgba(255,255,255,0.4); }
+.icare-btn-cta { background: var(--icare-yellow); color: #1a1a1a; border: 1px solid rgba(0,0,0,0.08); border-radius: 9999px; padding: 0.7rem 1.4rem; font-weight: 600; transition: box-shadow .2s, transform .15s; box-shadow: var(--icare-shadow); }
+.icare-btn-cta:hover { color: #1a1a1a; transform: translateY(-1px); box-shadow: var(--icare-shadow-hover); }
+.icare-btn-outline { background: var(--icare-bg-light); color: var(--icare-green); border: 2px solid rgba(0,146,72,0.25); border-radius: 9999px; padding: 0.7rem 1.4rem; font-weight: 600; transition: all .2s; }
+.icare-btn-outline:hover { background: var(--icare-bg-light-alt); border-color: var(--icare-green); color: var(--icare-green); }
+
+/* About: green feature cards – academic, consistent radius */
+.icare-card-feature {
+  background: var(--icare-bg-green);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--icare-radius-lg);
+  transition: box-shadow .2s, border-color .2s;
+  box-shadow: var(--icare-shadow);
+}
+.icare-card-feature:hover {
+  box-shadow: var(--icare-shadow-hover);
+  border-color: rgba(254,189,23,0.4);
+}
+.icare-card-feature,
+.icare-card-feature h3,
+.icare-card-feature p { color: #fff !important; }
+.icare-card-feature p { opacity: 0.95; }
+
+.icare-icon-circle {
+  width: 4rem;
+  height: 4rem;
+  background: var(--icare-yellow);
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  font-size: 1.35rem;
+  box-shadow: var(--icare-shadow);
+}
+.icare-card-white { background: var(--icare-bg-light); border: 1px solid rgba(0,146,72,0.12); border-radius: var(--icare-radius-lg); box-shadow: var(--icare-shadow); transition: box-shadow .2s, border-color .2s; }
+.icare-card-white:hover { box-shadow: var(--icare-shadow-hover); border-color: rgba(254,189,23,0.3); }
+
+/* ========== FACULTIES SECTION ========== */
+#faculties .icare-faculty-card {
+  border-radius: var(--icare-radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--icare-shadow);
+}
+#faculties .icare-faculty-card-img-wrap {
+  height: 16rem;
+  overflow: hidden;
+  border-radius: var(--icare-radius-lg) var(--icare-radius-lg) 0 0;
+  flex-shrink: 0;
+}
+#faculties .icare-faculty-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+#faculties .icare-faculty-star {
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--icare-yellow);
+  color: #1a1a1a;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 2px solid rgba(255,255,255,0.8);
+}
+#faculties .icare-faculty-card-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+#faculties .icare-faculty-subjects {
+  margin-top: auto;
+  padding: 0.75rem 1rem;
+  background: rgba(254,189,23,0.12);
+  border-radius: var(--icare-radius);
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+#faculties .icare-faculty-subjects span:last-child {
+  word-break: break-word;
+}
+
+.icare-feedback-card { border-radius: var(--icare-radius-lg); border: 1px solid rgba(0,146,72,0.15); padding: 1rem 1.5rem; transition: box-shadow .2s; box-shadow: var(--icare-shadow); }
+.icare-feedback-card:hover { box-shadow: var(--icare-shadow-hover); }
+/* Feedback: white text for name, program, year on cards (Icare/assets only) */
+.icare-feedback-card .icare-feedback-name { color: #fff !important; font-weight: 700; }
+.icare-feedback-card .icare-feedback-meta { color: rgba(255,255,255,0.95) !important; font-weight: 500; }
+.icare-feedback-card .icare-feedback-quote { color: #252f4a !important; background: #fff !important; }
+.icare-faq-item { background: var(--icare-bg-light); border-radius: var(--icare-radius); border: 1px solid rgba(255,255,255,0.25); overflow: hidden; transition: border-color .2s, box-shadow .2s; box-shadow: var(--icare-shadow); }
+.icare-faq-item:hover { border-color: var(--icare-yellow); box-shadow: var(--icare-shadow-hover); }
+.icare-faq-answer { background: var(--icare-bg-light-alt); border-left: 4px solid var(--icare-yellow); border-radius: var(--icare-radius); padding: 1rem; }
+
+.icare-carousel-btn { width: 2.75rem; height: 2.75rem; border-radius: 50%; background: var(--icare-yellow); color: #1a1a1a; border: none; display: flex; align-items: center; justify-content: center; box-shadow: var(--icare-shadow); transition: box-shadow .2s; }
+.icare-carousel-btn:hover { color: #1a1a1a; box-shadow: var(--icare-shadow-hover); }
+.icare-dot { width: 0.75rem; height: 0.75rem; border-radius: 50%; background: rgba(255,255,255,0.5); transition: all .3s; }
+.icare-dot.active { background: var(--icare-yellow); width: 2rem; }
+
+@keyframes icare-spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.icare-animate-spin-slow { animation: icare-spin-slow 20s linear infinite; }
+.icare-min-h-hero { min-height: 100vh; }
+#hero .rounded-circle.bg-icare-yellow { background: var(--icare-yellow) !important; }
+#hero .rounded-circle.bg-white { background: #fff !important; }
+#services, #about, #feedback, #faq, #faculties, #tutorial, #learn-more { scroll-margin-top: 6rem; }
+
+.icare-card-hover:hover { border-color: var(--icare-yellow) !important; background: rgba(255,255,255,0.2) !important; transform: scale(1.05); }
+
+@media (max-width: 768px) {
+  .icare-carousel-btn { width: 2.5rem; height: 2.5rem; }
+}
+
+/* ========== EVENT CARDS ========== */
+.icare-event-card {
+  background: var(--icare-bg-light);
+  border-radius: var(--icare-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--icare-shadow);
+  border: 1px solid rgba(0,146,72,0.08);
+  transition: box-shadow .2s;
+}
+.icare-event-card:hover { box-shadow: var(--icare-shadow-hover); }
+.icare-event-card .icare-event-img-wrap {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: var(--icare-radius-lg) var(--icare-radius-lg) 0 0;
+}
+.icare-event-card .icare-event-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.icare-event-card .icare-event-body { padding: 1.25rem 1.5rem; }
+.icare-event-card .icare-event-tag {
+  display: inline-block;
+  background: #86d8a4;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+.icare-event-card .icare-event-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #252f4a;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+.icare-event-card .icare-event-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #252f4a;
+  margin-bottom: 0.4rem;
+}
+.icare-event-card .icare-event-detail:last-child { margin-bottom: 0; }
+.icare-event-card .icare-event-detail i.ki-outline {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.icare-event-card .icare-event-detail.icare-event-date { color: var(--icare-green); }
+.icare-event-card .icare-event-detail.icare-event-date i { color: var(--icare-green); }

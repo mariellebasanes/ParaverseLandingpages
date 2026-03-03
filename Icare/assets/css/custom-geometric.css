@@ -1,0 +1,281 @@
+/* ====================================================================
+   ICARE CUSTOM GEOMETRIC BACKGROUND & BORDERS
+   ==================================================================== */
+
+/* OVERLAYS & CONTAINERS */
+.bg-geometric {
+    position: relative;
+    z-index: 1;
+    /* Content stays on top */
+}
+
+/* Ensures content text stays clickable and selectable over shapes */
+.bg-geometric>* {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-geometric::before,
+.bg-geometric::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ====================================================================
+   UNEVEN ANGLED BORDERS
+   Using clip-path to slice the top and bottom of sections diagonally
+   ==================================================================== */
+
+.section-angle-top {
+    clip-path: polygon(0 4vw, 100% 0, 100% 100%, 0 100%);
+    margin-top: -4vw;
+    padding-top: calc(4vw + 4rem) !important;
+}
+
+.section-angle-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
+    margin-bottom: -4vw;
+    padding-bottom: calc(4vw + 8rem) !important;
+    z-index: 1;
+}
+
+.section-angle-reverse-top {
+    clip-path: polygon(0 0, 100% 4vw, 100% 100%, 0 100%);
+    margin-top: -4vw;
+    padding-top: calc(4vw + 4rem) !important;
+}
+
+.section-angle-both {
+    clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%);
+    margin-top: -4vw;
+    margin-bottom: -4vw;
+    padding-top: calc(4vw + 4rem) !important;
+    padding-bottom: calc(4vw + 8rem) !important;
+}
+
+/* ====================================================================
+   SCATTERED ICONS (LIGHT / WHITE THEME)
+   Used for sections with white/light backgrounds
+   ==================================================================== */
+
+/* Blur Blobs Background Design */
+.blur-blob {
+    position: absolute;
+    filter: blur(100px);
+    z-index: 0;
+    opacity: 0.35;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: blobFloat 10s infinite alternate ease-in-out;
+}
+
+.blur-blob-green {
+    background-color: var(--icare-green);
+}
+
+.blur-blob-yellow {
+    background-color: var(--icare-yellow);
+}
+
+@keyframes blobFloat {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(20px, -20px) scale(1.05);
+    }
+}
+
+.bg-glow-green {
+    background-image: radial-gradient(circle at 0% 0%, rgba(15, 137, 72, 0.08) 0%, transparent 60%) !important;
+}
+
+.bg-glow-yellow {
+    background-image: radial-gradient(circle at 100% 0%, rgba(253, 188, 23, 0.12) 0%, transparent 60%) !important;
+}
+
+.bg-glow-both {
+    background-image:
+        radial-gradient(circle at 0% 0%, rgba(15, 137, 72, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(253, 188, 23, 0.12) 0%, transparent 60%) !important;
+}
+
+.bg-geometric-light {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section (White) */
+.bg-hero-icons::before {
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 10%;
+    left: 5%;
+    background-image: url('../img/bg-assets/atom.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    transform: rotate(-15deg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg-hero-icons::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 5%;
+    right: 15%;
+    background-image: url('../img/bg-assets/book.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    transform: rotate(20deg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Services Section (White) */
+.bg-services-icons::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 15%;
+    right: 5%;
+    background-image: url('../img/bg-assets/coding.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    transform: rotate(10deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-services-icons::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    left: 2%;
+    background-image: url('../img/bg-assets/maths.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    transform: rotate(-10deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Events Section (White) */
+.bg-events-icons::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: 30%;
+    left: -2%;
+    background-image: url('../img/bg-assets/test.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    transform: rotate(-5deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-events-icons::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    right: 0%;
+    background-image: url('../img/bg-assets/atom.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    transform: rotate(25deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ====================================================================
+   GEOMETRIC SCATTERED SHAPES (DARK / GREEN THEME)
+   Used for sections with green backgrounds
+   ==================================================================== */
+
+.bg-geometric-dark.bg-shape-1::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: -5%;
+    right: -2%;
+    background-image: url('../img/bg-assets/maths.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    filter: brightness(0) invert(1);
+    transform: rotate(15deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-geometric-dark.bg-shape-1::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 5%;
+    left: -5%;
+    background-image: url('../img/bg-assets/test.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    filter: brightness(0) invert(1);
+    transform: rotate(-10deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-geometric-dark.bg-shape-2::before {
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    bottom: -10%;
+    right: 0%;
+    background-image: url('../img/bg-assets/atom.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    filter: brightness(0) invert(1);
+    transform: rotate(-25deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-geometric-dark.bg-shape-2::after {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 15%;
+    left: 2%;
+    background-image: url('../img/bg-assets/coding.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    filter: brightness(0) invert(1);
+    transform: rotate(20deg);
+    z-index: 0;
+    pointer-events: none;
+}
