@@ -18,19 +18,19 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
   <!-- Uneven background design icons -->
   <img src="<?php echo htmlspecialchars($assetsBase); ?>/img/bg-assets/flower.png"
     class="position-absolute d-none d-lg-block"
-    style="top: 15%; right: 5%; opacity: 0.4; pointer-events: none; width: 220px; transform: rotate(-15deg); z-index: 0;"
+    style="top: 15%; right: 5%; opacity: 0.15; pointer-events: none; width: 220px; transform: rotate(-15deg); z-index: 0;"
     alt="">
   <img src="<?php echo htmlspecialchars($assetsBase); ?>/img/bg-assets/brain.png"
     class="position-absolute d-none d-lg-block"
-    style="bottom: 10%; left: 5%; opacity: 0.4; pointer-events: none; width: 250px; transform: rotate(20deg); z-index: 0;"
+    style="bottom: 10%; left: 5%; opacity: 0.15; pointer-events: none; width: 250px; transform: rotate(20deg); z-index: 0;"
     alt="">
-  <div class="container pt-20 pb-0 position-relative" style="z-index: 1;">
+  <div class="container-xxl pt-20 pb-0 position-relative" style="z-index: 1;">
     <div class="row align-items-center gy-10">
 
       <!-- Text content -->
       <div class="col-lg-6 pe-lg-10">
         <span
-          class="badge badge-light-danger border border-danger border-opacity-25 fs-8 ls-2 text-uppercase fw-bolder py-3 px-5 mb-6 rounded-pill">
+          class="badge badge-light-danger border border-danger border-opacity-25 fs-8 ls-2 text-uppercase fw-bolder py-3 px-5 mb-6 rounded-1">
           Student Counseling &amp; Support
         </span>
         <h1 class="text-dark fw-bolder fs-3x fs-lg-4x lh-sm mb-6">
@@ -43,7 +43,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
         </p>
         <div class="d-flex flex-wrap gap-4 mb-10">
           <a href="#services" class="btn btn-primary d-inline-flex align-items-center gap-2
-                    rounded-pill px-8 py-4 fw-bolder fs-6
+                    rounded-1 px-8 py-4 fw-bolder fs-6
                     text-decoration-none shadow-sm hover-elevate-up">
             <i class="ki-duotone ki-calendar-2 fs-4 text-white">
               <span class="path1"></span><span class="path2"></span>
@@ -51,7 +51,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
             </i>
             Schedule a Session
           </a>
-          <a href="#how-it-works" class="btn btn-light-primary d-inline-flex align-items-center gap-2 rounded-pill px-8 py-4
+          <a href="#how-it-works" class="btn btn-light-primary d-inline-flex align-items-center gap-2 rounded-1 px-8 py-4
                     fw-bolder fs-6 text-decoration-none hover-elevate-up">
             Learn More
             <i class="ki-duotone ki-arrow-right fs-4 text-primary">
@@ -61,8 +61,8 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
         </div>
 
         <div
-          class="d-inline-flex align-items-center gap-4 bg-white border border-gray-200 rounded-pill px-6 py-3 shadow-sm mt-2">
-          <div class="symbol-group symbol-hover">
+          class="d-inline-flex align-items-center gap-4 bg-white border border-gray-200 rounded-1 px-6 py-3 shadow-sm mt-2">
+          <div class="d-flex gap-2">
             <div class="symbol symbol-40px symbol-circle">
               <span class="symbol-label bg-primary text-white fw-bold fs-7">1K+</span>
             </div>

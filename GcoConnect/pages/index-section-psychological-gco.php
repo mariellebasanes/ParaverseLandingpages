@@ -12,7 +12,7 @@ $tests = [
 ];
 ?>
 <section class="bg-gco py-20">
-  <div class="container">
+  <div class="container-xxl">
 
     <div class="text-center mb-15">
       <span class="badge bg-white bg-opacity-20 text-white border border-white border-opacity-25 fs-9 ls-2 text-uppercase fw-bold py-2 px-4 mb-4">PSYCHOLOGICAL TESTS</span>
@@ -35,7 +35,7 @@ $tests = [
               </div>
               <div>
                 <h4 class="text-white fw-semibold fs-6 mb-2 lh-sm"><?= htmlspecialchars($t['name']) ?></h4>
-                <p class="text-white opacity-75 fs-8 mb-0"><?= htmlspecialchars($t['desc']) ?></p>
+                <p class="text-white opacity-75 mb-0" style="font-size: 13px !important;"><?= htmlspecialchars($t['desc']) ?></p>
               </div>
             </div>
           </div>

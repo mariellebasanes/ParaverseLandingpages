@@ -31,7 +31,7 @@ $programs = [
 $slides = array_chunk($programs, 3);
 ?>
 <section id="featured-events" class="bg-gco py-20">
-  <div class="container">
+  <div class="container-xxl">
 
     <div class="text-center mb-15">
       <span class="badge bg-white bg-opacity-20 text-white border border-white border-opacity-25 fs-9 ls-2 text-uppercase fw-bold py-2 px-4 mb-4">SPECIAL PROGRAMS</span>

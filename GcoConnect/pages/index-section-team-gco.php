@@ -31,11 +31,11 @@ $team = [
     class="position-absolute d-none d-lg-block"
     style="bottom: 10%; left: 5%; opacity: 0.4; pointer-events: none; width: 240px; transform: rotate(-15deg); z-index: 0;"
     alt="">
-  <div class="container position-relative" style="z-index: 1;">
+  <div class="container-xxl position-relative" style="z-index: 1;">
 
     <div class="text-center mb-15">
       <span class="badge badge-light-primary fs-9 ls-2 text-uppercase fw-bold py-2 px-4 mb-4">MEET THE TEAM</span>
-      <h2 class="fw-bolder fs-2x mb-4 text-gray-800">Our <span class="text-primary">Counselors</span></h2>
+      <h2 class="fw-bolder fs-2x mb-4 text-gray-600">Our Counselors</h2>
       <p class="text-gray-600 fs-5 mw-500px mx-auto">Meet our dedicated team of professionals ready to support your
         wellness journey</p>
     </div>
@@ -45,16 +45,16 @@ $team = [
       <div class="swiper-wrapper">
         <?php foreach ($team as $m): ?>
         <div class="swiper-slide h-auto">
-          <div class="card card-bordered overflow-hidden h-100 mx-auto" style="max-width: 350px;">
+          <div class="card card-bordered overflow-hidden h-100 mx-auto" style="max-width: 260px;">
             <div class="ratio ratio-1x1 overflow-hidden">
               <img src="<?= htmlspecialchars($photoBase . '/' . $m['photo'])?>" alt="<?= htmlspecialchars($m['name'])?>"
                 class="object-fit-cover w-100 h-100 position-absolute top-0 start-0 hover-scale">
             </div>
-            <div class="card-body p-6 d-flex flex-column">
+            <div class="card-body p-5 p-lg-6 d-flex flex-column">
               <span class="badge badge-light-primary fs-9 text-uppercase ls-1 mb-3 align-self-start">
                 <?= htmlspecialchars($m['role'])?>
               </span>
-              <h3 class="fw-bold fs-4 mb-1 text-gray-800">
+              <h3 class="fw-bold fs-4 mb-1 text-gray-600">
                 <?= htmlspecialchars($m['name'])?>
               </h3>
               <a href="mailto:<?= htmlspecialchars($m['email'])?>"
@@ -62,14 +62,14 @@ $team = [
                 <?= htmlspecialchars($m['email'])?>
               </a>
               <div class="separator mb-4"></div>
-              <div class="text-gray-500 fs-9 fw-bold text-uppercase ls-1 mb-3">Assigned Programs</div>
+              <div class="text-gray-500 fs-9 fw-normal text-uppercase ls-1 mb-3">Assigned Programs</div>
               <div class="d-flex flex-wrap gap-2 mb-4">
                 <?php foreach ($m['programs'] as $p): ?>
-                <span class="badge badge-light fs-9 fw-semibold">
+                <span class="badge badge-light fs-9 fw-semibold d-flex align-items-center gap-2">
+                  <img src="https://via.placeholder.com/16" alt="Logo" class="rounded-circle w-15px h-15px">
                   <?= htmlspecialchars($p)?>
                 </span>
-                <?php
-  endforeach; ?>
+                <?php endforeach; ?>
               </div>
               <div class="mt-auto">
                 <a href="mailto:<?= htmlspecialchars($m['email'])?>"
@@ -95,7 +95,7 @@ endforeach; ?>
             slidesPerView: 1, spaceBetween: 20, loop: true,
             autoplay: { delay: 3000, disableOnInteraction: false },
             pagination: { el: '.swiper-pagination', clickable: true },
-            breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20 }, 1024: { slidesPerView: 3, spaceBetween: 30 } }
+            breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20 }, 1024: { slidesPerView: 4, spaceBetween: 20 } }
           });
         }
       });

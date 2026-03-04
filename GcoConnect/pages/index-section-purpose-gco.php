@@ -67,12 +67,12 @@ $categories = [
     class="position-absolute d-none d-lg-block"
     style="top: 15%; right: 5%; opacity: 0.4; pointer-events: none; width: 240px; transform: rotate(10deg); z-index: 0;"
     alt="">
-  <div class="container position-relative" style="z-index: 1;">
+  <div class="container-xxl pt-10 pb-0 position-relative" style="z-index: 1;">
 
     <div class="text-center mb-15">
       <span class="badge badge-light-primary fs-9 ls-2 text-uppercase fw-bold py-2 px-4 mb-4">Purpose of
         Appointment</span>
-      <h2 class="fw-bolder fs-2x mb-4 text-gray-800">Find the <span class="text-primary">Help You Need!</span></h2>
+      <h2 class="fw-bolder fs-2x mb-4 text-gray-600">Find the Help You Need!</h2>
       <p class="text-gray-600 fs-5 mw-600px mx-auto">
         Select your purpose and get the <span class="text-primary fw-semibold">support you deserve</span>&mdash;quick,
         easy, and just for you!

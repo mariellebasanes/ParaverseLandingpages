@@ -29,11 +29,11 @@ $faqs = [
     class="position-absolute d-none d-lg-block"
     style="bottom: 10%; right: 5%; opacity: 0.4; pointer-events: none; width: 240px; transform: rotate(-20deg); z-index: 0;"
     alt="">
-  <div class="container position-relative" style="z-index: 1;">
+  <div class="container-xxl position-relative" style="z-index: 1;">
 
     <div class="text-center mb-15">
       <span class="badge badge-light-primary fs-9 ls-2 text-uppercase fw-bold py-2 px-4 mb-4">FAQ</span>
-      <h2 class="fw-bolder fs-2x mb-4 text-gray-800">Frequently Asked <span class="text-primary">Questions</span></h2>
+      <h2 class="fw-bolder fs-2x mb-4 text-gray-600">Frequently Asked Questions</h2>
       <p class="text-gray-600 fs-5 mw-500px mx-auto">Find answers to common questions about our counseling services</p>
     </div>
 
@@ -43,21 +43,21 @@ $faqs = [
       gco-design.css wires the Bootstrap .accordion-button open/closed styles
       to details[open] so the chevron and active colours apply correctly.
     -->
-    <div class="accordion mw-750px mx-auto">
+    <div class="accordion accordion-icon-toggle mw-900px mx-auto" id="kt_accordion_faq">
       <?php foreach ($faqs as $i => $faq): ?>
-      <details class="accordion-item mb-3 rounded overflow-hidden">
-        <summary class="accordion-button fw-bold fs-5">
-          <i class="ki-duotone ki-question-2 fs-3 text-primary me-3 flex-shrink-0">
-            <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-          </i>
-          <?= htmlspecialchars($faq['q'])?>
-        </summary>
-        <div class="accordion-body text-gray-600 fs-6 ps-12">
-          <?= htmlspecialchars($faq['a'])?>
+      <div class="accordion-item mb-5 bg-white border border-gray-200 rounded-2 shadow-none">
+        <h2 class="accordion-header" id="kt_accordion_faq_header_<?= $i ?>">
+          <button class="accordion-button fs-5 fw-bold text-gray-600 collapsed p-6" type="button" data-bs-toggle="collapse" data-bs-target="#kt_accordion_faq_body_<?= $i ?>" aria-expanded="false" aria-controls="kt_accordion_faq_body_<?= $i ?>">
+            <?= htmlspecialchars($faq['q'])?>
+          </button>
+        </h2>
+        <div id="kt_accordion_faq_body_<?= $i ?>" class="accordion-collapse collapse" aria-labelledby="kt_accordion_faq_header_<?= $i ?>" data-bs-parent="#kt_accordion_faq">
+          <div class="accordion-body text-gray-600 fs-6 px-6 pb-6 pt-0 lh-lg">
+            <?= htmlspecialchars($faq['a'])?>
+          </div>
         </div>
-      </details>
-      <?php
-endforeach; ?>
+      </div>
+      <?php endforeach; ?>
     </div>
 
   </div>

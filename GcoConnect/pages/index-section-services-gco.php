@@ -20,14 +20,14 @@ $services = [
     </div>
   </div>
 
-  <div class="container position-relative" style="z-index: 1;">
+  <div class="container-xxl position-relative" style="z-index: 1;">
 
     <!-- Header -->
     <div class="text-center mb-12">
       <span
         class="badge badge-light-danger border border-danger border-opacity-25 fs-8 ls-2 text-uppercase fw-bolder py-3 px-6 mb-5 rounded-pill d-inline-block">Our
         Services</span>
-      <h2 class="fw-bolder fs-2x text-gray-800 mb-4">Choose the right <span class="text-danger">service</span> for you
+      <h2 class="fw-bolder fs-2x text-gray-600 mb-4">Choose the right service for you
       </h2>
       <p class="fs-6 mb-0 mw-550px mx-auto text-gray-600">
         If you need more info, please check out the
@@ -52,10 +52,10 @@ $services = [
                 </i>
               </span>
             </div>
-            <h3 class="fw-bold fs-5 mb-3 text-gray-800">
+            <h3 class="fw-bold fs-3 mb-3 text-gray-600">
               <?= htmlspecialchars($s['title'])?>
             </h3>
-            <p class="text-gray-600 fs-7 mb-0">
+            <p class="text-gray-600 mb-0" style="font-size: 13px !important;">
               <?= htmlspecialchars($s['desc'])?>
             </p>
           </div>

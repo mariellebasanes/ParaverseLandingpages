@@ -2,7 +2,7 @@
 $bookingUrl = isset($GCO_BASE) ? $GCO_BASE . 'index.php' : 'index.php';
 ?>
 <section class="bg-gco py-20">
-  <div class="container">
+  <div class="container-xxl">
     <div
       class="card bg-white bg-opacity-10 border border-white border-opacity-25 rounded-4 p-10 text-center mx-auto mw-850px">
 

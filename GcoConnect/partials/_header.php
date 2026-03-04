@@ -16,7 +16,7 @@
       <?php include($sample_includes . '/widget-applications-browser.php'); ?>
       <a href="./" onclick="KTApp.showPageLoading()" class="d-flex align-items-center">
         <h1 class="mb-0">
-          <img src="assets/img/logo/logo-gco-connect.svg" alt="GCO Connect" class="h-20px">
+          <img src="assets/img/logo/logo-gco-connect.svg" alt="GCO Connect" class="h-40px">
           <span class="fw-bolder text-primary d-none">GCO Connect</span>
         </h1>
       </a>

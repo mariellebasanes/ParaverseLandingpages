@@ -8,7 +8,7 @@ $steps = [
 ];
 ?>
 <section id="how-it-works" class="bg-gco py-20">
-  <div class="container">
+  <div class="container-xxl">
 
     <div class="text-center mb-15">
       <span class="badge bg-white bg-opacity-20 text-white border border-white border-opacity-25 fs-9 ls-2 text-uppercase fw-bold py-2 px-4 mb-4">HOW IT WORKS</span>
@@ -19,7 +19,7 @@ $steps = [
     <div class="row g-5 justify-content-center">
       <?php foreach ($steps as $i => $step): ?>
       <div class="col-12 col-lg-10">
-        <div class="d-flex flex-column flex-md-row align-items-center gap-5 <?= $i % 2 === 1 ? 'flex-md-row-reverse justify-content-end' : '' ?>">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-5">
 
           <!-- Step number -->
           <div class="symbol symbol-circle symbol-70px flex-shrink-0">
