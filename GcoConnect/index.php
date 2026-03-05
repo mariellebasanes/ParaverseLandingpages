@@ -20,7 +20,7 @@ $META_DESC = "Professional counseling services for students. Connect with licens
   <?php HEAD_ESSENTIALS(); ?>
   <!-- Metronic local assets (fontawesome icons + brand overrides) -->
   <link rel="stylesheet" href="<?php echo htmlspecialchars($GCO_BASE); ?>assets/css/fontawesome.css" type="text/css" />
-  <link rel="stylesheet" href="<?php echo htmlspecialchars($GCO_BASE); ?>assets/css/gco-design.css" type="text/css" />
+  <link rel="stylesheet" href="<?php echo htmlspecialchars($GCO_BASE); ?>assets/css/gco-design.css?v=<?php echo time(); ?>" type="text/css" />
 
   <!-- Swiper CSS (no local bundle — CDN only) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
