@@ -6,7 +6,7 @@
             <div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px"
                 data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
                 data-kt-menu-placement="bottom-start">
-                <img src="/assets/img/logo/icon-paraverse.svg" class="w-100">
+                <img src="<?php echo htmlspecialchars($GCO_BASE); ?>assets/img/logo/icon-paraverse.svg" class="w-100">
             </div>
             <div class="menu menu-sub menu-sub-dropdown menu-column w-100 w-sm-500px" data-kt-menu="true">
                 <div class="card">
@@ -42,6 +42,6 @@
 
 <?php } else { ?>
     <a href="/portal/" onclick="KTApp.showPageLoading()" class="d-flex align-items-center me-4 pe-4 border-end">
-        <img src="/assets/img/logo.png" class="h-35px">
+        <img src="<?php echo htmlspecialchars($GCO_BASE); ?>assets/img/logo/Logo.svg" class="h-30px">
     </a>
 <?php } ?>

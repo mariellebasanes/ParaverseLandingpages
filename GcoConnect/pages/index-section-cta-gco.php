@@ -4,7 +4,7 @@ $bookingUrl = isset($GCO_BASE) ? $GCO_BASE . 'index.php' : 'index.php';
 <section class="bg-gco py-20">
   <div class="container-xxl">
     <div
-      class="card bg-white bg-opacity-10 border border-white border-opacity-25 rounded-4 p-10 text-center mx-auto mw-850px">
+      class="card bg-white bg-opacity-10 border border-white border-opacity-25 rounded-4 p-10 text-center mx-auto w-100 position-relative">
 
       <div class="symbol symbol-70px mx-auto mb-6">
         <span class="symbol-label bg-white bg-opacity-20">
@@ -20,7 +20,7 @@ $bookingUrl = isset($GCO_BASE) ? $GCO_BASE . 'index.php' : 'index.php';
       </p>
 
       <div class="d-flex flex-wrap gap-4 justify-content-center">
-        <a href="<?= htmlspecialchars($bookingUrl)?>" class="btn btn-light fw-bold px-8 py-3 text-nowrap text-danger">
+        <a href="<?= htmlspecialchars($bookingUrl)?>" class="btn btn-light fw-bold px-8 py-3 text-nowrap text-danger hover-elevate-up">
           <i class="ki-duotone ki-calendar-2 fs-4 me-2 text-danger"><span class="path1"></span><span
               class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
           Book an Appointment

@@ -15,10 +15,7 @@
     <div class="app-navbar flex-shrink-0">
       <?php include($sample_includes . '/widget-applications-browser.php'); ?>
       <a href="./" onclick="KTApp.showPageLoading()" class="d-flex align-items-center">
-        <h1 class="mb-0">
-          <img src="assets/img/logo/logo-gco-connect.svg" alt="GCO Connect" class="h-40px">
-          <span class="fw-bolder text-primary d-none">GCO Connect</span>
-        </h1>
+        <img src="<?php echo htmlspecialchars($GCO_BASE); ?>assets/img/logo/logo-gco-connect.svg" alt="GCO Connect" style="height: 32px;">
       </a>
     </div>
 

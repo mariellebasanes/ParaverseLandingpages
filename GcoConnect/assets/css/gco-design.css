@@ -262,11 +262,12 @@
 
 #purpose-tab-0:checked~.purpose-panes-wrapper [data-pane="0"],
 #purpose-tab-1:checked~.purpose-panes-wrapper [data-pane="1"],
-#purpose-tab-2:checked~.purpose-panes-wrapper [data-pane="2"] {
+#purpose-tab-2:checked~.purpose-panes-wrapper [data-pane="2"],
+#purpose-tab-3:checked~.purpose-panes-wrapper [data-pane="3"] {
   display: block;
 }
 
-/* Active tab labels — primary tabs (0 & 2) use brand pink, Psych. Testing (1) uses coral */
+/* Active tab labels — brand pink (0, 2), coral (1, 3) */
 #purpose-tab-0:checked~.purpose-tab-nav label[for="purpose-tab-0"],
 #purpose-tab-2:checked~.purpose-tab-nav label[for="purpose-tab-2"] {
   background-color: #DB3F6B !important;
@@ -274,7 +275,8 @@
   color: #ffffff !important;
 }
 
-#purpose-tab-1:checked~.purpose-tab-nav label[for="purpose-tab-1"] {
+#purpose-tab-1:checked~.purpose-tab-nav label[for="purpose-tab-1"],
+#purpose-tab-3:checked~.purpose-tab-nav label[for="purpose-tab-3"] {
   background-color: #E76659 !important;
   border-color: #E76659 !important;
   color: #ffffff !important;
@@ -283,7 +285,8 @@
 /* Inactive tab labels: light tint */
 #purpose-tab-0:checked~.purpose-tab-nav label:not([for="purpose-tab-0"]),
 #purpose-tab-1:checked~.purpose-tab-nav label:not([for="purpose-tab-1"]),
-#purpose-tab-2:checked~.purpose-tab-nav label:not([for="purpose-tab-2"]) {
+#purpose-tab-2:checked~.purpose-tab-nav label:not([for="purpose-tab-2"]),
+#purpose-tab-3:checked~.purpose-tab-nav label:not([for="purpose-tab-3"]) {
   background-color: #fce8ef !important;
   border-color: #DB3F6B !important;
   color: #DB3F6B !important;
@@ -512,26 +515,57 @@ body#kt_app_body .lead[class*="fs-"] {
 
 /* ── CTA Playful Redesign ────────────────────────────────────────────────── */
 @keyframes heartbeat {
-  0% { transform: scale(1); }
-  14% { transform: scale(1.3); }
-  28% { transform: scale(1); }
-  42% { transform: scale(1.3); }
-  70% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.3);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.3);
+  }
+
+  70% {
+    transform: scale(1);
+  }
 }
+
 .animate-heartbeat {
   animation: heartbeat 1.5s infinite;
 }
 
 @keyframes float-cta {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(5deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 
 @keyframes float-cta-reverse {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(15px) rotate(-5deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(15px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 
 .floating-cta-1 {
@@ -562,9 +596,10 @@ body#kt_app_body .lead[class*="fs-"] {
 .btn-hover-scale {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .btn-hover-scale:hover {
   transform: scale(1.05) translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .cta-card {

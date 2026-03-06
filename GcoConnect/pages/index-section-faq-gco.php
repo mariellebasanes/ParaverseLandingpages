@@ -1,11 +1,12 @@
 ﻿<?php
 $faqs = [
+  ['q' => 'What exactly do Guidance Counselors and Psychometricians do?', 'a' => 'A guidance counselor intently hears your story and works with you to establish the best course of action given your objectives. They provide an opportunity to be completely and honestly heard, exploring your deepest ideas and feelings. They may also provide techniques to help you recognize unhealthy thought patterns and behaviors. A psychometrician provides an opportunity for increased awareness and understanding of oneself through the administration and interpretation of standardized psychological tests.'],
+  ['q' => 'What is a "Kumustahan" Session?', 'a' => 'It is carried out in the form of "kumustahan" and acts as an early intervention for students who may need help.'],
+  ['q' => 'What are Consultation and Counseling services?', 'a' => 'Consultation services help students create solutions to recognized concerns or issues by giving adept advice and accessible resources. Counseling services assist students in dealing with challenges by clarifying concerns, exploring possibilities, increasing self-awareness, and developing intervention plans that may include psychological assessment.'],
+  ['q' => 'What is Psychological Testing?', 'a' => 'Psychological testing is a way that students can become more aware of their strengths and areas of improvement using standardized psychological tests. Through testing, students can gain insights that help guide their decisions and actions.'],
   ['q' => 'Is the GCO available to everyone?', 'a' => 'Yes! The Guidance and Counseling Office is available to all enrolled students. Whether you need academic support, personal counseling, or career guidance, our doors are always open.'],
-  ['q' => 'Are all of your counselors certified?', 'a' => 'Absolutely. All our counselors are licensed professionals with advanced degrees in psychology, counseling, or related fields. They undergo continuous training to provide the best support possible.'],
   ['q' => 'What is the cost?', 'a' => 'All GCO services are completely FREE for enrolled students. This is part of our commitment to student wellbeing and success.'],
-  ['q' => 'How do I get started?', 'a' => "Getting started is easy! Simply click 'Book an Appointment', select the service you need, fill in your basic information, choose a time slot, and you're all set. You'll receive a confirmation with all the details."],
-  ['q' => 'What if I need to reschedule?', 'a' => "No problem! You can reschedule your appointment up to 24 hours before your scheduled time. Simply contact our office via email or phone, and we'll help you find a new time that works for you."],
-  ['q' => 'How long does each session last?', 'a' => 'Session duration varies by service type. Interviews typically last 30–45 minutes, counseling sessions are 50–60 minutes, and psychological assessments can take 1–2 hours depending on the test.'],
+  ['q' => 'How do I get started?', 'a' => "Getting started is easy! Simply click 'Book an Appointment', select the service you need, fill in your information, choose a time slot, and you're all set. You'll receive a confirmation with all the details."],
 ];
 ?>
 <section class="bg-body py-20 overflow-hidden position-relative" style="z-index: 0;">
@@ -45,24 +46,16 @@ $faqs = [
     -->
     <div class="accordion accordion-icon-toggle mw-900px mx-auto" id="kt_accordion_faq">
       <?php foreach ($faqs as $i => $faq): ?>
-      <div class="accordion-item mb-5 bg-white border border-gray-200 rounded-2 shadow-none">
-        <h2 class="accordion-header" id="kt_accordion_faq_header_<?= $i ?>">
-          <button class="accordion-button fs-5 fw-bold text-gray-600 collapsed p-6" type="button" data-bs-toggle="collapse" data-bs-target="#kt_accordion_faq_body_<?= $i ?>" aria-expanded="false" aria-controls="kt_accordion_faq_body_<?= $i ?>">
-            <?= htmlspecialchars($faq['q'])?>
-          </button>
-        </h2>
-        <div id="kt_accordion_faq_body_<?= $i ?>" class="accordion-collapse collapse" aria-labelledby="kt_accordion_faq_header_<?= $i ?>" data-bs-parent="#kt_accordion_faq">
-          <div class="accordion-body text-gray-600 fs-6 px-6 pb-6 pt-0 lh-lg">
-            <?= htmlspecialchars($faq['a'])?>
-          </div>
+      <details class="accordion-item mb-5 bg-white border border-gray-200 rounded-2 shadow-none">
+        <summary class="accordion-button fs-5 fw-bold text-gray-600 p-6">
+          <?= htmlspecialchars($faq['q'])?>
+        </summary>
+        <div class="accordion-body text-gray-600 fs-6 px-6 pb-6 pt-0 lh-lg">
+          <?= htmlspecialchars($faq['a'])?>
         </div>
-      </div>
+      </details>
       <?php endforeach; ?>
     </div>
 
   </div>
-</section>; ??
-</div>
-
-</div>
 </section>

@@ -9,9 +9,9 @@ $categories = [
     'paths' => 5,
     'items' => [
       ['title' => 'Student Leader Interview', 'desc' => "Interview for Incoming, Out-going student leaders' candidate of leadership awardee"],
-      ['title' => 'Request for Recommendation', 'desc' => 'For students requesting Recommendation Forms for admission and scholarship purposes'],
-      ['title' => 'Kumustahan / Student Routine Interview', 'desc' => "General interview for updates on the student's concerns and status"],
-      ['title' => 'Student Routine Interview & Test Results', 'desc' => 'Support for relating and assistance in queries on psychological test results. For clients who have already completed Psychological Test Administration'],
+      ['title' => 'Request for Recommendation', 'desc' => 'For students who are requesting Recommendation Forms for admission and scholarship purposes'],
+      ['title' => 'Kumustahan Session or Student Routine Interview', 'desc' => "General interview in lieu of updates on the students concerns and status"],
+      ['title' => 'Student Routine Interview and Test Results Discussion', 'desc' => 'Support for relating and assistance in queries on the results of their psychological test. For clients who have already completed Psychological Test Administration'],
     ],
   ],
   [
@@ -22,15 +22,35 @@ $categories = [
     'icon' => 'ki-notepad-bookmark',
     'paths' => 6,
     'items' => [
-      ['title' => 'Referred by Counselor', 'desc' => 'Students who received a formal referral from their counselor for Psychological Test Administration'],
-      ['title' => 'Invitation from GCO Activity', 'desc' => 'Students who participated in GCO special programs (COPE, RISE, SASE, KUMUSTAHAN, Career Navigation etc.)'],
+      ['title' => 'Referred by Counselor', 'desc' => 'Students who received a formal referral from their counselor for Psychological Test Administration, typically following an initial consultation session'],
+      ['title' => 'Invitation from GCO Activity', 'desc' => 'Students who participated in GCO special programs (i.e. COPE, RISE, SASE, KUMUSTAHAN, Career Navigation etc.) and invited for Psychological Test Administration'],
     ],
   ],
   [
-    'title' => 'Consultation & Counseling Purposes',
+    'title' => 'Consultation Purposes',
     'tab' => 'Consultation',
     'count' => 10,
     'color' => 'primary',
+    'icon' => 'ki-briefcase',
+    'paths' => 2,
+    'items' => [
+      ['title' => 'Mental Health Support', 'desc' => 'Focused on emotional well-being and psychological health'],
+      ['title' => 'Social Adjustment', 'desc' => 'Support for adapting to social environments and improving social interactions'],
+      ['title' => 'Peer Relationships', 'desc' => 'Assistance with navigating friendships and peer dynamics'],
+      ['title' => 'Family Dynamics', 'desc' => 'Support for addressing family-related challenges and conflicts'],
+      ['title' => 'Relationship Development', 'desc' => 'Guidance for building and maintaining healthy relationships'],
+      ['title' => 'Academic Support', 'desc' => 'Assistance with academic challenges and improving school performance'],
+      ['title' => 'Bereavement', 'desc' => 'Assistance in coping with the loss of someone relatively in the process of grieving'],
+      ['title' => 'Occupational Problems', 'desc' => 'Assistance on work related concerns such as adjustments and relational issues'],
+      ['title' => 'Legal Problems', 'desc' => 'Concern that involves the law that needs to be addressed'],
+      ['title' => 'Consultation and Test Results Discussion', 'desc' => 'Support for relating and assistance in queries on the results of their psychological test. For clients who have already completed Psychological Test Administration'],
+    ],
+  ],
+  [
+    'title' => 'Counseling Purposes',
+    'tab' => 'Counseling',
+    'count' => 10,
+    'color' => 'danger',
     'icon' => 'ki-heart',
     'paths' => 2,
     'items' => [
@@ -40,10 +60,10 @@ $categories = [
       ['title' => 'Family Dynamics', 'desc' => 'Support for addressing family-related challenges and conflicts'],
       ['title' => 'Relationship Development', 'desc' => 'Guidance for building and maintaining healthy relationships'],
       ['title' => 'Academic Support', 'desc' => 'Assistance with academic challenges and improving school performance'],
-      ['title' => 'Bereavement', 'desc' => 'Assistance in coping with loss and support in the grieving process'],
-      ['title' => 'Occupational Problems', 'desc' => 'Assistance on work-related concerns such as adjustments and relational issues'],
-      ['title' => 'Legal Problems', 'desc' => 'Concerns that involve the law that need to be addressed'],
-      ['title' => 'Consultation & Test Results', 'desc' => 'Support for assistance in queries on psychological test results. For clients who have already completed Psychological Test Administration'],
+      ['title' => 'Bereavement', 'desc' => 'Assistance in coping with the loss of someone relatively in the process of grieving'],
+      ['title' => 'Occupational Problems', 'desc' => 'Assistance on work related concerns such as adjustments and relational issues'],
+      ['title' => 'Legal Problems', 'desc' => 'Concern that involves the law that needs to be addressed'],
+      ['title' => 'Counseling and Test Results Discussion', 'desc' => 'Support for relating and assistance in queries on the results of their psychological test. For clients who have already completed Psychological Test Administration'],
     ],
   ],
 ];
@@ -84,7 +104,7 @@ $categories = [
       Hidden radio inputs drive visibility via :checked ~ sibling selectors
       defined in gco-design.css (.purpose-tab-*).
     -->
-    <div class="mw-900px mx-auto">
+    <div class="mx-auto">
 
       <!-- 1. Radio controls (must come first as siblings of nav + panes) -->
       <?php foreach ($categories as $i => $cat): ?>
