@@ -1,10 +1,12 @@
 ﻿<?php
 $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
 $services = [
-  ['title' => 'Interview', 'desc' => "For gathering information that allows the counselor to learn about the student's needs and current state.", 'icon' => 'ki-messages', 'paths' => 5],
-  ['title' => 'Psychological Test Administration', 'desc' => 'Professional psychological assessments to better understand your strengths, challenges, and learning style.', 'icon' => 'ki-notepad-bookmark', 'paths' => 6],
-  ['title' => 'Consultation', 'desc' => 'One-on-one sessions to discuss academic, personal, or career-related concerns in a confidential setting.', 'icon' => 'ki-profile-circle', 'paths' => 3],
-  ['title' => 'Counseling', 'desc' => 'Ongoing support and guidance to help you navigate challenges and develop healthy coping strategies.', 'icon' => 'ki-heart', 'paths' => 2],
+  ['title' => 'Counseling', 'desc' => 'Counseling provides students with a safe and supportive space to discuss concerns affecting their personal, academic, or social life. Counselors work collaboratively with students to help them adjust, grow, and overcome challenges.', 'icon' => 'ki-heart', 'paths' => 2],
+  ['title' => 'Consultation', 'desc' => 'Consultations allow counselors to support students, parents, and faculty in addressing specific concerns. Through guidance and collaboration, counselors help identify strengths, resources, and possible solutions.', 'icon' => 'ki-profile-circle', 'paths' => 3],
+  ['title' => 'Routine Interviews', 'desc' => 'Routine interviews, also known as "kumustahan sessions," serve as an early check-in to support students and identify those who may need additional guidance or assistance.', 'icon' => 'ki-messages', 'paths' => 5],
+  ['title' => 'Psychological Testing', 'desc' => 'Psychological testing helps students better understand their strengths, abilities, and areas for improvement through standardized assessments that support informed decisions and personal development.', 'icon' => 'ki-notepad-bookmark', 'paths' => 6],
+  ['title' => 'Information and Enrichment', 'desc' => 'Students are provided with helpful resources such as reading materials, web links, and infographics, along with activities like orientations, webinars, and workshops for learning and growth.', 'icon' => 'ki-book-open', 'paths' => 2],
+  ['title' => 'Referral and Follow-Up', 'desc' => 'Referral and follow-up services ensure students receive continued support and guidance. Counselors monitor progress and provide additional assistance when needed.', 'icon' => 'ki-send', 'paths' => 2],
 ];
 ?>
 <section id="services" class="bg-white pt-0 pb-20 position-relative overflow-hidden" style="z-index: 0;">
@@ -27,7 +29,8 @@ $services = [
       <span
         class="badge badge-light-danger border border-danger border-opacity-25 fs-8 ls-2 text-uppercase fw-bolder py-3 px-6 mb-5 rounded-pill d-inline-block">Our
         Services</span>
-      <h2 class="fw-bolder fs-2x text-gray-600 mb-4">Choose the right service for you
+      <h2 class="fw-bolder fs-2x text-gray-600 mb-4"><span class="text-gray-500 fw-bold">Choose the right service</span>
+        <span class="text-danger">for you</span>
       </h2>
       <p class="fs-6 mb-0 mw-550px mx-auto text-gray-600">
         If you need more info, please check out the
@@ -36,13 +39,13 @@ $services = [
       </p>
     </div>
 
-    <!-- Service cards grid — in one row -->
-    <div class="row g-5 row-cols-1 row-cols-md-2 row-cols-xl-4">
+    <!-- Service cards grid — 2 rows of 3 -->
+    <div class="row g-5 row-cols-1 row-cols-md-2 row-cols-xl-3">
       <?php foreach ($services as $s): ?>
       <div class="col">
         <div class="card border-0 h-100 shadow-sm border-top border-4 border-danger">
           <div class="card-body p-7">
-            <!-- Icon above text to fit nicely in 4 columns -->
+            <!-- Icon -->
             <div class="symbol symbol-50px mb-5">
               <span class="symbol-label rounded-3 bg-light-danger">
                 <i class="ki-duotone <?= $s['icon']?> fs-2x text-danger">

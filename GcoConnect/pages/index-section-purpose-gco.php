@@ -43,7 +43,7 @@ $categories = [
       ['title' => 'Bereavement', 'desc' => 'Assistance in coping with the loss of someone relatively in the process of grieving'],
       ['title' => 'Occupational Problems', 'desc' => 'Assistance on work related concerns such as adjustments and relational issues'],
       ['title' => 'Legal Problems', 'desc' => 'Concern that involves the law that needs to be addressed'],
-      ['title' => 'Consultation and Test Results Discussion', 'desc' => 'Support for relating and assistance in queries on the results of their psychological test. For clients who have already completed Psychological Test Administration'],
+      ['title' => 'Consultation and Test Results Discussion', 'desc' => 'Support for relating and assistance in queries on the results of their psychological test. '],
     ],
   ],
   [
@@ -63,7 +63,7 @@ $categories = [
       ['title' => 'Bereavement', 'desc' => 'Assistance in coping with the loss of someone relatively in the process of grieving'],
       ['title' => 'Occupational Problems', 'desc' => 'Assistance on work related concerns such as adjustments and relational issues'],
       ['title' => 'Legal Problems', 'desc' => 'Concern that involves the law that needs to be addressed'],
-      ['title' => 'Counseling and Test Results Discussion', 'desc' => 'Support for relating and assistance in queries on the results of their psychological test. For clients who have already completed Psychological Test Administration'],
+      ['title' => 'Counseling and Test Results Discussion', 'desc' => 'Support for relating and assistance in queries on the results of their psychological test'],
     ],
   ],
 ];

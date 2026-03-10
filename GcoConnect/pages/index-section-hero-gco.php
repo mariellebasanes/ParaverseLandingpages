@@ -34,12 +34,13 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
           Student Counseling &amp; Support
         </span>
         <h1 class="text-dark fw-bolder fs-3x fs-lg-4x lh-sm mb-6">
-          Your Mental Health<br>
-          <span class="text-primary opacity-75">Matters</span>
+          <span class="text-gray-700 opacity-75">Your Mental Health</span><br>
+          <span class="text-primary">Matters</span>
         </h1>
         <p class="text-gray-600 fs-4 mb-10 mw-500px">
-          Professional counseling services tailored for students. Connect with licensed therapists who understand your
-          journey and are here to support your wellbeing.
+          The Guidance and Counseling Office (GCO) supports students’ emotional, social, and psychological well-being
+          through innovative programs and services. It provides a safe and confidential space where students can openly
+          discuss personal, academic, or career concerns.
         </p>
         <div class="d-flex flex-wrap gap-4 mb-10">
           <a href="#services" class="btn btn-primary d-inline-flex align-items-center gap-2

@@ -103,25 +103,63 @@
   border-color: #b8335a !important;
 }
 
+/* ── btn-light-primary (used on team cards + hero) ──────────────────────── */
 .btn.btn-light-primary,
 .btn-light-primary {
   background-color: #fce8ef !important;
   color: #DB3F6B !important;
 }
 
-.btn.btn-light-primary:hover {
-  background-color: #f9d4e0 !important;
-}
-
-/* White buttons (.btn-light) hover state → coral pink */
-.btn.btn-light:hover {
-  background-color: #E76659 !important;
-  border-color: #E76659 !important;
+/* On hover → solid dark pink with white text/icons (clearly readable) */
+.btn.btn-light-primary:hover,
+.btn.btn-light-primary:focus {
+  background-color: #DB3F6B !important;
+  border-color: #DB3F6B !important;
   color: #ffffff !important;
 }
 
-.btn.btn-light:hover i,
-.btn.btn-light:hover span {
+/* Force ALL child elements (icons, path spans, text) white on hover */
+.btn.btn-light-primary:hover *,
+.btn.btn-light-primary:focus * {
+  color: #ffffff !important;
+}
+
+/* ── btn-light (plain white button, e.g. CTA "Book an Appointment") ──────── */
+/* Only apply coral hover to genuine plain-white btn-light
+   (NOT outline-light which has no background, NOT light-primary) */
+.btn.btn-light:not([class*="outline"]):not([class*="light-"]):hover {
+  background-color: #DB3F6B !important;
+  border-color: #DB3F6B !important;
+  color: #ffffff !important;
+}
+
+.btn.btn-light:not([class*="outline"]):not([class*="light-"]):hover * {
+  color: #ffffff !important;
+}
+
+/* ── btn-outline-light (CTA "Learn About GCO") ───────────────────────────── */
+.btn.btn-outline-light:hover,
+.btn.btn-outline-light:focus {
+  background-color: rgba(255, 255, 255, 0.22) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.btn.btn-outline-light:hover *,
+.btn.btn-outline-light:focus * {
+  color: #ffffff !important;
+}
+
+/* ── btn-outline-primary (Purpose-of-Appointment tabs) ───────────────────── */
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus {
+  background-color: #DB3F6B !important;
+  border-color: #DB3F6B !important;
+  color: #ffffff !important;
+}
+
+.btn.btn-outline-primary:hover *,
+.btn.btn-outline-primary:focus * {
   color: #ffffff !important;
 }
 
@@ -226,6 +264,39 @@
 .bg-gco .card.card-bordered div,
 .bg-gco .card.card-bordered a {
   color: var(--bs-body-color) !important;
+}
+
+/* ── Button colour exceptions inside .bg-gco ────────────────────────────────
+ * The rule ".bg-gco span { color:#fff }" above forces ALL spans white,
+ * which makes duotone icon path spans invisible on light-coloured buttons
+ * that live inside the CTA section. The rules below restore the correct
+ * colours for every button variant that can appear inside .bg-gco.
+ */
+
+/* Plain white button ("Book an Appointment") ─ keep danger-colour icon+text */
+.bg-gco .btn.btn-light:not([class*="outline"]):not([class*="light-"]) {
+  color: #E76659 !important;
+}
+
+.bg-gco .btn.btn-light:not([class*="outline"]):not([class*="light-"]) * {
+  color: #E76659 !important;
+}
+
+/* On hover it turns pink — force white for everything */
+.bg-gco .btn.btn-light:not([class*="outline"]):not([class*="light-"]):hover,
+.bg-gco .btn.btn-light:not([class*="outline"]):not([class*="light-"]):hover * {
+  color: #ffffff !important;
+}
+
+/* Outline-light button ("Learn About GCO") ─ always white text/icons */
+.bg-gco .btn.btn-outline-light,
+.bg-gco .btn.btn-outline-light * {
+  color: #ffffff !important;
+}
+
+.bg-gco .btn.btn-outline-light:hover,
+.bg-gco .btn.btn-outline-light:hover * {
+  color: #ffffff !important;
 }
 
 /*

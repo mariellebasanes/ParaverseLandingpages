@@ -1,5 +1,5 @@
 <?php $sample_includes = __DIR__ . '/../includes'; ?>
-<div id="kt_app_header" class="app-header bg-white" data-kt-sticky="true"
+<div id="kt_app_header" class="app-header bg-white" data-kt-sticky="true" data-bs-theme="light"
   data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize"
   data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
 
@@ -15,7 +15,8 @@
     <div class="app-navbar flex-shrink-0">
       <?php include($sample_includes . '/widget-applications-browser.php'); ?>
       <a href="./" onclick="KTApp.showPageLoading()" class="d-flex align-items-center">
-        <img src="<?php echo htmlspecialchars($GCO_BASE); ?>assets/img/logo/logo-gco-connect.svg" alt="GCO Connect" style="height: 32px;">
+        <img src="<?php echo htmlspecialchars($GCO_BASE); ?>assets/img/logo/logo-gco-connect.svg" alt="GCO Connect"
+          style="height: 32px;">
       </a>
     </div>
 
@@ -42,10 +43,10 @@
 
       <div class="app-navbar flex-shrink-0">
         <?php
-        include($sample_includes . '/widget-user-menu.php');
-        include($sample_includes . '/widget-app-item-login.php');
-        include($sample_includes . '/widget-app-item-hamburger.php');
-        ?>
+include($sample_includes . '/widget-user-menu.php');
+include($sample_includes . '/widget-app-item-login.php');
+include($sample_includes . '/widget-app-item-hamburger.php');
+?>
       </div>
 
     </div>
