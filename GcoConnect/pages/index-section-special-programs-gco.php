@@ -44,9 +44,6 @@ $programs = [
     'image' => 'career path.png',
   ],
 ];
-
-/* Group into slides of 3 */
-$slides = array_chunk($programs, 3);
 ?>
 <section id="featured-events" class="bg-gco py-20">
   <div class="container-xxl">
@@ -61,93 +58,113 @@ $slides = array_chunk($programs, 3);
         sessions&mdash;connected in <strong class="text-white">Eventually</strong>.</p>
     </div>
 
-    <!--
-      Multi-item Bootstrap carousel: each slide is a row of up to 3 cards.
-      data-bs-ride="false"  → no auto-play; user must click prev/next.
-      Controls are hidden when there is only one slide.
-    -->
-    <div id="eventsCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
+    <!-- Swiper carousel -->
+    <div class="swiper my-5 pb-10 px-5" id="eventsSwiper">
+      <div class="swiper-wrapper">
+        <?php foreach ($programs as $p): ?>
+        <div class="swiper-slide h-auto">
+          <div class="card card-bordered overflow-hidden h-100 transition-all duration-300 hover-elevate-up shadow-sm border-0 bg-white"
+            style="border-radius: 1rem;">
+            <?php if (!empty($p['image'])): ?>
+            <div class="ratio ratio-16x9 overflow-hidden">
+              <img src="<?= htmlspecialchars($eventsBase . '/' . $p['image'])?>"
+                alt="<?= htmlspecialchars($p['title'])?>" class="object-fit-cover w-100 h-100">
+            </div>
+            <?php endif; ?>
 
-      <!-- Dot indicators (only rendered when >1 slide) -->
-      <?php if (count($slides) > 1): ?>
-      <div class="carousel-indicators mb-n6">
-        <?php foreach ($slides as $si => $slide): ?>
-        <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="<?= $si?>"
-          class="<?= $si === 0 ? 'active' : ''?>" <?=$si===0 ? 'aria-current="true"' : ''?>
-          aria-label="Slide
-          <?= $si + 1?>">
-        </button>
-        <?php
-  endforeach; ?>
-      </div>
-      <?php
-endif; ?>
-
-      <!-- Slides -->
-      <div class="carousel-inner">
-        <?php foreach ($slides as $si => $slide): ?>
-        <div class="carousel-item <?= $si === 0 ? 'active' : ''?>">
-          <div class="row g-6 row-cols-1 row-cols-md-<?= count($slide)?> px-<?= count($slides) > 1 ? '8' : '0'?>">
-            <?php foreach ($slide as $p): ?>
-            <div class="col">
-              <div class="card card-bordered overflow-hidden h-100 hover-elevate-up">
-
-                <?php if (!empty($p['image'])): ?>
-                <div style="height:200px;overflow:hidden;">
-                  <img src="<?= htmlspecialchars($eventsBase . '/' . $p['image'])?>"
-                    alt="<?= htmlspecialchars($p['title'])?>" class="w-100 h-100 object-fit-cover">
+            <div class="card-body p-6 d-flex flex-column text-start">
+              <span class="badge badge-light-danger text-danger fs-9 text-uppercase ls-1 fw-bold mb-4 align-self-start px-3 py-2 border border-danger border-opacity-25">
+                <?= htmlspecialchars($p['category'])?>
+              </span>
+              <h4 class="fw-bold fs-5 mb-4 text-gray-900">
+                <?= $p['desc']?>
+              </h4>
+              <div class="mt-auto">
+                <div class="d-flex align-items-center gap-2 text-gray-500 fs-7 mb-2">
+                  <i class="ki-duotone ki-calendar-2 fs-5 text-primary">
+                    <span class="path1"></span><span class="path2"></span>
+                    <span class="path3"></span><span class="path4"></span><span class="path5"></span>
+                  </i>
+                  <?= htmlspecialchars($p['date'])?>
                 </div>
-                <?php
-    endif; ?>
-
-                <div class="card-body p-5">
-                  <span class="badge badge-light-danger text-danger fs-9 text-uppercase ls-1 fw-bold mb-3">
-                    <?= htmlspecialchars($p['category'])?>
-                  </span>
-                  <h4 class="fw-bold fs-6 mb-4">
-                    <?= $p['desc']?>
-                  </h4>
-                  <div class="d-flex align-items-center gap-2 text-gray-500 fs-7 mb-2">
-                    <i class="ki-duotone ki-calendar-2 fs-5 text-primary">
-                      <span class="path1"></span><span class="path2"></span>
-                      <span class="path3"></span><span class="path4"></span><span class="path5"></span>
-                    </i>
-                    <?= htmlspecialchars($p['date'])?>
-                  </div>
-                  <div class="d-flex align-items-center gap-2 text-gray-500 fs-7">
-                    <i class="ki-duotone ki-geolocation fs-5 text-primary">
-                      <span class="path1"></span><span class="path2"></span>
-                    </i>
-                    <?= htmlspecialchars($p['location'])?>
-                  </div>
+                <div class="d-flex align-items-center gap-2 text-gray-500 fs-7">
+                  <i class="ki-duotone ki-geolocation fs-5 text-primary">
+                    <span class="path1"></span><span class="path2"></span>
+                  </i>
+                  <?= htmlspecialchars($p['location'])?>
                 </div>
-
               </div>
             </div>
-            <?php
-  endforeach; ?>
           </div>
         </div>
-        <?php
-endforeach; ?>
-      </div><!-- /carousel-inner -->
+        <?php endforeach; ?>
+      </div>
+      <div class="swiper-pagination mt-10 position-relative"></div>
+    </div>
 
-      <!-- Prev / Next — only rendered when >1 slide -->
-      <?php if (count($slides) > 1): ?>
-      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev"
-        style="width:2.5rem;">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next"
-        style="width:2.5rem;">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <?php
-endif; ?>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof Swiper !== 'undefined') {
+          new Swiper('#eventsSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: false,
+            grabCursor: true,
+            autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+              dynamicBullets: true
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 25
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+              }
+            }
+          });
+        }
+      });
+    </script>
 
-    </div><!-- /carousel -->
+    <style>
+      #eventsSwiper {
+        padding-bottom: 3.5rem !important;
+        padding-top: 1rem !important;
+      }
+
+      #eventsSwiper .swiper-pagination-bullet {
+        background-color: #fff;
+        opacity: .3;
+        transition: all 0.3s ease;
+        width: 10px;
+        height: 10px;
+      }
+
+      #eventsSwiper .swiper-pagination-bullet-active {
+        opacity: 1;
+        width: 32px;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+
+      .bg-gco {
+        background-color: #7a1d1d;
+        /* Match GCO Red if needed, or keep existing class */
+      }
+    </style>
 
   </div>
 </section>

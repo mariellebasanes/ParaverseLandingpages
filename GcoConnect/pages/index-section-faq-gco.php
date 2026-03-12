@@ -1,12 +1,12 @@
 ﻿<?php
 $faqs = [
-  ['q' => 'What exactly do Guidance Counselors and Psychometricians do?', 'a' => 'A guidance counselor intently hears your story and works with you to establish the best course of action given your objectives. They provide an opportunity to be completely and honestly heard, exploring your deepest ideas and feelings. They may also provide techniques to help you recognize unhealthy thought patterns and behaviors. A psychometrician provides an opportunity for increased awareness and understanding of oneself through the administration and interpretation of standardized psychological tests.'],
-  ['q' => 'What is a "Kumustahan" Session?', 'a' => 'It is carried out in the form of "kumustahan" and acts as an early intervention for students who may need help.'],
-  ['q' => 'What are Consultation and Counseling services?', 'a' => 'Consultation services help students create solutions to recognized concerns or issues by giving adept advice and accessible resources. Counseling services assist students in dealing with challenges by clarifying concerns, exploring possibilities, increasing self-awareness, and developing intervention plans that may include psychological assessment.'],
-  ['q' => 'What is Psychological Testing?', 'a' => 'Psychological testing is a way that students can become more aware of their strengths and areas of improvement using standardized psychological tests. Through testing, students can gain insights that help guide their decisions and actions.'],
-  ['q' => 'Is the GCO available to everyone?', 'a' => 'Yes! The Guidance and Counseling Office is available to all enrolled students. Whether you need academic support, personal counseling, or career guidance, our doors are always open.'],
-  ['q' => 'What is the cost?', 'a' => 'All GCO services are completely FREE for enrolled students. This is part of our commitment to student wellbeing and success.'],
-  ['q' => 'How do I get started?', 'a' => "Getting started is easy! Simply click 'Book an Appointment', select the service you need, fill in your information, choose a time slot, and you're all set. You'll receive a confirmation with all the details."],
+  ['q' => 'What is GCO Connect?', 'a' => 'GCO Connect is the official online appointment system of the FEU Tech Guidance and Counseling Office (GCO). It allows students to easily book counseling, consultation, and other guidance services.'],
+  ['q' => 'Who is eligible to use GCO Connect?', 'a' => 'All currently enrolled students of FEU Tech, FEU Diliman, and FEU Alabang are eligible to use GCO Connect to access counseling and guidance services.'],
+  ['q' => 'What services are available for booking through GCO Connect?', 'a' => 'Available services include Counseling, Consultation, Interviews (Kumustahan), and Psychological Testing.'],
+  ['q' => 'How can I schedule an appointment using GCO Connect?', 'a' => 'Log in to the GCO Connect portal using your student credentials, select your desired service, choose an available time slot with your assigned counselor, and confirm your booking.'],
+  ['q' => 'How can I book a follow-up appointment in GCO Connect?', 'a' => 'After your initial session, you can book a follow-up appointment through the same portal by selecting the "Follow-up" option or coordinating with your counselor during your session.'],
+  ['q' => 'How can I view or obtain my appointment records?', 'a' => 'You can view your current and past appointments through the "My Appointments" or "History" section of the GCO Connect dashboard. For formal records, please contact the GCO office directly.'],
+  ['q' => 'Who should I contact if I experience technical issues or need assistance?', 'a' => 'If you experience any technical issues with GCO Connect, you may email the Guidance and Counseling Office at guidance@feutech.edu.ph or visit the GCO office in person.'],
 ];
 ?>
 <section class="bg-body py-20 overflow-hidden position-relative" style="z-index: 0;">
