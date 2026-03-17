@@ -20,6 +20,14 @@ $services = [
     </div>
   </div>
 
+  <!-- Decorative Background Icons -->
+  <div class="floating-cta-1 d-none d-lg-block" style="top: 10%; left: 2%; width: 180px; z-index: 0; opacity: 0.12;">
+    <img src="<?php echo htmlspecialchars($assetsBase); ?>/img/bg-assets/flower.png" class="w-100" style="transform: rotate(-15deg);" alt="">
+  </div>
+  <div class="floating-cta-3 d-none d-lg-block" style="bottom: 10%; right: 2%; width: 200px; z-index: 0; opacity: 0.12;">
+    <img src="<?php echo htmlspecialchars($assetsBase); ?>/img/bg-assets/brain.png" class="w-100" style="transform: rotate(20deg);" alt="">
+  </div>
+
   <div class="container-xxl position-relative" style="z-index: 1;">
 
     <!-- Header -->

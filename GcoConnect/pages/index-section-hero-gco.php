@@ -20,20 +20,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
     <span class="position-absolute rounded-circle d-none d-lg-block" style="width: 80px; height: 80px; top: 40%; right: 10%; background: rgba(255,255,255,0.05);"></span>
   </div>
 
-  <!-- Uneven background design icons with floating animations -->
-  <div class="floating-cta-1 d-none d-lg-block" style="top: 15%; right: 5%; width: 220px; z-index: 0;">
-    <img src="<?php echo htmlspecialchars($assetsBase); ?>/img/bg-assets/flower.png"
-      class="w-100"
-      style="opacity: 0.15; pointer-events: none; transform: rotate(-15deg);"
-      alt="">
-  </div>
-  <div class="floating-cta-3 d-none d-lg-block" style="bottom: 10%; left: 5%; width: 250px; z-index: 0;">
-    <img src="<?php echo htmlspecialchars($assetsBase); ?>/img/bg-assets/brain.png"
-      class="w-100"
-      style="opacity: 0.15; pointer-events: none; transform: rotate(20deg);"
-      alt="">
-  </div>
-  <div class="container-xxl pt-20 pb-20 position-relative" style="z-index: 1;">
+  <div class="container-xxl pt-20 pb-lg-0 pb-10 position-relative" style="z-index: 1;">
     <div class="row align-items-center gy-10">
 
       <!-- Text content -->
@@ -88,10 +75,54 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
       </div>
 
       <!-- Hero Animation -->
-      <div class="col-lg-6 position-relative d-flex justify-content-center mt-10 mt-lg-0">
+      <div class="col-lg-6 position-relative d-flex justify-content-end align-items-end mt-10 mt-lg-0 overflow-visible" style="min-height: 400px;">
+        <style>
+          .hero-lottie-asset {
+            width: 900px;
+            height: 900px;
+            position: absolute;
+            right: -210px;
+            bottom: -320px; /* Hits the very end on large screens */
+            pointer-events: none;
+            z-index: 0;
+          }
+
+          @media (max-width: 1400px) {
+            .hero-lottie-asset {
+              width: 800px;
+              height: 800px;
+              right: -180px;
+              bottom: -280px;
+            }
+          }
+
+          @media (max-width: 1200px) {
+            .hero-lottie-asset {
+              width: 700px;
+              height: 700px;
+              right: -150px;
+              bottom: -250px;
+            }
+          }
+
+          @media (max-width: 991px) {
+            .hero-lottie-asset {
+              position: relative;
+              width: 100%;
+              max-width: 450px;
+              height: auto;
+              right: 0;
+              bottom: 0;
+              margin: 30px auto -120px auto; /* Extreme negative margin to hit the transition edge */
+              display: block;
+            }
+            .min-h-600px { min-height: auto !important; }
+          }
+        </style>
         <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js" type="module"></script>
-        <dotlottie-wc src="https://lottie.host/177811db-3257-4256-8c80-74ba7bd7b915/5MFiKBwwD5.lottie"
-          style="width: 100%; max-width: 600px; height: 600px;" autoplay loop></dotlottie-wc>
+        <dotlottie-wc src="https://lottie.host/84aa7bc7-fe43-496a-ad74-34609f4dbaca/cJSnR5USDS.lottie"
+          class="hero-lottie-asset" 
+          autoplay loop></dotlottie-wc>
       </div>
 
     </div>

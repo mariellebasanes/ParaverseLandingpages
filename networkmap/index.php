@@ -44,6 +44,7 @@ $META_TITLE = "Welcome to Edith";
   </div>
   <?php include("partials/_scrolltop.php"); ?>
 
+  <script src="/networkmap/assets/js/curriculum-interactions.js?v=<?php echo time(); ?>"></script>
   <script>
     // Force remove loading screen
     function removeLoader() {
