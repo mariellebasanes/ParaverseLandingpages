@@ -1,5 +1,5 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="hero-section bg-white overflow-hidden position-relative">
+<section class="hero-section bg-white overflow-hidden position-relative min-vh-100 d-flex flex-column justify-content-center">
   <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.05; background-image: linear-gradient(#0047AB 1px, transparent 1px), linear-gradient(90deg, #0047AB 1px, transparent 1px); background-size: 40px 40px;"></div>
   
   <!-- Floating particles -->
@@ -51,17 +51,17 @@
       <div class="verified-text">1k+ Students Verified</div>
     </div>
     
-    <div class="hero-minimalist">
-      <h2 class="hero-subheader">Map Your <span class="text-primary fw-bold">Success</span>:</h2>
-      <h1 class="hero-title-main">
-        Master Your <span class="text-primary">Curriculum</span>
+    <div class="hero-minimalist py-20 mt-10">
+      <h2 class="hero-subheader fs-1 mb-6">Map Your <span class="text-primary fw-bold">Success</span>:</h2>
+      <h1 class="hero-title-main" style="font-size: 6rem; line-height: 1.1; margin-bottom: 2.5rem;">
+        Master Your <br><span class="text-primary">Curriculum</span>
       </h1>
-      <p class="fs-4 text-gray-600 mb-10 mw-600px mx-auto">
+      <p class="fs-2 lh-lg text-gray-600 mb-15 mw-800px mx-auto">
         Track every unit, visualize prerequisite chains, and graduate with confidence using the industry-leading academic map.
       </p>
-      <div class="d-flex justify-content-center gap-4">
-        <a href="#" class="btn btn-nm-primary shadow-sm fs-4 px-12">Get Started</a>
-        <a href="#" class="btn btn-light-primary fs-4 px-12 border-0">View Demo</a>
+      <div class="d-flex justify-content-center gap-6">
+        <a href="#" class="btn btn-nm-primary shadow-lg fs-3 fw-bold px-15 py-6 rounded-pill">Get Started</a>
+        <a href="#" class="btn btn-light-primary fs-3 fw-bold px-15 py-6 rounded-pill border-0">View Demo</a>
       </div>
     </div>
   </div>

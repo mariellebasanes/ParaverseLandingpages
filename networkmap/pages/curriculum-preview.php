@@ -1,9 +1,9 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="curriculum-section">
+<section class="curriculum-section min-vh-100 d-flex flex-column justify-content-center">
   <div class="container container-xxl">
-    <div class="text-center mb-15">
-      <h2 class="fs-2x mb-5">Your Interactive <span class="text-blue-primary">Degree Map</span></h2>
-      <p class="fs-4 text-gray-600 mw-800px mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="fs-4x fw-bolder mb-8">Your Interactive <span class="text-blue-primary">Degree Map</span></h2>
+      <p class="fs-2 lh-lg text-gray-600 mw-800px mx-auto">
         Experience the visual power of NetworkMap. Track your progress across every trimester and see exactly where you stand on your journey to graduation.
       </p>
     </div>

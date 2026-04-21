@@ -5,7 +5,7 @@ include(__DIR__ . '/functions-new.php');
 
 //IS_LOGGED_IN($_SERVER['REQUEST_URI']);
 
-$META_TITLE = "Welcome to Edith";
+$META_TITLE = "NetworkMap - Visualize Your Curriculum";
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +29,7 @@ $META_TITLE = "Welcome to Edith";
               <div class="app-content flex-column-fluid">
                 <?php
                 include(__DIR__ . "/pages/hero.php");
+                include(__DIR__ . "/pages/about.php");
                 include(__DIR__ . "/pages/features.php");
                 include(__DIR__ . "/pages/curriculum-preview.php");
                 include(__DIR__ . "/pages/how-it-works.php");

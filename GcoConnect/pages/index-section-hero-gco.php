@@ -20,7 +20,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
     <span class="position-absolute rounded-circle d-none d-lg-block" style="width: 80px; height: 80px; top: 40%; right: 10%; background: rgba(255,255,255,0.05);"></span>
   </div>
 
-  <div class="container-xxl pt-20 pb-lg-0 pb-10 position-relative" style="z-index: 1;">
+  <div class="container-xxl pt-20 pb-20 pb-lg-20 position-relative" style="z-index: 1;">
     <div class="row align-items-center gy-10">
 
       <!-- Text content -->

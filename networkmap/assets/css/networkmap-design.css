@@ -528,6 +528,7 @@ h6 {
 .status-pending::before {
     content: '◔ ';
 }
+
 /* Modal Enhancements */
 #course_details_modal .modal-content {
     border: none;
@@ -567,4 +568,234 @@ h6 {
 
 .course-card-mini:active {
     transform: translateY(-2px) scale(1);
+}
+
+/* Animated Network Map Section */
+.network-animation-wrapper {
+    perspective: 1000px;
+}
+
+.network-svg {
+    pointer-events: none;
+}
+
+.net-line {
+    fill: none;
+    stroke: var(--bs-primary);
+    stroke-width: 2.5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawNetLine 5s ease forwards infinite alternate;
+    opacity: 0.6;
+}
+
+.net-line.line-1 {
+    animation-delay: 0s;
+}
+
+.net-line.line-2 {
+    animation-delay: 0.5s;
+}
+
+.net-line.line-3 {
+    animation-delay: 1s;
+}
+
+.net-line.line-4 {
+    animation-delay: 1.5s;
+}
+
+.net-line.line-5 {
+    animation-delay: 2s;
+    stroke-dasharray: 8, 8;
+    opacity: 0.3;
+    stroke-width: 1.5;
+}
+
+.net-line.line-6 {
+    animation-delay: 2.5s;
+    stroke-dasharray: 8, 8;
+    opacity: 0.3;
+    stroke-width: 1.5;
+}
+
+@keyframes drawNetLine {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.net-node {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--bs-primary-light);
+    z-index: 2;
+    animation: pulseNode 3s infinite alternate;
+    transition: all 0.3s ease;
+}
+
+.net-node:hover {
+    transform: translate(-50%, -50%) scale(1.15) !important;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 71, 171, 0.2) !important;
+}
+
+.net-node.node-center {
+    top: 200px;
+    left: 250px;
+    width: 95px;
+    height: 95px;
+    border-color: var(--bs-primary);
+    animation-delay: 0s;
+}
+
+.net-node.node-tl {
+    top: 80px;
+    left: 100px;
+    animation-delay: 0.5s;
+}
+
+.net-node.node-tr {
+    top: 100px;
+    left: 400px;
+    animation-delay: 1s;
+}
+
+.net-node.node-bl {
+    top: 320px;
+    left: 120px;
+    animation-delay: 1.5s;
+}
+
+.net-node.node-br {
+    top: 300px;
+    left: 380px;
+    animation-delay: 2s;
+}
+
+@keyframes pulseNode {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 71, 171, 0.4);
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 15px rgba(0, 71, 171, 0);
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
+/* Animated Horizontal Network Map Section */
+.horizontal-network-wrapper {
+    position: relative;
+}
+
+.horizontal-network-svg {
+    pointer-events: none;
+}
+
+.horizontal-net-line {
+    fill: none;
+    stroke: var(--bs-primary);
+    stroke-width: 2.5;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: drawNetLineHorizontal 4s ease forwards infinite alternate;
+    opacity: 0.5;
+}
+
+.horizontal-net-line.line-1 {
+    animation-delay: 0s;
+}
+
+.horizontal-net-line.line-2 {
+    animation-delay: 0.5s;
+}
+
+.horizontal-net-line.line-3 {
+    animation-delay: 1s;
+}
+
+.horizontal-net-line.line-4 {
+    animation-delay: 1.5s;
+}
+
+.horizontal-net-line.line-5 {
+    animation-delay: 2s;
+}
+
+@keyframes drawNetLineHorizontal {
+    0% {
+        stroke-dashoffset: 600;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.course-node {
+    position: absolute;
+    width: 120px;
+    z-index: 2;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: floatNode 4s infinite alternate ease-in-out;
+}
+
+.course-node:hover {
+    transform: translateY(-8px) scale(1.05) !important;
+    z-index: 10;
+}
+
+.course-node.n-1 {
+    animation-delay: 0s;
+}
+
+.course-node.n-2 {
+    animation-delay: 0.5s;
+}
+
+.course-node.n-3 {
+    animation-delay: 1s;
+}
+
+.course-node.n-4 {
+    animation-delay: 1.5s;
+}
+
+.course-node.n-5 {
+    animation-delay: 2s;
+}
+
+@keyframes floatNode {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    100% {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 71, 171, 0.15);
+    }
 }
