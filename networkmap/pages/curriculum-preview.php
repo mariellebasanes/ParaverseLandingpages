@@ -1,14 +1,14 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="curriculum-section min-vh-100 d-flex flex-column justify-content-center">
+<section class="curriculum-section min-vh-100 d-flex flex-column justify-content-center bg-white" style="background-color: #ffffff !important; background-image: linear-gradient(rgba(26, 115, 232, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(26, 115, 232, 0.06) 1px, transparent 1px); background-size: 30px 30px;">
   <div class="container container-xxl">
     <div class="text-center mb-20">
-      <h2 class="fs-4x fw-bolder mb-8">Your Interactive <span class="text-blue-primary">Degree Map</span></h2>
-      <p class="fs-2 lh-lg text-gray-600 mw-800px mx-auto">
+      <h2 class="fs-4x fw-bolder mb-8 text-dark">Your Interactive <span class="text-blue-primary">Degree Map</span></h2>
+      <p class="fs-2 lh-lg mw-800px mx-auto" style="color: #4b668f;">
         Experience the visual power of NetworkMap. Track your progress across every trimester and see exactly where you stand on your journey to graduation.
       </p>
     </div>
 
-    <div class="curriculum-viewport">
+    <div class="curriculum-viewport" style="background-color: #ffffff; background-image: none; border: 1px solid #d4e5ff; box-shadow: 0 10px 20px rgba(26, 115, 232, 0.05) inset;">
       <!-- Grid Header -->
       <div class="curriculum-grid-header">
         <div class="year-col">
@@ -345,14 +345,14 @@
                 <i class="ki-duotone ki-book-open fs-5 text-primary"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
               </div>
             </div>
-            <h4 class="fs-6 fw-bold text-gray-800 mb-0">Past Lessons & Curriculum</h4>
+            <h4 class="fs-6 fw-bold text-dark mb-0">Past Lessons & Curriculum</h4>
           </div>
           <div id="modal_course_lessons" class="d-flex flex-wrap gap-2">
             <!-- Lessons will be injected here -->
           </div>
         </div>
 
-        <div class="rounded-2 bg-light p-4 d-flex align-items-center justify-content-between">
+        <div class="rounded-2 p-4 d-flex align-items-center justify-content-between" style="background-color: #f4f8fe; border: 1px solid #d4e5ff;">
           <div class="d-flex align-items-center">
              <div class="symbol symbol-35px me-3">
                 <div id="modal_status_icon" class="symbol-label">
@@ -360,15 +360,15 @@
                 </div>
              </div>
              <div>
-                <div class="fs-8 fw-bold text-gray-500 text-uppercase ls-1">Current Status</div>
-                <div id="modal_course_status_text" class="fs-6 fw-bolder text-gray-800">PASSED</div>
+                <div class="fs-8 fw-bold text-primary text-uppercase ls-1">Current Status</div>
+                <div id="modal_course_status_text" class="fs-6 fw-bolder text-dark">PASSED</div>
              </div>
           </div>
           <div id="modal_status_badge" class="badge py-2 px-4 fs-8 fw-bolder">STATUS</div>
         </div>
       </div>
       <div class="modal-footer border-0 p-8 pt-0">
-        <button type="button" class="btn btn-light-primary fw-bolder w-100 py-4" data-bs-dismiss="modal">Close Details</button>
+        <button type="button" class="btn fw-bolder w-100 py-4" style="background-color: #e6f0ff; color: #1a73e8;" data-bs-dismiss="modal">Close Details</button>
       </div>
     </div>
   </div>

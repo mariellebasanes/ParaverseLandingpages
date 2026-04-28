@@ -33,6 +33,7 @@ $META_TITLE = "NetworkMap - Visualize Your Curriculum";
                 include(__DIR__ . "/pages/features.php");
                 include(__DIR__ . "/pages/curriculum-preview.php");
                 include(__DIR__ . "/pages/how-it-works.php");
+                include(__DIR__ . "/pages/faq.php");
                 include(__DIR__ . "/pages/cta.php");
                 ?>
               </div>
