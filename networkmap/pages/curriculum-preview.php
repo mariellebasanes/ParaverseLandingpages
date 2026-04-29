@@ -2,13 +2,17 @@
 <section class="curriculum-section min-vh-100 d-flex flex-column justify-content-center bg-white" style="background-color: #ffffff !important; background-image: linear-gradient(rgba(26, 115, 232, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(26, 115, 232, 0.06) 1px, transparent 1px); background-size: 30px 30px;">
   <div class="container container-xxl">
     <div class="text-center mb-20">
-      <h2 class="fs-4x fw-bolder mb-8 text-dark">Your Interactive <span class="text-blue-primary">Degree Map</span></h2>
-      <p class="fs-2 lh-lg mw-800px mx-auto" style="color: #4b668f;">
+      <div class="d-inline-flex align-items-center py-2 px-4 bg-light rounded-pill mb-5 text-uppercase fw-bold" style="font-size: 0.85rem; color: #5e6278; letter-spacing: 1px;">
+        <i class="ki-duotone ki-map fs-5 me-2 text-primary"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+        Curriculum Map
+      </div>
+      <h2 class="fs-4x fw-bolder mb-8 text-dark">Your Interactive <span class="text-blue-primary">Curriculum  Map</span></h2>
+      <p class="fs-2 lh-lg mw-800px mx-auto" style="color: #1a2d58;">
         Experience the visual power of NetworkMap. Track your progress across every trimester and see exactly where you stand on your journey to graduation.
       </p>
     </div>
 
-    <div class="curriculum-viewport" style="background-color: #ffffff; background-image: none; border: 1px solid #d4e5ff; box-shadow: 0 10px 20px rgba(26, 115, 232, 0.05) inset;">
+    <div class="curriculum-viewport" style="background-color: #ffffff; background-image: none; border: 1px solid #c2d5f2; box-shadow: 0 10px 20px rgba(26, 115, 232, 0.05) inset;">
       <!-- Grid Header -->
       <div class="curriculum-grid-header">
         <div class="year-col">
@@ -352,7 +356,7 @@
           </div>
         </div>
 
-        <div class="rounded-2 p-4 d-flex align-items-center justify-content-between" style="background-color: #f4f8fe; border: 1px solid #d4e5ff;">
+        <div class="rounded-2 p-4 d-flex align-items-center justify-content-between" style="background-color: #e2eafc; border: 1px solid #c2d5f2;">
           <div class="d-flex align-items-center">
              <div class="symbol symbol-35px me-3">
                 <div id="modal_status_icon" class="symbol-label">
@@ -368,7 +372,7 @@
         </div>
       </div>
       <div class="modal-footer border-0 p-8 pt-0">
-        <button type="button" class="btn fw-bolder w-100 py-4" style="background-color: #e6f0ff; color: #1a73e8;" data-bs-dismiss="modal">Close Details</button>
+        <button type="button" class="btn fw-bolder w-100 py-4" style="background-color: #e2eafc; color: #1c57cc;" data-bs-dismiss="modal">Close Details</button>
       </div>
     </div>
   </div>

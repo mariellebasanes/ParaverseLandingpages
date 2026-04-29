@@ -48,7 +48,7 @@
         <div class="symbol symbol-30px symbol-circle"><img src="https://i.pravatar.cc/150?u=2" alt=""></div>
         <div class="symbol symbol-30px symbol-circle"><img src="https://i.pravatar.cc/150?u=3" alt=""></div>
       </div>
-      <div class="verified-text">1k+ Students Verified</div>
+      <div class="verified-text">1k+ Students Users</div>
     </div>
     
     <div class="hero-minimalist py-20 mt-10">
@@ -57,7 +57,7 @@
         Master Your <br><span class="text-primary">Curriculum</span>
       </h1>
       <p class="fs-2 lh-lg text-gray-600 mb-15 mw-800px mx-auto">
-        Track every unit, visualize prerequisite chains, and graduate with confidence using the industry-leading academic map.
+        Track every unit, visualize prerequisite chains, and graduate with confidence using network map.
       </p>
       <div class="d-flex justify-content-center gap-6">
         <a href="#" class="btn btn-nm-primary shadow-lg fs-3 fw-bold px-15 py-6 rounded-pill">Get Started</a>

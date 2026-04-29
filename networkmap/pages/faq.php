@@ -1,10 +1,14 @@
 <?php if (!defined('MBG')) exit; ?>
 <section class="section-padding bg-white position-relative overflow-hidden" id="faq-section" style="padding-top: 80px; padding-bottom: 100px;">
-  <div class="container container-xxl">
+  <!-- Decorative uneven blobs (no blur) -->
+  <div class="position-absolute" style="top: 10%; right: -5%; width: 45vw; height: 45vw; max-width: 550px; max-height: 550px; background: linear-gradient(135deg, rgba(28, 87, 204, 0.08) 0%, rgba(20, 64, 166, 0.03) 100%); border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 0; pointer-events: none; transform: rotate(-10deg);"></div>
+  <div class="position-absolute" style="bottom: 10%; left: -5%; width: 30vw; height: 30vw; max-width: 350px; max-height: 350px; background: linear-gradient(135deg, rgba(28, 87, 204, 0.06) 0%, rgba(20, 64, 166, 0.02) 100%); border-radius: 60% 40% 30% 70% / 50% 60% 50% 40%; z-index: 0; pointer-events: none; transform: rotate(15deg);"></div>
+
+  <div class="container container-xxl position-relative z-index-1">
     <div class="text-center mb-15">
       <div class="d-inline-flex align-items-center py-2 px-4 bg-light rounded-pill mb-5 text-uppercase fw-bold" style="font-size: 0.85rem; color: #5e6278; letter-spacing: 1px;">
         <i class="ki-duotone ki-message-question fs-5 me-2 text-primary"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-        Getting Answers
+        Frequently Asked Questions
       </div>
       <h2 class="fs-2x fs-md-3x fw-bolder mb-4 text-dark">Frequently Asked <span class="text-primary">Questions</span></h2>
       <p class="fs-4 text-gray-600 mw-700px mx-auto fw-medium">
@@ -21,12 +25,12 @@
           <div class="accordion-item border-0 mb-5 bg-light rounded-4">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button fs-4 fw-bold text-dark bg-transparent rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="padding: 24px;">
-                How does NetworkMap import my transcripts?
+                How does NetworkMap map my previous courses?
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#networkmap_faq">
               <div class="accordion-body fs-5 text-gray-600 pt-0 pb-6 px-6" style="padding-left: 24px; padding-right: 24px;">
-                We use an advanced parsing engine to securely analyze PDF or digital copies of your academic history. We automatically credit matching courses towards your degree map.
+                NetworkMap will automatically map your previous courses to your degree map.
               </div>
             </div>
           </div>
@@ -40,7 +44,7 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#networkmap_faq">
               <div class="accordion-body fs-5 text-gray-600 pt-0 pb-6 px-6" style="padding-left: 24px; padding-right: 24px;">
-                Absolutely! Our dynamic scenario builder lets you preview hypothetical degree changes instantly, showing exactly how many extra credits you'd need or which existing credits apply to the new path.
+                Yes, you can switch majors and NetworkMap will automatically adjust your degree map to reflect the new requirements.
               </div>
             </div>
           </div>
@@ -49,12 +53,12 @@
           <div class="accordion-item border-0 mb-5 bg-light rounded-4">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed fs-4 fw-bold text-dark bg-transparent rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="padding: 24px;">
-                Does it alert me if I try to take courses out of order?
+                Does it automatically update my grades after the term ends?
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#networkmap_faq">
               <div class="accordion-body fs-5 text-gray-600 pt-0 pb-6 px-6" style="padding-left: 24px; padding-right: 24px;">
-                Yes. NetworkMap visually maps out all prerequisites and corequisites. The interface will explicitly warn you if you attempt to track a course without meeting its prerequisites.
+                Yes. NetworkMap automatically updates the status of your grades after the term ends. 
               </div>
             </div>
           </div>

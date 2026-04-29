@@ -1,5 +1,5 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="section-padding bg-white position-relative overflow-hidden" style="padding-top: 100px; padding-bottom: 100px; background-image: linear-gradient(rgba(26, 115, 232, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(26, 115, 232, 0.06) 1px, transparent 1px); background-size: 30px 30px;">
+<section class="section-padding bg-white position-relative overflow-hidden" style="background-image: linear-gradient(rgba(26, 115, 232, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(26, 115, 232, 0.06) 1px, transparent 1px); background-size: 30px 30px;">
   
   <div class="container container-xxl position-relative" style="z-index: 2;">
     <!-- Section Header -->
@@ -37,7 +37,7 @@
               padding: 16px 20px;
               color: white;
             }
-            .mod-card-header.bg-blue { background-color: #1a73e8; }
+            .mod-card-header.bg-blue { background-color: #1c57cc; }
             .mod-card-header.bg-green { background-color: #34d399; }
             .mod-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 2px; }
             .mod-subtitle { font-size: 0.8rem; opacity: 0.9; }
@@ -54,7 +54,7 @@
               font-weight: 600;
               color: #1e293b;
             }
-            .mod-item span.blue-text { color: #1a73e8; margin-right: 4px; }
+            .mod-item span.blue-text { color: #1c57cc; margin-right: 4px; }
             .mod-item span.green-text { color: #34d399; margin-right: 4px; }
             
             .curriculum-flow {
@@ -110,10 +110,10 @@
               <svg width="100%" height="100%" style="overflow: visible;" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <marker id="arrowhead-flow" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
-                    <polygon points="0 0, 6 2, 0 4" fill="#1a73e8" />
+                    <polygon points="0 0, 6 2, 0 4" fill="#1c57cc" />
                   </marker>
                 </defs>
-                <g stroke="#1a73e8" stroke-width="1.5" fill="none" class="opacity-75">
+                <g stroke="#1c57cc" stroke-width="1.5" fill="none" class="opacity-75">
                   <!-- From Top (125) -->
                   <path d="M 0 125 C 40 125, 40 182, 75 182" marker-end="url(#arrowhead-flow)" />
                   <path d="M 0 125 C 40 125, 40 227, 75 227" marker-end="url(#arrowhead-flow)" />
@@ -132,9 +132,9 @@
                 </g>
                 
                 <!-- Nodes -->
-                <circle cx="0" cy="125" r="4" fill="#1a73e8" />
-                <circle cx="0" cy="170" r="4" fill="#1a73e8" />
-                <circle cx="0" cy="350" r="4" fill="#1a73e8" />
+                <circle cx="0" cy="125" r="4" fill="#1c57cc" />
+                <circle cx="0" cy="170" r="4" fill="#1c57cc" />
+                <circle cx="0" cy="350" r="4" fill="#1c57cc" />
               </svg>
             </div>
 
@@ -169,23 +169,23 @@
       <div class="col-lg-4 ps-lg-5 mt-15 mt-lg-0 d-flex flex-column gap-6">
         
         <!-- Box 1 -->
-        <div class="rounded-4 p-8 shadow-sm transition-all" data-aos="fade-left" data-aos-delay="200" style="background-color: #f4f8fe; border: 1px solid #d4e5ff; transition: transform 0.3s ease; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div class="rounded-4 p-8 shadow-sm transition-all" data-aos="fade-left" data-aos-delay="200" style="background-color: #e2eafc; border: 1px solid #c2d5f2; transition: transform 0.3s ease; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
           <div class="d-flex align-items-center justify-content-center w-50px h-50px bg-white rounded-circle shadow-sm mb-6 border border-white">
             <i class="ki-duotone ki-time fs-2x text-primary"><span class="path1"></span><span class="path2"></span></i>
           </div>
           <h3 class="fs-2 fw-bolder text-dark mb-4">View Previous Modules</h3>
-          <p class="fs-6 mb-0 lh-lg fw-medium" style="color: #4b668f;">
+          <p class="fs-6 mb-0 lh-lg fw-medium" style="color: #1a2d58;">
             Easily look back at specific modules from subjects you've already completed. Keep your foundational knowledge organized and accessible whenever you need to reference it.
           </p>
         </div>
         
         <!-- Box 2 -->
-        <div class="rounded-4 p-8 shadow-sm transition-all" data-aos="fade-left" data-aos-delay="350" style="background-color: #f4f8fe; border: 1px solid #d4e5ff; transition: transform 0.3s ease; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div class="rounded-4 p-8 shadow-sm transition-all" data-aos="fade-left" data-aos-delay="350" style="background-color: #e2eafc; border: 1px solid #c2d5f2; transition: transform 0.3s ease; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
           <div class="d-flex align-items-center justify-content-center w-50px h-50px bg-white rounded-circle shadow-sm mb-6 border border-white">
             <i class="ki-duotone ki-chart-line-star fs-2x text-primary"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
           </div>
           <h3 class="fs-2 fw-bolder text-dark mb-4">See Connected Prerequisites</h3>
-          <p class="fs-6 mb-6 lh-lg fw-medium" style="color: #4b668f;">
+          <p class="fs-6 mb-6 lh-lg fw-medium" style="color: #1a2d58;">
             Visually track how each topic connects to advanced subjects. The map clearly highlights prerequisite links, ensuring you clearly know what's connected before moving forward.
           </p>
           <a href="#" class="btn btn-nm-primary w-100 fw-bold">Explore Curriculum Map</a>
