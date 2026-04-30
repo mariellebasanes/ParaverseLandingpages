@@ -1,10 +1,7 @@
 <?php
 // bento-features.php
 ?>
-<?php
-// bento-features.php
-?>
-<section id="bento-features" class="section-padding position-relative overflow-hidden bg-primary">
+<section id="bento-features" class="section-padding position-relative overflow-hidden" style="background-color: #37609A;">
   <!-- Decorative uneven blobs (light overlay for dark blue background) -->
   <div class="position-absolute" style="top: 5%; right: -5%; width: 45vw; height: 45vw; max-width: 550px; max-height: 550px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%); border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 0; pointer-events: none; transform: rotate(-10deg);"></div>
   <div class="position-absolute" style="bottom: 5%; left: -5%; width: 30vw; height: 30vw; max-width: 350px; max-height: 350px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%); border-radius: 60% 40% 30% 70% / 50% 60% 50% 40%; z-index: 0; pointer-events: none; transform: rotate(15deg);"></div>
@@ -14,9 +11,9 @@
     <div class="text-center mb-15">
       <div class="d-inline-flex align-items-center py-2 px-4 bg-white bg-opacity-10 rounded-pill mb-5 text-uppercase fw-bold border border-white border-opacity-25" style="font-size: 0.85rem; color: #ffffff; letter-spacing: 1px;">
         <i class="ki-duotone ki-stop fs-5 me-2 text-white"><span class="path1"></span><span class="path2"></span></i>
-        Integrated Applications
+        Paraverse Integrated Applications
       </div>
-      <h2 class="fs-2x fs-md-3x fw-bolder text-white mb-4"><span class="opacity-50">Access Different</span> Applications</h2>
+      <h2 class="fs-2x fs-md-3x fw-bolder text-white mb-4"><span class="opacity-50">Access Different</span> Integrated Applications</h2>
       <p class="fs-4 text-white opacity-75 mw-700px mx-auto fw-medium">
         Access integrated applications in one place
       </p>
