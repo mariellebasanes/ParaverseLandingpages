@@ -1,7 +1,7 @@
 <?php
 // bento-features.php
 ?>
-<section id="bento-features" class="section-padding position-relative overflow-hidden" style="background-color: #37609A;">
+<section id="bento-features" class="section-padding position-relative overflow-hidden bg-primary">
   <!-- Decorative uneven blobs (light overlay for dark blue background) -->
   <div class="position-absolute" style="top: 5%; right: -5%; width: 45vw; height: 45vw; max-width: 550px; max-height: 550px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%); border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 0; pointer-events: none; transform: rotate(-10deg);"></div>
   <div class="position-absolute" style="bottom: 5%; left: -5%; width: 30vw; height: 30vw; max-width: 350px; max-height: 350px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%); border-radius: 60% 40% 30% 70% / 50% 60% 50% 40%; z-index: 0; pointer-events: none; transform: rotate(15deg);"></div>
