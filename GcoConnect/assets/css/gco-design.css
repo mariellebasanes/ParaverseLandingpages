@@ -574,35 +574,35 @@ body#kt_app_body {
   font-size: 13px !important;
 }
 
-body#kt_app_body h1,
-body#kt_app_body .h1,
-body#kt_app_body h1[class*="fs-"],
-body#kt_app_body .h1[class*="fs-"] {
+body#kt_app_body main h1,
+body#kt_app_body main .h1,
+body#kt_app_body main h1[class*="fs-"],
+body#kt_app_body main .h1[class*="fs-"] {
   font-size: 65px !important;
 }
 
-body#kt_app_body h2,
-body#kt_app_body .h2,
-body#kt_app_body h2[class*="fs-"],
-body#kt_app_body .h2[class*="fs-"] {
+body#kt_app_body main h2,
+body#kt_app_body main .h2,
+body#kt_app_body main h2[class*="fs-"],
+body#kt_app_body main .h2[class*="fs-"] {
   font-size: 32.5px !important;
 }
 
-body#kt_app_body h6,
-body#kt_app_body .h6,
-body#kt_app_body h6[class*="fs-"],
-body#kt_app_body .h6[class*="fs-"],
-body#kt_app_body label,
-body#kt_app_body .form-label,
-body#kt_app_body label[class*="fs-"],
-body#kt_app_body .form-label[class*="fs-"] {
+body#kt_app_body main h6,
+body#kt_app_body main .h6,
+body#kt_app_body main h6[class*="fs-"],
+body#kt_app_body main .h6[class*="fs-"],
+body#kt_app_body main label,
+body#kt_app_body main .form-label,
+body#kt_app_body main label[class*="fs-"],
+body#kt_app_body main .form-label[class*="fs-"] {
   font-size: 17.55px !important;
 }
 
-body#kt_app_body p,
-body#kt_app_body .lead,
-body#kt_app_body p[class*="fs-"],
-body#kt_app_body .lead[class*="fs-"] {
+body#kt_app_body main p,
+body#kt_app_body main .lead,
+body#kt_app_body main p[class*="fs-"],
+body#kt_app_body main .lead[class*="fs-"] {
   font-size: 22.75px !important;
 }
 

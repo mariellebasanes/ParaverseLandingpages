@@ -6,7 +6,7 @@ $assets = $base . 'assets/';
 $logo_small = $assets . 'img/logo/logo-gco-connect.svg';
 $logo_large = $assets . 'img/logo.png';
 ?>
-<footer data-bs-theme="light">
+<footer>
   <div class="app-container container-xxl">
     <div class="row d-flex align-items-end justify-content-between pt-10">
       <div class="col-lg-4 my-5">

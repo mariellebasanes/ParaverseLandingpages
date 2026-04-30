@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $categories = [
   [
     'title' => 'Interview Purposes',
@@ -68,7 +68,7 @@ $categories = [
   ],
 ];
 ?>
-<section class="bg-body py-20 overflow-hidden position-relative" style="z-index: 0;">
+<section class="py-20 overflow-hidden position-relative" style="z-index: 0;">
   <!-- Background Gradient Blobs -->
   <div class="position-absolute w-100 h-100 top-0 start-0 overflow-hidden" style="z-index: 0; pointer-events: none;">
     <div class="position-absolute bg-warning rounded-circle blur-3"

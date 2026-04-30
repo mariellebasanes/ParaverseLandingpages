@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $photoBase = isset($GCO_BASE)
   ? $GCO_BASE . 'assets/img/GCO Assets/gco faculties'
   : 'assets/img/GCO Assets/gco faculties';
@@ -56,7 +56,7 @@ $all_team = [
   ]
 ];
 ?>
-<section class="bg-light py-20 overflow-hidden position-relative" style="z-index: 0;">
+<section class="py-20 overflow-hidden position-relative" style="z-index: 0;">
   <!-- Background Gradient Blobs -->
   <div class="position-absolute w-100 h-100 top-0 start-0 overflow-hidden" style="z-index: 0; pointer-events: none;">
     <!-- Top right blob -->

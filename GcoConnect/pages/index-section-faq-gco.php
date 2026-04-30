@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $faqs = [
   ['q' => 'What is GCO Connect?', 'a' => 'GCO Connect is the official online appointment system of the FEU Tech Guidance and Counseling Office (GCO). It allows students to easily book counseling, consultation, and other guidance services.'],
   ['q' => 'Who is eligible to use GCO Connect?', 'a' => 'All currently enrolled students of FEU Tech, FEU Diliman, and FEU Alabang are eligible to use GCO Connect to access counseling and guidance services.'],
@@ -9,7 +9,7 @@ $faqs = [
   ['q' => 'Who should I contact if I experience technical issues or need assistance?', 'a' => 'If you experience any technical issues with GCO Connect, you may email the Guidance and Counseling Office at guidance@feutech.edu.ph or visit the GCO office in person.'],
 ];
 ?>
-<section class="bg-body py-20 overflow-hidden position-relative" style="z-index: 0;">
+<section class="py-20 overflow-hidden position-relative" style="z-index: 0;">
   <!-- Background Gradient Blobs -->
   <div class="position-absolute w-100 h-100 top-0 start-0 overflow-hidden" style="z-index: 0; pointer-events: none;">
     <!-- Top right blob -->
