@@ -6,6 +6,5 @@ node_modules/
 vendor/
 .gemini/
 .agents/
-**/assets/img/
-!**/assets/img/logo.png
-!networkmap/assets/img/hero_nm.png
+# Allow NetworkMap assets
+!networkmap/assets/img/**
