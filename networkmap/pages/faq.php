@@ -6,7 +6,7 @@
 
   <div class="container container-xxl position-relative z-index-1">
     <div class="text-center mb-15">
-      <div class="d-inline-flex align-items-center py-2 px-4 bg-light rounded-pill mb-5 text-uppercase fw-bold" style="font-size: 0.85rem; color: #5e6278; letter-spacing: 1px;">
+      <div class="d-inline-flex align-items-center py-2 px-4 bg-primary bg-opacity-5 rounded-pill mb-5 text-uppercase fw-bold border border-primary border-opacity-10" style="font-size: 0.85rem; color: #1c57cc; letter-spacing: 1px;">
         <i class="ki-duotone ki-message-question fs-5 me-2 text-primary"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
         Frequently Asked Questions
       </div>
@@ -22,7 +22,7 @@
         <div class="accordion accordion-icon-toggle border-0" id="networkmap_faq">
           
           <!-- FAQ 1 -->
-          <div class="accordion-item border-0 mb-5 bg-light rounded-4">
+          <div class="accordion-item border-0 mb-5 bg-white rounded-4 shadow-sm">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button fs-4 fw-bold text-dark bg-transparent rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="padding: 24px;">
                 How does NetworkMap map my previous courses?
@@ -36,7 +36,7 @@
           </div>
 
           <!-- FAQ 2 -->
-          <div class="accordion-item border-0 mb-5 bg-light rounded-4">
+          <div class="accordion-item border-0 mb-5 bg-white rounded-4 shadow-sm">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed fs-4 fw-bold text-dark bg-transparent rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="padding: 24px;">
                 Can I switch majors to see how it affects my timeline?
@@ -50,7 +50,7 @@
           </div>
 
           <!-- FAQ 3 -->
-          <div class="accordion-item border-0 mb-5 bg-light rounded-4">
+          <div class="accordion-item border-0 mb-5 bg-white rounded-4 shadow-sm">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed fs-4 fw-bold text-dark bg-transparent rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="padding: 24px;">
                 Does it automatically update my grades after the term ends?
@@ -64,7 +64,7 @@
           </div>
           
           <!-- FAQ 4 -->
-          <div class="accordion-item border-0 mb-5 bg-light rounded-4">
+          <div class="accordion-item border-0 mb-5 bg-white rounded-4 shadow-sm">
             <h2 class="accordion-header" id="headingFour">
               <button class="accordion-button collapsed fs-4 fw-bold text-dark bg-transparent rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="padding: 24px;">
                 Is my academic data secure?

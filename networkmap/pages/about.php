@@ -1,24 +1,24 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="section-padding bg-light-blue position-relative overflow-hidden min-vh-100 d-flex flex-column justify-content-center" id="about">
-  <!-- Decorative uneven blobs (no blur) -->
-  <div class="position-absolute" style="top: 10%; left: -5%; width: 45vw; height: 45vw; max-width: 550px; max-height: 550px; background: linear-gradient(135deg, rgba(28, 87, 204, 0.08) 0%, rgba(20, 64, 166, 0.03) 100%); border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 0; pointer-events: none; transform: rotate(-10deg);"></div>
-  <div class="position-absolute" style="bottom: 10%; right: -5%; width: 30vw; height: 30vw; max-width: 350px; max-height: 350px; background: linear-gradient(135deg, rgba(28, 87, 204, 0.06) 0%, rgba(20, 64, 166, 0.02) 100%); border-radius: 60% 40% 30% 70% / 50% 60% 50% 40%; z-index: 0; pointer-events: none; transform: rotate(15deg);"></div>
+<section class="section-padding position-relative overflow-hidden min-vh-100 d-flex flex-column justify-content-center" id="about" style="background: linear-gradient(135deg, #f8faff 0%, #eef2ff 100%);">
+  <!-- Decorative uneven blobs (Consistent) -->
+  <div class="position-absolute bento-blob blob-1" style="top: 10%; left: -5%; width: 45vw; height: 45vw; background: radial-gradient(circle, rgba(78, 127, 247, 0.08) 0%, transparent 70%); border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 0; pointer-events: none; transform: rotate(-10deg);"></div>
+  <div class="position-absolute bento-blob blob-2" style="bottom: 10%; right: -5%; width: 30vw; height: 30vw; background: radial-gradient(circle, rgba(114, 57, 234, 0.05) 0%, transparent 70%); border-radius: 60% 40% 30% 70% / 50% 60% 50% 40%; z-index: 0; pointer-events: none; transform: rotate(15deg);"></div>
 
   <div class="container container-xxl position-relative z-index-1">
     <div class="row align-items-center">
       <div class="col-lg-5 mb-10 mb-lg-0 z-index-2">
         <div class="mb-5">
-            <div class="d-inline-flex align-items-center py-2 px-4 bg-light rounded-pill mb-5 text-uppercase fw-bold" style="font-size: 0.85rem; color: #5e6278; letter-spacing: 1px;">
-              <i class="ki-duotone ki-information-5 fs-5 me-2 text-primary"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+            <div class="d-inline-flex align-items-center py-2 px-4 bg-primary bg-opacity-5 rounded-pill mb-5 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 0.85rem; color: #4E7FF7; letter-spacing: 2px;">
+              <i class="ki-duotone ki-information-5 fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
               About NetworkMap
             </div>
-            <h2 class="fs-4x fw-bolder mb-8">Visualize Your <br><span class="text-blue-primary">Curriculum</span></h2>
+            <h2 class="fs-2x fs-md-4x fw-bolder mb-8 text-dark ls-n2">Visualize Your <br><span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Path</span></h2>
         </div>
-        <p class="fs-2 lh-lg text-gray-600 mb-12">
-          Experience powerful Curriculum Mapping. Click on the course cards in the horizontal timeline to view past courses, prerequisites, and discover all road or connected subjects on your path to graduation!
+        <p class="fs-2 lh-lg text-gray-600 mb-12 fw-medium">
+          Experience powerful Curriculum Mapping. Click on the course cards in the horizontal timeline to view past courses, prerequisites, and discover all connected subjects on your path to graduation!
         </p>
         <div class="d-flex align-items-center gap-3">
-            <a href="#how-it-works" class="btn btn-nm-primary fs-3 px-10 py-5 rounded-pill shadow-sm">Explore Platform</a>
+            <a href="#how-it-works" class="btn shadow-lg fs-3 fw-bolder px-10 py-5 rounded-pill text-white transition-all hover-elevate-up" style="background-color: #4E7FF7;">Explore Platform</a>
         </div>
       </div>
       <div class="col-lg-7">

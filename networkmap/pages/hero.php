@@ -1,6 +1,6 @@
 <?php if (!defined('MBG')) exit; ?>
 <section class="hero-section bg-white overflow-hidden position-relative min-vh-100 d-flex flex-column justify-content-center">
-  <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.05; background-image: linear-gradient(#0047AB 1px, transparent 1px), linear-gradient(90deg, #0047AB 1px, transparent 1px); background-size: 40px 40px;"></div>
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.05; background-image: linear-gradient(#4E7FF7 1px, transparent 1px), linear-gradient(90deg, #4E7FF7 1px, transparent 1px); background-size: 40px 40px;"></div>
   
   <!-- Floating particles -->
   <div class="particle" style="top: 15%; left: 20%; animation-delay: 0s;"></div>

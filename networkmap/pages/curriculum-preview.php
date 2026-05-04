@@ -1,18 +1,22 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="curriculum-section min-vh-100 d-flex flex-column justify-content-center bg-white" style="background-color: #ffffff !important; background-image: linear-gradient(rgba(26, 115, 232, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(26, 115, 232, 0.06) 1px, transparent 1px); background-size: 30px 30px;">
-  <div class="container container-xxl">
+<section class="curriculum-section min-vh-100 d-flex flex-column justify-content-center position-relative overflow-hidden" style="background: #ffffff;">
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.05; background-image: linear-gradient(#4E7FF7 1px, transparent 1px), linear-gradient(90deg, #4E7FF7 1px, transparent 1px); background-size: 30px 30px;"></div>
+  <!-- Soft Background Blobs (Consistent) -->
+  <div class="position-absolute bento-blob blob-1" style="top: -10%; right: -5%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(78, 127, 247, 0.05) 0%, transparent 70%); border-radius: 50%; z-index: 0; pointer-events: none;"></div>
+  
+  <div class="container container-xxl position-relative" style="z-index: 1;">
     <div class="text-center mb-20">
-      <div class="d-inline-flex align-items-center py-2 px-4 bg-light rounded-pill mb-5 text-uppercase fw-bold" style="font-size: 0.85rem; color: #5e6278; letter-spacing: 1px;">
-        <i class="ki-duotone ki-map fs-5 me-2 text-primary"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+      <div class="d-inline-flex align-items-center py-2 px-4 bg-primary bg-opacity-5 rounded-pill mb-5 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 0.85rem; color: #4E7FF7; letter-spacing: 2px;">
+        <i class="ki-duotone ki-map fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
         Curriculum Map
       </div>
-      <h2 class="fs-4x fw-bolder mb-8 text-dark">Your Interactive <span class="text-blue-primary">Curriculum  Map</span></h2>
-      <p class="fs-2 lh-lg mw-800px mx-auto" style="color: #1a2d58;">
+      <h2 class="fs-2x fs-md-4x fw-bolder mb-8 text-dark ls-n2">Your Interactive <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Map</span></h2>
+      <p class="fs-2 lh-lg mw-800px mx-auto fw-medium text-gray-600">
         Experience the visual power of NetworkMap. Track your progress across every trimester and see exactly where you stand on your journey to graduation.
       </p>
     </div>
 
-    <div class="curriculum-viewport" style="background-color: #ffffff; background-image: none; border: 1px solid #c2d5f2; box-shadow: 0 10px 20px rgba(26, 115, 232, 0.05) inset;">
+    <div class="curriculum-viewport" style="background-color: #ffffff; background-image: none; border: 1px solid rgba(78, 127, 247, 0.1); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);">
       <!-- Grid Header -->
       <div class="curriculum-grid-header">
         <div class="year-col">
