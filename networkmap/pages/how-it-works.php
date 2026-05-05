@@ -89,7 +89,7 @@
           <div class="curriculum-flow flex-column flex-lg-row align-items-center">
             
             <!-- Left Card -->
-            <div class="mod-card" data-aos="fade-right">
+            <div class="mod-card" data-aos="fade-right" style="cursor: pointer;" onclick="alert('Viewing GED0081 Modules...')">
               <div class="mod-card-header bg-blue d-flex justify-content-between align-items-center">
                 <div>
                   <div class="mod-title">GED0081</div>
@@ -144,7 +144,7 @@
             </div>
 
             <!-- Right Card -->
-            <div class="mod-card right-mod-card" data-aos="fade-left">
+            <div class="mod-card right-mod-card" data-aos="fade-left" style="cursor: pointer;" onclick="alert('Viewing GED0083 Modules...')">
               <div class="mod-card-header bg-green d-flex justify-content-between align-items-center">
                 <div>
                   <div class="mod-title">GED0083</div>
@@ -167,33 +167,43 @@
             </div>
             
           </div>
+          <div class="text-center mt-5 d-lg-none">
+             <span class="badge badge-light-primary fw-bold px-4 py-2"><i class="ki-duotone ki-mouse-square fs-6 me-2"></i> Click cards to see module details</span>
+          </div>
         </div>
       </div>
       
       <!-- More Info Column -->
-      <div class="col-lg-4 ps-lg-5 mt-15 mt-lg-0 d-flex flex-column gap-6">
+      <div class="col-lg-4 ps-lg-10 mt-15 mt-lg-0 d-flex flex-column gap-8">
         
         <!-- Box 1 -->
-        <div class="card rounded-5 p-8 shadow-sm transition-all border-0 hover-elevate-up" data-aos="fade-left" data-aos-delay="200" style="background-color: #ffffff; cursor: default;">
-          <div class="d-flex align-items-center justify-content-center w-50px h-50px bg-primary bg-opacity-10 rounded-circle shadow-sm mb-6 border border-white">
-            <i class="ki-duotone ki-time fs-2x" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span></i>
+        <div class="card rounded-5 p-10 shadow-lg transition-all border-0 hover-elevate-up" data-aos="fade-left" data-aos-delay="200" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); cursor: default;">
+          <div class="d-flex align-items-center mb-6">
+            <div class="symbol symbol-50px me-5">
+              <div class="symbol-label bg-light-primary">
+                <i class="ki-duotone ki-time fs-2x text-primary"><span class="path1"></span><span class="path2"></span></i>
+              </div>
+            </div>
+            <h3 class="fs-2 fw-bolder text-dark mb-0">View Previous Modules</h3>
           </div>
-          <h3 class="fs-2 fw-bolder text-dark mb-4">View Previous Modules</h3>
-          <p class="fs-5 mb-0 lh-lg fw-medium text-gray-600">
+          <p class="fs-5 mb-0 lh-lg fw-bold text-gray-700 opacity-75">
             Easily look back at specific modules from subjects you've already completed. Keep your foundational knowledge organized and accessible.
           </p>
         </div>
         
         <!-- Box 2 -->
-        <div class="card rounded-5 p-8 shadow-sm transition-all border-0 hover-elevate-up" data-aos="fade-left" data-aos-delay="350" style="background-color: #ffffff; cursor: default;">
-          <div class="d-flex align-items-center justify-content-center w-50px h-50px bg-primary bg-opacity-10 rounded-circle shadow-sm mb-6 border border-white">
-            <i class="ki-duotone ki-chart-line-star fs-2x" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+        <div class="card rounded-5 p-10 shadow-lg transition-all border-0 hover-elevate-up" data-aos="fade-left" data-aos-delay="350" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); cursor: default;">
+          <div class="d-flex align-items-center mb-6">
+            <div class="symbol symbol-50px me-5">
+              <div class="symbol-label bg-light-success">
+                <i class="ki-duotone ki-chart-line-star fs-2x text-success"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+              </div>
+            </div>
+            <h3 class="fs-2 fw-bolder text-dark mb-0">Connected Prerequisites</h3>
           </div>
-          <h3 class="fs-2 fw-bolder text-dark mb-4">See Connected Prerequisites</h3>
-          <p class="fs-5 mb-6 lh-lg fw-medium text-gray-600">
+          <p class="fs-5 mb-0 lh-lg fw-bold text-gray-700 opacity-75">
             Visually track how each topic connects to advanced subjects. Know exactly what's connected before moving forward.
           </p>
-          <a href="#" class="btn shadow-sm fw-bolder px-8 py-4 rounded-pill text-white" style="background-color: #4E7FF7;">Explore Curriculum Map</a>
         </div>
         
       </div>

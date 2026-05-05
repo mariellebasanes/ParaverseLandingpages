@@ -3,6 +3,79 @@
  */
 
 :root {
+    /* --- Typography System --- */
+    --fs-hero: 65px;
+    --fs-section-title: 32.5px;
+    --fs-sub-heading: 22.75px;
+    --fs-feature-title: 19.5px;
+    --fs-label: 17.55px;
+    --fs-lead: 22.75px;
+    --fs-body: 16.25px;
+    --fs-caption: 14.95px;
+    --fs-small: 13px;
+    --fs-legal: 11.05px;
+    --fs-ui: 13px;
+}
+
+.display-1 { 
+    font-size: var(--fs-hero) !important; 
+    font-weight: 800 !important;
+    line-height: 1.1;
+}
+
+.display-6 { 
+    font-size: var(--fs-section-title) !important; 
+    font-weight: 800 !important;
+    line-height: 1.2;
+}
+
+h3, .fs-2 { 
+    font-size: var(--fs-sub-heading) !important; 
+    font-weight: 700 !important;
+}
+
+h5, .fs-3 { 
+    font-size: var(--fs-feature-title) !important; 
+    font-weight: 600 !important;
+}
+
+h6, .text-uppercase-label { 
+    font-size: var(--fs-label) !important; 
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lead, .fs-2 { 
+    font-size: var(--fs-lead) !important; 
+    font-weight: 400 !important;
+}
+
+p, .fs-4, .fs-5 { 
+    font-size: var(--fs-body) !important; 
+    font-weight: 400 !important;
+}
+
+.fs-6, .card-name, .caption-text { 
+    font-size: var(--fs-caption) !important; 
+}
+
+.small-text, .fs-7 { 
+    font-size: var(--fs-small) !important; 
+}
+
+.legal-text, .fs-8, .fs-9 { 
+    font-size: var(--fs-legal) !important; 
+}
+
+.btn, .nav-link { 
+    font-size: var(--fs-ui) !important; 
+    font-weight: 500 !important;
+}
+
+/* --- End Typography System --- */
+
+:root {
     /* Blue Primary Palette */
     --bs-primary: #4E7FF7;
     /* Custom Blue */
@@ -160,6 +233,14 @@ h6 {
 
 .h-card-3 {
     --rot: -8deg;
+}
+
+.h-card-4 {
+    --rot: 10deg;
+}
+
+.h-card-5 {
+    --rot: 15deg;
 }
 
 /* Verified Badge Styles */

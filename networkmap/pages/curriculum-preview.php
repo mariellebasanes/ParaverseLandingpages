@@ -6,12 +6,12 @@
   
   <div class="container container-xxl position-relative" style="z-index: 1;">
     <div class="text-center mb-20">
-      <div class="d-inline-flex align-items-center py-2 px-4 bg-primary bg-opacity-5 rounded-pill mb-5 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 0.85rem; color: #4E7FF7; letter-spacing: 2px;">
+      <div class="d-inline-flex align-items-center py-2 px-5 bg-primary bg-opacity-5 rounded-pill mb-8 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 12.35px; color: #4E7FF7; letter-spacing: 2px;">
         <i class="ki-duotone ki-map fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
         Curriculum Map
       </div>
-      <h2 class="fs-2x fs-md-4x fw-bolder mb-8 text-dark ls-n2">Your Interactive <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Map</span></h2>
-      <p class="fs-2 lh-lg mw-800px mx-auto fw-medium text-gray-600">
+      <h2 class="display-6 text-dark mb-8 ls-n2">Your Interactive <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Map</span></h2>
+      <p class="mw-800px mx-auto text-gray-600">
         Experience the visual power of NetworkMap. Track your progress across every trimester and see exactly where you stand on your journey to graduation.
       </p>
     </div>
@@ -20,35 +20,35 @@
       <!-- Grid Header -->
       <div class="curriculum-grid-header">
         <div class="year-col">
-          <div class="year-header">Freshman</div>
+          <h5 class="year-header">Freshman</h5>
           <div class="trimester-container">
-            <div class="trimester-header">1st Trimester</div>
-            <div class="trimester-header">2nd Trimester</div>
-            <div class="trimester-header">3rd Trimester</div>
+            <div class="trimester-header fs-7">1st Trimester</div>
+            <div class="trimester-header fs-7">2nd Trimester</div>
+            <div class="trimester-header fs-7">3rd Trimester</div>
           </div>
         </div>
         <div class="year-col">
-          <div class="year-header">Sophomore</div>
+          <h5 class="year-header">Sophomore</h5>
           <div class="trimester-container">
-            <div class="trimester-header">1st Trimester</div>
-            <div class="trimester-header">2nd Trimester</div>
-            <div class="trimester-header">3rd Trimester</div>
+            <div class="trimester-header fs-7">1st Trimester</div>
+            <div class="trimester-header fs-7">2nd Trimester</div>
+            <div class="trimester-header fs-7">3rd Trimester</div>
           </div>
         </div>
         <div class="year-col">
-          <div class="year-header">Junior</div>
+          <h5 class="year-header">Junior</h5>
           <div class="trimester-container">
-            <div class="trimester-header">1st Trimester</div>
-            <div class="trimester-header">2nd Trimester</div>
-            <div class="trimester-header">3rd Trimester</div>
+            <div class="trimester-header fs-7">1st Trimester</div>
+            <div class="trimester-header fs-7">2nd Trimester</div>
+            <div class="trimester-header fs-7">3rd Trimester</div>
           </div>
         </div>
         <div class="year-col">
-          <div class="year-header">Senior</div>
+          <h5 class="year-header">Senior</h5>
           <div class="trimester-container">
-            <div class="trimester-header">1st Trimester</div>
-            <div class="trimester-header">2nd Trimester</div>
-            <div class="trimester-header">3rd Trimester</div>
+            <div class="trimester-header fs-7">1st Trimester</div>
+            <div class="trimester-header fs-7">2nd Trimester</div>
+            <div class="trimester-header fs-7">3rd Trimester</div>
           </div>
         </div>
       </div>
@@ -360,7 +360,7 @@
           </div>
         </div>
 
-        <div class="rounded-2 p-4 d-flex align-items-center justify-content-between" style="background-color: #e2eafc; border: 1px solid #c2d5f2;">
+        <div class="rounded-2 p-4 d-flex align-items-center justify-content-between mb-8" style="background-color: #e2eafc; border: 1px solid #c2d5f2;">
           <div class="d-flex align-items-center">
              <div class="symbol symbol-35px me-3">
                 <div id="modal_status_icon" class="symbol-label">
@@ -373,6 +373,31 @@
              </div>
           </div>
           <div id="modal_status_badge" class="badge py-2 px-4 fs-8 fw-bolder">STATUS</div>
+        </div>
+
+        <div class="mb-0">
+          <div class="d-flex align-items-center mb-4">
+            <div class="symbol symbol-30px me-3">
+              <div class="symbol-label bg-light-danger">
+                <i class="ki-duotone ki-delivery-3 fs-5 text-danger"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+              </div>
+            </div>
+            <h4 class="fs-6 fw-bold text-dark mb-0">Module Materials</h4>
+          </div>
+          <div class="d-flex gap-3">
+             <div class="flex-fill p-3 rounded-2 bg-light d-flex flex-column align-items-center">
+                <i class="ki-duotone ki-files fs-2 text-primary mb-2"><span class="path1"></span><span class="path2"></span></i>
+                <span class="fs-9 fw-bold text-gray-700">PowerPoint</span>
+             </div>
+             <div class="flex-fill p-3 rounded-2 bg-light d-flex flex-column align-items-center">
+                <i class="ki-duotone ki-video fs-2 text-danger mb-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+                <span class="fs-9 fw-bold text-gray-700">Videos</span>
+             </div>
+             <div class="flex-fill p-3 rounded-2 bg-light d-flex flex-column align-items-center">
+                <i class="ki-duotone ki-document fs-2 text-success mb-2"><span class="path1"></span><span class="path2"></span></i>
+                <span class="fs-9 fw-bold text-gray-700">PCW</span>
+             </div>
+          </div>
         </div>
       </div>
       <div class="modal-footer border-0 p-8 pt-0">

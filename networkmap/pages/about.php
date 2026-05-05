@@ -8,17 +8,17 @@
     <div class="row align-items-center">
       <div class="col-lg-5 mb-10 mb-lg-0 z-index-2">
         <div class="mb-5">
-            <div class="d-inline-flex align-items-center py-2 px-4 bg-primary bg-opacity-5 rounded-pill mb-5 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 0.85rem; color: #4E7FF7; letter-spacing: 2px;">
+            <div class="d-inline-flex align-items-center py-2 px-5 bg-primary bg-opacity-5 rounded-pill mb-8 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 12.35px; color: #4E7FF7; letter-spacing: 2px;">
               <i class="ki-duotone ki-information-5 fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
               About NetworkMap
             </div>
-            <h2 class="fs-2x fs-md-4x fw-bolder mb-8 text-dark ls-n2">Visualize Your <br><span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Path</span></h2>
+            <h2 class="display-6 mb-8 text-dark ls-n2">Visualize Your <br><span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Path</span></h2>
         </div>
-        <p class="fs-2 lh-lg text-gray-600 mb-12 fw-medium">
+        <p class="mb-12">
           Experience powerful Curriculum Mapping. Click on the course cards in the horizontal timeline to view past courses, prerequisites, and discover all connected subjects on your path to graduation!
         </p>
         <div class="d-flex align-items-center gap-3">
-            <a href="#how-it-works" class="btn shadow-lg fs-3 fw-bolder px-10 py-5 rounded-pill text-white transition-all hover-elevate-up" style="background-color: #4E7FF7;">Explore Platform</a>
+            <a href="#how-it-works" class="btn btn-nm-primary shadow-lg px-10 py-5 rounded-pill text-white transition-all hover-elevate-up">Explore Platform</a>
         </div>
       </div>
       <div class="col-lg-7">

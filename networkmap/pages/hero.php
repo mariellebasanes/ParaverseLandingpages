@@ -12,7 +12,7 @@
   <div class="container container-xxl position-relative z-index-1">
     <!-- Floating course cards -->
     <div class="hero-floating-card h-card-1 animate-bouncy-float d-none d-lg-block">
-      <div class="course-card-mini">
+      <div class="course-card-mini shadow-lg">
         <div class="course-type-bar type-ged">GED</div>
         <div class="course-card-body">
           <div class="course-code">GED0081</div>
@@ -22,7 +22,7 @@
     </div>
     
     <div class="hero-floating-card h-card-2 animate-bouncy-float d-none d-lg-block" style="animation-delay: -2s;">
-      <div class="course-card-mini">
+      <div class="course-card-mini shadow-lg">
         <div class="course-type-bar type-it">IT</div>
         <div class="course-card-body">
           <div class="course-code">CS0017</div>
@@ -32,10 +32,30 @@
     </div>
 
     <div class="hero-floating-card h-card-3 animate-bouncy-float d-none d-lg-block" style="animation-delay: -4s;">
-      <div class="course-card-mini">
+      <div class="course-card-mini shadow-lg">
         <div class="course-type-bar type-cs">CS</div>
         <div class="course-card-body">
           <div class="course-code">CS0048</div>
+          <div class="course-status status-passed">PASSED</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-floating-card h-card-4 animate-bouncy-float d-none d-lg-block" style="animation-delay: -1s; top: 65%; left: 5%; transform: rotate(10deg);">
+      <div class="course-card-mini shadow-lg">
+        <div class="course-type-bar type-ite">ITE</div>
+        <div class="course-card-body">
+          <div class="course-code">ITE0012</div>
+          <div class="course-status status-pending">PENDING</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-floating-card h-card-5 animate-bouncy-float d-none d-lg-block" style="animation-delay: -3.5s; top: 10%; right: 10%; transform: rotate(15deg);">
+      <div class="course-card-mini shadow-lg">
+        <div class="course-type-bar type-cpe">CpE</div>
+        <div class="course-card-body">
+          <div class="course-code">CPE0021</div>
           <div class="course-status status-passed">PASSED</div>
         </div>
       </div>
@@ -52,16 +72,16 @@
     </div>
     
     <div class="hero-minimalist py-20 mt-10">
-      <h2 class="hero-subheader fs-1 mb-6">Map Your <span class="text-primary fw-bold">Success</span>:</h2>
-      <h1 class="hero-title-main" style="font-size: 6rem; line-height: 1.1; margin-bottom: 2.5rem;">
-        Master Your <br><span class="text-primary">Curriculum</span>
-      </h1>
-      <p class="fs-2 lh-lg text-gray-600 mb-15 mw-800px mx-auto">
-        Track every unit, visualize prerequisite chains, and graduate with confidence using network map.
+      <h2 class="display-1 mb-8">
+        Map Your Success: <br>
+        <span class="text-primary">Master Your Curriculum</span>
+      </h2>
+      <p class="lead text-gray-600 mb-15 mw-800px mx-auto">
+        Track every unit, visualize prerequisite chains, and graduate with confidence using NetworkMap's interactive academic storytelling.
       </p>
       <div class="d-flex justify-content-center gap-6">
-        <a href="#" class="btn btn-nm-primary shadow-lg fs-3 fw-bold px-15 py-6 rounded-pill">Get Started</a>
-        <a href="#" class="btn btn-light-primary fs-3 fw-bold px-15 py-6 rounded-pill border-0">View Demo</a>
+        <a href="#" class="btn btn-nm-primary shadow-lg px-15 py-6 rounded-pill">Get Started</a>
+        <a href="#" class="btn btn-light-primary px-15 py-6 rounded-pill border-0">View Demo</a>
       </div>
     </div>
   </div>
