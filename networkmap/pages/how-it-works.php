@@ -4,7 +4,7 @@
   <!-- Soft Background Blobs (Consistent) -->
   <div class="position-absolute bento-blob blob-1" style="top: -10%; right: -5%; width: 40vw; height: 40vw; background: radial-gradient(circle, rgba(78, 127, 247, 0.05) 0%, transparent 70%); border-radius: 50%; z-index: 0; pointer-events: none;"></div>
   
-  <div class="container container-xxl position-relative" style="z-index: 2;">
+  <div class="container-xxl position-relative" style="z-index: 1;">
     <!-- Section Header -->
     <div class="text-center mb-15">
       <div class="d-inline-flex align-items-center py-2 px-4 bg-primary bg-opacity-5 rounded-pill mb-5 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 0.85rem; color: #4E7FF7; letter-spacing: 2px;">

@@ -7,7 +7,7 @@
   <div class="position-absolute bento-blob" style="bottom: -15%; left: -10%; width: 40vw; height: 40vw; background: rgba(255, 255, 255, 0.1); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; z-index: 0; pointer-events: none; transform: rotate(20deg);"></div>
   <div class="position-absolute bento-blob d-none d-lg-block" style="top: 30%; left: 10%; width: 15vw; height: 15vw; background: rgba(255, 255, 255, 0.08); border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; z-index: 0; pointer-events: none;"></div>
   
-  <div class="container container-xxl position-relative" style="z-index: 1;">
+  <div class="container-xxl position-relative" style="z-index: 1;">
     
     <!-- Section Introduction -->
     <div class="text-center mb-15">
@@ -173,115 +173,157 @@
         <div class="row g-8 justify-content-center position-relative" style="z-index: 1;">
       <!-- M-FLIX -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100 border shadow-sm rounded-5 hover-elevate-up transition-all bg-white group app-card overflow-hidden position-relative" style="border-color: rgba(221, 31, 38, 0.1) !important;">
-          <div class="card-body p-12 d-flex flex-column align-items-center text-center z-index-1">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-8" style="background-color: rgba(221, 31, 38, 0.08); color: #DD1F26; font-size: 11px;">Knowledge Base</span>
-            <div class="mb-8 app-logo-container transition-all group-hover-scale d-flex align-items-center justify-content-center" style="height: 60px;">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-mflix.svg" class="h-40px object-fit-contain" alt="M-FLIX">
+        <div class="card h-100 app-card" style="--brand-color: #DD1F26; --brand-color-soft: rgba(221, 31, 38, 0.08); --brand-color-rgb: 221, 31, 38;">
+          <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Knowledge Base</span>
+            
+            <div class="app-logo-container mb-10">
+              <img src="/networkmap/assets/img/logo/Updated-icons/logo-mflix.svg" class="h-40px transition-all" alt="M-FLIX">
             </div>
-            <p class="text-gray-600 fs-7 fw-medium mb-10 lh-lg">
+
+
+            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
               Experience learning like never before with our high-definition video courseware platform.
             </p>
-            <div class="mt-auto">
-               <a href="#" class="btn btn-sm fw-bold rounded-pill px-10 py-3 shadow-sm hover-scale text-white" style="background-color: #DD1F26; border-color: #DD1F26;">Go to M-FLIX</a>
+            
+            <div class="mt-auto w-100">
+               <a href="#" class="app-btn app-btn-red">
+                 Explore M-FLIX
+                 <i class="ki-duotone ki-arrow-right"><span class="path1"></span><span class="path2"></span></i>
+               </a>
             </div>
           </div>
-          <div class="position-absolute bottom-0 start-0 w-100 h-4px" style="background-color: rgba(221, 31, 38, 0.2);"></div>
+          <div class="app-card-accent"></div>
         </div>
       </div>
 
       <!-- iCARE -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="card h-100 border shadow-sm rounded-5 hover-elevate-up transition-all bg-white app-card overflow-hidden position-relative" style="border-color: rgba(80, 205, 137, 0.1) !important;">
-          <div class="card-body p-12 d-flex flex-column align-items-center text-center z-index-1">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-8" style="background-color: rgba(80, 205, 137, 0.08); color: #50cd89; font-size: 11px;">Student Support</span>
-            <div class="app-logo-container mb-8 transition-all group-hover-scale d-flex align-items-center justify-content-center" style="height: 60px;">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-icare.svg" class="h-50px object-fit-contain" alt="iCARE">
+        <div class="card h-100 app-card" style="--brand-color: #50cd89; --brand-color-soft: rgba(80, 205, 137, 0.08); --brand-color-rgb: 80, 205, 137;">
+          <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Student Support</span>
+            
+            <div class="app-logo-container mb-10">
+              <img src="/networkmap/assets/img/logo/Updated-icons/logo-icare.svg" class="h-45px transition-all" alt="iCARE">
             </div>
-            <p class="text-gray-600 fs-7 fw-medium mb-10 lh-lg">
+
+
+            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
               Personalized mentorship and academic guidance at your fingertips.
             </p>
-            <div class="mt-auto">
-               <a href="#" class="btn btn-success btn-sm fw-bold rounded-pill px-10 py-3 shadow-sm hover-scale">Go to iCARE</a>
+            
+            <div class="mt-auto w-100">
+               <a href="#" class="app-btn app-btn-green">
+                 Launch iCARE
+                 <i class="ki-duotone ki-arrow-right"><span class="path1"></span><span class="path2"></span></i>
+               </a>
             </div>
           </div>
-          <div class="position-absolute bottom-0 start-0 w-100 h-4px" style="background-color: rgba(80, 205, 137, 0.2);"></div>
+          <div class="app-card-accent"></div>
         </div>
       </div>
 
       <!-- Arcadia -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100 border shadow-sm rounded-5 hover-elevate-up transition-all bg-white app-card overflow-hidden position-relative" style="border-color: rgba(238, 77, 45, 0.1) !important;">
-          <div class="card-body p-12 d-flex flex-column align-items-center text-center z-index-1">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-8" style="background-color: rgba(238, 77, 45, 0.08); color: #EE4D2D; font-size: 11px;">Achievements</span>
-            <div class="app-logo-container mb-8 transition-all group-hover-scale d-flex align-items-center justify-content-center" style="height: 60px;">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-arcadia.svg" class="h-50px object-fit-contain" alt="Arcadia">
+        <div class="card h-100 app-card" style="--brand-color: #EE4D2D; --brand-color-soft: rgba(238, 77, 45, 0.08); --brand-color-rgb: 238, 77, 45;">
+          <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Achievements</span>
+            
+            <div class="app-logo-container mb-10">
+              <img src="/networkmap/assets/img/logo/Updated-icons/logo-arcadia.svg" class="h-45px transition-all" alt="Arcadia">
             </div>
-            <p class="text-gray-600 fs-7 fw-medium mb-10 lh-lg">
+
+
+            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
               Track your milestones and showcase your digital academic credentials.
             </p>
-            <div class="mt-auto">
-               <a href="#" class="btn btn-sm fw-bold rounded-pill px-10 py-3 shadow-sm hover-scale text-white" style="background-color: #EE4D2D; border-color: #EE4D2D;">Go to Arcadia</a>
+            
+            <div class="mt-auto w-100">
+               <a href="#" class="app-btn app-btn-orange">
+                 View Arcadia
+                 <i class="ki-duotone ki-arrow-right"><span class="path1"></span><span class="path2"></span></i>
+               </a>
             </div>
           </div>
-          <div class="position-absolute bottom-0 start-0 w-100 h-4px" style="background-color: rgba(238, 77, 45, 0.2);"></div>
+          <div class="app-card-accent"></div>
         </div>
       </div>
 
       <!-- GCO Connect -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="card h-100 border shadow-sm rounded-5 hover-elevate-up transition-all bg-white app-card overflow-hidden position-relative" style="border-color: rgba(223, 79, 104, 0.1) !important;">
-          <div class="card-body p-12 d-flex flex-column align-items-center text-center z-index-1">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-8" style="background-color: rgba(223, 79, 104, 0.08); color: #DF4F68; font-size: 11px;">Wellness</span>
-            <div class="app-logo-container mb-8 transition-all group-hover-scale d-flex align-items-center justify-content-center" style="height: 60px;">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-gco-connect.svg" class="h-50px object-fit-contain" alt="GCO Connect">
+        <div class="card h-100 app-card" style="--brand-color: #DF4F68; --brand-color-soft: rgba(223, 79, 104, 0.08); --brand-color-rgb: 223, 79, 104;">
+          <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Wellness</span>
+            
+            <div class="app-logo-container mb-10">
+              <img src="/networkmap/assets/img/logo/Updated-icons/logo-gco-connect.svg" class="h-45px transition-all" alt="GCO Connect">
             </div>
-            <p class="text-gray-600 fs-7 fw-medium mb-10 lh-lg">
+
+
+            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
               Mental wellness and community connection for a balanced student life.
             </p>
-            <div class="mt-auto">
-               <a href="#" class="btn btn-sm fw-bold rounded-pill px-10 py-3 shadow-sm hover-scale text-white" style="background-color: #DF4F68; border-color: #DF4F68;">Go to GCO Connect</a>
+            
+            <div class="mt-auto w-100">
+               <a href="#" class="app-btn app-btn-pink">
+                 Open GCO Connect
+                 <i class="ki-duotone ki-arrow-right"><span class="path1"></span><span class="path2"></span></i>
+               </a>
             </div>
           </div>
-          <div class="position-absolute bottom-0 start-0 w-100 h-4px" style="background-color: rgba(223, 79, 104, 0.2);"></div>
+          <div class="app-card-accent"></div>
         </div>
       </div>
 
       <!-- Eventually -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-        <div class="card h-100 border shadow-sm rounded-5 hover-elevate-up transition-all bg-white app-card overflow-hidden position-relative" style="border-color: rgba(112, 80, 252, 0.1) !important;">
-          <div class="card-body p-12 d-flex flex-column align-items-center text-center z-index-1">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-8" style="background-color: rgba(112, 80, 252, 0.08); color: #7050FC; font-size: 11px;">Scheduling</span>
-            <div class="app-logo-container mb-8 transition-all group-hover-scale d-flex align-items-center justify-content-center" style="height: 60px;">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-eventually.svg" class="h-50px object-fit-contain" alt="Eventually">
+        <div class="card h-100 app-card" style="--brand-color: #7050FC; --brand-color-soft: rgba(112, 80, 252, 0.08); --brand-color-rgb: 112, 80, 252;">
+          <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Scheduling</span>
+            
+            <div class="app-logo-container mb-10">
+              <img src="/networkmap/assets/img/logo/Updated-icons/logo-eventually.svg" class="h-45px transition-all" alt="Eventually">
             </div>
-            <p class="text-gray-600 fs-7 fw-medium mb-10 lh-lg">
+
+
+            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
               Stay ahead of your academic calendar with smart class scheduling.
             </p>
-            <div class="mt-auto">
-               <a href="#" class="btn btn-sm fw-bold rounded-pill px-10 py-3 shadow-sm hover-scale text-white" style="background-color: #7050FC; border-color: #7050FC;">Go to Eventually</a>
+            
+            <div class="mt-auto w-100">
+               <a href="#" class="app-btn app-btn-purple">
+                 Go to Eventually
+                 <i class="ki-duotone ki-arrow-right"><span class="path1"></span><span class="path2"></span></i>
+               </a>
             </div>
           </div>
-          <div class="position-absolute bottom-0 start-0 w-100 h-4px" style="background-color: rgba(112, 80, 252, 0.2);"></div>
+          <div class="app-card-accent"></div>
         </div>
       </div>
 
       <!-- Libra -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-        <div class="card h-100 border shadow-sm rounded-5 hover-elevate-up transition-all group app-card overflow-hidden position-relative bg-white" style="border-color: rgba(139, 69, 19, 0.1) !important;">
-          <div class="card-body p-12 d-flex flex-column align-items-center text-center z-index-1">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-8" style="background-color: rgba(139, 69, 19, 0.08); color: #8B4513; font-size: 11px;">Library</span>
-            <div class="app-logo-container mb-8 transition-all group-hover-scale d-flex align-items-center justify-content-center" style="height: 60px;">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-libra.svg" class="h-50px object-fit-contain" alt="Libra">
+        <div class="card h-100 app-card" style="--brand-color: #8B4513; --brand-color-soft: rgba(139, 69, 19, 0.08); --brand-color-rgb: 139, 69, 19;">
+          <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Library</span>
+            
+            <div class="app-logo-container mb-10">
+              <img src="/networkmap/assets/img/logo/Updated-icons/logo-libra.svg" class="h-45px transition-all" alt="Libra">
             </div>
-            <p class="text-gray-600 fs-7 fw-medium mb-10 lh-lg">
+
+
+            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
               Access a vast collection of digital academic resources, e-books, and research journals.
             </p>
-            <div class="mt-auto">
-               <a href="#" class="btn btn-sm fw-bold rounded-pill px-10 py-3 shadow-sm hover-scale text-white" style="background-color: #8B4513; border-color: #8B4513;">Go to Libra</a>
+            
+            <div class="mt-auto w-100">
+               <a href="#" class="app-btn app-btn-brown">
+                 Explore Libra
+                 <i class="ki-duotone ki-arrow-right"><span class="path1"></span><span class="path2"></span></i>
+               </a>
             </div>
           </div>
-          <div class="position-absolute bottom-0 start-0 w-100 h-4px" style="background-color: rgba(139, 69, 19, 0.2);"></div>
+          <div class="app-card-accent"></div>
         </div>
       </div>
         </div>
@@ -294,28 +336,7 @@
       transform: translateY(-12px);
       box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.08) !important;
     }
-    
-    .app-card {
-       border: 1px solid transparent !important;
-       transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-    
-    .app-card:hover {
-       border-color: rgba(78, 127, 247, 0.1) !important;
-    }
-    
-    .app-logo-container {
-       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    
-    .app-card:hover .app-logo-container {
-       transform: scale(1.05);
-    }
-    
-    .hover-scale:hover {
-       transform: scale(1.05);
-    }
-    
+
     @keyframes float {
       0% { transform: translateY(0px); }
       100% { transform: translateY(-10px); }
@@ -336,13 +357,160 @@
       66% { transform: translate(-20px, 20px) scale(0.9); }
       100% { transform: translate(0, 0) scale(1); }
     }
-    
-    .bento-mini-card {
-       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
-    }
-    
+
     .ls-n2 { letter-spacing: -0.02em; }
     .text-transparent { color: transparent; }
     .bg-clip-text { -webkit-background-clip: text; background-clip: text; }
+
+    /* Premium App Card System */
+    .app-card {
+       border: 1px solid rgba(0, 0, 0, 0.06) !important;
+       border-radius: 32px !important;
+       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+       background: #ffffff;
+       overflow: hidden;
+       position: relative;
+       z-index: 1;
+    }
+    
+    .app-card:hover {
+       border-color: transparent !important;
+       transform: translateY(-15px);
+       box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .app-card-accent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: var(--brand-color);
+      opacity: 0.15;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .app-card:hover .app-card-accent {
+      height: 10px;
+      opacity: 1;
+    }
+
+    .app-badge {
+      background-color: var(--brand-color-soft) !important;
+      color: var(--brand-color) !important;
+      font-size: 10px !important;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .app-logo-container {
+       height: 80px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .app-card:hover .app-logo-container img {
+       transform: scale(1.15);
+    }
+
+    /* Premium Button Styles */
+    .app-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 1.75rem;
+      width: 100%;
+      font-weight: 800;
+      font-size: 0.85rem;
+      border-radius: 100px;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      overflow: hidden;
+      border: 1px solid transparent;
+      text-decoration: none !important;
+      z-index: 1;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .app-btn i {
+      margin-left: 10px;
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      font-size: 1.1rem;
+    }
+
+    .app-btn:hover i {
+      transform: translateX(8px);
+      color: white !important;
+    }
+
+    /* Color Variants for App Buttons */
+    .app-btn-red {
+      background: rgba(221, 31, 38, 0.06);
+      color: #DD1F26;
+      border-color: rgba(221, 31, 38, 0.1);
+    }
+    .app-btn-red:hover {
+      background: #DD1F26;
+      color: white;
+      box-shadow: 0 15px 30px rgba(221, 31, 38, 0.3);
+    }
+
+    .app-btn-green {
+      background: rgba(80, 205, 137, 0.06);
+      color: #50cd89;
+      border-color: rgba(80, 205, 137, 0.1);
+    }
+    .app-btn-green:hover {
+      background: #50cd89;
+      color: white;
+      box-shadow: 0 15px 30px rgba(80, 205, 137, 0.3);
+    }
+
+    .app-btn-orange {
+      background: rgba(238, 77, 45, 0.06);
+      color: #EE4D2D;
+      border-color: rgba(238, 77, 45, 0.1);
+    }
+    .app-btn-orange:hover {
+      background: #EE4D2D;
+      color: white;
+      box-shadow: 0 15px 30px rgba(238, 77, 45, 0.3);
+    }
+
+    .app-btn-pink {
+      background: rgba(223, 79, 104, 0.06);
+      color: #DF4F68;
+      border-color: rgba(223, 79, 104, 0.1);
+    }
+    .app-btn-pink:hover {
+      background: #DF4F68;
+      color: white;
+      box-shadow: 0 15px 30px rgba(223, 79, 104, 0.3);
+    }
+
+    .app-btn-purple {
+      background: rgba(112, 80, 252, 0.06);
+      color: #7050FC;
+      border-color: rgba(112, 80, 252, 0.1);
+    }
+    .app-btn-purple:hover {
+      background: #7050FC;
+      color: white;
+      box-shadow: 0 15px 30px rgba(112, 80, 252, 0.3);
+    }
+
+    .app-btn-brown {
+      background: rgba(139, 69, 19, 0.06);
+      color: #8B4513;
+      border-color: rgba(139, 69, 19, 0.1);
+    }
+    .app-btn-brown:hover {
+      background: #8B4513;
+      color: white;
+      box-shadow: 0 15px 30px rgba(139, 69, 19, 0.3);
+    }
   </style>
 </section>

@@ -4,7 +4,7 @@
   <div class="position-absolute" style="top: 10%; right: -5%; width: 45vw; height: 45vw; max-width: 550px; max-height: 550px; background: linear-gradient(135deg, rgba(28, 87, 204, 0.08) 0%, rgba(20, 64, 166, 0.03) 100%); border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 0; pointer-events: none; transform: rotate(-10deg);"></div>
   <div class="position-absolute" style="bottom: 10%; left: -5%; width: 30vw; height: 30vw; max-width: 350px; max-height: 350px; background: linear-gradient(135deg, rgba(28, 87, 204, 0.06) 0%, rgba(20, 64, 166, 0.02) 100%); border-radius: 60% 40% 30% 70% / 50% 60% 50% 40%; z-index: 0; pointer-events: none; transform: rotate(15deg);"></div>
 
-  <div class="container container-xxl position-relative z-index-1">
+  <div class="container-xxl position-relative" style="z-index: 1;">
     <div class="text-center mb-15">
       <div class="d-inline-flex align-items-center py-2 px-5 bg-primary bg-opacity-5 rounded-pill mb-8 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 12.35px; color: #4E7FF7; letter-spacing: 2px;">
         <i class="ki-duotone ki-message-question fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>

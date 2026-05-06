@@ -1,31 +1,83 @@
 <?php if (!defined('MBG')) exit; ?>
 <section class="section-padding position-relative overflow-hidden min-vh-100 d-flex flex-column justify-content-center" id="about" style="background: linear-gradient(135deg, #f8faff 0%, #eef2ff 100%);">
-  <!-- Decorative uneven blobs (Consistent) -->
-  <div class="position-absolute bento-blob blob-1" style="top: 10%; left: -5%; width: 45vw; height: 45vw; background: radial-gradient(circle, rgba(78, 127, 247, 0.08) 0%, transparent 70%); border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 0; pointer-events: none; transform: rotate(-10deg);"></div>
-  <div class="position-absolute bento-blob blob-2" style="bottom: 10%; right: -5%; width: 30vw; height: 30vw; background: radial-gradient(circle, rgba(114, 57, 234, 0.05) 0%, transparent 70%); border-radius: 60% 40% 30% 70% / 50% 60% 50% 40%; z-index: 0; pointer-events: none; transform: rotate(15deg);"></div>
+  <!-- Advanced Decorative System -->
+  <div class="position-absolute w-100 h-100 top-0 start-0 overflow-hidden" style="z-index: 0; pointer-events: none;">
+    <!-- Tech Grid Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" 
+      style="opacity: 0.03; background-image: radial-gradient(var(--bs-primary) 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
 
-  <div class="container container-xxl position-relative z-index-1">
+    <!-- Large animated blobs -->
+    <div class="position-absolute bg-primary rounded-circle blur-3 justify-content-center align-items-center animate-float"
+      style="width: 35vw; height: 35vw; top: -10vw; left: -10vw; opacity: 0.08; filter: blur(80px); mix-blend-mode: multiply;">
+    </div>
+    <div class="position-absolute bg-info rounded-circle animate-float"
+      style="width: 25vw; height: 25vw; bottom: -5vw; right: -5vw; opacity: 0.06; filter: blur(60px); animation-delay: -2s;">
+    </div>
+    
+    <!-- Floating geometric accents -->
+    <div class="position-absolute rounded-circle border border-primary border-opacity-10 animate-bouncy-float" 
+      style="width: 120px; height: 120px; top: 15%; right: 10%; --rot: 15deg;"></div>
+    <div class="position-absolute rounded-circle border border-info border-opacity-10 animate-bouncy-float" 
+      style="width: 80px; height: 80px; bottom: 20%; left: 15%; --rot: -10deg; animation-delay: -3s;"></div>
+    
+    <!-- Data Points (Glowy Sparks) -->
+    <div class="position-absolute bg-primary rounded-circle shadow-sm animate-pulse" 
+      style="width: 8px; height: 8px; top: 30%; left: 35%; opacity: 0.4; box-shadow: 0 0 15px var(--bs-primary);"></div>
+    <div class="position-absolute bg-info rounded-circle shadow-sm animate-pulse" 
+      style="width: 6px; height: 6px; bottom: 40%; right: 40%; opacity: 0.3; animation-delay: -1.5s; box-shadow: 0 0 10px var(--bs-info);"></div>
+    
+    <!-- Micro-particles -->
+    <div class="particle" style="top: 20%; left: 40%; width: 4px; height: 4px; background: var(--bs-primary); opacity: 0.3;"></div>
+    <div class="particle" style="top: 60%; right: 30%; width: 6px; height: 6px; background: var(--bs-info); opacity: 0.2;"></div>
+    <div class="particle" style="top: 40%; left: 10%; width: 8px; height: 8px; background: var(--bs-primary); opacity: 0.15; animation-delay: -5s;"></div>
+
+    <!-- Extra soft blobs -->
+    <div class="position-absolute bg-purple rounded-circle blur-3"
+      style="width: 20vw; height: 20vw; top: 20%; right: 20%; opacity: 0.04; filter: blur(50px); pointer-events: none;">
+    </div>
+  </div>
+
+  <div class="container-xxl position-relative" style="z-index: 1;">
     <div class="row align-items-center">
-      <div class="col-lg-5 mb-10 mb-lg-0 z-index-2">
-        <div class="mb-5">
-            <div class="d-inline-flex align-items-center py-2 px-5 bg-primary bg-opacity-5 rounded-pill mb-8 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 12.35px; color: #4E7FF7; letter-spacing: 2px;">
-              <i class="ki-duotone ki-information-5 fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-              About NetworkMap
+      <div class="col-lg-5 mb-15 mb-lg-0 z-index-2 pe-lg-15">
+        <div class="mb-8 position-relative">
+            <!-- Decorative line accent -->
+            <div class="position-absolute start-0 top-0 h-100 w-4px bg-primary rounded-pill opacity-10 ms-n8 d-none d-lg-block"></div>
+            
+            <div class="d-inline-flex align-items-center py-2 px-5 bg-white bg-opacity-80 backdrop-blur rounded-pill mb-6 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 11px; color: #4E7FF7; letter-spacing: 2.5px;">
+              <i class="ki-duotone ki-chart-line-star fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+              Intelligent Mapping
             </div>
-            <h2 class="display-6 mb-8 text-dark ls-n2">Visualize Your <br><span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Path</span></h2>
+            <h2 class="display-5 mb-8 text-dark fw-bolder">Visualize Your <br><span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Path</span></h2>
         </div>
-        <p class="mb-12">
-          Experience powerful Curriculum Mapping. Click on the course cards in the horizontal timeline to view past courses, prerequisites, and discover all connected subjects on your path to graduation!
+        <p class="mb-12 fs-5 text-gray-600 lh-lg">
+          Experience the future of academic planning. Our interactive nodes visualize course dependencies, prerequisites, and your unique journey toward graduation.
         </p>
-        <div class="d-flex align-items-center gap-3">
-            <a href="#how-it-works" class="btn btn-nm-primary shadow-lg px-10 py-5 rounded-pill text-white transition-all hover-elevate-up">Explore Platform</a>
+        <div class="d-flex align-items-center gap-6">
+            <a href="#how-it-works" class="btn btn-nm-primary shadow-lg px-12 py-5 rounded-pill text-white transition-all hover-elevate-up">Explore Mapping</a>
+            <a href="#" class="text-primary fw-bold fs-7 text-decoration-none border-bottom border-primary border-opacity-20 pb-1 hover-translate-x-5 transition-all d-flex align-items-center gap-2">
+              Learn More <i class="ki-duotone ki-arrow-right fs-5"></i>
+            </a>
         </div>
       </div>
       <div class="col-lg-7">
         <style>
+          .backdrop-blur { backdrop-filter: blur(8px); }
+          .hover-translate-x-5:hover { transform: translateX(5px); }
           .responsive-network-scale {
-            transform: scale(0.85);
-            transform-origin: left center;
+            transform: scale(1);
+            transform-origin: center center;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
+            backdrop-filter: none;
+            transition: all 0.5s ease;
+          }
+          .responsive-network-scale:hover {
+            transform: scale(1.02);
           }
           @media (min-width: 576px) {
             .responsive-network-scale {
@@ -40,8 +92,8 @@
             }
           }
         </style>
-        <div class="overflow-auto pb-5 custom-scroll">
-          <div class="horizontal-network-wrapper responsive-network-scale mx-auto mt-5 mt-lg-0" style="height: 260px; width: 620px; min-width: 620px; margin: 40px 0;">
+        <div class="position-relative">
+          <div class="horizontal-network-wrapper responsive-network-scale mx-auto mt-5 mt-lg-0" style="height: 380px; width: 620px; min-width: 620px; margin: 60px auto;">
             <!-- SVG Lines -->
             <svg class="horizontal-network-svg" width="100%" height="100%" style="position:absolute; top:0; left:0; z-index:0;">
               <!-- Col 1 to Col 2 -->

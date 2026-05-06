@@ -9,7 +9,7 @@
   <div class="particle" style="top: 20%; right: 20%; animation-delay: 1s;"></div>
   <div class="particle" style="top: 50%; right: 15%; animation-delay: 3s; width: 10px; height: 10px;"></div>
   
-  <div class="container container-xxl position-relative z-index-1">
+  <div class="container-xxl position-relative z-index-1">
     <!-- Floating course cards -->
     <div class="hero-floating-card h-card-1 animate-bouncy-float d-none d-lg-block">
       <div class="course-card-mini shadow-lg">

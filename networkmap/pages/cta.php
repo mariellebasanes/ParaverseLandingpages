@@ -1,6 +1,6 @@
 <?php if (!defined('MBG')) exit; ?>
 <section class="section-padding bg-networkmap min-vh-100 d-flex flex-column justify-content-center">
-  <div class="container container-xxl">
+  <div class="container-xxl">
     <div class="card bg-white bg-opacity-10 border-0 rounded-4 overflow-hidden position-relative">
       <!-- Decorative light blobs -->
       <div class="position-absolute top-0 start-0 w-200px h-200px bg-white bg-opacity-10 rounded-circle blur-3xl" style="transform: translate(-30%, -30%);"></div>

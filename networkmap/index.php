@@ -26,13 +26,13 @@ $META_TITLE = "NetworkMap - Visualize Your Curriculum";
         <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
           <div class="d-flex flex-column flex-column-fluid">
             <main>
-              <div class="app-content flex-column-fluid">
+              <div id="kt_app_content" class="flex-column-fluid">
                 <?php
                 include(__DIR__ . "/pages/hero.php");
                 include(__DIR__ . "/pages/features.php");
                 include(__DIR__ . "/pages/curriculum-preview.php");
                 include(__DIR__ . "/pages/about.php");
-                include(__DIR__ . "/pages/bento-features.php");
+                include(__DIR__ . "/pages/integrated-applications.php");
                 include(__DIR__ . "/pages/faq.php");
                 include(__DIR__ . "/pages/cta.php");
                 ?>

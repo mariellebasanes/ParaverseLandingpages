@@ -4,13 +4,13 @@
   <!-- Soft Background Blobs (Consistent) -->
   <div class="position-absolute bento-blob blob-1" style="top: -10%; right: -5%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(78, 127, 247, 0.05) 0%, transparent 70%); border-radius: 50%; z-index: 0; pointer-events: none;"></div>
   
-  <div class="container container-xxl position-relative" style="z-index: 1;">
+  <div class="container-xxl position-relative" style="z-index: 1;">
     <div class="text-center mb-20">
       <div class="d-inline-flex align-items-center py-2 px-5 bg-primary bg-opacity-5 rounded-pill mb-8 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 12.35px; color: #4E7FF7; letter-spacing: 2px;">
         <i class="ki-duotone ki-map fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
         Curriculum Map
       </div>
-      <h2 class="display-6 text-dark mb-8 ls-n2">Your Interactive <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Map</span></h2>
+      <h2 class="display-6 text-dark mb-8 fw-bolder">Your Interactive <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #4E7FF7 0%, #1c57cc 100%);">Curriculum Map</span></h2>
       <p class="mw-800px mx-auto text-gray-600">
         Experience the visual power of NetworkMap. Track your progress across every trimester and see exactly where you stand on your journey to graduation.
       </p>

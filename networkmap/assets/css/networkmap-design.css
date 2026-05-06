@@ -861,3 +861,31 @@ h6 {
         box-shadow: 0 15px 30px rgba(var(--bs-primary-rgb), 0.15);
     }
 }
+
+/* --- GcoConnect Style Container & Margin System --- */
+
+#kt_app_content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/* Standardized Content Container Width */
+.container-xxl {
+    max-width: 1320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+/* Redefine section padding to match GcoConnect's pt-20/pb-20 (approx 100px) */
+.section-padding {
+    padding: 100px 0 !important;
+}
+
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding: 60px 0 !important;
+    }
+}
