@@ -163,9 +163,9 @@
         
         <!-- Grid Header -->
         <div class="text-center mb-15 position-relative" style="z-index: 1;">
-          <h2 class="display-6 text-dark mb-6 ls-n2">Explore other <span class="text-primary">integrated apps</span></h2>
+          <h2 class="display-6 text-dark mb-6 ls-n2">Master every <span class="text-primary">step of your map</span></h2>
           <p class="text-gray-500 mw-600px mx-auto fs-6">
-            Discover a suite of specialized tools designed to support your growth, wellness, and organization.
+            Beyond visualization, discover the specialized tools designed to support your growth as you navigate through each subject and milestone.
           </p>
         </div>
 
@@ -175,7 +175,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card h-100 app-card" style="--brand-color: #DD1F26; --brand-color-soft: rgba(221, 31, 38, 0.08); --brand-color-rgb: 221, 31, 38;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Knowledge Base</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Visual Learning</span>
             
             <div class="app-logo-container mb-10">
               <img src="/networkmap/assets/img/logo/Updated-icons/logo-mflix.svg" class="h-40px transition-all" alt="M-FLIX">
@@ -183,7 +183,7 @@
 
 
             <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
-              Experience learning like never before with our high-definition video courseware platform.
+              Stuck on a complex module? Watch in-depth video tutorials specifically tailored to your course prerequisites.
             </p>
             
             <div class="mt-auto w-100">
@@ -201,7 +201,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="card h-100 app-card" style="--brand-color: #50cd89; --brand-color-soft: rgba(80, 205, 137, 0.08); --brand-color-rgb: 80, 205, 137;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Student Support</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Mentorship</span>
             
             <div class="app-logo-container mb-10">
               <img src="/networkmap/assets/img/logo/Updated-icons/logo-icare.svg" class="h-45px transition-all" alt="iCARE">
@@ -209,7 +209,7 @@
 
 
             <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
-              Personalized mentorship and academic guidance at your fingertips.
+              Connect with mentors who can help you navigate the toughest paths on your curriculum map.
             </p>
             
             <div class="mt-auto w-100">
@@ -227,7 +227,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="card h-100 app-card" style="--brand-color: #EE4D2D; --brand-color-soft: rgba(238, 77, 45, 0.08); --brand-color-rgb: 238, 77, 45;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Achievements</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Recognition</span>
             
             <div class="app-logo-container mb-10">
               <img src="/networkmap/assets/img/logo/Updated-icons/logo-arcadia.svg" class="h-45px transition-all" alt="Arcadia">
@@ -235,7 +235,7 @@
 
 
             <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
-              Track your milestones and showcase your digital academic credentials.
+              Earn digital badges as you complete key milestones and progress through your degree nodes.
             </p>
             
             <div class="mt-auto w-100">
@@ -253,7 +253,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="card h-100 app-card" style="--brand-color: #DF4F68; --brand-color-soft: rgba(223, 79, 104, 0.08); --brand-color-rgb: 223, 79, 104;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Wellness</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Balanced Life</span>
             
             <div class="app-logo-container mb-10">
               <img src="/networkmap/assets/img/logo/Updated-icons/logo-gco-connect.svg" class="h-45px transition-all" alt="GCO Connect">
@@ -261,7 +261,7 @@
 
 
             <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
-              Mental wellness and community connection for a balanced student life.
+              Maintain your mental wellness as you tackle challenging subject requirements and deadlines.
             </p>
             
             <div class="mt-auto w-100">
@@ -279,7 +279,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
         <div class="card h-100 app-card" style="--brand-color: #7050FC; --brand-color-soft: rgba(112, 80, 252, 0.08); --brand-color-rgb: 112, 80, 252;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Scheduling</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Time Mastery</span>
             
             <div class="app-logo-container mb-10">
               <img src="/networkmap/assets/img/logo/Updated-icons/logo-eventually.svg" class="h-45px transition-all" alt="Eventually">
@@ -287,7 +287,7 @@
 
 
             <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
-              Stay ahead of your academic calendar with smart class scheduling.
+              Sync your subject map with your daily schedule to never miss a lecture or a prerequisite deadline.
             </p>
             
             <div class="mt-auto w-100">
@@ -305,7 +305,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
         <div class="card h-100 app-card" style="--brand-color: #8B4513; --brand-color-soft: rgba(139, 69, 19, 0.08); --brand-color-rgb: 139, 69, 19;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Library</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Deep Research</span>
             
             <div class="app-logo-container mb-10">
               <img src="/networkmap/assets/img/logo/Updated-icons/logo-libra.svg" class="h-45px transition-all" alt="Libra">
@@ -313,7 +313,7 @@
 
 
             <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
-              Access a vast collection of digital academic resources, e-books, and research journals.
+              Instantly access the specific e-books and journals required for your current course modules.
             </p>
             
             <div class="mt-auto w-100">
