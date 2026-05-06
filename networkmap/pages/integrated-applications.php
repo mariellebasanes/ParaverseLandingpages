@@ -156,7 +156,7 @@
     </div>
 
     <!-- Integrated Apps Grid Section -->
-    <div class="card border-0 shadow-lg rounded-5 overflow-hidden" style="background: #ffffff;" data-aos="fade-up">
+    <div class="card border-0 shadow-lg rounded-5" style="background: #ffffff; position: relative;" data-aos="fade-up">
       <div class="card-body p-10 p-lg-20 position-relative">
         <!-- Grid Background Effect -->
         <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: linear-gradient(rgba(78, 127, 247, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(78, 127, 247, 0.03) 1px, transparent 1px); background-size: 30px 30px; z-index: 0; pointer-events: none;"></div>
@@ -175,14 +175,35 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card h-100 app-card" style="--brand-color: #DD1F26; --brand-color-soft: rgba(221, 31, 38, 0.08); --brand-color-rgb: 221, 31, 38;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Visual Learning</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-6 app-badge">Visual Learning</span>
             
-            <div class="app-logo-container mb-10">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-mflix.svg" class="h-40px transition-all" alt="M-FLIX">
+            <div class="app-visual-box w-100 rounded-4 mb-6 d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden" style="height: 200px; background: var(--brand-color-soft); border: 1px solid rgba(var(--brand-color-rgb), 0.1);">
+              <!-- Decorative Inner Glow -->
+              <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, transparent 100%); opacity: 0.4;"></div>
+              <div class="app-logo-container mb-6">
+                <img src="/networkmap/assets/img/logo/Updated-icons/logo-mflix.svg" class="h-45px transition-all" alt="M-FLIX">
+              </div>
+
+              <!-- Sample View: M-FLIX -->
+              <div class="app-sample-preview">
+                <div class="video-preview rounded-4 position-relative overflow-hidden shadow-lg mx-auto border border-white border-opacity-30" style="width: 160px; height: 90px; background: linear-gradient(135deg, #000 0%, #222 100%);">
+                  <div class="position-absolute top-50 start-50 translate-middle">
+                    <div class="w-40px h-40px rounded-circle d-flex align-items-center justify-content-center shadow-lg transition-all hover-scale-110" style="background: #DD1F26;">
+                      <div class="play-icon-css"></div>
+                    </div>
+                  </div>
+                  <div class="position-absolute bottom-0 start-0 w-100 p-2" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                    <div class="fs-11 text-white opacity-90 fw-bold">GED0081: Vectors</div>
+                    <div class="progress h-2px bg-white bg-opacity-20 mt-1">
+                      <div class="progress-bar" style="width: 65%; background: #DD1F26;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
-            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
+            <p class="text-gray-500 fs-7 fw-medium mb-8 lh-lg px-2">
               Stuck on a complex module? Watch in-depth video tutorials specifically tailored to your course prerequisites.
             </p>
             
@@ -201,14 +222,31 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="card h-100 app-card" style="--brand-color: #50cd89; --brand-color-soft: rgba(80, 205, 137, 0.08); --brand-color-rgb: 80, 205, 137;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Mentorship</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-6 app-badge">Mentorship</span>
             
-            <div class="app-logo-container mb-10">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-icare.svg" class="h-45px transition-all" alt="iCARE">
+            <div class="app-visual-box w-100 rounded-4 mb-6 d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden" style="height: 200px; background: var(--brand-color-soft); border: 1px solid rgba(var(--brand-color-rgb), 0.1);">
+              <!-- Decorative Inner Glow -->
+              <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, transparent 100%); opacity: 0.4;"></div>
+              <div class="app-logo-container mb-6">
+                <img src="/networkmap/assets/img/logo/Updated-icons/logo-icare.svg" class="h-40px transition-all" alt="iCARE">
+              </div>
+
+              <!-- Sample View: iCARE -->
+              <div class="app-sample-preview">
+                <div class="d-flex align-items-center justify-content-center gap-3 bg-white border border-success border-opacity-10 rounded-4 p-3 mx-auto shadow-sm" style="width: 160px;">
+                  <div class="symbol symbol-30px symbol-circle border border-success border-opacity-20">
+                    <div class="symbol-label bg-success bg-opacity-10 text-success fw-bold fs-9">M</div>
+                  </div>
+                  <div class="text-start">
+                    <div class="fs-9 fw-bold text-dark">Physics Professor</div>
+                    <div class="fs-10 text-gray-400">Available Now</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
-            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
+            <p class="text-gray-500 fs-7 fw-medium mb-8 lh-lg px-2">
               Connect with mentors who can help you navigate the toughest paths on your curriculum map.
             </p>
             
@@ -227,14 +265,33 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="card h-100 app-card" style="--brand-color: #EE4D2D; --brand-color-soft: rgba(238, 77, 45, 0.08); --brand-color-rgb: 238, 77, 45;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Recognition</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-6 app-badge">Recognition</span>
             
-            <div class="app-logo-container mb-10">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-arcadia.svg" class="h-45px transition-all" alt="Arcadia">
+            <div class="app-visual-box w-100 rounded-4 mb-6 d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden" style="height: 200px; background: var(--brand-color-soft); border: 1px solid rgba(var(--brand-color-rgb), 0.1);">
+              <!-- Decorative Inner Glow -->
+              <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, transparent 100%); opacity: 0.4;"></div>
+              <div class="app-logo-container mb-6">
+                <img src="/networkmap/assets/img/logo/Updated-icons/logo-arcadia.svg" class="h-40px transition-all" alt="Arcadia">
+              </div>
+
+              <!-- Sample View: Arcadia -->
+              <div class="app-sample-preview">
+                <div class="d-flex justify-content-center gap-2">
+                  <div class="w-35px h-35px rounded-4 bg-white d-flex align-items-center justify-content-center border border-warning border-opacity-10 shadow-sm transition-all hover-rotate-12">
+                    <i class="ki-duotone ki-medal-star fs-3 text-warning"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+                  </div>
+                  <div class="w-35px h-35px rounded-4 bg-white d-flex align-items-center justify-content-center border border-primary border-opacity-10 shadow-sm transition-all hover-rotate-12">
+                    <i class="ki-duotone ki-cup fs-3 text-primary"><span class="path1"></span><span class="path2"></span></i>
+                  </div>
+                  <div class="w-35px h-35px rounded-4 bg-white d-flex align-items-center justify-content-center border border-success border-opacity-10 shadow-sm transition-all hover-rotate-12">
+                    <i class="ki-duotone ki-award fs-3 text-success"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
-            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
+            <p class="text-gray-500 fs-7 fw-medium mb-8 lh-lg px-2">
               Earn digital badges as you complete key milestones and progress through your degree nodes.
             </p>
             
@@ -253,15 +310,34 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="card h-100 app-card" style="--brand-color: #DF4F68; --brand-color-soft: rgba(223, 79, 104, 0.08); --brand-color-rgb: 223, 79, 104;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Balanced Life</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-6 app-badge">Balanced Life</span>
             
-            <div class="app-logo-container mb-10">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-gco-connect.svg" class="h-45px transition-all" alt="GCO Connect">
+            <div class="app-visual-box w-100 rounded-4 mb-6 d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden" style="height: 200px; background: var(--brand-color-soft); border: 1px solid rgba(var(--brand-color-rgb), 0.1);">
+              <!-- Decorative Inner Glow -->
+              <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, transparent 100%); opacity: 0.4;"></div>
+              <div class="app-logo-container mb-6">
+                <img src="/networkmap/assets/img/logo/Updated-icons/logo-gco-connect.svg" class="h-40px transition-all" alt="GCO Connect">
+              </div>
+
+              <!-- Sample View: GCO Connect -->
+              <div class="app-sample-preview">
+                <div class="bg-white rounded-4 p-4 shadow-sm border border-danger border-opacity-10 mx-auto d-flex align-items-center gap-4" style="width: 190px;">
+                  <div class="symbol symbol-40px symbol-circle">
+                    <div class="symbol-label bg-light-danger">
+                      <i class="ki-duotone ki-heart fs-2 text-danger"><span class="path1"></span><span class="path2"></span></i>
+                    </div>
+                  </div>
+                  <div class="text-start">
+                    <div class="fs-11 fw-bold text-dark">Wellness Check</div>
+                    <div class="fs-11 text-gray-500">Anxious</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
-            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
-              Maintain your mental wellness as you tackle challenging subject requirements and deadlines.
+            <p class="text-gray-500 fs-7 fw-medium mb-8 lh-lg px-2">
+              Stressed with exams? Maintain your mental wellness as you tackle challenging subject requirements and academic deadlines.
             </p>
             
             <div class="mt-auto w-100">
@@ -279,14 +355,26 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
         <div class="card h-100 app-card" style="--brand-color: #7050FC; --brand-color-soft: rgba(112, 80, 252, 0.08); --brand-color-rgb: 112, 80, 252;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Time Mastery</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-6 app-badge">Time Mastery</span>
             
-            <div class="app-logo-container mb-10">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-eventually.svg" class="h-45px transition-all" alt="Eventually">
+            <div class="app-visual-box w-100 rounded-4 mb-6 d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden" style="height: 200px; background: var(--brand-color-soft); border: 1px solid rgba(var(--brand-color-rgb), 0.1);">
+              <!-- Decorative Inner Glow -->
+              <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, transparent 100%); opacity: 0.4;"></div>
+              <div class="app-logo-container mb-6">
+                <img src="/networkmap/assets/img/logo/Updated-icons/logo-eventually.svg" class="h-40px transition-all" alt="Eventually">
+              </div>
+
+              <!-- Sample View: Eventually -->
+              <div class="app-sample-preview">
+                <div class="bg-white border border-primary border-opacity-10 rounded-4 p-4 mx-auto text-start shadow-sm" style="width: 170px; border-left: 4px solid #7050FC !important;">
+                  <div class="fs-10 fw-bold text-dark mb-1">Physics 1 Review Session</div>
+                  <div class="fs-11 text-gray-400">Tomorrow, 9:00 AM</div>
+                </div>
+              </div>
             </div>
 
 
-            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
+            <p class="text-gray-500 fs-7 fw-medium mb-8 lh-lg px-2">
               Sync your subject map with your daily schedule to never miss a lecture or a prerequisite deadline.
             </p>
             
@@ -305,14 +393,26 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
         <div class="card h-100 app-card" style="--brand-color: #8B4513; --brand-color-soft: rgba(139, 69, 19, 0.08); --brand-color-rgb: 139, 69, 19;">
           <div class="card-body p-10 p-xl-12 d-flex flex-column align-items-center text-center">
-            <span class="badge fw-bold px-4 py-2 rounded-pill mb-10 app-badge">Deep Research</span>
+            <span class="badge fw-bold px-4 py-2 rounded-pill mb-6 app-badge">Deep Research</span>
             
-            <div class="app-logo-container mb-10">
-              <img src="/networkmap/assets/img/logo/Updated-icons/logo-libra.svg" class="h-45px transition-all" alt="Libra">
+            <div class="app-visual-box w-100 rounded-4 mb-8 d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden" style="height: 200px; background: var(--brand-color-soft); border: 1px solid rgba(var(--brand-color-rgb), 0.1);">
+              <!-- Decorative Inner Glow -->
+              <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, transparent 100%); opacity: 0.4;"></div>
+              <div class="app-logo-container mb-6">
+                <img src="/networkmap/assets/img/logo/Updated-icons/logo-libra.svg" class="h-40px transition-all" alt="Libra">
+              </div>
+
+              <!-- Sample View: Libra -->
+              <div class="app-sample-preview">
+                <div class="input-group input-group-sm mx-auto shadow-sm" style="width: 160px;">
+                  <span class="input-group-text bg-white border-gray-100"><i class="ki-duotone ki-magnifier fs-9 text-gray-500"><span class="path1"></span><span class="path2"></span></i></span>
+                  <input type="text" class="form-control border-gray-100 fs-10 bg-white" placeholder="Physics Books about Vectors" readonly>
+                </div>
+              </div>
             </div>
 
 
-            <p class="text-gray-500 fs-7 fw-medium mb-12 lh-lg">
+            <p class="text-gray-500 fs-7 fw-medium mb-8 lh-lg px-2">
               Instantly access the specific e-books and journals required for your current course modules.
             </p>
             
@@ -379,6 +479,31 @@
        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08) !important;
     }
 
+    .app-visual-box {
+       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+       z-index: 0;
+    }
+
+    .app-card:hover .app-visual-box {
+       transform: scale(0.98);
+       border-color: rgba(var(--brand-color-rgb), 0.2) !important;
+    }
+    
+    .app-card:hover .app-visual-box div[style*="radial-gradient"] {
+       opacity: 0.6 !important;
+       transform: scale(1.2);
+       transition: all 0.6s ease;
+    }
+
+    .play-icon-css {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 12px solid white;
+      margin-left: 4px;
+    }
+
     .app-card-accent {
       position: absolute;
       bottom: 0;
@@ -412,7 +537,26 @@
     }
 
     .app-card:hover .app-logo-container img {
-       transform: scale(1.15);
+       transform: scale(1.1);
+    }
+
+    .app-sample-preview {
+       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+       opacity: 0.95;
+    }
+
+    .app-card:hover .app-sample-preview {
+       transform: scale(1.05) translateY(-5px);
+       opacity: 1;
+    }
+    
+    .hover-rotate-12:hover {
+       transform: rotate(12deg) scale(1.1);
+    }
+
+    .wave-path {
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
     }
 
     /* Premium Button Styles */
