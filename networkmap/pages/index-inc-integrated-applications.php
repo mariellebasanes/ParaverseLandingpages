@@ -16,7 +16,7 @@
   <div class="container-xxl position-relative" style="z-index: 1;">
 
     <!-- Section Introduction -->
-    <div class="text-center mb-15">
+    <div class="text-center mb-8">
       <div
         class="d-inline-flex align-items-center py-2 px-5 bg-white bg-opacity-10 rounded-pill mb-8 text-uppercase fw-bold border border-white border-opacity-10 shadow-sm"
         style="font-size: 12.35px; color: #ffffff; letter-spacing: 2px;">
@@ -31,7 +31,7 @@
 
 
     <!-- Access Your Subject Map -->
-    <div class="card border-0 shadow-lg rounded-5 overflow-hidden mb-15" style="background: #ffffff;"
+    <div class="card border-0 shadow-lg rounded-5 overflow-hidden mb-8" style="background: #ffffff;"
       data-aos="fade-up">
       <div class="card-body p-10 p-lg-20">
         <div class="row align-items-center g-10">
@@ -208,7 +208,7 @@
         </div>
 
         <!-- Grid Header -->
-        <div class="text-center mb-15 position-relative" style="z-index: 1;">
+        <div class="text-center mb-8 position-relative" style="z-index: 1;">
           <h2 class="display-6 text-dark mb-6 ls-n2">Master every <span class="text-primary">step of your map</span>
           </h2>
           <p class="text-gray-500 mw-600px mx-auto fs-6">

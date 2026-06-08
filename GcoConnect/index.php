@@ -43,15 +43,15 @@ $META_DESC = "Professional counseling services for students. Connect with licens
               <div class="app-container container-xxl">
                 <div id="kt_app_content" class="flex-column-fluid">
                   <?php
-include(__DIR__ . "/pages/index-section-hero-gco.php");
-include(__DIR__ . "/pages/index-section-services-gco.php");
-include(__DIR__ . "/pages/index-section-how-it-works-gco.php");
-include(__DIR__ . "/pages/index-section-team-gco.php");
-include(__DIR__ . "/pages/index-section-psychological-gco.php");
-include(__DIR__ . "/pages/index-section-purpose-gco.php");
-include(__DIR__ . "/pages/index-section-special-programs-gco.php");
-include(__DIR__ . "/pages/index-section-faq-gco.php");
-include(__DIR__ . "/pages/index-section-cta-gco.php");
+include(__DIR__ . "/pages/index-inc-hero-gco.php");
+include(__DIR__ . "/pages/index-inc-services-gco.php");
+include(__DIR__ . "/pages/index-inc-how-it-works-gco.php");
+include(__DIR__ . "/pages/index-inc-team-gco.php");
+include(__DIR__ . "/pages/index-inc-psychological-gco.php");
+include(__DIR__ . "/pages/index-inc-purpose-gco.php");
+include(__DIR__ . "/pages/index-inc-special-programs-gco.php");
+include(__DIR__ . "/pages/index-inc-faq-gco.php");
+include(__DIR__ . "/pages/index-inc-cta-gco.php");
 ?>
                 </div>
               </div>

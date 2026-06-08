@@ -114,9 +114,15 @@ h6 {
 
 /* Hero Section Styles */
 .hero-section {
-    padding: 120px 0;
+    padding: 60px 0;
     color: #181C32;
     background-color: #ffffff !important;
+}
+
+@media (min-width: 992px) {
+    .hero-section {
+        min-height: 650px;
+    }
 }
 
 .hero-minimalist {
@@ -357,7 +363,7 @@ h6 {
 
 /* Section Spacing */
 .section-padding {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 /* How It Works Refinements */
@@ -441,7 +447,7 @@ h6 {
 /* Curriculum Tracker Preview */
 .curriculum-section {
     background: #e9ecef;
-    padding: 100px 0;
+    padding: 60px 0;
     overflow: hidden;
 }
 
@@ -879,13 +885,31 @@ h6 {
     padding-right: 1.5rem !important;
 }
 
-/* Redefine section padding to match GcoConnect's pt-20/pb-20 (approx 100px) */
+/* Standardized section padding for default screen size */
 .section-padding {
-    padding: 100px 0 !important;
+    padding: 60px 0 !important;
 }
 
 @media (max-width: 991.98px) {
     .section-padding {
-        padding: 60px 0 !important;
+        padding: 40px 0 !important;
+    }
+}
+
+/* Ensure consistent premium height for key sections on desktop */
+@media (min-width: 992px) {
+    .features-section,
+    .about-section,
+    .curriculum-section {
+        min-height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .features-section > .container-xxl,
+    .about-section > .container-xxl,
+    .curriculum-section > .container-xxl {
+        width: 100%;
     }
 }

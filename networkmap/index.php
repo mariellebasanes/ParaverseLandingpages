@@ -28,13 +28,13 @@ $META_TITLE = "NetworkMap - Visualize Your Curriculum";
             <main>
               <div id="kt_app_content" class="flex-column-fluid">
                 <?php
-                include(__DIR__ . "/pages/hero.php");
-                include(__DIR__ . "/pages/features.php");
-                include(__DIR__ . "/pages/curriculum-preview.php");
-                include(__DIR__ . "/pages/about.php");
-                include(__DIR__ . "/pages/integrated-applications.php");
-                include(__DIR__ . "/pages/faq.php");
-                include(__DIR__ . "/pages/cta.php");
+                include(__DIR__ . "/pages/index-inc-hero.php");
+                include(__DIR__ . "/pages/index-inc-features.php");
+                include(__DIR__ . "/pages/index-inc-curriculum-preview.php");
+                include(__DIR__ . "/pages/index-inc-about.php");
+                include(__DIR__ . "/pages/index-inc-integrated-applications.php");
+                include(__DIR__ . "/pages/index-inc-faq.php");
+                include(__DIR__ . "/pages/index-inc-cta.php");
                 ?>
               </div>
             </main>

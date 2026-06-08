@@ -1,10 +1,10 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="section-padding position-relative overflow-hidden" style="background: #4E7FF7;">
+<section class="section-padding features-section position-relative overflow-hidden" style="background: #4E7FF7;">
   <!-- Decorative Grid (Subtle) -->
   <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.1; background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
   
   <div class="container-xxl position-relative" style="z-index: 1;">
-    <div class="text-center mb-20">
+    <div class="text-center mb-10">
       <div class="d-inline-flex align-items-center py-2 px-5 bg-white bg-opacity-10 rounded-pill mb-6 text-uppercase fw-bold border border-white border-opacity-10 shadow-sm" style="font-size: 12.35px; color: #ffffff; letter-spacing: 2px;">
         <i class="ki-duotone ki-abstract-26 fs-5 me-2 text-white"><span class="path1"></span><span class="path2"></span></i>
         Core Features

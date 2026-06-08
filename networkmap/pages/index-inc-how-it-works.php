@@ -6,7 +6,7 @@
   
   <div class="container-xxl position-relative" style="z-index: 1;">
     <!-- Section Header -->
-    <div class="text-center mb-15">
+    <div class="text-center mb-8">
       <div class="d-inline-flex align-items-center py-2 px-4 bg-primary bg-opacity-5 rounded-pill mb-5 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 0.85rem; color: #4E7FF7; letter-spacing: 2px;">
         <i class="ki-duotone ki-book-open fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
         Process Flowchart

@@ -1,5 +1,5 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="hero-section bg-white overflow-hidden position-relative min-vh-100 d-flex flex-column justify-content-center">
+<section class="hero-section bg-white overflow-hidden position-relative d-flex flex-column justify-content-center">
   <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.05; background-image: linear-gradient(#4E7FF7 1px, transparent 1px), linear-gradient(90deg, #4E7FF7 1px, transparent 1px); background-size: 40px 40px;"></div>
   
   <!-- Floating particles -->
@@ -71,12 +71,12 @@
       <div class="verified-text">1k+ Students Users</div>
     </div>
     
-    <div class="hero-minimalist py-20 mt-10">
+    <div class="hero-minimalist py-10 mt-10">
       <h2 class="display-1 mb-8">
         Map Your Success: <br>
         <span class="text-primary">Master Your Curriculum</span>
       </h2>
-      <p class="lead text-gray-600 mb-15 mw-800px mx-auto">
+      <p class="lead text-gray-600 mb-8 mw-800px mx-auto">
         Track every unit, visualize prerequisite chains, and graduate with confidence using NetworkMap's interactive academic storytelling.
       </p>
       <div class="d-flex justify-content-center gap-6">

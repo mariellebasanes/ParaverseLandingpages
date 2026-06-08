@@ -1,11 +1,11 @@
 <?php if (!defined('MBG')) exit; ?>
-<section class="curriculum-section min-vh-100 d-flex flex-column justify-content-center position-relative overflow-hidden" style="background: #ffffff;">
+<section class="curriculum-section position-relative overflow-hidden" style="background: #ffffff;">
   <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.05; background-image: linear-gradient(#4E7FF7 1px, transparent 1px), linear-gradient(90deg, #4E7FF7 1px, transparent 1px); background-size: 30px 30px;"></div>
   <!-- Soft Background Blobs (Consistent) -->
   <div class="position-absolute bento-blob blob-1" style="top: -10%; right: -5%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(78, 127, 247, 0.05) 0%, transparent 70%); border-radius: 50%; z-index: 0; pointer-events: none;"></div>
   
   <div class="container-xxl position-relative" style="z-index: 1;">
-    <div class="text-center mb-20">
+    <div class="text-center mb-10">
       <div class="d-inline-flex align-items-center py-2 px-5 bg-primary bg-opacity-5 rounded-pill mb-8 text-uppercase fw-bold border border-primary border-opacity-10 shadow-sm" style="font-size: 12.35px; color: #4E7FF7; letter-spacing: 2px;">
         <i class="ki-duotone ki-map fs-5 me-2" style="color: #4E7FF7;"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
         Curriculum Map

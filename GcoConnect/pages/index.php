@@ -42,7 +42,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/sample/functions-new.php');
           <div class="d-flex flex-column flex-column-fluid">
             <main>
               <div id="kt_app_content" class="flex-column-fluid">
-                <?php include('index-section-table.php'); ?>
+                <?php include('index-inc-table.php'); ?>
               </div>
             </main>
           </div>
