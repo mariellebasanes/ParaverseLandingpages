@@ -1,0 +1,913 @@
+.card-back-view-5-x-5-puzzle-card-game-design,
+.card-back-view-5-x-5-puzzle-card-game-design * {
+  box-sizing: border-box;
+}
+.card-back-view-5-x-5-puzzle-card-game-design {
+  background: #04000f;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 1695px;
+  position: relative;
+}
+.app {
+  background: radial-gradient(
+      closest-side,
+      rgba(42, 28, 90, 1) 0%,
+      rgba(0, 0, 0, 0) 55.000001192092896%
+    ),
+    radial-gradient(closest-side, rgba(60, 33, 102, 1) 0%, rgba(0, 0, 0, 0) 50%),
+    radial-gradient(closest-side, rgba(27, 29, 82, 1) 0%, rgba(0, 0, 0, 0) 50%),
+    linear-gradient(
+      170deg,
+      rgba(11, 3, 34, 1) 0%,
+      rgba(17, 17, 57, 1) 30.000001192092896%,
+      rgba(4, 0, 15, 1) 64.99999761581421%,
+      rgba(23, 11, 46, 1) 100%
+    );
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1695px;
+  min-height: 993px;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: rgba(4, 0, 15, 0.5);
+  border-style: solid;
+  border-color: rgba(165, 69, 153, 0.2);
+  border-width: 0px 0px 1px 0px;
+  padding: 16px 24px 16px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1551px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.logo-mark {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  overflow: hidden;
+}
+.paraverse-logo {
+  width: 120%;
+  height: 103.33%;
+  position: absolute;
+  right: -18.33%;
+  left: -1.67%;
+  bottom: -1.9%;
+  top: -1.43%;
+  overflow: visible;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 133.33px;
+  position: relative;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.paraverse {
+  color: #eaa7b7;
+  text-align: left;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 16.799999237060547px;
+  line-height: 16.8px;
+  letter-spacing: 3.29px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+}
+.paragraph2 {
+  padding: 3px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 133.33px;
+  height: 15px;
+  position: relative;
+}
+.puzzle-card-game {
+  color: rgba(145, 139, 195, 0.5);
+  text-align: left;
+  font-family: "Cousine-Regular", sans-serif;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  position: relative;
+}
+.container3 {
+  padding: 32px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1551px;
+  position: absolute;
+  left: 0px;
+  top: 64.8px;
+}
+.heading-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.flip-the-card {
+  color: #e56ba6;
+  text-align: center;
+  font-family: "Inter-Black", sans-serif;
+  font-size: 44.79999923706055px;
+  line-height: 49.28px;
+  letter-spacing: 5.74px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+}
+.paragraph3 {
+  padding: 6px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1551px;
+  height: 25px;
+  position: relative;
+}
+.all-cards-start-face-down-choose-your-grid {
+  color: rgba(145, 139, 195, 0.6);
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12.479999542236328px;
+  line-height: 18.72px;
+  letter-spacing: 0.96px;
+  font-weight: 400;
+  position: relative;
+}
+.container4 {
+  padding: 0px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 1551px;
+  position: absolute;
+  left: 0px;
+  top: 182.78px;
+}
+.button {
+  background: rgba(4, 0, 15, 0.4);
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(145, 139, 195, 0.18);
+  border-width: 1px;
+  padding: 1px;
+  flex-shrink: 0;
+  width: 82.58px;
+  height: 35.69px;
+  position: relative;
+}
+._3-3 {
+  color: rgba(145, 139, 195, 0.5);
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 13.119999885559082px;
+  line-height: 19.68px;
+  letter-spacing: 1.49px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 22px;
+  top: 7px;
+}
+.button2 {
+  background: rgba(4, 0, 15, 0.4);
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(145, 139, 195, 0.18);
+  border-width: 1px;
+  padding: 1px;
+  flex-shrink: 0;
+  width: 83.06px;
+  height: 35.69px;
+  position: relative;
+}
+._4-4 {
+  color: rgba(145, 139, 195, 0.5);
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 13.119999885559082px;
+  line-height: 19.68px;
+  letter-spacing: 1.49px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 23px;
+  top: 7px;
+}
+.button3 {
+  background: linear-gradient(
+    135deg,
+    rgba(60, 33, 102, 0.9) 0%,
+    rgba(42, 28, 90, 0.9) 100%
+  );
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(165, 69, 153, 0.6);
+  border-width: 1px;
+  padding: 1px;
+  flex-shrink: 0;
+  width: 82.44px;
+  height: 35.69px;
+  position: relative;
+  box-shadow: 0px 0px 16px 0px rgba(165, 69, 153, 0.25);
+}
+._5-5 {
+  color: #eaa7b7;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 13.119999885559082px;
+  line-height: 19.68px;
+  letter-spacing: 1.49px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 22px;
+  top: 7px;
+}
+.container-margin {
+  padding: 32px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 612px;
+  top: 1245px;
+}
+.container5 {
+  border-style: solid;
+  border-color: rgba(145, 139, 195, 0.12);
+  border-width: 1px 0px 0px 0px;
+  padding: 18px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 400px;
+  position: relative;
+}
+.container6 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.grid-size {
+  color: rgba(145, 139, 195, 0.35);
+  text-align: left;
+  font-family: "Cousine-Regular", sans-serif;
+  font-size: 7.679999828338623px;
+  line-height: 11.52px;
+  letter-spacing: 1.23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+._5-52 {
+  color: #c084fc;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15.199999809265137px;
+  line-height: 22.8px;
+  letter-spacing: 1.27px;
+  font-weight: 700;
+  position: relative;
+}
+.total-cards {
+  color: rgba(145, 139, 195, 0.35);
+  text-align: left;
+  font-family: "Cousine-Regular", sans-serif;
+  font-size: 7.679999828338623px;
+  line-height: 11.52px;
+  letter-spacing: 1.23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+._25 {
+  color: #c084fc;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15.199999809265137px;
+  line-height: 22.8px;
+  letter-spacing: 1.27px;
+  font-weight: 700;
+  position: relative;
+}
+.status {
+  color: rgba(145, 139, 195, 0.35);
+  text-align: left;
+  font-family: "Cousine-Regular", sans-serif;
+  font-size: 7.679999828338623px;
+  line-height: 11.52px;
+  letter-spacing: 1.23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.face-down {
+  color: #c084fc;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15.199999809265137px;
+  line-height: 22.8px;
+  letter-spacing: 1.27px;
+  font-weight: 700;
+  position: relative;
+}
+._5-x-5-landscape {
+  display: grid;
+  gap: 0px;
+  row-gap: 18px;
+  position: absolute;
+  left: 181px;
+  top: 306px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+.cards {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.card-back {
+  background: linear-gradient(
+    160deg,
+    rgba(23, 11, 46, 1) 0%,
+    rgba(11, 3, 34, 1) 40.00000059604645%,
+    rgba(4, 0, 15, 1) 100%
+  );
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(165, 69, 153, 0.28);
+  border-width: 1px;
+  padding: 1px;
+  width: 226px;
+  height: 163px;
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  overflow: hidden;
+}
+.container7 {
+  background: radial-gradient(
+    closest-side,
+    rgba(145, 139, 195, 0.1) 0.8130080997943878%,
+    rgba(0, 0, 0, 0) 0.8130080997943878%
+  );
+  width: 123px;
+  height: 186px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.container8 {
+  background: radial-gradient(
+    closest-side,
+    rgba(165, 69, 153, 0.12) 0%,
+    rgba(0, 0, 0, 0) 64.99999761581421%
+  );
+  width: 225px;
+  height: 163px;
+  position: absolute;
+  left: 1px;
+  top: 0px;
+}
+.container9 {
+  border-radius: 1px;
+  border-style: solid;
+  border-color: rgba(234, 167, 183, 0.4);
+  border-width: 1px 0px 0px 1px;
+  padding: 1px 0px 0px 1px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 8.83px;
+  top: 8.99px;
+}
+.container10 {
+  border-radius: 1px;
+  border-style: solid;
+  border-color: rgba(234, 167, 183, 0.4);
+  border-width: 1px 1px 0px 0px;
+  padding: 1px 1px 0px 0px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 210px;
+  top: 8.99px;
+}
+.container11 {
+  border-radius: 1px;
+  border-style: solid;
+  border-color: rgba(234, 167, 183, 0.4);
+  border-width: 0px 0px 1px 1px;
+  padding: 0px 0px 1px 1px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 13px;
+  top: 146px;
+}
+.container12 {
+  border-radius: 1px;
+  border-style: solid;
+  border-color: rgba(234, 167, 183, 0.4);
+  border-width: 0px 1px 1px 0px;
+  padding: 0px 1px 1px 0px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 205px;
+  top: 146px;
+}
+.container13 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 79px;
+  top: 39px;
+  box-shadow: 0px 0px 16px 0px rgba(165, 69, 153, 0.5);
+}
+.paraverse-logo2 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.container14 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 121px;
+  position: absolute;
+  left: 53px;
+  top: 107px;
+}
+.container15 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.paraverse2 {
+  color: #eaa7b7;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15.399999618530273px;
+  line-height: 15.4px;
+  letter-spacing: 3.12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.container16 {
+  padding: 3px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 121px;
+  height: 13px;
+  position: relative;
+}
+.div {
+  color: rgba(145, 139, 195, 0.35);
+  text-align: center;
+  font-family: "Cousine-Regular", sans-serif;
+  font-size: 9.100000381469727px;
+  line-height: 9.1px;
+  letter-spacing: 1.09px;
+  font-weight: 400;
+  position: relative;
+}
+.cards2 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+.paraverse-logo3 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards3 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+.paraverse-logo4 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards4 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+.paraverse-logo5 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards5 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+}
+.paraverse-logo6 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards6 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+.paraverse-logo7 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards7 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+.paraverse-logo8 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards8 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+.paraverse-logo9 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards9 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+.paraverse-logo10 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards10 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 1;
+}
+.paraverse-logo11 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards11 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+.paraverse-logo12 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards12 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+.paraverse-logo13 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards13 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+.paraverse-logo14 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards14 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+}
+.paraverse-logo15 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards15 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 5 / span 1;
+  grid-row: 3 / span 1;
+}
+.paraverse-logo16 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards16 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+.paraverse-logo17 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards17 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+.paraverse-logo18 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards18 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+}
+.paraverse-logo19 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards19 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+}
+.paraverse-logo20 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards20 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 5 / span 1;
+  grid-row: 4 / span 1;
+}
+.paraverse-logo21 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards21 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+}
+.paraverse-logo22 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards22 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+}
+.paraverse-logo23 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards23 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 1;
+}
+.paraverse-logo24 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards24 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 4 / span 1;
+  grid-row: 5 / span 1;
+}
+.paraverse-logo25 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+.cards25 {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  grid-column: 5 / span 1;
+  grid-row: 5 / span 1;
+}
+.paraverse-logo26 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+}
+._25-cards-advanced {
+  color: rgba(165, 69, 153, 0.55);
+  text-align: left;
+  font-family: "Cousine-Regular", sans-serif;
+  font-size: 8.800000190734863px;
+  line-height: 13.2px;
+  letter-spacing: 1.58px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  left: 711px;
+  top: 238px;
+}

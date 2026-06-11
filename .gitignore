@@ -6,5 +6,6 @@ node_modules/
 vendor/
 .gemini/
 .agents/
+frankenphp
 # Allow NetworkMap assets
 !networkmap/assets/img/**
