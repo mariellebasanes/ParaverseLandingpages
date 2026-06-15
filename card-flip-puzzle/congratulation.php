@@ -15,8 +15,8 @@ $META_TITLE = "Welcome to Edith";
   <?php HEAD_ESSENTIALS(); ?>
   <link rel="stylesheet" href="assets/vars_congratulation.css">
   <link rel="stylesheet" href="assets/style_congratulation.css">
-  <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-  <script src="/assets/plugins/custom/datatables/datatables.bundle.js" defer></script>
+  <link href="/networkmap/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <script src="/networkmap/assets/plugins/custom/datatables/datatables.bundle.js" defer></script>
 </head>
 
 <body id="kt_app_body" data-kt-app-page-loading-enabled="true" data-kt-app-page-loading="on"

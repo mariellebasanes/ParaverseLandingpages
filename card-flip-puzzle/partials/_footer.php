@@ -12,14 +12,14 @@
       <div class="col-lg-4 my-5">
         <div class="d-flex mb-5">
           <a href="https://feualabang.edu.ph/" target="_blank" class="me-1"><img class="h-50px lozad"
-              data-src="/assets/img/logo/feu-alabang.webp"></a>
+              data-src="/networkmap/assets/img/logo/feu-alabang.webp"></a>
           <a href="https://feudiliman.edu.ph/" target="_blank" class="me-1"><img class="h-50px lozad"
-              data-src="/assets/img/logo/feu-diliman.webp"></a>
+              data-src="/networkmap/assets/img/logo/feu-diliman.webp"></a>
           <a href="https://feutech.edu.ph/" target="_blank"><img class="h-50px lozad"
-              data-src="/assets/img/logo/feu-tech.webp"></a>
+              data-src="/networkmap/assets/img/logo/feu-tech.webp"></a>
         </div>
         <div class="d-flex">
-          <a href="/" onclick="KTApp.showPageLoading()"><img data-src="/assets/img/logo.png"
+          <a href="/" onclick="KTApp.showPageLoading()"><img data-src="/networkmap/assets/img/logo.png"
               class="h-35px lozad me-4"></a>
           <p class='fs-lg mb-0'>
             <span class="d-block text-gray-600">Proudly made with <span class="text-danger">❤️</span> by the</span>
@@ -40,5 +40,5 @@
   </div>
 </footer>
 
-<script src="/assets/plugins/global/plugins.bundle.js"></script>
-<script src="/assets/js/scripts.bundle.v2.01.js"></script>
+<script src="/networkmap/assets/plugins/global/plugins.bundle.js"></script>
+<script src="/networkmap/assets/js/scripts.bundle.v2.01.js"></script>

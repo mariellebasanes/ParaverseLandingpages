@@ -232,32 +232,14 @@ class CardFlipGame {
       const card2 = { index, data: cardData, element: cardDiv };
       
       if (card1.data.emoji === card2.data.emoji) {
-        // MATCH!
-        const winThreshold = Math.floor((this.gridSize * this.gridSize) / 2);
+        // MATCH! — Always show sliding puzzle for every correct match
+        this.finalCardReveal = { card1, card2 };
+        clearInterval(this.timerInterval);
+        this.isPlaying = false;
         
-        if (this.matchedPairs + 1 === winThreshold) {
-          // FINAL CORRECT CARD!
-          // Before flipping card2, show sliding puzzle
-          this.finalCardReveal = { card1, card2 };
-          clearInterval(this.timerInterval);
-          this.isPlaying = false;
-          
-          setTimeout(() => {
-            this.startSlidingPuzzlePhase();
-          }, 600);
-        } else {
-          // Regular match: flip and match normally
-          cardDiv.classList.add('flipped');
-          card1.element.classList.add('matched');
-          card2.element.classList.add('matched');
-          this.matchedPairs++;
-          this.flippedCards = [];
-          this.movesCount++;
-          
-          setTimeout(() => {
-            this.showTriviaModal(card1.data);
-          }, 600);
-        }
+        setTimeout(() => {
+          this.startSlidingPuzzlePhase();
+        }, 600);
       } else {
         // NO MATCH: flip card2, show it, then flip both back
         cardDiv.classList.add('flipped');
@@ -343,6 +325,19 @@ class CardFlipGame {
     }
     if (feedback) feedback.textContent = '';
     
+    // Helper to handle post-trivia game flow
+    const onTriviaDismissed = () => {
+      wrapper.style.display = 'none';
+      const winThreshold = Math.floor((this.gridSize * this.gridSize) / 2);
+      if (this.matchedPairs >= winThreshold) {
+        this.showCongratulationsModal();
+      } else {
+        // Resume gameplay — restart timer and allow card flipping
+        this.isPlaying = true;
+        this.startTimer();
+      }
+    };
+    
     // Verify action
     const verifyBtn = interactionContainer.querySelector('button');
     const checkAnswer = () => {
@@ -353,11 +348,7 @@ class CardFlipGame {
         feedback.style.color = '#10b981';
         input.style.borderColor = '#10b981';
         setTimeout(() => {
-          wrapper.style.display = 'none';
-          const winThreshold = Math.floor((this.gridSize * this.gridSize) / 2);
-          if (this.matchedPairs === winThreshold) {
-            this.showCongratulationsModal();
-          }
+          onTriviaDismissed();
         }, 1200);
       } else {
         feedback.textContent = 'Incorrect, try again! ❌';
@@ -373,11 +364,7 @@ class CardFlipGame {
     const closeBtn = wrapper.querySelector('.button4');
     if (closeBtn) {
       closeBtn.onclick = () => {
-        wrapper.style.display = 'none';
-        const winThreshold = Math.floor((this.gridSize * this.gridSize) / 2);
-        if (this.matchedPairs === winThreshold) {
-          this.showCongratulationsModal();
-        }
+        onTriviaDismissed();
       };
     }
     
@@ -448,7 +435,7 @@ class CardFlipGame {
     const solvedBanner = wrapper.querySelector('.container124');
     if (solvedBanner) solvedBanner.style.display = 'none';
     
-    // Initially hide the congratulations popup
+    // Initially hide the reveal button
     const revealBtnWrapper = wrapper.querySelector('.container125');
     if (revealBtnWrapper) {
       revealBtnWrapper.style.display = 'none';
@@ -463,7 +450,9 @@ class CardFlipGame {
               card1.element.classList.add('matched');
               card2.element.classList.add('matched');
               this.matchedPairs++;
+              this.movesCount++;
               this.flippedCards = [];
+              this.finalCardReveal = null;
               this.showTriviaModal(card1.data);
             }, 600);
           } else {

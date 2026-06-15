@@ -1,4 +1,13 @@
 <?php
+// Enforce trailing slash for directory requests (crucial for local built-in PHP server)
+if (substr(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), -1) !== '/') {
+  $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+  if (is_dir($_SERVER['DOCUMENT_ROOT'] . $path)) {
+    header("Location: " . $_SERVER['REQUEST_URI'] . "/", true, 301);
+    exit;
+  }
+}
+
 function HEAD_ESSENTIALS()
 {
   global $META_TITLE;
@@ -59,19 +68,19 @@ function HEAD_ESSENTIALS()
 <meta name="twitter:image" content="' . $META_IMAGE . '">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
-<link rel="manifest" href="/assets/site.webmanifest?v=2">
+<link rel="icon" type="image/x-icon" href="/networkmap/assets/img/favicon.png">
+<link rel="manifest" href="/networkmap/assets/site.webmanifest?v=2">
 
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Paraverse">
-<link rel="apple-touch-icon" href="/assets/img/logo/icon-paraverse-192.png">
+<link rel="apple-touch-icon" href="/networkmap/assets/img/logo/icon-paraverse-192.png">
 
-<link rel="stylesheet" href="/assets/plugins/global/plugins.bundle.css">
-<link rel="stylesheet" href="/assets/css/style.keenicons.css">
-<link rel="stylesheet" href="/assets/css/style.bundle.v2.full.css?version=1.1028">
+<link rel="stylesheet" href="/networkmap/assets/plugins/global/plugins.bundle.css">
+<link rel="stylesheet" href="/networkmap/assets/css/style.keenicons.css">
+<link rel="stylesheet" href="/networkmap/assets/css/style.bundle.v2.full.css?version=1.1028">
 
-<script src="/assets/js/jquery.js"></script>
+<script src="/networkmap/assets/js/jquery.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,5 +102,33 @@ function HEAD_ESSENTIALS()
     // window.top.location.replace(window.self.location.href);
   }
 </script>
+<style>
+  /* Dark theme overrides to prevent white background margins */
+  body, #kt_app_body, #kt_app_root, #kt_app_page, #kt_app_wrapper, #kt_app_main, .app-wrapper, .app-main {
+    background-color: #04000f !important;
+  }
+  .app-header, #kt_app_header {
+    background-color: #04000f !important;
+    border-bottom: 1px solid rgba(165, 69, 153, 0.2) !important;
+    box-shadow: none !important;
+  }
+  .app-footer, #kt_app_footer {
+    background-color: #04000f !important;
+    border-top: 1px solid rgba(165, 69, 153, 0.2) !important;
+  }
+  .app-header .menu-link, .app-header .menu-title, .app-footer, .app-footer a {
+    color: #eaa7b7 !important;
+  }
+  main .app-container {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  /* Remove Metronic white page loader bg */
+  .page-loader {
+    background-color: #04000f !important;
+  }
+</style>
 ' . $maintenance;
 }
