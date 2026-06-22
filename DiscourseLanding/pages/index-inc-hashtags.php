@@ -4,21 +4,21 @@
   <div class="container-xxl">
 
     <!-- Section header -->
-    <div class="text-center mx-auto mb-12" style="max-width:520px;">
-      <span class="d-inline-block fw-bold text-uppercase mb-3"
-        style="color:var(--dc-green-light); font-size:0.78rem; letter-spacing:0.10em;">
+    <div class="text-center mx-auto mb-12 dl-reveal" style="max-width:520px;">
+      <span class="dl-eyebrow dl-eyebrow-green">
+        <i class="ki-outline ki-tag fs-6"></i>
         Topic Discovery
       </span>
       <h2 class="fw-bolder text-gray-900 mb-4" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
         Every subject has a hashtag
       </h2>
-      <p class="text-gray-600" style="font-size:1rem; line-height:1.72;">
+      <p class="text-gray-500" style="font-size:1rem; line-height:1.72;">
         Hashtags group discussions dynamically across all communities. Click any tag to see how Discourse aggregates trending campus conversations.
       </p>
     </div>
 
     <!-- Hashtag pills cloud -->
-    <div class="d-flex flex-wrap justify-content-center gap-3">
+    <div class="d-flex flex-wrap justify-content-center gap-3 dl-reveal dl-delay-1">
       <?php
       $tags = [
         ['label' => '#TECHNOLOGY',    'style' => 'green'],
@@ -46,20 +46,21 @@
         $slug = ltrim(strtolower($t['label']), '#');
         $cls  = 'dl-hashtag dl-hashtag-' . $t['style'];
       ?>
-        <a href="/Discourse/hashtags/index.php?tag=<?php echo urlencode($slug); ?>"
+        <a href="/ParaverseLandingpages/DiscourseLanding/hashtags/index.php?tag=<?php echo urlencode($slug); ?>"
            class="<?php echo $cls; ?>">
-          <?php echo htmlspecialchars($t['label']); ?>
+          <i class="ki-outline ki-tag" style="font-size:0.8rem; opacity:0.7;"></i>
+          <?php echo htmlspecialchars(ltrim($t['label'],'#')); ?>
         </a>
       <?php endforeach; ?>
     </div>
 
     <!-- CTA row -->
-    <div class="text-center mt-12">
-      <a href="/Discourse/"
-         class="btn fw-semibold rounded-pill px-8 py-3"
+    <div class="text-center mt-12 dl-reveal dl-delay-2">
+      <a href="/ParaverseLandingpages/DiscourseLanding/"
+         class="btn fw-semibold rounded-pill px-8 py-3 d-inline-flex align-items-center gap-2"
          style="background:var(--dc-green-light); color:#fff; font-size:0.9rem;"
          onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
-        <i class="bi bi-hash me-2"></i> Browse All Hashtags
+        <i class="ki-outline ki-filter fs-5"></i> Browse All Hashtags
       </a>
     </div>
 

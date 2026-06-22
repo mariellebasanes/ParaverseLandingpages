@@ -1,7 +1,7 @@
 <?php
 
 define('MBG', TRUE);
-include($_SERVER['DOCUMENT_ROOT'] . "/Discourse/functions-new.php");
+include($_SERVER['DOCUMENT_ROOT'] . "/ParaverseLandingpages/DiscourseLanding/functions-new.php");
 
 DIRECT_ACCESS_BLOCKED();
 

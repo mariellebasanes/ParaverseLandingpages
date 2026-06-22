@@ -1,5 +1,5 @@
 <?php
-$base = "/Discourse/";
+$base = "/ParaverseLandingpages/DiscourseLanding/";
 ?>
 <!-- ════════════  POSTS + SIDEBAR (What students are saying)  ════════════ -->
 <section id="posts" class="py-20 dc-bg-light">
@@ -7,8 +7,8 @@ $base = "/Discourse/";
 
     <!-- Section header -->
     <div class="mb-10">
-      <span class="d-inline-block fw-bold text-uppercase mb-3"
-        style="color:var(--dc-green-light); font-size:0.78rem; letter-spacing:0.10em;">
+      <span class="dl-eyebrow dl-eyebrow-green">
+        <i class="ki-outline ki-messages fs-6"></i>
         Interactive Mock Feed
       </span>
       <h2 class="fw-bolder text-gray-900 mb-3" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
@@ -21,11 +21,11 @@ $base = "/Discourse/";
 
     <!-- Feed filter tabs -->
     <div class="d-flex flex-wrap gap-2 mb-8" id="dl-feed-tabs">
-      <button class="btn btn-sm dl-feed-tab active" data-filter="all">All Topics</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="announcement">Announcements</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="technology">Technology</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="gaming">Gaming</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="feu">FEU Life</button>
+      <button class="btn btn-sm dl-feed-tab active" data-filter="all"><i class="ki-outline ki-grid me-1 fs-7"></i>All Topics</button>
+      <button class="btn btn-sm dl-feed-tab" data-filter="announcement"><i class="ki-outline ki-message-notif me-1 fs-7"></i>Announcements</button>
+      <button class="btn btn-sm dl-feed-tab" data-filter="technology"><i class="ki-outline ki-message-programming me-1 fs-7"></i>Technology</button>
+      <button class="btn btn-sm dl-feed-tab" data-filter="gaming"><i class="ki-outline ki-medal-star me-1 fs-7"></i>Gaming</button>
+      <button class="btn btn-sm dl-feed-tab" data-filter="feu"><i class="ki-outline ki-heart me-1 fs-7"></i>FEU Life</button>
     </div>
 
     <!-- Two-column layout: feed + sidebar -->
@@ -40,30 +40,30 @@ $base = "/Discourse/";
             style="border-left:4px solid #05b166 !important; background:#f4faf6;">
             <div class="d-flex">
               <div class="dl-vote-col">
-                <button class="dl-vote-btn dl-up" title="Upvote"><i class="bi bi-hand-thumbs-up-fill fs-5"></i></button>
+                <button class="dl-vote-btn dl-up" title="Upvote"><i class="ki-solid ki-up fs-3"></i></button>
                 <span class="fw-bold text-gray-700 dl-cnt" style="font-size:0.95rem;">214</span>
-                <button class="dl-vote-btn dl-down" title="Downvote"><i class="bi bi-hand-thumbs-down-fill fs-5"></i></button>
+                <button class="dl-vote-btn dl-down" title="Downvote"><i class="ki-solid ki-down fs-3"></i></button>
               </div>
               <div class="d-flex flex-column py-5 flex-grow-1">
                 <div class="px-5 mb-3">
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <div class="d-flex align-items-center gap-2">
                       <span style="width:22px;height:22px;border-radius:6px;background:#e8f5ee;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="bi bi-cpu" style="color:#2D6A4F; font-size:0.7rem;"></i>
+                        <i class="ki-outline ki-cpu-charge" style="color:#2D6A4F; font-size:0.75rem;"></i>
                       </span>
                       <span class="fw-bold text-gray-800 fs-7">c/FEU TECH</span>
                       <span class="badge rounded-pill px-3 py-1 fw-bold d-flex align-items-center gap-1"
                         style="font-size:0.7rem; background:#e8f5ee; color:#2D6A4F;">
-                        <i class="bi bi-megaphone-fill"></i> ANNOUNCEMENT
+                        <i class="ki-outline ki-message-notif" style="font-size:0.75rem;"></i> ANNOUNCEMENT
                       </span>
                     </div>
-                    <button class="dl-post-report"><i class="bi bi-flag"></i> Report</button>
+                    <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
                   </div>
                   <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/Discourse/assets/images/catalina.webp'">
+                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
                     <div>
                       <div class="fw-bold text-gray-800 fs-7">EDITH Admin</div>
-                      <div class="text-muted" style="font-size:0.72rem;"><i class="bi bi-clock me-1"></i>1 hour ago</div>
+                      <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>1 hour ago</div>
                     </div>
                   </div>
                   <h5 class="fw-bold text-gray-900 fs-6 mb-2">E-Sports Tournament Registration is now live! 🎮</h5>
@@ -77,14 +77,14 @@ $base = "/Discourse/";
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-1 px-5 border-top border-gray-100 pt-3 mt-2">
-                  <button class="dl-post-action dl-toggle-comments"><i class="bi bi-chat me-1"></i><span class="dl-c-cnt">3</span> Comments</button>
-                  <button class="dl-post-action"><i class="bi bi-share me-1"></i>Share</button>
-                  <button class="dl-post-action dl-bkmk"><i class="bi bi-bookmark me-1"></i>Save</button>
+                  <button class="dl-post-action dl-toggle-comments"><i class="ki-outline ki-messages me-1 fs-6"></i><span class="dl-c-cnt">3</span> Comments</button>
+                  <button class="dl-post-action"><i class="ki-outline ki-share me-1 fs-6"></i>Share</button>
+                  <button class="dl-post-action dl-bkmk"><i class="ki-outline ki-bookmark me-1 fs-6"></i>Save</button>
                 </div>
                 <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
                   <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/Discourse/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Sofia Karim</span>
@@ -94,7 +94,7 @@ $base = "/Discourse/";
                       </div>
                     </div>
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/Discourse/assets/images/catalina.webp'">
+                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Marco Torres</span>
@@ -106,7 +106,7 @@ $base = "/Discourse/";
                   </div>
                   <form class="dl-comment-form">
                     <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/Discourse/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
                       <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
                       <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
                     </div>
@@ -120,27 +120,27 @@ $base = "/Discourse/";
           <div class="card border-0 shadow-sm bg-white" data-dc="post-card" data-cat="technology">
             <div class="d-flex">
               <div class="dl-vote-col">
-                <button class="dl-vote-btn dl-up" title="Upvote"><i class="bi bi-hand-thumbs-up-fill fs-5"></i></button>
+                <button class="dl-vote-btn dl-up" title="Upvote"><i class="ki-solid ki-up fs-3"></i></button>
                 <span class="fw-bold text-gray-700 dl-cnt" style="font-size:0.95rem;">124</span>
-                <button class="dl-vote-btn dl-down" title="Downvote"><i class="bi bi-hand-thumbs-down-fill fs-5"></i></button>
+                <button class="dl-vote-btn dl-down" title="Downvote"><i class="ki-solid ki-down fs-3"></i></button>
               </div>
               <div class="d-flex flex-column py-5 flex-grow-1">
                 <div class="px-5 mb-3">
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <div class="d-flex align-items-center gap-2">
                       <span style="width:22px;height:22px;border-radius:6px;background:#eef0fb;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="bi bi-code-slash" style="color:#5b61e5; font-size:0.7rem;"></i>
+                        <i class="ki-outline ki-message-programming" style="color:#5b61e5; font-size:0.75rem;"></i>
                       </span>
                       <span class="fw-bold text-gray-800 fs-7">c/FEU TECH DEV</span>
                       <span class="rounded-pill px-3 py-1 fw-bold" style="font-size:0.7rem;background:#eef0fb;color:#5b61e5;">TECHNOLOGY</span>
                     </div>
-                    <button class="dl-post-report"><i class="bi bi-flag"></i> Report</button>
+                    <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
                   </div>
                   <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/Discourse/assets/images/anonymous.png'">
+                    <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
                     <div>
                       <div class="fw-bold text-gray-800 fs-7">Sofia Karim</div>
-                      <div class="text-muted" style="font-size:0.72rem;"><i class="bi bi-clock me-1"></i>2 hours ago</div>
+                      <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>2 hours ago</div>
                     </div>
                   </div>
                   <h5 class="fw-bold text-gray-900 fs-6 mb-2">Integrating AI tools in our Capstone projects? Let's discuss.</h5>
@@ -154,14 +154,14 @@ $base = "/Discourse/";
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-1 px-5 border-top border-gray-100 pt-3 mt-2">
-                  <button class="dl-post-action dl-toggle-comments"><i class="bi bi-chat me-1"></i><span class="dl-c-cnt">2</span> Comments</button>
-                  <button class="dl-post-action"><i class="bi bi-share me-1"></i>Share</button>
-                  <button class="dl-post-action dl-bkmk"><i class="bi bi-bookmark me-1"></i>Save</button>
+                  <button class="dl-post-action dl-toggle-comments"><i class="ki-outline ki-messages me-1 fs-6"></i><span class="dl-c-cnt">2</span> Comments</button>
+                  <button class="dl-post-action"><i class="ki-outline ki-share me-1 fs-6"></i>Share</button>
+                  <button class="dl-post-action dl-bkmk"><i class="ki-outline ki-bookmark me-1 fs-6"></i>Save</button>
                 </div>
                 <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
                   <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/Discourse/assets/images/catalina.webp'">
+                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Ravi Joshi</span>
@@ -173,7 +173,7 @@ $base = "/Discourse/";
                   </div>
                   <form class="dl-comment-form">
                     <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/Discourse/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
                       <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
                       <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
                     </div>
@@ -187,27 +187,27 @@ $base = "/Discourse/";
           <div class="card border-0 shadow-sm bg-white" data-dc="post-card" data-cat="feu">
             <div class="d-flex">
               <div class="dl-vote-col">
-                <button class="dl-vote-btn dl-up" title="Upvote"><i class="bi bi-hand-thumbs-up-fill fs-5"></i></button>
+                <button class="dl-vote-btn dl-up" title="Upvote"><i class="ki-solid ki-up fs-3"></i></button>
                 <span class="fw-bold text-gray-700 dl-cnt" style="font-size:0.95rem;">456</span>
-                <button class="dl-vote-btn dl-down" title="Downvote"><i class="bi bi-hand-thumbs-down-fill fs-5"></i></button>
+                <button class="dl-vote-btn dl-down" title="Downvote"><i class="ki-solid ki-down fs-3"></i></button>
               </div>
               <div class="d-flex flex-column py-5 flex-grow-1">
                 <div class="px-5 mb-3">
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <div class="d-flex align-items-center gap-2">
                       <span style="width:22px;height:22px;border-radius:6px;background:#fdf1ef;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="bi bi-heart-fill" style="color:#c0392b; font-size:0.7rem;"></i>
+                        <i class="ki-solid ki-heart" style="color:#c0392b; font-size:0.75rem;"></i>
                       </span>
                       <span class="fw-bold text-gray-800 fs-7">c/FEU LIFE</span>
                       <span class="rounded-pill px-3 py-1 fw-bold" style="font-size:0.7rem;background:rgba(255,193,7,0.13);color:#b58105;">FEU</span>
                     </div>
-                    <button class="dl-post-report"><i class="bi bi-flag"></i> Report</button>
+                    <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
                   </div>
                   <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/Discourse/assets/images/catalina.webp'">
+                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
                     <div>
                       <div class="fw-bold text-gray-800 fs-7">Marco Torres</div>
-                      <div class="text-muted" style="font-size:0.72rem;"><i class="bi bi-clock me-1"></i>4 hours ago</div>
+                      <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>4 hours ago</div>
                     </div>
                   </div>
                   <h5 class="fw-bold text-gray-900 fs-6 mb-2">📊 Poll: How do you study for finals? Be honest.</h5>
@@ -224,14 +224,14 @@ $base = "/Discourse/";
                   <span class="text-muted d-block mb-1" style="font-size:0.76rem;">442 votes · 3 days left</span>
                 </div>
                 <div class="d-flex align-items-center gap-1 px-5 border-top border-gray-100 pt-3 mt-2">
-                  <button class="dl-post-action dl-toggle-comments"><i class="bi bi-chat me-1"></i><span class="dl-c-cnt">1</span> Comment</button>
-                  <button class="dl-post-action"><i class="bi bi-share me-1"></i>Share</button>
-                  <button class="dl-post-action dl-bkmk"><i class="bi bi-bookmark me-1"></i>Save</button>
+                  <button class="dl-post-action dl-toggle-comments"><i class="ki-outline ki-messages me-1 fs-6"></i><span class="dl-c-cnt">1</span> Comment</button>
+                  <button class="dl-post-action"><i class="ki-outline ki-share me-1 fs-6"></i>Share</button>
+                  <button class="dl-post-action dl-bkmk"><i class="ki-outline ki-bookmark me-1 fs-6"></i>Save</button>
                 </div>
                 <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
                   <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/Discourse/assets/images/catalina.webp'">
+                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Catalina Smith</span>
@@ -243,7 +243,7 @@ $base = "/Discourse/";
                   </div>
                   <form class="dl-comment-form">
                     <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/Discourse/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
                       <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
                       <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
                     </div>
@@ -263,7 +263,7 @@ $base = "/Discourse/";
         <div class="dl-sidebar-info-card p-5 mb-5 rounded-4 shadow-sm" style="min-height:220px;">
           <div class="dl-sidebar-glow"></div>
           <div style="position:relative;z-index:1;">
-            <img src="/Discourse/assets/images/Discourse-logo.png" alt="Discourse Logo" style="height:52px;width:auto;margin-bottom:14px;">
+            <img src="/ParaverseLandingpages/DiscourseLanding/assets/images/Discourse-logo.png" alt="Discourse Logo" style="height:52px;width:auto;margin-bottom:14px;">
             <p class="text-white mb-3" style="opacity:0.78; font-size:0.84rem; line-height:1.65;">
               Ask questions, start debates, post anonymously. No prof. No judgment. Just FEU Tech students keeping it real.
             </p>
@@ -276,7 +276,7 @@ $base = "/Discourse/";
               ['emoji'=>'💡','text'=>'What if governance used ranked-choice weighted by stake?','sub'=>'no replies yet'],
             ];
             foreach ($trending as $tr): ?>
-            <a href="/Discourse/posts/index.php"
+            <a href="/ParaverseLandingpages/DiscourseLanding/posts/index.php"
                class="discourse-info-post-item d-flex align-items-start gap-2 p-2 rounded text-decoration-none mb-1">
               <span style="margin-top:2px; font-size:0.82rem;"><?php echo $tr['emoji']; ?></span>
               <div>
@@ -296,15 +296,15 @@ $base = "/Discourse/";
             <h6 class="fw-bold text-gray-800 fs-6 mb-4">Community Stats</h6>
             <?php
             $stats = [
-              ['icon'=>'bi-people-fill','label'=>'Members','val'=>'4,819','sub'=>'+143 This Week'],
-              ['icon'=>'bi-file-text-fill','label'=>'Posts Today','val'=>'390','sub'=>'Across 9 Topics'],
-              ['icon'=>'bi-wifi','label'=>'Online Now','val'=>'1,042','sub'=>'Active Users'],
+              ['icon'=>'ki-solid ki-people','label'=>'Members','val'=>'4,819','sub'=>'+143 This Week'],
+              ['icon'=>'ki-solid ki-message-text','label'=>'Posts Today','val'=>'390','sub'=>'Across 9 Topics'],
+              ['icon'=>'ki-solid ki-chart-line-up','label'=>'Online Now','val'=>'1,042','sub'=>'Active Users'],
             ];
             foreach ($stats as $s): ?>
             <div class="dl-stat-item d-flex align-items-center justify-content-between pb-4 mb-4">
               <div class="d-flex align-items-center gap-3">
                 <div class="d-flex align-items-center justify-content-center rounded-2" style="width:36px;height:36px;background:#e8ede9;flex-shrink:0;">
-                  <i class="bi <?php echo $s['icon']; ?>" style="color:#3a5c45;"></i>
+                  <i class="<?php echo $s['icon']; ?>" style="color:#3a5c45; font-size:1.1rem;"></i>
                 </div>
                 <span class="fw-bold text-gray-800 fs-8 text-uppercase" style="letter-spacing:0.06em;"><?php echo $s['label']; ?></span>
               </div>
@@ -325,7 +325,7 @@ $base = "/Discourse/";
               <?php
               $topics = ['TECHNOLOGY','GAMING','FEU','AI','CULTURE','SCIENCE','NEWS','SPORTS','ACADEMICS'];
               foreach ($topics as $t): ?>
-              <a href="/Discourse/topics/index.php?t=<?php echo $t; ?>"
+              <a href="/ParaverseLandingpages/DiscourseLanding/topics/index.php?t=<?php echo $t; ?>"
                  class="badge rounded-pill fw-semibold px-3 py-2 text-decoration-none"
                  style="font-size:0.73rem; background:#dce8df; color:#3a5c45; transition:background 0.15s, color 0.15s;"
                  onmouseover="this.style.background='#2D6A4F';this.style.color='#fff';"
@@ -372,8 +372,8 @@ window.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', function () {
       var saved = btn.innerHTML.includes('bookmark-fill');
       btn.innerHTML = saved
-        ? '<i class="bi bi-bookmark me-1"></i>Save'
-        : '<i class="bi bi-bookmark-fill me-1" style="color:#2D6A4F;"></i>Saved';
+        ? '<i class="ki-outline ki-bookmark me-1 fs-6"></i>Save'
+        : '<i class="ki-solid ki-bookmark me-1 fs-6" style="color:#2D6A4F;"></i>Saved';
     });
   });
 
@@ -399,7 +399,7 @@ window.addEventListener('DOMContentLoaded', function () {
       if (!text) return;
       var el = document.createElement('div');
       el.className = 'd-flex gap-2';
-      el.innerHTML = `<img src="/Discourse/assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="">
+      el.innerHTML = `<img src="/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="">
         <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
           <div class="d-flex justify-content-between mb-1">
             <span class="fw-bold text-gray-800">You (Anonymous)</span>

@@ -4,7 +4,7 @@ define('MBG', TRUE);
 $uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $DISCOURSE_BASE = (substr(rtrim($uri, '/'), -9) === 'index.php' ? dirname($uri) . '/' : rtrim($uri, '/') . '/');
 if ($DISCOURSE_BASE === '/' || $DISCOURSE_BASE === '') {
-  $DISCOURSE_BASE = '/Discourse/';
+  $DISCOURSE_BASE = '/ParaverseLandingpages/DiscourseLanding/';
 }
 
 include(__DIR__ . '/functions-new.php');
@@ -19,11 +19,7 @@ $META_DESC  = "Connect with peers, join communities, share resources, and grow t
   <?php HEAD_ESSENTIALS(); ?>
 </head>
 
-<body id="kt_app_body" data-kt-app-layout="light-header" data-kt-app-page-loading-enabled="true"
-  data-kt-app-page-loading="on" class="app-default">
-
-  <!-- Page Loader -->
-  <?php include(__DIR__ . "/partials/_page-loader.php"); ?>
+<body id="kt_app_body" data-kt-app-layout="light-header" class="app-default">
 
   <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
     <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
@@ -75,6 +71,25 @@ $META_DESC  = "Connect with peers, join communities, share resources, and grow t
     window.addEventListener("DOMContentLoaded", function () {
       document.documentElement.removeAttribute("data-bs-theme");
       setTimeout(function () { document.documentElement.removeAttribute("data-bs-theme"); }, 100);
+
+      // Scroll-reveal: animate elements with .dl-reveal when they enter the viewport
+      if ('IntersectionObserver' in window) {
+        var revealEls = document.querySelectorAll('.dl-reveal');
+        var revealObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealEls.forEach(function (el) { revealObserver.observe(el); });
+      } else {
+        // Fallback: show all immediately
+        document.querySelectorAll('.dl-reveal').forEach(function (el) {
+          el.classList.add('visible');
+        });
+      }
     });
   </script>
 </body>

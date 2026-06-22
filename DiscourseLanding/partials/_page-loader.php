@@ -1,5 +1,5 @@
 <?php 
-$base = "/Discourse/"; 
+$base = "/ParaverseLandingpages/DiscourseLanding/"; 
 ?>
 <div class="page-loader flex-column bg-white">
 	<img class="edith-logo-animation max-h-60px mb-8" src="<?php echo htmlspecialchars($base); ?>assets/images/Discourse-logo.png" alt="Discourse Logo"/>
