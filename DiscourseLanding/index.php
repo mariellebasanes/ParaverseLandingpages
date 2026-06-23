@@ -4,7 +4,7 @@ define('MBG', TRUE);
 $uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $DISCOURSE_BASE = (substr(rtrim($uri, '/'), -9) === 'index.php' ? dirname($uri) . '/' : rtrim($uri, '/') . '/');
 if ($DISCOURSE_BASE === '/' || $DISCOURSE_BASE === '') {
-  $DISCOURSE_BASE = '/ParaverseLandingpages/DiscourseLanding/';
+  $DISCOURSE_BASE = '/DiscourseLanding/';
 }
 
 include(__DIR__ . '/functions-new.php');

@@ -18,10 +18,9 @@
         </p>
       </div>
       <div class="col-lg-5 text-lg-end mt-6 mt-lg-0 dl-reveal dl-delay-1">
-        <a href="/ParaverseLandingpages/DiscourseLanding/communities/index.php"
+        <a href="#posts"
            class="btn fw-bold rounded-pill px-7 py-3 d-inline-flex align-items-center gap-2"
-           style="background:var(--dc-gold); color:#111; font-size:0.9rem;"
-           onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
+           style="background:var(--dc-gold); color:#111; font-size:0.9rem;">
           <i class="ki-outline ki-compass fs-5"></i>Explore Communities
         </a>
       </div>
@@ -42,6 +41,7 @@
           'color'   => '#c0392b',
           'badge_bg'=> 'rgba(192,57,43,0.10)',
           'badge_c' => '#c0392b',
+          'filter'  => 'feu',
         ],
         [
           'name'    => 'Freshies Guide',
@@ -49,10 +49,11 @@
           'desc'    => 'Guidance on enrollment, university processes, and first-year advice.',
           'members' => '890',
           'ki'      => 'ki-people',
-          'bg'      => '#e8f0fb',
-          'color'   => '#3a56d4',
-          'badge_bg'=> 'rgba(58,86,212,0.10)',
-          'badge_c' => '#3a56d4',
+          'bg'      => '#f1f5f9',
+          'color'   => '#1e293b',
+          'badge_bg'=> 'rgba(30,41,59,0.08)',
+          'badge_c' => '#1e293b',
+          'filter'  => 'feu',
         ],
         [
           'name'    => 'Study Group',
@@ -64,6 +65,7 @@
           'color'   => '#2D6A4F',
           'badge_bg'=> 'rgba(45,106,79,0.10)',
           'badge_c' => '#2D6A4F',
+          'filter'  => 'technology',
         ],
         [
           'name'    => 'CultureHub',
@@ -71,21 +73,23 @@
           'desc'    => 'Music, cinema, arts, student theater projects, and cultural gatherings.',
           'members' => '410',
           'ki'      => 'ki-star',
-          'bg'      => '#e8f0fb',
-          'color'   => '#3a56d4',
-          'badge_bg'=> 'rgba(58,86,212,0.10)',
-          'badge_c' => '#3a56d4',
+          'bg'      => '#f1f5f9',
+          'color'   => '#1e293b',
+          'badge_bg'=> 'rgba(30,41,59,0.08)',
+          'badge_c' => '#1e293b',
+          'filter'  => 'feu',
         ],
         [
           'name'    => 'Cosplay & Artists',
           'slug'    => 'Cosplay',
           'desc'    => 'Share illustrations, cosplays, layout tips, and local convention updates.',
           'members' => '350',
-          'ki'      => 'ki-graph',
+          'ki'      => 'ki-brush',
           'bg'      => 'rgba(251,197,1,0.14)',
           'color'   => '#b58105',
           'badge_bg'=> 'rgba(181,129,5,0.10)',
           'badge_c' => '#b58105',
+          'filter'  => 'gaming',
         ],
         [
           'name'    => 'E-Sports Guild',
@@ -97,15 +101,16 @@
           'color'   => '#2D6A4F',
           'badge_bg'=> 'rgba(45,106,79,0.10)',
           'badge_c' => '#2D6A4F',
+          'filter'  => 'gaming',
         ],
       ];
       $delays = ['dl-delay-1','dl-delay-2','dl-delay-3','dl-delay-1','dl-delay-2','dl-delay-3'];
       foreach ($communities as $i => $c): ?>
 
       <div class="col-md-6 col-lg-4 dl-reveal <?php echo $delays[$i]; ?>">
-        <a href="/ParaverseLandingpages/DiscourseLanding/communities/index.php?c=<?php echo $c['slug']; ?>"
+        <a href="#posts"
            class="dl-comm-card p-6 h-100"
-           onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
+           data-feed-filter="<?php echo $c['filter']; ?>">
 
           <div class="d-flex align-items-center gap-4 mb-4">
             <!-- Icon -->
@@ -138,3 +143,27 @@
     </div><!-- /row -->
   </div>
 </section>
+
+<!-- Community Scroll-and-Filter Interaction Script -->
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+  var commCards = document.querySelectorAll('.dl-comm-card');
+  commCards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      var filter = card.getAttribute('data-feed-filter');
+      if (filter) {
+        e.preventDefault();
+        var targetSection = document.getElementById('posts');
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+          // Find the corresponding filter tab in the posts section
+          var tabBtn = document.querySelector('#dl-feed-tabs .dl-feed-tab[data-filter="' + filter + '"]');
+          if (tabBtn) {
+            tabBtn.click();
+          }
+        }
+      }
+    });
+  });
+});
+</script>

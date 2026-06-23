@@ -1,5 +1,5 @@
 <?php
-$base = "/ParaverseLandingpages/DiscourseLanding/";
+$base = "/DiscourseLanding/";
 ?>
 <!-- ════════════  POSTS + SIDEBAR (What students are saying)  ════════════ -->
 <section id="posts" class="py-20 dc-bg-light">
@@ -49,7 +49,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <div class="d-flex align-items-center gap-2">
                       <span style="width:22px;height:22px;border-radius:6px;background:#e8f5ee;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="ki-outline ki-cpu-charge" style="color:#2D6A4F; font-size:0.75rem;"></i>
+                        <i class="ki-outline ki-electricity" style="color:#2D6A4F; font-size:0.75rem;"></i>
                       </span>
                       <span class="fw-bold text-gray-800 fs-7">c/FEU TECH</span>
                       <span class="badge rounded-pill px-3 py-1 fw-bold d-flex align-items-center gap-1"
@@ -60,7 +60,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                     <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
                   </div>
                   <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
+                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/DiscourseLanding/assets/images/catalina.webp'">
                     <div>
                       <div class="fw-bold text-gray-800 fs-7">EDITH Admin</div>
                       <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>1 hour ago</div>
@@ -84,7 +84,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                 <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
                   <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/DiscourseLanding/assets/images/anonymous.png'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Sofia Karim</span>
@@ -94,7 +94,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                       </div>
                     </div>
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
+                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/DiscourseLanding/assets/images/catalina.webp'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Marco Torres</span>
@@ -106,7 +106,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                   </div>
                   <form class="dl-comment-form">
                     <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/DiscourseLanding/assets/images/anonymous.png'">
                       <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
                       <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
                     </div>
@@ -137,7 +137,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                     <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
                   </div>
                   <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
+                    <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/DiscourseLanding/assets/images/anonymous.png'">
                     <div>
                       <div class="fw-bold text-gray-800 fs-7">Sofia Karim</div>
                       <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>2 hours ago</div>
@@ -161,7 +161,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                 <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
                   <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
+                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/DiscourseLanding/assets/images/catalina.webp'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Ravi Joshi</span>
@@ -173,7 +173,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                   </div>
                   <form class="dl-comment-form">
                     <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/DiscourseLanding/assets/images/anonymous.png'">
                       <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
                       <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
                     </div>
@@ -204,7 +204,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                     <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
                   </div>
                   <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
+                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='/DiscourseLanding/assets/images/catalina.webp'">
                     <div>
                       <div class="fw-bold text-gray-800 fs-7">Marco Torres</div>
                       <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>4 hours ago</div>
@@ -231,7 +231,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                 <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
                   <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
                     <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/catalina.webp'">
+                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='/DiscourseLanding/assets/images/catalina.webp'">
                       <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
                         <div class="d-flex justify-content-between mb-1">
                           <span class="fw-bold text-gray-800">Catalina Smith</span>
@@ -243,7 +243,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
                   </div>
                   <form class="dl-comment-form">
                     <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png'">
+                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='/DiscourseLanding/assets/images/anonymous.png'">
                       <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
                       <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
                     </div>
@@ -263,7 +263,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
         <div class="dl-sidebar-info-card p-5 mb-5 rounded-4 shadow-sm" style="min-height:220px;">
           <div class="dl-sidebar-glow"></div>
           <div style="position:relative;z-index:1;">
-            <img src="/ParaverseLandingpages/DiscourseLanding/assets/images/Discourse-logo.png" alt="Discourse Logo" style="height:52px;width:auto;margin-bottom:14px;">
+            <img src="/DiscourseLanding/assets/images/Discourse-logo.png" alt="Discourse Logo" style="height:52px;width:auto;margin-bottom:14px;">
             <p class="text-white mb-3" style="opacity:0.78; font-size:0.84rem; line-height:1.65;">
               Ask questions, start debates, post anonymously. No prof. No judgment. Just FEU Tech students keeping it real.
             </p>
@@ -276,7 +276,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
               ['emoji'=>'💡','text'=>'What if governance used ranked-choice weighted by stake?','sub'=>'no replies yet'],
             ];
             foreach ($trending as $tr): ?>
-            <a href="/ParaverseLandingpages/DiscourseLanding/posts/index.php"
+            <a href="/DiscourseLanding/posts/index.php"
                class="discourse-info-post-item d-flex align-items-start gap-2 p-2 rounded text-decoration-none mb-1">
               <span style="margin-top:2px; font-size:0.82rem;"><?php echo $tr['emoji']; ?></span>
               <div>
@@ -325,7 +325,7 @@ $base = "/ParaverseLandingpages/DiscourseLanding/";
               <?php
               $topics = ['TECHNOLOGY','GAMING','FEU','AI','CULTURE','SCIENCE','NEWS','SPORTS','ACADEMICS'];
               foreach ($topics as $t): ?>
-              <a href="/ParaverseLandingpages/DiscourseLanding/topics/index.php?t=<?php echo $t; ?>"
+              <a href="/DiscourseLanding/topics/index.php?t=<?php echo $t; ?>"
                  class="badge rounded-pill fw-semibold px-3 py-2 text-decoration-none"
                  style="font-size:0.73rem; background:#dce8df; color:#3a5c45; transition:background 0.15s, color 0.15s;"
                  onmouseover="this.style.background='#2D6A4F';this.style.color='#fff';"
@@ -399,7 +399,7 @@ window.addEventListener('DOMContentLoaded', function () {
       if (!text) return;
       var el = document.createElement('div');
       el.className = 'd-flex gap-2';
-      el.innerHTML = `<img src="/ParaverseLandingpages/DiscourseLanding/assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="">
+      el.innerHTML = `<img src="/DiscourseLanding/assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="">
         <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
           <div class="d-flex justify-content-between mb-1">
             <span class="fw-bold text-gray-800">You (Anonymous)</span>

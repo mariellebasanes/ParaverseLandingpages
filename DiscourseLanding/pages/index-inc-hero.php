@@ -1,7 +1,7 @@
 <?php
-$base            = "/ParaverseLandingpages/DiscourseLanding/";
-$communities_url = "/ParaverseLandingpages/DiscourseLanding/communities/index.php";
-$app_url         = "/ParaverseLandingpages/DiscourseLanding/";
+$base            = "/DiscourseLanding/";
+$communities_url = "#communities";
+$app_url         = "/DiscourseLanding/";
 ?>
 <!-- ════════════════════  HERO SECTION  ════════════════════ -->
 <section id="dl-hero" class="py-0">
@@ -86,7 +86,7 @@ $app_url         = "/ParaverseLandingpages/DiscourseLanding/";
             <img src="<?php echo htmlspecialchars($base); ?>assets/images/hero3d.png"
                  alt="FEU Tech Students"
                  class="dl-hero-img"
-                 onerror="this.src='/ParaverseLandingpages/DiscourseLanding/assets/images/hero3d.png';">
+                 onerror="this.src='/DiscourseLanding/assets/images/hero3d.png';">
           </div>
         </div>
 

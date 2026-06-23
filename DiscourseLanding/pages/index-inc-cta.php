@@ -1,6 +1,6 @@
 <?php
-$app_url         = "/ParaverseLandingpages/DiscourseLanding/";
-$communities_url = "/ParaverseLandingpages/DiscourseLanding/communities/index.php";
+$app_url         = "/DiscourseLanding/";
+$communities_url = "#communities";
 ?>
 <!-- ════════════════  CTA SECTION  ════════════════════════ -->
 <section id="dl-cta" class="py-20">

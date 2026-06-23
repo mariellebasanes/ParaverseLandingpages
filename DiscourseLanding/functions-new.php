@@ -14,7 +14,7 @@ function HEAD_ESSENTIALS()
   $META_IMAGE = empty($META_IMAGE) ? "https://paraverse.feutech.edu.ph/assets/img/office.jpg" : Sanitizer::url($META_IMAGE);
   $META_LINK = "https://" . $_SERVER['HTTP_HOST'] . parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
-  $base = "/ParaverseLandingpages/DiscourseLanding/";
+  $base = "/DiscourseLanding/";
 
   echo '
 <title>' . $META_TITLE . '</title>
@@ -42,7 +42,7 @@ function HEAD_ESSENTIALS()
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Discourse">
-<link rel="apple-touch-icon" href="' . $base . 'assets/img/logo/icon-paraverse-192.png">
+<link rel="apple-touch-icon" href="' . $base . 'assets/img/logo/icon-paraverse.svg">
 
 <!-- Metronic Global Stylesheets -->
 <link rel="stylesheet" href="' . $base . 'assets/plugins/global/plugins.bundle.css">
