@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="col-lg-5 text-lg-end mt-6 mt-lg-0 dl-reveal dl-delay-1">
-        <a href="/ParaverseLandingpages/DiscourseLanding/communities/index.php"
+        <a href="<?php global $DISCOURSE_BASE; echo htmlspecialchars($DISCOURSE_BASE); ?>communities/index.php"
            class="btn fw-bold rounded-pill px-7 py-3 d-inline-flex align-items-center gap-2"
            style="background:var(--dc-gold); color:#111; font-size:0.9rem;"
            onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
@@ -103,33 +103,36 @@
       foreach ($communities as $i => $c): ?>
 
       <div class="col-md-6 col-lg-4 dl-reveal <?php echo $delays[$i]; ?>">
-        <a href="/ParaverseLandingpages/DiscourseLanding/communities/index.php?c=<?php echo $c['slug']; ?>"
-           class="dl-comm-card p-6 h-100"
-           onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
-
-          <div class="d-flex align-items-center gap-4 mb-4">
-            <!-- Icon -->
-            <div class="dl-comm-icon" style="background:<?php echo $c['bg']; ?>;">
-              <i class="ki-solid <?php echo $c['ki']; ?>" style="color:<?php echo $c['color']; ?>; font-size:1.4rem;"></i>
+        <a href="<?php global $DISCOURSE_BASE; echo htmlspecialchars($DISCOURSE_BASE); ?>communities/index.php?c=<?php echo $c['slug']; ?>"
+           class="card card-flush shadow-sm hover-elevate-up h-100 text-decoration-none border-0"
+           onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()"
+           style="transition: all 0.3s ease;">
+          <div class="card-body p-6">
+            <div class="d-flex align-items-center gap-4 mb-4">
+              <!-- Icon -->
+              <div class="symbol symbol-50px symbol-circle">
+                <div class="symbol-label" style="background:<?php echo $c['bg']; ?>; color:<?php echo $c['color']; ?>;">
+                  <i class="ki-solid <?php echo $c['ki']; ?> fs-2x" style="color:inherit;"></i>
+                </div>
+              </div>
+              <!-- Title + members -->
+              <div>
+                <h4 class="fw-bolder text-gray-900 fs-5 mb-1"><?php echo htmlspecialchars($c['name']); ?></h4>
+                <span class="badge fw-bold" style="background:<?php echo $c['badge_bg']; ?>; color:<?php echo $c['badge_c']; ?>;">
+                  <i class="ki-outline ki-people fs-8 me-1" style="color:inherit;"></i>
+                  <?php echo $c['members']; ?> members
+                </span>
+              </div>
             </div>
-            <!-- Title + members -->
-            <div>
-              <h4 class="fw-bold text-gray-900 fs-6 mb-1"><?php echo htmlspecialchars($c['name']); ?></h4>
-              <span class="dl-members-badge" style="background:<?php echo $c['badge_bg']; ?>; color:<?php echo $c['badge_c']; ?>;">
-                <i class="ki-outline ki-people" style="font-size:0.75rem;"></i>
-                <?php echo $c['members']; ?> members
-              </span>
+
+            <p class="text-gray-500 mb-5" style="font-size:0.85rem; line-height:1.68;">
+              <?php echo htmlspecialchars($c['desc']); ?>
+            </p>
+
+            <div class="d-flex align-items-center fw-bolder fs-6" style="color:var(--dc-green-light);">
+              View Community <i class="ki-outline ki-arrow-right fs-4 ms-2 text-inherit"></i>
             </div>
           </div>
-
-          <p class="text-gray-500 mb-4" style="font-size:0.85rem; line-height:1.68;">
-            <?php echo htmlspecialchars($c['desc']); ?>
-          </p>
-
-          <div class="dl-comm-arrow" style="color:var(--dc-green-light);">
-            View Community <i class="ki-outline ki-arrow-right fs-6"></i>
-          </div>
-
         </a>
       </div>
 

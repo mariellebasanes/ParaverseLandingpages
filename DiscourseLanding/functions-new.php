@@ -14,7 +14,8 @@ function HEAD_ESSENTIALS()
   $META_IMAGE = empty($META_IMAGE) ? "https://paraverse.feutech.edu.ph/assets/img/office.jpg" : Sanitizer::url($META_IMAGE);
   $META_LINK = "https://" . $_SERVER['HTTP_HOST'] . parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
-  $base = "/ParaverseLandingpages/DiscourseLanding/";
+  global $DISCOURSE_BASE;
+  $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/ParaverseLandingpages/DiscourseLanding/";
 
   echo '
 <title>' . $META_TITLE . '</title>
