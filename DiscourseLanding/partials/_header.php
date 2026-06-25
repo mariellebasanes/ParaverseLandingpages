@@ -13,10 +13,10 @@
 
     <div class="app-navbar flex-shrink-0">
       <?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/widget-applications-browser.php'); ?>
-      <a href="//" onclick="KTApp.showPageLoading()" class="d-flex align-items-center">
+      <a href="/DiscourseLanding/" onclick="KTApp.showPageLoading()" class="d-flex align-items-center">
         <h1 class="mb-0">
-          <img src="" class="h-20px">
-          <span class="fw-bolder text-primary d-none"></span>
+          <img src="/DiscourseLanding/assets/images/Discourse-logo.png" style="height: 28px;" alt="Discourse">
+          <span class="fw-bolder text-primary d-none">Discourse</span>
         </h1>
       </a>
     </div>

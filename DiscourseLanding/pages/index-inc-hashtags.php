@@ -64,5 +64,33 @@
       </div>
     </div>
 
+    <!-- Interactive Filtering Script -->
+    <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var filterBtns = document.querySelectorAll('.dl-filter-btn');
+      var tags = document.querySelectorAll('.dl-hashtag');
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+
+          var filter = btn.getAttribute('data-filter');
+
+          tags.forEach(function (tag) {
+            if (filter === 'all' || tag.getAttribute('data-category') === filter) {
+              tag.style.display = 'inline-flex';
+              tag.classList.add('animate-tag-in');
+              // Clear the animation class after it completes to allow triggering it again
+              setTimeout(function() { tag.classList.remove('animate-tag-in'); }, 300);
+            } else {
+              tag.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+    </script>
+
   </div>
 </section>

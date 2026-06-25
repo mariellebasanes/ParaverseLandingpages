@@ -43,7 +43,7 @@ function HEAD_ESSENTIALS()
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Discourse">
-<link rel="apple-touch-icon" href="' . $base . 'assets/img/logo/icon-paraverse-192.png">
+<link rel="apple-touch-icon" href="' . $base . 'assets/img/logo/icon-paraverse.svg">
 
 <!-- Metronic Global Stylesheets -->
 <link rel="stylesheet" href="' . $base . 'assets/plugins/global/plugins.bundle.css">

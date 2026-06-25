@@ -50,7 +50,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/DiscourseLanding/";
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <div class="d-flex align-items-center gap-2">
                       <span style="width:22px;height:22px;border-radius:6px;background:#e8f5ee;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="ki-outline ki-cpu-charge" style="color:#2D6A4F; font-size:0.75rem;"></i>
+                        <i class="ki-outline ki-electricity" style="color:#2D6A4F; font-size:0.75rem;"></i>
                       </span>
                       <span class="fw-bold text-gray-800 fs-7">c/FEU TECH</span>
                       <span class="badge rounded-pill px-3 py-1 fw-bold d-flex align-items-center gap-1"

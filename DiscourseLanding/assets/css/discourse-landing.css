@@ -303,28 +303,102 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    HASHTAGS  (light tint section)
    ════════════════════════════════════════════════════════════ */
 .dl-hashtag {
-  display: inline-flex; align-items: center; gap: 5px;
-  border-radius: 50px; padding: 9px 18px;
-  font-weight: 700; font-size: 0.85rem;
+  display: inline-flex; align-items: center; gap: 6px;
+  border-radius: 50px; padding: 8px 16px;
+  font-weight: 700; font-size: 0.82rem;
   text-decoration: none;
-  transition: background 0.18s, color 0.18s, transform 0.18s, box-shadow 0.18s;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.02em;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
 }
-.dl-hashtag:hover { transform: translateY(-3px); }
+.dl-hashtag:hover { transform: translateY(-3px) scale(1.02); }
+
 .dl-hashtag-green {
   background: #d4e8da; color: #1f4e39;
+  border-color: rgba(45, 106, 79, 0.15);
 }
 .dl-hashtag-green:hover { background: var(--dc-green-light); color: #fff; box-shadow: 0 6px 16px rgba(45,106,79,0.22); }
+
 .dl-hashtag-gold {
-  background: rgba(251,197,1,0.16); color: #7a5c00;
-  border: 1px solid rgba(251,197,1,0.30);
+  background: rgba(251,197,1,0.10); color: #7a5c00;
+  border-color: rgba(251,197,1,0.32);
 }
 .dl-hashtag-gold:hover { background: var(--dc-gold); color: #111; box-shadow: 0 6px 16px rgba(251,197,1,0.30); }
+
 .dl-hashtag-dark {
-  background: rgba(11,50,32,0.09); color: #1f4e39;
-  border: 1px solid rgba(11,50,32,0.10);
+  background: rgba(11,50,32,0.05); color: #1f4e39;
+  border-color: rgba(11,50,32,0.12);
 }
 .dl-hashtag-dark:hover { background: var(--dc-green); color: #fff; box-shadow: 0 6px 16px rgba(11,50,32,0.22); }
+
+/* Filter buttons container */
+.dl-hashtag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Filter button item */
+.dl-filter-btn {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(45, 106, 79, 0.15);
+  color: var(--dc-green-mid);
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+.dl-filter-btn:hover {
+  background: rgba(45, 106, 79, 0.08);
+  border-color: var(--dc-green-light);
+  color: var(--dc-green-light);
+  transform: translateY(-1px);
+}
+.dl-filter-btn.active {
+  background: var(--dc-green-light);
+  border-color: var(--dc-green-light);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(45, 106, 79, 0.2);
+}
+
+/* Glassmorphic tags container */
+.dl-hashtag-cloud-container {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 10px 30px rgba(0, 0, 0, 0.02);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+
+/* Micro-animations */
+@keyframes tagFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-tag-in {
+  animation: tagFadeIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
 
 /* ════════════════════════════════════════════════════════════
    COMMUNITIES  (white section — Metronic card)
@@ -337,6 +411,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   transition: transform 0.25s cubic-bezier(.34,1.56,.64,1), box-shadow 0.25s, border-color 0.25s;
   text-decoration: none; display: block;
   position: relative; overflow: hidden;
+  color: #1e293b !important;
+}
+.dl-comm-card, .dl-comm-card:hover {
+  text-decoration: none !important;
+}
+.dl-comm-card h4 {
+  color: #1e293b !important;
+  transition: color 0.18s;
+}
+.dl-comm-card p {
+  color: #55585b !important;
+  transition: color 0.18s;
+}
+.dl-comm-card:hover h4 {
+  color: var(--dc-green-light) !important;
 }
 .dl-comm-card::after {
   content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 0;
