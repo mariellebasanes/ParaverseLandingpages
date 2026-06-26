@@ -1,5 +1,5 @@
 <?php
-$BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
+$BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/icare/icare';
 ?>
 <section id="hero-v2"
     class="position-relative overflow-hidden py-20 bg-white bg-geometric bg-geometric-light bg-hero-icons section-angle-bottom">

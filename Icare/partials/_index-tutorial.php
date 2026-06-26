@@ -1,5 +1,5 @@
 <?php
-$BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
+$BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/icare/icare';
 $events = [
   [
     'img' => $BASE . '/assets/img/news-images/building-bonds-in-virtual-worlds.jpg',

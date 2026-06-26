@@ -15,7 +15,7 @@ $partials_dir = is_dir($sample_partials) ? $sample_partials : $ICARE_ROOT . '/pa
 // Asset base: when using local Icare, path to Icare folder (3 levels up from admin/pages/index.php)
 $assets_base = is_dir($sample_partials) ? '' : rtrim(dirname(dirname(dirname($_SERVER['SCRIPT_NAME']))), '/');
 if ($assets_base === '' || $assets_base === '.') {
-  $assets_base = '/Icare/Icare';
+  $assets_base = '/icare/icare';
 }
 
 IS_LOGGED_IN($_SERVER['REQUEST_URI']);

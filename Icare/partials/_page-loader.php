@@ -1,4 +1,4 @@
-<?php $BASE = (defined('ICARE_BASE') ? rtrim(ICARE_BASE, '/') : '/Icare/Icare'); ?>
+<?php $BASE = (defined('ICARE_BASE') ? rtrim(ICARE_BASE, '/') : '/icare/icare'); ?>
 <div class="page-loader flex-column">
 	<img class="edith-logo-animation max-h-50px mb-8" src="<?php echo htmlspecialchars($BASE); ?>/assets/img/logo.png" alt=""/>
 	<h2 class="mb-0 h4" style="color: #169546;">FEU Institute of Technology</h2>

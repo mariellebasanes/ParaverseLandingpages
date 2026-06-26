@@ -1,5 +1,5 @@
 <?php
-$ICARE_BASE = defined('ICARE_BASE') ? ICARE_BASE : '/Icare/Icare';
+$ICARE_BASE = defined('ICARE_BASE') ? ICARE_BASE : '/icare/icare';
 $ICARE_HOME = isset($ICARE_HOME) ? $ICARE_HOME : $ICARE_BASE . '/';
 ?>
 <!-- Custom variables -->

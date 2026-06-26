@@ -19,9 +19,9 @@ else {
 
 $icare_root = __DIR__;
 if (!is_file($icare_root . '/functions-new.php')) {
-  $icare_root = dirname(__DIR__) . '/Icare';
+  $icare_root = dirname(__DIR__) . '/icare';
 }
-$functions_path = is_file($icare_root . '/functions-new.php') ? $icare_root . '/functions-new.php' : $_SERVER['DOCUMENT_ROOT'] . '/Icare/sample/functions-new.php';
+$functions_path = is_file($icare_root . '/functions-new.php') ? $icare_root . '/functions-new.php' : $_SERVER['DOCUMENT_ROOT'] . '/icare/sample/functions-new.php';
 if (!is_file($functions_path)) {
   $functions_path = $_SERVER['DOCUMENT_ROOT'] . '/sample/functions-new.php';
 }

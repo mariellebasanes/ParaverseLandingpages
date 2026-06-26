@@ -1,5 +1,5 @@
 <?php
-$BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
+$BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/icare/icare';
 ?>
 <section id="directory"
     class="py-15 py-lg-20 position-relative bg-geometric bg-geometric-dark bg-shape-1 section-angle-bottom"

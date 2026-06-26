@@ -1,5 +1,5 @@
 <?php
-$ICARE_BASE = defined('ICARE_BASE') ? ICARE_BASE : '/Icare/Icare';
+$ICARE_BASE = defined('ICARE_BASE') ? ICARE_BASE : '/icare/icare';
 ?>
 <footer>
   <div class="app-container container-xxl">
