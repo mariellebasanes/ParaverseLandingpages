@@ -197,7 +197,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <div class="d-flex align-items-center gap-2">
                       <span style="width:22px;height:22px;border-radius:6px;background:#fdf1ef;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="ki-solid ki-heart" style="color:#c0392b; font-size:0.75rem;"></i>
+                        <i class="ki-outline ki-heart" style="color:#c0392b; font-size:0.75rem;"></i>
                       </span>
                       <span class="fw-bold text-gray-800 fs-7">c/FEU LIFE</span>
                       <span class="rounded-pill px-3 py-1 fw-bold" style="font-size:0.7rem;background:rgba(255,193,7,0.13);color:#b58105;">FEU</span>
@@ -297,9 +297,9 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             <h6 class="fw-bold text-gray-800 fs-6 mb-4">Community Stats</h6>
             <?php
             $stats = [
-              ['icon'=>'ki-solid ki-people','label'=>'Members','val'=>'4,819','sub'=>'+143 This Week'],
-              ['icon'=>'ki-solid ki-message-text','label'=>'Posts Today','val'=>'390','sub'=>'Across 9 Topics'],
-              ['icon'=>'ki-solid ki-chart-line-up','label'=>'Online Now','val'=>'1,042','sub'=>'Active Users'],
+              ['icon'=>'ki-outline ki-people','label'=>'Members','val'=>'4,819','sub'=>'+143 This Week'],
+              ['icon'=>'ki-outline ki-message-text','label'=>'Posts Today','val'=>'390','sub'=>'Across 9 Topics'],
+              ['icon'=>'ki-outline ki-chart-line-up','label'=>'Online Now','val'=>'1,042','sub'=>'Active Users'],
             ];
             foreach ($stats as $s): ?>
             <div class="dl-stat-item d-flex align-items-center justify-content-between pb-4 mb-4">
@@ -371,10 +371,10 @@ window.addEventListener('DOMContentLoaded', function () {
   /* Bookmark */
   document.querySelectorAll('.dl-bkmk').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var saved = btn.innerHTML.includes('bookmark-fill');
+      var saved = btn.innerHTML.includes('Saved');
       btn.innerHTML = saved
         ? '<i class="ki-outline ki-bookmark me-1 fs-6"></i>Save'
-        : '<i class="ki-solid ki-bookmark me-1 fs-6" style="color:#2D6A4F;"></i>Saved';
+        : '<i class="ki-duotone ki-bookmark me-1 fs-6" style="color:#2D6A4F;"><span class="path1"></span><span class="path2"></span></i>Saved';
     });
   });
 
