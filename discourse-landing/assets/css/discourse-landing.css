@@ -551,15 +551,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 @media (max-width: 991px) {
   #dl-hero { min-height: auto; }
   .dl-hero-content { padding: 4rem 0 3rem; }
-  .dl-hero-left { padding-right: 0; padding-bottom: 2.5rem; text-align: center; }
+  .dl-hero-left { padding-left: 1.5rem; padding-right: 1.5rem; padding-bottom: 2.5rem; text-align: center; }
   .dl-hero-sub  { margin-left: auto; margin-right: auto; }
   .dl-hero-stats { margin: 0 auto; }
   .dl-hero-tags  { justify-content: center; }
-  .dl-hero-right { margin-top: 0; }
+  .dl-hero-right { margin-top: 0; padding-left: 1.5rem; padding-right: 1.5rem; }
   .dl-orbit-chip { display: none; }
   .dl-orbit-tag  { display: none; }
   .dl-vring      { width: 280px; height: 280px; }
-  .dl-img-frame  { max-width: 340px; }
+  .dl-img-frame  { width: 100%; max-width: 340px; margin: 0 auto; }
   .dl-hero-img, .dl-hero-img--sm { max-height: 220px; }
 }
 @media (max-width: 575px) {
