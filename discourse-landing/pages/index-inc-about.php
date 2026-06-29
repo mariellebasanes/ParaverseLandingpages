@@ -26,7 +26,7 @@
       <div class="col-md-6 col-lg-4 dl-reveal dl-delay-1">
         <div class="dl-feature-card h-100 p-7">
           <div class="dl-feat-icon mb-5" style="background:#e6f5ee;">
-            <i class="ki-solid ki-messages" style="color:#2D6A4F; font-size:1.5rem;"></i>
+            <i class="ki-outline ki-messages" style="color:#2D6A4F; font-size:1.5rem;"></i>
           </div>
           <h4 class="fw-bold text-gray-900 fs-5 mb-2">1. Find Your Community</h4>
           <p class="text-gray-500 mb-0" style="font-size:0.87rem; line-height:1.72;">
@@ -39,7 +39,7 @@
       <div class="col-md-6 col-lg-4 dl-reveal dl-delay-2">
         <div class="dl-feature-card h-100 p-7">
           <div class="dl-feat-icon mb-5" style="background:rgba(251,197,1,0.13);">
-            <i class="ki-solid ki-star" style="color:#c89800; font-size:1.5rem;"></i>
+            <i class="ki-outline ki-star" style="color:#c89800; font-size:1.5rem;"></i>
           </div>
           <h4 class="fw-bold text-gray-900 fs-5 mb-2">2. Build Your Reputation</h4>
           <p class="text-gray-500 mb-0" style="font-size:0.87rem; line-height:1.72;">
@@ -52,7 +52,7 @@
       <div class="col-md-6 col-lg-4 dl-reveal dl-delay-3">
         <div class="dl-feature-card h-100 p-7">
           <div class="dl-feat-icon mb-5" style="background:#fdf1ef;">
-            <i class="ki-solid ki-shield-tick" style="color:#c0392b; font-size:1.5rem;"></i>
+            <i class="ki-outline ki-shield-tick" style="color:#c0392b; font-size:1.5rem;"></i>
           </div>
           <h4 class="fw-bold text-gray-900 fs-5 mb-2">3. Lead and Protect</h4>
           <p class="text-gray-500 mb-0" style="font-size:0.87rem; line-height:1.72;">
@@ -65,7 +65,7 @@
       <div class="col-md-6 col-lg-4 dl-reveal dl-delay-1">
         <div class="dl-feature-card h-100 p-7">
           <div class="dl-feat-icon mb-5" style="background:#e6f5ee;">
-            <i class="ki-solid ki-people" style="color:#2D6A4F; font-size:1.5rem;"></i>
+            <i class="ki-outline ki-people" style="color:#2D6A4F; font-size:1.5rem;"></i>
           </div>
           <h4 class="fw-bold text-gray-900 fs-5 mb-2">4. Learn from the Best</h4>
           <p class="text-gray-500 mb-0" style="font-size:0.87rem; line-height:1.72;">
@@ -78,7 +78,7 @@
       <div class="col-md-6 col-lg-4 dl-reveal dl-delay-2">
         <div class="dl-feature-card h-100 p-7">
           <div class="dl-feat-icon mb-5" style="background:rgba(251,197,1,0.13);">
-            <i class="ki-solid ki-chart-simple" style="color:#c89800; font-size:1.5rem;"></i>
+            <i class="ki-outline ki-chart-simple" style="color:#c89800; font-size:1.5rem;"></i>
           </div>
           <h4 class="fw-bold text-gray-900 fs-5 mb-2">5. Share Your Voice</h4>
           <p class="text-gray-500 mb-0" style="font-size:0.87rem; line-height:1.72;">
@@ -91,7 +91,7 @@
       <div class="col-md-6 col-lg-4 dl-reveal dl-delay-3">
         <div class="dl-feature-card h-100 p-7">
           <div class="dl-feat-icon mb-5" style="background:#e6f5ee;">
-            <i class="ki-solid ki-bookmark" style="color:#2D6A4F; font-size:1.5rem;"></i>
+            <i class="ki-outline ki-bookmark" style="color:#2D6A4F; font-size:1.5rem;"></i>
           </div>
           <h4 class="fw-bold text-gray-900 fs-5 mb-2">6. Master Your Subjects</h4>
           <p class="text-gray-500 mb-0" style="font-size:0.87rem; line-height:1.72;">
