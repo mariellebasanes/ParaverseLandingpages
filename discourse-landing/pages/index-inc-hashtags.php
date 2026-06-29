@@ -7,7 +7,7 @@
       <!-- Section header & CTA -->
       <div class="col-lg-6 mb-8 mb-lg-0 dl-reveal">
         <span class="dl-eyebrow dl-eyebrow-green">
-          <i class="ki-outline ki-tag fs-6"></i>
+          <i class="bi bi-hash fs-5 me-1" style="vertical-align: middle; line-height: 1;"></i>
           Topic Discovery
         </span>
         <h2 class="fw-bolder text-gray-900 mb-4" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
