@@ -150,7 +150,7 @@
               <!-- Icon -->
               <div class="symbol symbol-50px symbol-circle">
                 <div class="symbol-label" style="background:<?php echo $c['bg']; ?>; color:<?php echo $c['color']; ?>;">
-                  <i class="ki-solid <?php echo $c['ki']; ?> fs-2x" style="color:inherit;"></i>
+                  <i class="ki-outline <?php echo $c['ki']; ?> fs-2x" style="color:inherit;"></i>
                 </div>
               </div>
               <!-- Title + members badge -->

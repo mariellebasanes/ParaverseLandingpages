@@ -90,7 +90,7 @@ $app_url         = $base;
               <div class="dl-oc-icon" style="background:#fdf1ef;">
                 <img src="<?php echo htmlspecialchars($base); ?>assets/images/communities/comm_6a1fbb3384b750.69753970.png"
                      alt="FEU Life" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                <i class="ki-solid ki-heart fs-4" style="color:#c0392b;display:none;"></i>
+                <i class="ki-outline ki-heart fs-4" style="color:#c0392b;display:none;"></i>
               </div>
               <div class="dl-oc-text">
                 <span class="dl-oc-name">FEU Life</span>
@@ -103,7 +103,7 @@ $app_url         = $base;
               <div class="dl-oc-icon" style="background:#e8f5ee;">
                 <img src="<?php echo htmlspecialchars($base); ?>assets/images/communities/comm_6a22a40f7323f2.07105387.png"
                      alt="E-Sports" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                <i class="ki-solid ki-rocket fs-4" style="color:#2D6A4F;display:none;"></i>
+                <i class="ki-outline ki-rocket fs-4" style="color:#2D6A4F;display:none;"></i>
               </div>
               <div class="dl-oc-text">
                 <span class="dl-oc-name">E-Sports Guild</span>
@@ -116,7 +116,7 @@ $app_url         = $base;
               <div class="dl-oc-icon" style="background:#e8f5ee;">
                 <img src="<?php echo htmlspecialchars($base); ?>assets/images/communities/comm_6a1fc4b6130233.39661525.png"
                      alt="Study Group" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                <i class="ki-solid ki-bookmark fs-4" style="color:#2D6A4F;display:none;"></i>
+                <i class="ki-outline ki-bookmark fs-4" style="color:#2D6A4F;display:none;"></i>
               </div>
               <div class="dl-oc-text">
                 <span class="dl-oc-name">Study Group</span>
@@ -129,7 +129,7 @@ $app_url         = $base;
               <div class="dl-oc-icon" style="background:#f1f5f9;">
                 <img src="<?php echo htmlspecialchars($base); ?>assets/images/communities/comm_6a1fbd5c0d6420.04280651.png"
                      alt="Freshies Guide" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                <i class="ki-solid ki-people fs-4" style="color:#1e293b;display:none;"></i>
+                <i class="ki-outline ki-people fs-4" style="color:#1e293b;display:none;"></i>
               </div>
               <div class="dl-oc-text">
                 <span class="dl-oc-name">Freshies Guide</span>
