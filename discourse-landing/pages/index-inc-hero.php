@@ -139,10 +139,10 @@ $app_url         = $base;
 
             <!-- Floating hashtag badges -->
             <span class="dl-orbit-tag dl-orbit-tag--right" style="animation-delay:0.9s;">
-              <i class="bi bi-controller me-1" style="font-size:0.7rem;"></i>#GAMING
+              <i class="ki-outline ki-mouse me-1" style="font-size:0.75rem;"></i>#GAMING
             </span>
             <span class="dl-orbit-tag dl-orbit-tag--left" style="animation-delay:1.4s;">
-              <i class="bi bi-book me-1" style="font-size:0.7rem;"></i>#ACADEMICS
+              <i class="ki-outline ki-book me-1" style="font-size:0.75rem;"></i>#ACADEMICS
             </span>
 
             <!-- 3D image inside app-window frame -->

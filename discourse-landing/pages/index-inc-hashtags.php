@@ -28,26 +28,26 @@
     <?php
     /* Split 20 tags into 3 rows (7 / 7 / 6) and duplicate each row for seamless looping */
     $all_tags = [
-      ['label' => '#TECHNOLOGY',  'style' => 'green', 'icon' => 'bi bi-laptop'],
-      ['label' => '#FEU',         'style' => 'gold',  'icon' => 'bi bi-building'],
-      ['label' => '#GAMING',      'style' => 'green', 'icon' => 'bi bi-controller'],
-      ['label' => '#WORLDPEACE',  'style' => 'dark',  'icon' => 'bi bi-globe-americas'],
-      ['label' => '#AI',          'style' => 'green', 'icon' => 'bi bi-robot'],
-      ['label' => '#VALORANT',    'style' => 'gold',  'icon' => 'bi bi-crosshair'],
-      ['label' => '#CULTURE',     'style' => 'green', 'icon' => 'bi bi-palette'],
-      ['label' => '#CAPSTONE',    'style' => 'dark',  'icon' => 'bi bi-journal-bookmark'],
-      ['label' => '#ACADEMICS',   'style' => 'gold',  'icon' => 'bi bi-book'],
-      ['label' => '#ESPORTS',     'style' => 'green', 'icon' => 'bi bi-trophy'],
-      ['label' => '#PETITION',    'style' => 'dark',  'icon' => 'bi bi-file-earmark-text'],
-      ['label' => '#LIFESTYLE',   'style' => 'green', 'icon' => 'bi bi-cup-hot'],
-      ['label' => '#MUSIC',       'style' => 'gold',  'icon' => 'bi bi-music-note-beamed'],
-      ['label' => '#SCIENCE',     'style' => 'green', 'icon' => 'bi bi-droplet'],
-      ['label' => '#SPORTS',      'style' => 'dark',  'icon' => 'bi bi-dribbble'],
-      ['label' => '#CREATIVE',    'style' => 'gold',  'icon' => 'bi bi-brush'],
-      ['label' => '#POLITICS',    'style' => 'green', 'icon' => 'bi bi-bank'],
-      ['label' => '#NEWS',        'style' => 'dark',  'icon' => 'bi bi-newspaper'],
-      ['label' => '#IDEAS',       'style' => 'gold',  'icon' => 'bi bi-lightbulb'],
-      ['label' => '#ISSUES',      'style' => 'green', 'icon' => 'bi bi-exclamation-circle'],
+      ['label' => '#TECHNOLOGY',  'style' => 'green', 'icon' => 'ki-outline ki-laptop'],
+      ['label' => '#FEU',         'style' => 'gold',  'icon' => 'ki-outline ki-bank'],
+      ['label' => '#GAMING',      'style' => 'green', 'icon' => 'ki-outline ki-mouse'],
+      ['label' => '#WORLDPEACE',  'style' => 'dark',  'icon' => 'ki-outline ki-map'],
+      ['label' => '#AI',          'style' => 'green', 'icon' => 'ki-outline ki-electricity'],
+      ['label' => '#VALORANT',    'style' => 'gold',  'icon' => 'ki-outline ki-focus'],
+      ['label' => '#CULTURE',     'style' => 'green', 'icon' => 'ki-outline ki-paintbucket'],
+      ['label' => '#CAPSTONE',    'style' => 'dark',  'icon' => 'ki-outline ki-bookmark'],
+      ['label' => '#ACADEMICS',   'style' => 'gold',  'icon' => 'ki-outline ki-book'],
+      ['label' => '#ESPORTS',     'style' => 'green', 'icon' => 'ki-outline ki-award'],
+      ['label' => '#PETITION',    'style' => 'dark',  'icon' => 'ki-outline ki-document'],
+      ['label' => '#LIFESTYLE',   'style' => 'green', 'icon' => 'ki-outline ki-cup'],
+      ['label' => '#MUSIC',       'style' => 'gold',  'icon' => 'ki-outline ki-star'],
+      ['label' => '#SCIENCE',     'style' => 'green', 'icon' => 'ki-outline ki-flask'],
+      ['label' => '#SPORTS',      'style' => 'dark',  'icon' => 'ki-outline ki-medal-star'],
+      ['label' => '#CREATIVE',    'style' => 'gold',  'icon' => 'ki-outline ki-brush'],
+      ['label' => '#POLITICS',    'style' => 'green', 'icon' => 'ki-outline ki-bank'],
+      ['label' => '#NEWS',        'style' => 'dark',  'icon' => 'ki-outline ki-document'],
+      ['label' => '#IDEAS',       'style' => 'gold',  'icon' => 'ki-outline ki-electricity'],
+      ['label' => '#ISSUES',      'style' => 'green', 'icon' => 'ki-outline ki-message-notif'],
     ];
 
     $rows = [
@@ -61,7 +61,7 @@
       $slug = ltrim(strtolower($t['label']), '#');
       $cls  = 'dl-hashtag dl-hashtag-' . $t['style'];
       echo '<a href="' . htmlspecialchars($DISCOURSE_BASE) . 'hashtags/index.php?tag=' . urlencode($slug) . '" class="' . $cls . '">'
-        . '<i class="' . htmlspecialchars($t['icon']) . '" style="font-size:0.8rem; opacity:0.7;"></i>'
+        . '<i class="' . htmlspecialchars($t['icon']) . ' me-1" style="font-size:0.8rem; opacity:0.7;"></i>'
         . htmlspecialchars(ltrim($t['label'], '#'))
         . '</a>';
     }
