@@ -272,9 +272,9 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             <!-- Trending posts from sec-sidebar.php -->
             <?php
             $trending = [
-              ['emoji'=>'📊','text'=>'Poll: How do you actually study for finals?...','sub'=>'just posted'],
-              ['emoji'=>'🔵','text'=>'The silent revolution in edge AI — why on-device inference is changing everything','sub'=>'3 comments · most active'],
-              ['emoji'=>'💡','text'=>'What if governance used ranked-choice weighted by stake?','sub'=>'no replies yet'],
+              ['emoji'=>'🎮','text'=>'E-Sports Tournament sign-ups are OPEN — Valorant & ML squads needed now!','sub'=>'just posted · 12 comments'],
+              ['emoji'=>'📅','text'=>'Capstone Defense Schedule for AY 2025–2026 is now posted in c/FEU TECH DEV','sub'=>'5 comments · most active'],
+              ['emoji'=>'📚','text'=>'Finals study session this Saturday at SM Alabang — who\'s joining?','sub'=>'no replies yet'],
             ];
             foreach ($trending as $tr): ?>
             <a href="<?php echo $base; ?>posts/index.php"

@@ -34,7 +34,7 @@
           id="kt_app_header_menu" data-kt-menu="true">
 
           <div class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
-            <a href="/badges" onclick="KTApp.showPageLoading()" class="menu-link text-hover-primary">
+            <a href="#badges" class="menu-link text-hover-primary">
               <span class="menu-title">Badges</span>
             </a>
           </div>
