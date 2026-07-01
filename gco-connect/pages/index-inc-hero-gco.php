@@ -75,7 +75,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
       </div>
 
       <!-- Hero Animation -->
-      <div class="col-lg-6 position-relative d-flex justify-content-end align-items-end mt-10 mt-lg-0 overflow-visible" style="min-height: 400px;">
+      <div class="col-lg-6 position-relative d-flex justify-content-end align-items-end mt-10 mt-lg-0 overflow-visible align-self-stretch" style="min-height: 400px;">
         <style>
           .hero-lottie-asset {
             width: 900px;
@@ -113,7 +113,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
               height: auto;
               right: 0;
               bottom: 0;
-              margin: 30px auto -120px auto; /* Extreme negative margin to hit the transition edge */
+              margin: 30px auto -150px auto; /* Extreme negative margin to hit the transition edge */
               display: block;
             }
             .min-h-600px { min-height: auto !important; }
