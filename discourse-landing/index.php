@@ -38,8 +38,6 @@ $META_DESC  = "Connect with peers, join communities, share resources, and grow t
                 include(__DIR__ . "/pages/index-inc-hero.php");
                 // 2. Features / About (white)
                 include(__DIR__ . "/pages/index-inc-about.php");
-                // 3. Steps / Info (dark green)
-                include(__DIR__ . "/pages/index-inc-info.php");
                 // 4. Hashtags (light green tint)
                 include(__DIR__ . "/pages/index-inc-hashtags.php");
                 // 5. Communities (white)
