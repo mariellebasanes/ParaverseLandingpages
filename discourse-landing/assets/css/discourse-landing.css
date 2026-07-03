@@ -1175,3 +1175,185 @@ body, p, .body-text,
   font-size: 13px !important;
   font-weight: 500 !important;
 }
+
+/* ════════════════════════════════════════════════════════════
+   ANNOUNCEMENTS SECTION (CAROUSEL & GRID DESIGN)
+   ════════════════════════════════════════════════════════════ */
+#announcements {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--dc-bg) !important;
+}
+
+/* Ambient glow blobs for announcements section background with pulse animations */
+.dl-announcements-glow-1 {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(45, 106, 79, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+  animation: dl-blob-pulse 22s infinite alternate ease-in-out;
+}
+
+.dl-announcements-glow-2 {
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(251, 197, 1, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+  animation: dl-blob-pulse-reverse 26s infinite alternate ease-in-out;
+}
+
+/* Elegant fading grid pattern background instead of dots */
+.dl-announcements-dots {
+  position: absolute; 
+  inset: 0; 
+  z-index: 0; 
+  pointer-events: none;
+  background-image: 
+    linear-gradient(to right, rgba(45, 106, 79, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(45, 106, 79, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 40%, transparent 100%);
+}
+
+/* Pulse Keyframes for Glow Blobs */
+@keyframes dl-blob-pulse {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -40px) scale(1.15);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+@keyframes dl-blob-pulse-reverse {
+  0% {
+    transform: translate(0, 0) scale(1.1);
+  }
+  50% {
+    transform: translate(-50px, 30px) scale(0.92);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.1);
+  }
+}
+
+/* Large Announcement Card inside Carousel */
+.dl-announcement-card-large {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 10px 35px rgba(45, 106, 79, 0.04) !important;
+  border-radius: 24px !important;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.dl-announcement-card-large:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(45, 106, 79, 0.10) !important;
+}
+
+/* Category-specific card hover shadows */
+.carousel-item:nth-child(1) .dl-announcement-card-large:hover {
+  box-shadow: 0 15px 35px rgba(45, 106, 79, 0.12) !important;
+}
+.carousel-item:nth-child(2) .dl-announcement-card-large:hover {
+  box-shadow: 0 15px 35px rgba(200, 152, 0, 0.12) !important;
+}
+.carousel-item:nth-child(3) .dl-announcement-card-large:hover {
+  box-shadow: 0 15px 35px rgba(114, 57, 234, 0.12) !important;
+}
+
+/* Gradient Icon for Large Card */
+.dl-announcement-icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+.dl-announcement-card-large:hover .dl-announcement-icon-wrap {
+  transform: scale(1.08) rotate(3deg);
+}
+
+/* Custom Navigation Controls */
+.dl-carousel-control {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(45, 106, 79, 0.15) !important;
+  background: var(--dc-white) !important;
+  color: var(--dc-green-light) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.dl-carousel-control:hover {
+  background: var(--dc-green-light) !important;
+  color: var(--dc-white) !important;
+  border-color: var(--dc-green-light) !important;
+  box-shadow: 0 8px 20px rgba(45, 106, 79, 0.2);
+}
+
+.dl-carousel-control-prev {
+  left: 20px;
+}
+
+.dl-carousel-control-next {
+  right: 20px;
+}
+
+/* Bullet Indicators styling */
+.dl-carousel-indicators {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  z-index: 10 !important;
+}
+
+.dl-carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  background-color: rgba(45, 106, 79, 0.2) !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+  margin: 0 4px !important;
+  text-indent: 0 !important;
+}
+
+.dl-carousel-indicators .active {
+  width: 24px !important;
+  border-radius: 5px !important;
+  background-color: var(--dc-green-light) !important;
+  opacity: 1 !important;
+}

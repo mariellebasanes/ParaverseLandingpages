@@ -36,6 +36,8 @@ $META_DESC  = "Connect with peers, join communities, share resources, and grow t
                 // Section order matches reference screenshot:
                 // 1. Hero (dark green)
                 include(__DIR__ . "/pages/index-inc-hero.php");
+                // 1.5 Announcements (light background)
+                include(__DIR__ . "/pages/index-inc-announcements.php");
                 // 2. Features / About (white)
                 include(__DIR__ . "/pages/index-inc-about.php");
                 // 4. Hashtags (light green tint)

@@ -4,7 +4,7 @@ global $DISCOURSE_BASE;
 $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 ?>
 <!-- ════════════════  COMMUNITIES SECTION  ════════════════ -->
-<section id="communities" class="pt-20 pb-28" style="background: #f4f6fb; position: relative;">
+<section id="communities" class="pt-20 pb-28" style="background: #ffffff; position: relative; background-image: linear-gradient(to right, rgba(45, 106, 79, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(45, 106, 79, 0.03) 1px, transparent 1px); background-size: 40px 40px;">
 
   <!-- Ambient background blobs — green & gold ONLY (clipped to section) -->
   <div style="position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0;">
@@ -288,12 +288,12 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
   }
   .dl-comm-fade-left  {
     left: 0;
-    background: linear-gradient(to right, #f4f6fb 10%, transparent);
+    background: linear-gradient(to right, #ffffff 10%, transparent);
     opacity: 0;
   }
   .dl-comm-fade-right {
     right: 0;
-    background: linear-gradient(to left, #f4f6fb 10%, transparent);
+    background: linear-gradient(to left, #ffffff 10%, transparent);
   }
   .dl-comm-carousel-wrap.can-scroll-left  .dl-comm-fade-left  { opacity: 1; }
   .dl-comm-carousel-wrap.can-scroll-right .dl-comm-fade-right { opacity: 1; }

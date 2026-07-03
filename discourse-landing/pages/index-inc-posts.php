@@ -3,8 +3,12 @@ global $DISCOURSE_BASE;
 $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 ?>
 <!-- ════════════  POSTS + SIDEBAR (What students are saying)  ════════════ -->
-<section id="posts" class="py-20 dc-bg-light">
-  <div class="container-xxl">
+<section id="posts" class="py-20 dc-bg-light" style="position: relative; overflow: hidden;">
+  <!-- Ambient background glow blobs -->
+  <div class="dl-posts-glow-1" style="position: absolute; top: 10%; left: -150px; width: 550px; height: 550px; background: radial-gradient(circle, rgba(45, 106, 79, 0.08) 0%, rgba(255, 255, 255, 0) 70%); pointer-events: none; z-index: 0; animation: dl-blob-pulse 24s infinite alternate ease-in-out;"></div>
+  <div class="dl-posts-glow-2" style="position: absolute; bottom: 10%; right: -150px; width: 550px; height: 550px; background: radial-gradient(circle, rgba(251, 197, 1, 0.08) 0%, rgba(255, 255, 255, 0) 70%); pointer-events: none; z-index: 0; animation: dl-blob-pulse-reverse 28s infinite alternate ease-in-out;"></div>
+
+  <div class="container-xxl" style="position: relative; z-index: 1;">
 
     <!-- Section header -->
     <div class="mb-10">
@@ -20,245 +24,116 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
       </p>
     </div>
 
-    <!-- Feed filter tabs -->
-    <div class="d-flex flex-wrap gap-2 mb-8" id="dl-feed-tabs">
-      <button class="btn btn-sm dl-feed-tab active" data-filter="all"><i class="ki-outline ki-grid me-1 fs-7"></i>All Topics</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="announcement"><i class="ki-outline ki-message-notif me-1 fs-7"></i>Announcements</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="technology"><i class="ki-outline ki-message-programming me-1 fs-7"></i>Technology</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="gaming"><i class="ki-outline ki-medal-star me-1 fs-7"></i>Gaming</button>
-      <button class="btn btn-sm dl-feed-tab" data-filter="feu"><i class="ki-outline ki-heart me-1 fs-7"></i>FEU Life</button>
-    </div>
-
     <!-- Two-column layout: feed + sidebar -->
-    <div class="row g-7 align-items-start">
+    <div class="row g-7 align-items-stretch">
 
-      <!-- LEFT: posts feed (col-lg-8) -->
-      <div class="col-lg-8">
-        <div id="dl-feed" class="d-flex flex-column gap-5">
+      <!-- LEFT: post detail view (col-lg-8) -->
+      <div class="col-lg-8 d-flex flex-column">
+        
+        <div class="card border-0 shadow-sm bg-white p-6 p-lg-8 rounded-4 mb-0 flex-grow-1 d-flex flex-column justify-content-between" data-dc="post-card">
+          <!-- Card Header Row -->
+          <div class="d-flex justify-content-between align-items-center mb-6">
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge rounded-2 p-0 d-inline-flex align-items-center justify-content-center"
+                    style="background: #e8f5ee; color: #2D6A4F; width: 32px; height: 32px; flex-shrink: 0;">
+                <i class="ki-outline ki-eye fs-5" style="color: #2D6A4F;"></i>
+              </span>
+              <span class="badge rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center"
+                    style="font-size: 0.72rem; background: #e8f5ee; color: #2D6A4F; height: 32px;">
+                c/CS Department
+              </span>
+            </div>
+            <button class="dl-post-report btn btn-link text-muted p-0 d-inline-flex align-items-center gap-1.5 text-decoration-none fw-semibold" style="font-size: 0.82rem;">
+              <i class="ki-outline ki-flag fs-6"></i> Report
+            </button>
+          </div>
 
-          <!-- ── Post 1: Announcement ── -->
-          <div class="card border-0 shadow-sm" data-dc="post-card" data-cat="announcement gaming"
-            style="border-left:4px solid #05b166 !important; background:#f4faf6;">
-            <div class="d-flex">
-              <div class="dl-vote-col">
-                <button class="dl-vote-btn dl-up" title="Upvote"><i class="ki-solid ki-up fs-3"></i></button>
-                <span class="fw-bold text-gray-700 dl-cnt" style="font-size:0.95rem;">214</span>
-                <button class="dl-vote-btn dl-down" title="Downvote"><i class="ki-solid ki-down fs-3"></i></button>
+          <!-- Author Info Row -->
+          <div class="d-flex align-items-center gap-3 mb-6">
+            <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;" alt="Khrysseline Faith R. Tuballa">
+            <div>
+              <div class="d-flex align-items-center">
+                <span class="fw-bold text-gray-900 fs-6">Khrysseline Faith R. Tuballa</span>
+                <span class="badge px-3 py-1 fw-bold ms-2" style="font-size: 0.7rem; background: #e8f5ee; color: #2D6A4F; border-radius: 6px;">Others</span>
               </div>
-              <div class="d-flex flex-column py-5 flex-grow-1">
-                <div class="px-5 mb-3">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <div class="d-flex align-items-center gap-2">
-                      <span style="width:22px;height:22px;border-radius:6px;background:#e8f5ee;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="ki-outline ki-electricity" style="color:#2D6A4F; font-size:0.75rem;"></i>
-                      </span>
-                      <span class="fw-bold text-gray-800 fs-7">c/FEU TECH</span>
-                      <span class="badge rounded-pill px-3 py-1 fw-bold d-flex align-items-center gap-1"
-                        style="font-size:0.7rem; background:#e8f5ee; color:#2D6A4F;">
-                        <i class="ki-outline ki-message-notif" style="font-size:0.75rem;"></i> ANNOUNCEMENT
-                      </span>
-                    </div>
-                    <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/catalina.webp'">
-                    <div>
-                      <div class="fw-bold text-gray-800 fs-7">EDITH Admin</div>
-                      <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>1 hour ago</div>
-                    </div>
-                  </div>
-                  <h5 class="fw-bold text-gray-900 fs-6 mb-2">E-Sports Tournament Registration is now live! 🎮</h5>
-                  <p class="text-gray-700 mb-3" style="font-size:0.86rem; line-height:1.65;">
-                    Register your teams for Valorant and Mobile Legends. Weekly slots open with cash prizes. Tag your guildmates below!
-                  </p>
-                  <div class="d-flex flex-wrap gap-1">
-                    <span class="rounded-pill px-2 py-1" style="font-size:0.72rem;background:#e8ede9;color:#3a5c45;">#gaming</span>
-                    <span class="rounded-pill px-2 py-1" style="font-size:0.72rem;background:#e8ede9;color:#3a5c45;">#esports</span>
-                    <span class="rounded-pill px-2 py-1" style="font-size:0.72rem;background:#e8ede9;color:#3a5c45;">#campus-cup</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-1 px-5 border-top border-gray-100 pt-3 mt-2">
-                  <button class="dl-post-action dl-toggle-comments"><i class="ki-outline ki-messages me-1 fs-6"></i><span class="dl-c-cnt">3</span> Comments</button>
-                  <button class="dl-post-action"><i class="ki-outline ki-share me-1 fs-6"></i>Share</button>
-                  <button class="dl-post-action dl-bkmk"><i class="ki-outline ki-bookmark me-1 fs-6"></i>Save</button>
-                </div>
-                <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
-                  <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
-                    <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/anonymous.png'">
-                      <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fw-bold text-gray-800">Sofia Karim</span>
-                          <span class="text-muted" style="font-size:0.7rem;">45m ago</span>
-                        </div>
-                        <p class="mb-0 text-gray-700">Let's form a team from BSCS! Who is down for Valorant?</p>
-                      </div>
-                    </div>
-                    <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/catalina.webp'">
-                      <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fw-bold text-gray-800">Marco Torres</span>
-                          <span class="text-muted" style="font-size:0.7rem;">30m ago</span>
-                        </div>
-                        <p class="mb-0 text-gray-700">Count me in as Duelist! I'll register us.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <form class="dl-comment-form">
-                    <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/anonymous.png'">
-                      <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
-                      <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
-                    </div>
-                  </form>
-                </div>
+              <div class="text-muted mt-0.5" style="font-size: 0.76rem;">29 days ago</div>
+            </div>
+          </div>
+
+          <!-- Title -->
+          <h2 class="fw-extrabold text-gray-900 mb-4" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
+            How do you balance difficult major subjects with general education courses?
+          </h2>
+
+          <!-- Content rendered literally as HTML string in text -->
+          <p class="text-gray-700 mb-6" style="font-size: 0.95rem; line-height: 1.68;">
+            &lt;p&gt;I'm currently taking several major subjects alongside GE courses, and I'm finding it difficult to manage deadlines and study time effectively. For students who have gone through a similar semester, what strategies helped you stay organized and avoid burnout? Any tips on scheduling, note-taking, or prioritizing requirements would be appreciated.&lt;/p&gt;
+          </p>
+
+          <!-- Reactions Row -->
+          <div class="d-flex align-items-center gap-6 text-muted fs-7 mb-6" id="dl-reactions-row">
+            <button class="btn p-0 d-inline-flex align-items-center gap-2 text-muted hover-text-success border-0 bg-transparent" id="dl-like-btn">
+              <i class="ki-outline ki-like fs-4"></i> <span id="dl-like-cnt">1</span>
+            </button>
+            <button class="btn p-0 d-inline-flex align-items-center gap-2 text-muted hover-text-danger border-0 bg-transparent" id="dl-dislike-btn">
+              <i class="ki-outline ki-dislike fs-4"></i> <span id="dl-dislike-cnt">2</span>
+            </button>
+            <span class="d-inline-flex align-items-center gap-2 text-muted">
+              <i class="ki-outline ki-message-text-2 fs-4"></i> <span class="dl-comment-total-cnt">5</span>
+            </span>
+            <button class="btn p-0 d-inline-flex align-items-center gap-2 text-muted hover-text-primary border-0 bg-transparent" id="dl-bookmark-btn">
+              <i class="ki-outline ki-bookmark fs-4"></i> <span id="dl-bookmark-cnt">5</span>
+            </button>
+          </div>
+
+          <hr class="text-gray-200 my-6">
+
+          <!-- Comments Heading -->
+          <h3 class="fw-bolder text-gray-900 mb-6" style="font-size: 1.15rem;">
+            Comments <span class="text-muted fw-normal fs-6 ms-1" id="dl-comments-title-cnt">5</span>
+          </h3>
+
+          <!-- Comments List -->
+          <div class="d-flex flex-column gap-5 mb-6" id="dl-comments-list">
+            <!-- Comment 1 -->
+            <div class="d-flex gap-3 align-items-start">
+              <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width: 36px; height: 36px; object-fit: cover;" alt="Khrysseline Faith R. Tuballa">
+              <div>
+                <div class="fw-bold text-gray-900 fs-7">Khrysseline Faith R. Tuballa</div>
+                <p class="text-gray-700 mb-0 mt-1" style="font-size: 0.88rem; line-height: 1.5;">I suggest setting up a weekly planner and dedicating specific blocks of time exclusively to your major subjects. For GE courses, try to skim the readings ahead of time so you can participate actively in class discussions without spending hours on them later.</p>
+              </div>
+            </div>
+
+            <!-- Comment 2 -->
+            <div class="d-flex gap-3 align-items-start">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
+                   style="width: 36px; height: 36px; background: #2D6A4F; font-size: 0.85rem; flex-shrink: 0;">
+                MM
+              </div>
+              <div>
+                <div class="fw-bold text-gray-900 fs-7">Marixine Sofia S. Manahan</div>
+                <p class="text-gray-700 mb-0 mt-1" style="font-size: 0.88rem; line-height: 1.5;">Don't underestimate the power of starting early on your programming labs! Leaving CS projects for the last minute while trying to write GE essays is how you get burned out. Try spacing out your deliverables and using tools like Notion to track deadlines.</p>
               </div>
             </div>
           </div>
 
-          <!-- ── Post 2: Technology ── -->
-          <div class="card border-0 shadow-sm bg-white" data-dc="post-card" data-cat="technology">
-            <div class="d-flex">
-              <div class="dl-vote-col">
-                <button class="dl-vote-btn dl-up" title="Upvote"><i class="ki-solid ki-up fs-3"></i></button>
-                <span class="fw-bold text-gray-700 dl-cnt" style="font-size:0.95rem;">124</span>
-                <button class="dl-vote-btn dl-down" title="Downvote"><i class="ki-solid ki-down fs-3"></i></button>
+          <!-- Add Comment Form -->
+          <form id="dl-single-comment-form" class="mt-4 border-top border-gray-100 pt-5">
+            <div class="d-flex align-items-center gap-3">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
+                   style="width: 32px; height: 32px; background: #e8b600; font-size: 0.75rem; flex-shrink: 0;">
+                U
               </div>
-              <div class="d-flex flex-column py-5 flex-grow-1">
-                <div class="px-5 mb-3">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <div class="d-flex align-items-center gap-2">
-                      <span style="width:22px;height:22px;border-radius:6px;background:#eef0fb;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="ki-outline ki-message-programming" style="color:#5b61e5; font-size:0.75rem;"></i>
-                      </span>
-                      <span class="fw-bold text-gray-800 fs-7">c/FEU TECH DEV</span>
-                      <span class="rounded-pill px-3 py-1 fw-bold" style="font-size:0.7rem;background:#eef0fb;color:#5b61e5;">TECHNOLOGY</span>
-                    </div>
-                    <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/anonymous.png'">
-                    <div>
-                      <div class="fw-bold text-gray-800 fs-7">Sofia Karim</div>
-                      <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>2 hours ago</div>
-                    </div>
-                  </div>
-                  <h5 class="fw-bold text-gray-900 fs-6 mb-2">Integrating AI tools in our Capstone projects? Let's discuss.</h5>
-                  <p class="text-gray-700 mb-3" style="font-size:0.86rem; line-height:1.65;">
-                    Has anyone tried using local LLMs (Llama 3) for backend code? Need suggestions on schemas and thermal envelope handling.
-                  </p>
-                  <div class="d-flex flex-wrap gap-1">
-                    <span class="rounded-pill px-2 py-1" style="font-size:0.72rem;background:#e8ede9;color:#3a5c45;">#capstone</span>
-                    <span class="rounded-pill px-2 py-1" style="font-size:0.72rem;background:#e8ede9;color:#3a5c45;">#ai</span>
-                    <span class="rounded-pill px-2 py-1" style="font-size:0.72rem;background:#e8ede9;color:#3a5c45;">#docker</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-1 px-5 border-top border-gray-100 pt-3 mt-2">
-                  <button class="dl-post-action dl-toggle-comments"><i class="ki-outline ki-messages me-1 fs-6"></i><span class="dl-c-cnt">2</span> Comments</button>
-                  <button class="dl-post-action"><i class="ki-outline ki-share me-1 fs-6"></i>Share</button>
-                  <button class="dl-post-action dl-bkmk"><i class="ki-outline ki-bookmark me-1 fs-6"></i>Save</button>
-                </div>
-                <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
-                  <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
-                    <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/catalina.webp'">
-                      <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fw-bold text-gray-800">Ravi Joshi</span>
-                          <span class="text-muted" style="font-size:0.7rem;">1h ago</span>
-                        </div>
-                        <p class="mb-0 text-gray-700">We ran llama3-8b on an M2 Mac using Ollama, works great!</p>
-                      </div>
-                    </div>
-                  </div>
-                  <form class="dl-comment-form">
-                    <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/anonymous.png'">
-                      <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
-                      <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+              <input type="text" id="dl-comment-input-field" class="form-control form-control-sm rounded-pill px-4 bg-light border-0" placeholder="Write a comment…" required style="font-size: 0.82rem; height: 36px;">
+              <button type="submit" class="btn btn-sm btn-success rounded-pill px-5 fw-bold" style="background: var(--dc-green-light); color: #fff; height: 36px; display: flex; align-items: center; border: none;">Post</button>
             </div>
-          </div>
+          </form>
+        </div>
 
-          <!-- ── Post 3: Poll / FEU Life ── -->
-          <div class="card border-0 shadow-sm bg-white" data-dc="post-card" data-cat="feu">
-            <div class="d-flex">
-              <div class="dl-vote-col">
-                <button class="dl-vote-btn dl-up" title="Upvote"><i class="ki-solid ki-up fs-3"></i></button>
-                <span class="fw-bold text-gray-700 dl-cnt" style="font-size:0.95rem;">456</span>
-                <button class="dl-vote-btn dl-down" title="Downvote"><i class="ki-solid ki-down fs-3"></i></button>
-              </div>
-              <div class="d-flex flex-column py-5 flex-grow-1">
-                <div class="px-5 mb-3">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <div class="d-flex align-items-center gap-2">
-                      <span style="width:22px;height:22px;border-radius:6px;background:#fdf1ef;display:inline-flex;align-items:center;justify-content:center;">
-                        <i class="ki-outline ki-heart" style="color:#c0392b; font-size:0.75rem;"></i>
-                      </span>
-                      <span class="fw-bold text-gray-800 fs-7">c/FEU LIFE</span>
-                      <span class="rounded-pill px-3 py-1 fw-bold" style="font-size:0.7rem;background:rgba(255,193,7,0.13);color:#b58105;">FEU</span>
-                    </div>
-                    <button class="dl-post-report"><i class="ki-outline ki-flag fs-6"></i> Report</button>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center mb-2">
-                    <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/catalina.webp'">
-                    <div>
-                      <div class="fw-bold text-gray-800 fs-7">Marco Torres</div>
-                      <div class="text-muted" style="font-size:0.72rem;"><i class="ki-outline ki-time me-1" style="font-size:0.8rem;"></i>4 hours ago</div>
-                    </div>
-                  </div>
-                  <h5 class="fw-bold text-gray-900 fs-6 mb-2">📊 Poll: How do you study for finals? Be honest.</h5>
-                  <p class="text-gray-700 mb-3" style="font-size:0.86rem; line-height:1.65;">
-                    Curious how my fellow FEU Tech, Alabang, and Diliman students survive finals season. Drop your honest answer 👇
-                  </p>
-                  <!-- Poll options — sec-posts.css -->
-                  <div class="dl-poll-group mb-2" style="max-width:460px;">
-                    <button type="button" class="dc-poll-opt" style="--tw:28%;"><span>Start early, study consistently</span><span class="fw-semibold text-gray-700" style="font-size:0.78rem;">28%</span></button>
-                    <button type="button" class="dc-poll-opt" style="--tw:45%;"><span>Cram the night before</span><span class="fw-semibold text-gray-700" style="font-size:0.78rem;">45%</span></button>
-                    <button type="button" class="dc-poll-opt" style="--tw:19%;"><span>Rely on group chats &amp; slides</span><span class="fw-semibold text-gray-700" style="font-size:0.78rem;">19%</span></button>
-                    <button type="button" class="dc-poll-opt" style="--tw:8%;"><span>Pray and submit anyway</span><span class="fw-semibold text-gray-700" style="font-size:0.78rem;">8%</span></button>
-                  </div>
-                  <span class="text-muted d-block mb-1" style="font-size:0.76rem;">442 votes · 3 days left</span>
-                </div>
-                <div class="d-flex align-items-center gap-1 px-5 border-top border-gray-100 pt-3 mt-2">
-                  <button class="dl-post-action dl-toggle-comments"><i class="ki-outline ki-messages me-1 fs-6"></i><span class="dl-c-cnt">1</span> Comment</button>
-                  <button class="dl-post-action"><i class="ki-outline ki-share me-1 fs-6"></i>Share</button>
-                  <button class="dl-post-action dl-bkmk"><i class="ki-outline ki-bookmark me-1 fs-6"></i>Save</button>
-                </div>
-                <div class="dl-comments-drawer px-5 pt-4 pb-4 border-top border-gray-100 mt-2">
-                  <div class="dl-comments-list d-flex flex-column gap-3 mb-4" style="max-height:160px;overflow-y:auto;">
-                    <div class="d-flex gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/catalina.webp'">
-                      <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fw-bold text-gray-800">Catalina Smith</span>
-                          <span class="text-muted" style="font-size:0.7rem;">4h ago</span>
-                        </div>
-                        <p class="mb-0 text-gray-700">Cramming is the way, but I promise I'll start early next semester 😂</p>
-                      </div>
-                    </div>
-                  </div>
-                  <form class="dl-comment-form">
-                    <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:26px;height:26px;" alt="" onerror="this.src='<?php echo $base; ?>assets/images/anonymous.png'">
-                      <input type="text" class="form-control form-control-sm rounded-pill px-4 bg-white dl-c-input" placeholder="Write a comment…" required style="font-size:0.81rem;">
-                      <button type="submit" class="btn btn-sm rounded-pill px-4 fw-bold py-2" style="background:var(--dc-green-light);color:#fff;white-space:nowrap;">Post</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- /dl-feed -->
       </div>
 
       <!-- RIGHT: Sidebar (matches sec-sidebar.php widgets) -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 d-flex flex-column">
 
         <!-- Widget 1: Discourse info card — dark green (from sec-sidebar.php) -->
         <div class="dl-sidebar-info-card p-5 mb-5 rounded-4 shadow-sm" style="min-height:220px;">
@@ -319,7 +194,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
         </div>
 
         <!-- Widget 3: Browse Topics (from sec-sidebar.php) -->
-        <div class="card border-0 shadow-sm rounded-4 mb-5">
+        <div class="card border-0 shadow-sm rounded-4 mb-0 flex-grow-1">
           <div class="card-body p-5">
             <h6 class="fw-bold text-gray-800 fs-6 mb-4">Browse Topics</h6>
             <div class="d-flex flex-wrap gap-2">
@@ -346,98 +221,99 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 
 <script>
 window.addEventListener('DOMContentLoaded', function () {
-  /* Vote toggle */
-  document.querySelectorAll('.dl-up').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var p = btn.parentNode, cnt = p.querySelector('.dl-cnt'), v = +cnt.textContent;
-      if (btn.classList.toggle('voted-up')) {
-        var dn = p.querySelector('.dl-down');
-        if (dn.classList.contains('voted-down')) { dn.classList.remove('voted-down'); v++; }
-        cnt.textContent = v + 1;
-      } else { cnt.textContent = v - 1; }
+  
+  /* Upvote / Like toggle */
+  var likeBtn = document.getElementById('dl-like-btn');
+  var likeCnt = document.getElementById('dl-like-cnt');
+  var dislikeBtn = document.getElementById('dl-dislike-btn');
+  var dislikeCnt = document.getElementById('dl-dislike-cnt');
+  
+  if (likeBtn && likeCnt) {
+    likeBtn.addEventListener('click', function () {
+      var isLiked = likeBtn.classList.toggle('text-success');
+      likeBtn.classList.toggle('fw-bold');
+      var val = parseInt(likeCnt.textContent, 10);
+      likeCnt.textContent = isLiked ? (val + 1) : (val - 1);
+      
+      // If dislike was active, remove it
+      if (isLiked && dislikeBtn && dislikeBtn.classList.contains('text-danger')) {
+        dislikeBtn.classList.remove('text-danger', 'fw-bold');
+        var dval = parseInt(dislikeCnt.textContent, 10);
+        dislikeCnt.textContent = dval - 1;
+      }
     });
-  });
-  document.querySelectorAll('.dl-down').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var p = btn.parentNode, cnt = p.querySelector('.dl-cnt'), v = +cnt.textContent;
-      if (btn.classList.toggle('voted-down')) {
-        var up = p.querySelector('.dl-up');
-        if (up.classList.contains('voted-up')) { up.classList.remove('voted-up'); v--; }
-        cnt.textContent = v - 1;
-      } else { cnt.textContent = v + 1; }
-    });
-  });
+  }
 
-  /* Bookmark */
-  document.querySelectorAll('.dl-bkmk').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var saved = btn.innerHTML.includes('Saved');
-      btn.innerHTML = saved
-        ? '<i class="ki-outline ki-bookmark me-1 fs-6"></i>Save'
-        : '<i class="ki-duotone ki-bookmark me-1 fs-6" style="color:#2D6A4F;"><span class="path1"></span><span class="path2"></span></i>Saved';
+  /* Downvote / Dislike toggle */
+  if (dislikeBtn && dislikeCnt) {
+    dislikeBtn.addEventListener('click', function () {
+      var isDisliked = dislikeBtn.classList.toggle('text-danger');
+      dislikeBtn.classList.toggle('fw-bold');
+      var val = parseInt(dislikeCnt.textContent, 10);
+      dislikeCnt.textContent = isDisliked ? (val + 1) : (val - 1);
+      
+      // If like was active, remove it
+      if (isDisliked && likeBtn && likeBtn.classList.contains('text-success')) {
+        likeBtn.classList.remove('text-success', 'fw-bold');
+        var lval = parseInt(likeCnt.textContent, 10);
+        likeCnt.textContent = lval - 1;
+      }
     });
-  });
+  }
 
-  /* Comment drawer */
-  document.querySelectorAll('.dl-toggle-comments').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var card = btn.closest('[data-dc="post-card"]');
-      var drawer = card ? card.querySelector('.dl-comments-drawer') : null;
-      if (!drawer) return;
-      $(drawer).slideToggle(220);
+  /* Bookmark toggle */
+  var bkmkBtn = document.getElementById('dl-bookmark-btn');
+  var bkmkCnt = document.getElementById('dl-bookmark-cnt');
+  if (bkmkBtn && bkmkCnt) {
+    bkmkBtn.addEventListener('click', function () {
+      var isBookmarked = bkmkBtn.classList.toggle('text-primary');
+      bkmkBtn.classList.toggle('fw-bold');
+      var val = parseInt(bkmkCnt.textContent, 10);
+      bkmkCnt.textContent = isBookmarked ? (val + 1) : (val - 1);
     });
-  });
+  }
 
-  /* Comment submit */
-  document.querySelectorAll('.dl-comment-form').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
+  /* Comment Form Submit */
+  var commentForm = document.getElementById('dl-single-comment-form');
+  var commentInput = document.getElementById('dl-comment-input-field');
+  var commentsList = document.getElementById('dl-comments-list');
+  var commentTotalSpan = document.querySelectorAll('.dl-comment-total-cnt');
+  var commentTitleSpan = document.getElementById('dl-comments-title-cnt');
+
+  if (commentForm && commentInput && commentsList) {
+    commentForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      var card  = form.closest('[data-dc="post-card"]');
-      var input = form.querySelector('.dl-c-input');
-      var list  = card.querySelector('.dl-comments-list');
-      var cnt   = card.querySelector('.dl-c-cnt');
-      var text  = input.value.trim();
+      var text = commentInput.value.trim();
       if (!text) return;
-      var el = document.createElement('div');
-      el.className = 'd-flex gap-2';
-      el.innerHTML = `<img src="<?php echo $base; ?>assets/images/anonymous.png" class="rounded-circle" style="width:25px;height:25px;flex-shrink:0;" alt="">
-        <div class="flex-grow-1 p-2 rounded-3" style="background:#f1f5f9;font-size:0.8rem;">
-          <div class="d-flex justify-content-between mb-1">
-            <span class="fw-bold text-gray-800">You (Anonymous)</span>
-            <span class="text-muted" style="font-size:0.7rem;">Just now</span>
-          </div>
-          <p class="mb-0 text-gray-700">${text}</p>
-        </div>`;
-      list.appendChild(el);
-      cnt.textContent = +cnt.textContent + 1;
-      input.value = '';
-      list.scrollTop = list.scrollHeight;
-    });
-  });
-
-  /* Feed filter */
-  var tabs  = document.querySelectorAll('#dl-feed-tabs .dl-feed-tab');
-  var cards = document.querySelectorAll('#dl-feed [data-dc="post-card"]');
-  tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      tabs.forEach(function (t) { t.classList.remove('active'); });
-      tab.classList.add('active');
-      var f = tab.dataset.filter;
-      cards.forEach(function (card) {
-        var cats = card.dataset.cat || '';
-        (f === 'all' || cats.includes(f)) ? $(card).fadeIn(200) : $(card).fadeOut(200);
+      
+      var commentEl = document.createElement('div');
+      commentEl.className = 'd-flex gap-3 align-items-start';
+      commentEl.innerHTML = `
+        <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
+             style="width: 36px; height: 36px; background: #e8b600; font-size: 0.85rem; flex-shrink: 0;">
+          U
+        </div>
+        <div>
+          <div class="fw-bold text-gray-900 fs-7">You (Anonymous)</div>
+          <p class="text-gray-700 mb-0 mt-1" style="font-size: 0.88rem; line-height: 1.5;">${text}</p>
+        </div>
+      `;
+      
+      commentsList.appendChild(commentEl);
+      
+      // Update counters
+      if (commentTitleSpan) {
+        var currentTitleCount = parseInt(commentTitleSpan.textContent, 10);
+        commentTitleSpan.textContent = currentTitleCount + 1;
+      }
+      commentTotalSpan.forEach(function (span) {
+        var currentTotalCount = parseInt(span.textContent, 10);
+        span.textContent = currentTotalCount + 1;
       });
+      
+      // Reset & scroll
+      commentInput.value = '';
     });
-  });
-
-  /* Poll option highlight */
-  document.querySelectorAll('.dl-poll-group .dc-poll-opt').forEach(function (opt) {
-    opt.addEventListener('click', function () {
-      opt.closest('.dl-poll-group').querySelectorAll('.dc-poll-opt').forEach(function (o) {
-        o.classList.remove('selected');
-      });
-      opt.classList.add('selected');
-    });
-  });
+  }
 });
 </script>
