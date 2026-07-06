@@ -57,8 +57,8 @@
                 <div>
                   <h4 class="fw-bold text-gray-900 fs-6 mb-0">Sofia Karim</h4>
                   <span class="text-muted d-block" style="font-size:0.75rem;">BSCS, 3rd Year &middot; FEU Tech</span>
-                  <span class="text-gray-500 d-block mt-1" style="font-size:0.72rem;">
-                    Posts: 142 &middot; Solutions: 61 &middot; Upvotes: 1.2k
+                  <span class="text-gray-550 d-block mt-1" style="font-size:0.72rem;">
+                    Posts: 142 &middot; Upvotes: 1.2k
                   </span>
                 </div>
               </div>
@@ -88,8 +88,8 @@
                 <div>
                   <h4 class="fw-bold text-gray-900 fs-6 mb-0">Marco Reyes</h4>
                   <span class="text-muted d-block" style="font-size:0.75rem;">BSIT, 2nd Year &middot; FEU Tech</span>
-                  <span class="text-gray-500 d-block mt-1" style="font-size:0.72rem;">
-                    Posts: 98 &middot; Solutions: 34 &middot; Upvotes: 620
+                  <span class="text-gray-550 d-block mt-1" style="font-size:0.72rem;">
+                    Posts: 98 &middot; Upvotes: 620
                   </span>
                 </div>
               </div>
@@ -119,8 +119,8 @@
                 <div>
                   <h4 class="fw-bold text-gray-900 fs-6 mb-0">Aira Santos</h4>
                   <span class="text-muted d-block" style="font-size:0.75rem;">BSECE, 4th Year &middot; FEU Tech</span>
-                  <span class="text-gray-500 d-block mt-1" style="font-size:0.72rem;">
-                    Posts: 74 &middot; Solutions: 18 &middot; Upvotes: 390
+                  <span class="text-gray-550 d-block mt-1" style="font-size:0.72rem;">
+                    Posts: 74 &middot; Upvotes: 390
                   </span>
                 </div>
               </div>
