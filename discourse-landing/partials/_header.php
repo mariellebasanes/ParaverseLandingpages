@@ -23,7 +23,7 @@
 
     <div class="d-flex align-items-stretch justify-content-end flex-lg-grow-1" id="kt_app_header_wrapper">
 
-      <div class="app-header-menu app-header-mobile-drawer align-items-stretch " data-kt-drawer="true"
+      <div class="app-header-menu app-header-mobile-drawer align-items-stretch drawer drawer-end bg-body" data-kt-drawer="true"
         data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}"
         data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
         data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true"

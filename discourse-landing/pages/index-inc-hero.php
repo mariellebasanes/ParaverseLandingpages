@@ -100,10 +100,10 @@ $app_url         = $base;
 
             <a href="<?php echo htmlspecialchars($communities_url); ?>?c=E-Sports"
                class="dl-orbit-chip dl-orbit-chip--tr" style="animation-delay:0.5s;">
-              <div class="dl-oc-icon" style="background:#e8f5ee;">
+              <div class="dl-oc-icon" style="background:#e6f8f0;">
                 <img src="<?php echo htmlspecialchars($base); ?>assets/images/communities/comm_6a22a40f7323f2.07105387.png"
                      alt="E-Sports" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                <i class="ki-outline ki-rocket fs-4" style="color:#2D6A4F;display:none;"></i>
+                <i class="ki-outline ki-rocket fs-4" style="color:#06AB62;display:none;"></i>
               </div>
               <div class="dl-oc-text">
                 <span class="dl-oc-name">E-Sports Guild</span>
@@ -113,10 +113,10 @@ $app_url         = $base;
 
             <a href="<?php echo htmlspecialchars($communities_url); ?>?c=Study%20Group"
                class="dl-orbit-chip dl-orbit-chip--bl" style="animation-delay:1s;">
-              <div class="dl-oc-icon" style="background:#e8f5ee;">
+              <div class="dl-oc-icon" style="background:#e6f8f0;">
                 <img src="<?php echo htmlspecialchars($base); ?>assets/images/communities/comm_6a1fc4b6130233.39661525.png"
                      alt="Study Group" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                <i class="ki-outline ki-bookmark fs-4" style="color:#2D6A4F;display:none;"></i>
+                <i class="ki-outline ki-bookmark fs-4" style="color:#06AB62;display:none;"></i>
               </div>
               <div class="dl-oc-text">
                 <span class="dl-oc-name">Study Group</span>

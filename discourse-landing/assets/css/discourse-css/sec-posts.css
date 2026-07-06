@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-.dc-vote-up:hover  { color: #2D6A4F !important; }
+.dc-vote-up:hover  { color: #06AB62 !important; }
 .dc-vote-down:hover { color: #c62828 !important; }
 
 .discourse-poll-option {
@@ -31,7 +31,7 @@
 }
 
 .discourse-poll-option:hover {
-  border-color: #2D6A4F;
+  border-color: #06AB62;
   background: #f0faf5;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .discourse-poll-options.show-results .discourse-poll-option.selected {
-  border-color: #2D6A4F;
+  border-color: #06AB62;
   background: linear-gradient(to right, #e2f5eb var(--target-width), #f5f6fa var(--target-width));
 }
 

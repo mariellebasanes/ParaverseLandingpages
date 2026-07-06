@@ -1,7 +1,7 @@
 /* ── Design tokens ──────────────────────────────────────── */
 :root {
-  --dc-primary: #2D6A4F;
-  --dc-primary-dark: #1f4e39;
+  --dc-primary: #06AB62;
+  --dc-primary-dark: #038a4f;
   --dc-accent: #F5A623;
   --dc-bg: #f5f6fa;
   --dc-card-radius: 12px;

@@ -1,5 +1,5 @@
 .discourse-hero-banner {
-  background-color: #0b3220 !important;
+  background-color: #025235 !important;
   overflow: visible !important;
 }
 
@@ -48,7 +48,7 @@
   transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 .discourse-hero-btn:hover {
-  background-color: #fbc501 !important;
+  background-color: #EBBB07 !important;
   color: #000 !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(245, 166, 35, 0.55) !important;

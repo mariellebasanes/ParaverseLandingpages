@@ -1,6 +1,6 @@
 /* ── Search input focus ring ─────────────────────────────── */
 #discourse-search-input:focus {
-  border-color: var(--dc-primary, #2D6A4F);
+  border-color: var(--dc-primary, #06AB62);
   box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.1);
   outline: none;
 }
@@ -11,7 +11,7 @@
 
 /* ── New Post button hover ───────────────────────────────── */
 .discourse-new-post-btn:hover {
-  background: var(--dc-primary-dark, #1f4e39) !important;
+  background: var(--dc-primary-dark, #038a4f) !important;
   color: #fff;
   transform: translateY(-1px);
 }
@@ -19,10 +19,10 @@
 /* ── Topics dropdown item hover ──────────────────────────── */
 .discourse-topics-dropdown-menu .dropdown-item:hover {
   background: #f0faf5;
-  color: var(--dc-primary, #2D6A4F);
+  color: var(--dc-primary, #06AB62);
 }
   #discoursePostTabs .nav-link.active,
   #discoursePostTabs .nav-link:active {
-    color: #3a5c45 !important;
-    border-bottom-color: #3a5c45 !important;
+    color: #06AB62 !important;
+    border-bottom-color: #06AB62 !important;
   }

@@ -4,12 +4,12 @@ global $DISCOURSE_BASE;
 $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 ?>
 <!-- ════════════════  COMMUNITIES SECTION  ════════════════ -->
-<section id="communities" class="pt-20 pb-28" style="background: #ffffff; position: relative; background-image: linear-gradient(to right, rgba(45, 106, 79, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(45, 106, 79, 0.03) 1px, transparent 1px); background-size: 40px 40px;">
+<section id="communities" class="pt-20 pb-40" style="background: #ffffff; position: relative; background-image: linear-gradient(to right, rgba(6,171,98, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(6,171,98, 0.03) 1px, transparent 1px); background-size: 40px 40px;">
 
   <!-- Ambient background blobs — green & gold ONLY (clipped to section) -->
   <div style="position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0;">
-    <div style="position:absolute; top:-80px; right:-120px; width:480px; height:480px; background:rgba(45,106,79,0.07); border-radius:50%; filter:blur(80px);"></div>
-    <div style="position:absolute; bottom:-60px; left:-80px; width:420px; height:420px; background:rgba(251,197,1,0.09); border-radius:50%; filter:blur(70px);"></div>
+    <div style="position:absolute; top:-80px; right:-120px; width:480px; height:480px; background:rgba(6,171,98,0.07); border-radius:50%; filter:blur(80px);"></div>
+    <div style="position:absolute; bottom:-60px; left:-80px; width:420px; height:420px; background:rgba(235,187,7,0.09); border-radius:50%; filter:blur(70px);"></div>
   </div>
 
   <div class="container-xxl" style="position:relative; z-index:1;">
@@ -22,7 +22,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           Departmental &amp; Hobby Channels
         </span>
         <h2 class="fw-bolder text-gray-900 mb-3" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
-          Find your people
+          Find your <span style="color:var(--dc-gold);">people</span>
         </h2>
         <p class="text-gray-500 mb-0" style="font-size:1rem; line-height:1.72; max-width:480px;">
           Specialized channels for hobby guilds, study circles, academic departments, and general campus life — all waiting for you inside Discourse.
@@ -40,7 +40,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
         </div>
         <a href="<?php global $DISCOURSE_BASE; echo htmlspecialchars($DISCOURSE_BASE); ?>communities/index.php"
            class="btn fw-bold rounded-pill px-7 py-3 d-inline-flex align-items-center gap-2"
-           style="background:var(--dc-gold); color:#111; font-size:0.9rem; box-shadow: 0 4px 16px rgba(251,197,1,0.35);">
+           style="background:var(--dc-gold); color:#111; font-size:0.9rem; box-shadow: 0 4px 16px rgba(235,187,7,0.35);">
           <i class="ki-outline ki-compass fs-5"></i>Explore Communities
         </a>
       </div>
@@ -101,10 +101,10 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             'members_raw' => 620,
             'posts_day'   => 22,
             'ki'          => 'ki-book',
-            'accent'      => '#2D6A4F',
-            'bg'          => '#e8f5ee',
-            'badge_bg'    => 'rgba(45,106,79,0.10)',
-            'badge_c'     => '#2D6A4F',
+            'accent'      => '#06AB62',
+            'bg'          => '#e6f8f0',
+            'badge_bg'    => 'rgba(6,171,98,0.10)',
+            'badge_c'     => '#06AB62',
             'tag'         => 'Academics',
           ],
           [
@@ -116,8 +116,8 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             'posts_day'   => 15,
             'ki'          => 'ki-note',
             'accent'      => '#d97706',
-            'bg'          => 'rgba(251,197,1,0.13)',
-            'badge_bg'    => 'rgba(217,119,6,0.10)',
+            'bg'          => 'rgba(235,187,7,0.13)',
+            'badge_bg'    => 'rgba(200,165,0,0.10)',
             'badge_c'     => '#b45309',
             'tag'         => 'Arts & Culture',
           ],
@@ -143,10 +143,10 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             'members_raw' => 780,
             'posts_day'   => 61,
             'ki'          => 'ki-rocket',
-            'accent'      => '#2D6A4F',
-            'bg'          => '#e8f5ee',
-            'badge_bg'    => 'rgba(45,106,79,0.10)',
-            'badge_c'     => '#2D6A4F',
+            'accent'      => '#06AB62',
+            'bg'          => '#e6f8f0',
+            'badge_bg'    => 'rgba(6,171,98,0.10)',
+            'badge_c'     => '#06AB62',
             'tag'         => 'Gaming',
           ],
         ];
@@ -162,8 +162,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
              class="dl-comm-card text-decoration-none d-block h-100">
             <div class="card border-0 h-100" style="border-radius:18px; background:#ffffff; box-shadow:0 2px 16px rgba(0,0,0,0.06); transition:all 0.3s cubic-bezier(0.165,0.84,0.44,1); overflow:hidden;">
 
-              <!-- Colored top accent bar -->
-              <div style="height:4px; background:linear-gradient(90deg, <?php echo $c['accent']; ?>, <?php echo $c['accent']; ?>55);"></div>
+
 
               <div class="card-body p-6">
 
@@ -237,7 +236,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
     </div><!-- /dl-comm-carousel-wrap -->
 
     <!-- Dot indicators -->
-    <div id="dl-comm-dots" class="dl-comm-dots mt-8" role="tablist" aria-label="Community slides"></div>
+    <div id="dl-comm-dots" class="dl-comm-dots mt-8 mb-16" role="tablist" aria-label="Community slides"></div>
 
   </div>
 </section>
@@ -302,9 +301,9 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
   .dl-carousel-nav {
     width: 44px; height: 44px;
     border-radius: 50%;
-    border: 1.5px solid rgba(45,106,79,0.25);
+    border: 1.5px solid rgba(6,171,98,0.25);
     background: #fff;
-    color: #2D6A4F;
+    color: #06AB62;
     display: inline-flex; align-items: center; justify-content: center;
     cursor: pointer;
     transition: all 0.22s cubic-bezier(.34,1.56,.64,1);
@@ -315,7 +314,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
     border-color: var(--dc-green-light);
     color: #fff;
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(45,106,79,0.28);
+    box-shadow: 0 6px 20px rgba(6,171,98,0.28);
   }
   .dl-carousel-nav:disabled {
     opacity: 0.35;
@@ -333,7 +332,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
   .dl-comm-dot {
     width: 8px; height: 8px;
     border-radius: 50%;
-    background: rgba(45,106,79,0.20);
+    background: rgba(6,171,98,0.20);
     border: none; cursor: pointer; padding: 0;
     transition: all 0.3s cubic-bezier(.34,1.56,.64,1);
   }

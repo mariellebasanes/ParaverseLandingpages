@@ -1,6 +1,6 @@
 /* ── Dark sidebar card ───────────────────────────────────── */
 .discourse-info-card {
-  background-color: #0b3220 !important;
+  background-color: #025235 !important;
   position: relative;
   z-index: 2;
 }
@@ -56,18 +56,18 @@
 /* ── Sidebar green overrides ─────────────────────────────── */
 .discourse-stat-item .bg-light-success,
 .discourse-community-item .bg-light-success {
-  background-color: #e8ede9 !important;
+  background-color: #d0f0e2 !important;
 }
 
 .discourse-stat-item .bg-light-success i,
 .discourse-community-item .bg-light-success i {
-  color: #3a5c45 !important;
+  color: #06AB62 !important;
 }
 
 /* dc-topic-tag base: no override — let each badge-light-* class set the color */
 .dc-see-all-btn {
-  background-color: #dce8df !important;
-  color: #3a5c45 !important;
+  background-color: #d0f0e2 !important;
+  color: #06AB62 !important;
 }
 
 /* No forced color on icons — badge-light-* handles it */

@@ -36,7 +36,7 @@
 
       <!-- Connector (desktop only) -->
       <div class="col-lg-auto d-none d-lg-flex align-items-center" style="margin-top:-20px; padding:0;">
-        <div style="width:44px; border-top:2px dashed rgba(251,197,1,0.28);"></div>
+        <div style="width:44px; border-top:2px dashed rgba(235,187,7,0.28);"></div>
       </div>
 
       <!-- Step 2 -->
@@ -53,7 +53,7 @@
 
       <!-- Connector -->
       <div class="col-lg-auto d-none d-lg-flex align-items-center" style="margin-top:-20px;">
-        <div style="width:44px; border-top:2px dashed rgba(251,197,1,0.28);"></div>
+        <div style="width:44px; border-top:2px dashed rgba(235,187,7,0.28);"></div>
       </div>
 
       <!-- Step 3 -->
@@ -70,7 +70,7 @@
 
       <!-- Connector -->
       <div class="col-lg-auto d-none d-lg-flex align-items-center" style="margin-top:-20px;">
-        <div style="width:44px; border-top:2px dashed rgba(251,197,1,0.28);"></div>
+        <div style="width:44px; border-top:2px dashed rgba(235,187,7,0.28);"></div>
       </div>
 
       <!-- Step 4 -->
