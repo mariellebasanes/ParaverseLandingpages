@@ -19,9 +19,6 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
       <h2 class="fw-bolder text-gray-900 mb-3" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
         What students are saying
       </h2>
-      <p class="text-gray-600 mb-0" style="font-size:1rem; line-height:1.72; max-width:520px;">
-        See the FEU Tech, Alabang, and Diliman communities in action. Upvote posts, join comments, and try the live poll — exactly like the real Discourse dashboard.
-      </p>
     </div>
 
     <!-- Two-column layout: feed + sidebar -->
