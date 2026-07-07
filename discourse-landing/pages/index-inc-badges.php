@@ -64,7 +64,7 @@
               </div>
               <div class="text-end">
                 <span class="badge badge-light-warning fs-8 fw-bolder px-3 py-2" style="background:rgba(235,187,7,0.12); color:#c8a000 !important;">
-                  4,850 pts
+                  4,850 likes
                 </span>
               </div>
             </div>
@@ -95,7 +95,7 @@
               </div>
               <div class="text-end">
                 <span class="badge badge-light-secondary fs-8 fw-bolder px-3 py-2" style="background:rgba(148,163,184,0.12); color:#64748b !important;">
-                  3,210 pts
+                  3,210 likes
                 </span>
               </div>
             </div>
@@ -126,7 +126,7 @@
               </div>
               <div class="text-end">
                 <span class="badge badge-light-danger fs-8 fw-bolder px-3 py-2" style="background:rgba(200,165,0,0.08); color:#b45309 !important;">
-                  2,540 pts
+                  2,540 likes
                 </span>
               </div>
             </div>
@@ -142,148 +142,122 @@
           <div class="d-flex align-items-center justify-content-between mb-6">
             <h3 class="fw-bolder text-gray-900 fs-4 mb-0 d-flex align-items-center gap-2">
               <i class="ki-outline ki-abstract-26 fs-3 text-success"></i>
-              Top Community
+              Top Communities
             </h3>
-            <span class="badge badge-light-success fs-8 fw-bold px-3 py-1">
-              <i class="ki-outline ki-ranking fs-7 text-success me-1"></i>#1 Ranked
-            </span>
           </div>
 
-          <!-- Community Identity -->
-          <div class="d-flex align-items-center mb-6">
-            <div class="symbol symbol-55px rounded-4 me-4 flex-shrink-0">
-              <span class="symbol-label rounded-4" style="background:rgba(91,97,229,0.08); border: 2px solid #fff; box-shadow: 0 4px 12px rgba(91,97,229,0.15);">
-                <i class="ki-outline ki-message-programming fs-1" style="color:#5b61e5;"></i>
-              </span>
-            </div>
-            <div class="d-flex flex-column">
-              <h4 class="fw-bolder text-gray-900 mb-0" style="font-size:1.2rem;">c/FEU TECH DEV</h4>
-              <span class="text-muted mt-1" style="font-size:0.8rem;">
-                <i class="ki-outline ki-category fs-7 me-1"></i>Technology &amp; Programming &middot; FEU Tech
-              </span>
-            </div>
-          </div>
-
-          <!-- Description -->
-          <p class="text-gray-650 mb-6" style="font-size:0.92rem; line-height:1.62;">
-            Collaborate, build, and share projects with fellow student developers. Join live coding sessions, coursework help, and capstone validation groups.
-          </p>
-
-          <!-- Stats Grid inside the card -->
-          <div class="row g-4 mb-8">
+          <!-- Bento Box Grid for Top Communities (Even Squares 2x2) -->
+          <div class="row g-4 mb-6 w-100 mx-auto">
+            
+            <!-- Tile 1: Rank #1 - FEU TECH DEV -->
             <div class="col-6">
-              <div class="rounded-4 p-4 d-flex align-items-center gap-3" style="background:#f4faf6; border:1px solid rgba(6,171,98,0.08);">
-                <i class="ki-outline ki-people fs-2 text-success"></i>
+              <div class="p-5 rounded-4 hover-elevate-up d-flex flex-column justify-content-between h-100" 
+                   style="background: linear-gradient(135deg, #fffdf2 0%, #ffffff 100%); border: 1px solid rgba(235,187,7,0.25); transition: all 0.25s ease; min-height: 160px;">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                  <span class="badge rounded-circle d-flex align-items-center justify-content-center bg-warning text-dark fw-bold" 
+                        style="width:22px; height:22px; font-size:0.7rem; box-shadow: 0 1px 4px rgba(235,187,7,0.2);">1</span>
+                  <div class="symbol symbol-35px rounded-3">
+                    <span class="symbol-label rounded-3" style="background:rgba(91,97,229,0.06); border: 1px solid rgba(91,97,229,0.12);">
+                      <i class="ki-outline ki-message-programming fs-4" style="color:#5b61e5;"></i>
+                    </span>
+                  </div>
+                </div>
                 <div>
-                  <span class="d-block text-gray-900 fw-extrabold fs-6" style="line-height:1.2;">1,240</span>
-                  <span class="text-gray-500 fs-9 text-uppercase" style="font-size:0.6rem; letter-spacing:0.04em;">Members</span>
+                  <span class="fw-bold text-gray-900 fs-6 d-block mb-1" style="line-height: 1.2;">c/FEU TECH DEV</span>
+                  <span class="text-muted d-block mb-2" style="font-size:0.7rem;">Programming</span>
+                  <span class="badge badge-light-warning fs-9 fw-semibold px-2.5 py-1" style="background:rgba(235,187,7,0.1); color:#c89e20 !important;">
+                    1.2k members
+                  </span>
                 </div>
               </div>
             </div>
+
+            <!-- Tile 2: Rank #2 - FEU LIFE -->
             <div class="col-6">
-              <div class="rounded-4 p-4 d-flex align-items-center gap-3" style="background:#f4faf6; border:1px solid rgba(6,171,98,0.08);">
-                <i class="ki-outline ki-messages fs-2 text-success"></i>
+              <div class="p-5 rounded-4 hover-elevate-up d-flex flex-column justify-content-between h-100" 
+                   style="background: linear-gradient(135deg, #fffdfd 0%, #ffffff 100%); border: 1px solid rgba(192,57,43,0.15); transition: all 0.25s ease; min-height: 160px;">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                  <span class="badge rounded-circle d-flex align-items-center justify-content-center bg-secondary text-gray-800 fw-bold" 
+                        style="width:22px; height:22px; font-size:0.7rem; background:#cbd5e1 !important; color:#334155 !important;">2</span>
+                  <div class="symbol symbol-35px rounded-3">
+                    <span class="symbol-label rounded-3" style="background:rgba(192,57,43,0.06); border: 1px solid rgba(192,57,43,0.12);">
+                      <i class="ki-outline ki-heart fs-4" style="color:#c0392b;"></i>
+                    </span>
+                  </div>
+                </div>
                 <div>
-                  <span class="d-block text-gray-900 fw-extrabold fs-6" style="line-height:1.2;">48</span>
-                  <span class="text-gray-500 fs-9 text-uppercase" style="font-size:0.6rem; letter-spacing:0.04em;">Live Threads</span>
+                  <span class="fw-bold text-gray-900 fs-6 d-block mb-1" style="line-height: 1.2;">c/FEU LIFE</span>
+                  <span class="text-muted d-block mb-2" style="font-size:0.7rem;">Campus Life</span>
+                  <span class="badge badge-light-success fs-9 fw-semibold px-2.5 py-1" style="background:rgba(6,171,98,0.06); color:#06AB62 !important;">
+                    980 members
+                  </span>
                 </div>
               </div>
             </div>
+
+            <!-- Tile 3: Rank #3 - Freshies Guide -->
+            <div class="col-6">
+              <div class="p-5 rounded-4 hover-elevate-up d-flex flex-column justify-content-between h-100" 
+                   style="background: linear-gradient(135deg, #fbfdff 0%, #ffffff 100%); border: 1px solid rgba(14,165,233,0.15); transition: all 0.25s ease; min-height: 160px;">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                  <span class="badge rounded-circle d-flex align-items-center justify-content-center bg-secondary text-gray-800 fw-bold" 
+                        style="width:22px; height:22px; font-size:0.7rem; background:#cbd5e1 !important; color:#334155 !important;">3</span>
+                  <div class="symbol symbol-35px rounded-3">
+                    <span class="symbol-label rounded-3" style="background:rgba(14,165,233,0.06); border: 1px solid rgba(14,165,233,0.12);">
+                      <i class="ki-outline ki-people fs-4" style="color:#0ea5e9;"></i>
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <span class="fw-bold text-gray-900 fs-6 d-block mb-1" style="line-height: 1.2;">c/Freshies</span>
+                  <span class="text-muted d-block mb-2" style="font-size:0.7rem;">First Year Guide</span>
+                  <span class="badge badge-light-success fs-9 fw-semibold px-2.5 py-1" style="background:rgba(6,171,98,0.06); color:#06AB62 !important;">
+                    890 members
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tile 4: Rank #4 - Study Group -->
+            <div class="col-6">
+              <div class="p-5 rounded-4 hover-elevate-up d-flex flex-column justify-content-between h-100" 
+                   style="background: linear-gradient(135deg, #fafdff 0%, #ffffff 100%); border: 1px solid rgba(6,171,98,0.15); transition: all 0.25s ease; min-height: 160px;">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                  <span class="badge rounded-circle d-flex align-items-center justify-content-center bg-secondary text-gray-800 fw-bold" 
+                        style="width:22px; height:22px; font-size:0.7rem; background:#cbd5e1 !important; color:#334155 !important;">4</span>
+                  <div class="symbol symbol-35px rounded-3">
+                    <span class="symbol-label rounded-3" style="background:rgba(6,171,98,0.06); border: 1px solid rgba(6,171,98,0.12);">
+                      <i class="ki-outline ki-book fs-4" style="color:#06AB62;"></i>
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <span class="fw-bold text-gray-900 fs-6 d-block mb-1" style="line-height: 1.2;">c/Study Group</span>
+                  <span class="text-muted d-block mb-2" style="font-size:0.7rem;">Academics &amp; Study</span>
+                  <span class="badge badge-light-success fs-9 fw-semibold px-2.5 py-1" style="background:rgba(6,171,98,0.06); color:#06AB62 !important;">
+                    620 members
+                  </span>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <!-- CTA / Footer Inside Card -->
           <div class="d-flex align-items-center justify-content-between mt-auto pt-4 border-top border-gray-100">
-            <a href="#posts"
+            <a href="<?php global $DISCOURSE_BASE; echo htmlspecialchars($DISCOURSE_BASE); ?>communities/index.php"
                class="btn btn-success fw-bold rounded-pill px-6 py-3"
                style="background:var(--dc-green); border-color:var(--dc-green); color:#fff !important; font-size:0.85rem; box-shadow:0 4px 14px rgba(6,171,98,0.18); transition:all 0.2s;"
                onmouseover="this.style.background='var(--dc-green-light)'; this.style.borderColor='var(--dc-green-light)'; this.style.transform='translateY(-2px)';"
                onmouseout="this.style.background='var(--dc-green)'; this.style.borderColor='var(--dc-green)'; this.style.transform='';">
-              Join Community
+              Explore All Communities
             </a>
-            <span class="text-gray-500" style="font-size:0.7rem;">Updated today</span>
+            <span class="text-gray-555" style="font-size:0.7rem;">Updated today</span>
           </div>
         </div>
       </div>
 
     </div><!-- /row -->
-
-    <!-- BOTTOM: Separate Guidelines Card -->
-    <div class="row mt-8 dl-reveal">
-      <div class="col-12">
-        <div class="card card-bordered shadow-sm p-8 hover-elevate-up" style="border-radius:24px; background: linear-gradient(135deg, #ffffff 70%, #fffdf4 100%);">
-          
-          <div class="d-flex align-items-center gap-3 mb-6">
-            <div class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
-                 style="width:36px; height:36px; background:rgba(6,171,98,0.10);">
-              <i class="ki-outline ki-information-2 fs-3" style="color:#06AB62;"></i>
-            </div>
-            <h3 class="fw-bolder text-gray-900 fs-5 mb-0">How to Earn Points &amp; Get Spotlighted</h3>
-          </div>
-
-          <div class="row g-6">
-            
-            <!-- Pillar 1 -->
-            <div class="col-md-4">
-              <div class="d-flex align-items-start gap-4">
-                <div class="d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" 
-                     style="width:40px; height:40px; background:#e6f8f0;">
-                  <i class="ki-outline ki-shield-tick fs-4" style="color:#06AB62;"></i>
-                </div>
-                <div>
-                  <h5 class="fw-bold text-gray-900 fs-6 mb-1">
-                    Peer Solutions
-                    <span class="badge badge-light-success fs-9 fw-bold ms-1" style="background:#e6f8f0; color:#06AB62 !important;">+15 Rep</span>
-                  </h5>
-                  <p class="text-gray-550 mb-0" style="font-size:0.8rem; line-height:1.5;">
-                    Provide verified answers to peer questions. Earn points when your reply is marked as the solution.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pillar 2 -->
-            <div class="col-md-4">
-              <div class="d-flex align-items-start gap-4">
-                <div class="d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" 
-                     style="width:40px; height:40px; background:rgba(114,57,234,0.10);">
-                  <i class="ki-outline ki-arrow-up fs-4" style="color:#7239ea;"></i>
-                </div>
-                <div>
-                  <h5 class="fw-bold text-gray-900 fs-6 mb-1">
-                    Quality Discussions
-                    <span class="badge badge-light-primary fs-9 fw-bold ms-1" style="background:rgba(114,57,234,0.10); color:#7239ea !important;">+5 Rep</span>
-                  </h5>
-                  <p class="text-gray-550 mb-0" style="font-size:0.8rem; line-height:1.5;">
-                    Start useful threads or post programming tips. Earn points from peer upvotes.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pillar 3 -->
-            <div class="col-md-4">
-              <div class="d-flex align-items-start gap-4">
-                <div class="d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" 
-                     style="width:40px; height:40px; background:rgba(235,187,7,0.13);">
-                  <i class="ki-outline ki-crown fs-4" style="color:#c8a000;"></i>
-                </div>
-                <div>
-                  <h5 class="fw-bold text-gray-900 fs-6 mb-1">
-                    Active Study Guilds
-                    <span class="badge badge-light-warning fs-9 fw-bold ms-1" style="background:rgba(235,187,7,0.15); color:#d69e00 !important;">+50 Rep</span>
-                  </h5>
-                  <p class="text-gray-550 mb-0" style="font-size:0.8rem; line-height:1.5;">
-                    Create study groups or guilds. Maintain 15+ active members for a sustained boost.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
 
   </div>
 </section>

@@ -11,24 +11,28 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
     <div style="position:absolute; top:-80px; right:-120px; width:480px; height:480px; background:rgba(6,171,98,0.07); border-radius:50%; filter:blur(80px);"></div>
     <div style="position:absolute; bottom:-60px; left:-80px; width:420px; height:420px; background:rgba(235,187,7,0.09); border-radius:50%; filter:blur(70px);"></div>
   </div>
-
   <div class="container-xxl" style="position:relative; z-index:1;">
 
     <!-- Section header -->
-    <div class="row align-items-end mb-10">
-      <div class="col-lg-7 dl-reveal">
-        <span class="dl-eyebrow dl-eyebrow-green">
+    <div class="row align-items-center mb-10">
+      <div class="col-lg-8 dl-reveal">
+        <span class="dl-eyebrow dl-eyebrow-green mb-3">
           <i class="ki-outline ki-people fs-6"></i>
           Departmental &amp; Hobby Channels
         </span>
-        <h2 class="fw-bolder text-gray-900 mb-3" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
+        <h2 class="fw-bolder text-gray-900 mb-4" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
           Find your <span style="color:var(--dc-gold);">people</span>
         </h2>
-        <p class="text-gray-500 mb-0" style="font-size:1rem; line-height:1.72; max-width:480px;">
+        <p class="text-gray-500 mb-6" style="font-size:1rem; line-height:1.72; max-width:580px;">
           Specialized channels for hobby guilds, study circles, academic departments, and general campus life — all waiting for you inside Discourse.
         </p>
+        <a href="<?php global $DISCOURSE_BASE; echo htmlspecialchars($DISCOURSE_BASE); ?>communities/index.php"
+           class="btn fw-bold rounded-pill px-7 py-3 d-inline-flex align-items-center gap-2"
+           style="background:var(--dc-gold); color:#111; font-size:0.9rem; box-shadow: 0 4px 16px rgba(235,187,7,0.35);">
+          <i class="ki-outline ki-compass fs-5"></i>Explore Communities
+        </a>
       </div>
-      <div class="col-lg-5 text-lg-end mt-6 mt-lg-0 dl-reveal dl-delay-1 d-flex align-items-center justify-content-lg-end gap-4">
+      <div class="col-lg-4 text-lg-end mt-6 mt-lg-0 dl-reveal dl-delay-1 d-flex align-items-center justify-content-lg-end justify-content-start">
         <!-- Carousel nav buttons -->
         <div class="d-flex align-items-center gap-2">
           <button id="comm-prev" class="dl-carousel-nav" aria-label="Previous">
@@ -38,11 +42,6 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             <i class="ki-outline ki-arrow-right fs-4"></i>
           </button>
         </div>
-        <a href="<?php global $DISCOURSE_BASE; echo htmlspecialchars($DISCOURSE_BASE); ?>communities/index.php"
-           class="btn fw-bold rounded-pill px-7 py-3 d-inline-flex align-items-center gap-2"
-           style="background:var(--dc-gold); color:#111; font-size:0.9rem; box-shadow: 0 4px 16px rgba(235,187,7,0.35);">
-          <i class="ki-outline ki-compass fs-5"></i>Explore Communities
-        </a>
       </div>
     </div>
 
