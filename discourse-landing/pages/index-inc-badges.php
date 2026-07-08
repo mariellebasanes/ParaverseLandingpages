@@ -1,23 +1,33 @@
-<?php /* index-inc-badges.php — "Campus Spotlight" — WHITE BACKGROUND */ ?>
+<?php /* index-inc-badges.php — "Campus Spotlight" — DARK GREEN GRID BACKGROUND */ ?>
 <!-- ════════════════  CAMPUS SPOTLIGHT SECTION  ════════════════ -->
-<section id="badges" class="py-20 dc-bg-white" style="position: relative; overflow: hidden;">
+<section id="badges" class="py-20" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #0a2e1d 0%, #0f3d27 45%, #0d3a25 100%);">
 
-  <!-- Ambient background blobs (Green and Yellow only) -->
-  <div class="dl-bg-blob dl-blob-green" style="position: absolute; top: -5%; left: -5%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(6,171,98,0.18) 0%, rgba(6,171,98,0) 70%); filter: blur(60px); pointer-events: none; z-index: 0;"></div>
-  <div class="dl-bg-blob dl-blob-gold"  style="position: absolute; bottom: -5%; right: -5%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(235,187,7,0.18) 0%, rgba(235,187,7,0) 70%); filter: blur(70px); pointer-events: none; z-index: 0;"></div>
+  <!-- Ambient background blobs -->
+  <div style="position:absolute;top:-15%;left:-8%;width:550px;height:550px;border-radius:50%;
+              background:radial-gradient(circle,rgba(6,171,98,0.07) 0%,transparent 70%);
+              pointer-events:none;filter:blur(60px);"></div>
+  <div style="position:absolute;bottom:-20%;right:-8%;width:600px;height:600px;border-radius:50%;
+              background:radial-gradient(circle,rgba(235,187,7,0.05) 0%,transparent 70%);
+              pointer-events:none;filter:blur(60px);"></div>
+  <!-- Dot-grid overlay (matching Student Journey) -->
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:0;
+              background-image:radial-gradient(circle,rgba(255,255,255,0.06) 1px,transparent 1px);
+              background-size:32px 32px;
+              -webkit-mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%);
+              mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%);"></div>
 
   <div class="container-xxl" style="position: relative; z-index: 1;">
 
     <!-- Section Header (Merged & Polished) -->
     <div class="text-center mx-auto mb-14 dl-reveal" style="max-width: 640px;">
-      <span class="dl-eyebrow dl-eyebrow-green mb-3">
+      <span class="dl-eyebrow dl-eyebrow-gold mb-3">
         <i class="ki-outline ki-crown fs-6"></i>
         Campus Spotlight
       </span>
-      <h2 class="fw-bolder text-gray-900 mb-4" style="font-size: clamp(1.8rem,3.2vw,2.5rem); line-height: 1.18;">
+      <h2 class="fw-bolder text-white mb-4" style="font-size: clamp(1.8rem,3.2vw,2.5rem); line-height: 1.18; color:#ffffff !important;">
         This Month's <span style="color:var(--dc-gold);">Campus Leaders</span>
       </h2>
-      <p class="text-gray-600 mb-0" style="font-size: 1rem; line-height: 1.72;">
+      <p class="mb-0" style="font-size: 1rem; line-height: 1.72; color: rgba(255,255,255,0.75);">
         Discourse celebrates the active peer guides, student leaders, and top academic channels contributing to success at FEU Tech.
       </p>
     </div>

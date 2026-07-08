@@ -48,7 +48,9 @@ $META_DESC  = "Connect with peers, join communities, share resources, and grow t
                 include(__DIR__ . "/pages/index-inc-posts.php");
                 // 7. Rewards & Gamification (white)
                 include(__DIR__ . "/pages/index-inc-badges.php");
-                // 8. CTA (dark green)
+                // 8. FAQ (light gray)
+                include(__DIR__ . "/pages/index-inc-faq.php");
+                // 9. CTA (dark green)
                 include(__DIR__ . "/pages/index-inc-cta.php");
                 ?>
               </div>

@@ -19,7 +19,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           Stay Informed
         </span>
         <h2 class="fw-bolder text-gray-900 mb-2" style="font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.18;">
-          Latest Campus Announcements
+          Latest Campus <span style="color:var(--dc-gold);">Announcements</span>
         </h2>
         <p class="text-gray-500 mb-0" style="font-size: 0.97rem; max-width: 480px; line-height: 1.65;">
           Events, platform updates, and community highlights across FEU Tech, Alabang &amp; Diliman.
@@ -55,10 +55,10 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                 <!-- Left: Icon + badge -->
                 <div class="col-12 col-md-3 d-flex flex-column align-items-center align-items-md-start mb-6 mb-md-0 pe-md-6"
                      style="border-right: 1px solid rgba(6,171,98,0.10);">
-                  <div class="dl-ann-icon mb-4" style="background:#e6f8f0; box-shadow:0 6px 20px rgba(6,171,98,0.12);">
-                    <i class="ki-outline ki-book-open fs-2x" style="color:#06AB62;"></i>
+                  <div class="dl-ann-icon mb-4" style="background:var(--dc-green-tint); box-shadow:0 6px 20px rgba(6,171,98,0.12);">
+                    <i class="ki-outline ki-book-open fs-2x" style="color:var(--dc-green-light);"></i>
                   </div>
-                  <span class="dl-ann-badge" style="background:#e6f8f0; color:#06AB62;">
+                  <span class="dl-ann-badge" style="background:var(--dc-green-tint); color:var(--dc-green-light);">
                     <i class="ki-outline ki-book fs-7 me-1"></i> Academic
                   </span>
                   <div class="dl-ann-date mt-2">July 3, 2026</div>
@@ -82,9 +82,9 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                     </div>
                     <a href="<?php echo htmlspecialchars($base); ?>"
                        class="btn fw-bold px-6 py-2 d-inline-flex align-items-center gap-2"
-                       style="background:#06AB62;color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
-                       onmouseover="this.style.background='#038a4f';"
-                       onmouseout="this.style.background='#06AB62';"
+                       style="background:var(--dc-green-light);color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
+                       onmouseover="this.style.background='var(--dc-green-mid)';"
+                       onmouseout="this.style.background='var(--dc-green-light)';"
                        onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
                       Read More <i class="ki-outline ki-arrow-right fs-6"></i>
                     </a>
@@ -107,10 +107,10 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                 <!-- Left: Icon + badge -->
                 <div class="col-12 col-md-3 d-flex flex-column align-items-center align-items-md-start mb-6 mb-md-0 pe-md-6"
                      style="border-right: 1px solid rgba(200,165,0,0.12);">
-                  <div class="dl-ann-icon mb-4" style="background:rgba(235,187,7,0.12); box-shadow:0 6px 20px rgba(200,165,0,0.14);">
-                    <i class="ki-outline ki-award fs-2x" style="color:#c8a000;"></i>
+                  <div class="dl-ann-icon mb-4" style="background:rgba(235,187,7,0.12); box-shadow:0 6px 20px rgba(235,187,7,0.14);">
+                    <i class="ki-outline ki-award fs-2x" style="color:var(--dc-gold-hover);"></i>
                   </div>
-                  <span class="dl-ann-badge" style="background:rgba(235,187,7,0.14); color:#c8a000;">
+                  <span class="dl-ann-badge" style="background:rgba(235,187,7,0.14); color:var(--dc-gold-hover);">
                     <i class="ki-outline ki-joystick fs-7 me-1"></i> Event
                   </span>
                   <div class="dl-ann-date mt-2">July 2, 2026</div>
@@ -127,16 +127,16 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                   <div class="d-flex align-items-center justify-content-between flex-wrap gap-4">
                     <div class="d-flex align-items-center gap-2">
                       <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white"
-                           style="width:28px;height:28px;background:#c8a000;font-size:0.65rem;flex-shrink:0;">MM</div>
+                           style="width:28px;height:28px;background:var(--dc-gold-hover);font-size:0.65rem;flex-shrink:0;">MM</div>
                       <span class="fw-semibold text-gray-700" style="font-size:0.83rem;">Marixine · ESports Comm</span>
                       <span class="text-gray-300 mx-1">•</span>
                       <span class="text-muted" style="font-size:0.83rem;">6 days ago</span>
                     </div>
                     <a href="<?php echo htmlspecialchars($base); ?>"
                        class="btn fw-bold px-6 py-2 d-inline-flex align-items-center gap-2"
-                       style="background:#c8a000;color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
-                       onmouseover="this.style.background='#c8a000';"
-                       onmouseout="this.style.background='#c8a000';"
+                       style="background:var(--dc-gold-hover);color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
+                       onmouseover="this.style.background='#b8900a';"
+                       onmouseout="this.style.background='var(--dc-gold-hover)';"
                        onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
                       Read More <i class="ki-outline ki-arrow-right fs-6"></i>
                     </a>

@@ -4,7 +4,7 @@ global $DISCOURSE_BASE;
 $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 ?>
 <!-- ════════════════  COMMUNITIES SECTION  ════════════════ -->
-<section id="communities" class="pt-20 pb-40" style="background: #ffffff; position: relative; background-image: linear-gradient(to right, rgba(6,171,98, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(6,171,98, 0.03) 1px, transparent 1px); background-size: 40px 40px;">
+<section id="communities" class="pt-20 pb-20" style="background: #ffffff; position: relative; background-image: linear-gradient(to right, rgba(6,171,98, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(6,171,98, 0.03) 1px, transparent 1px); background-size: 40px 40px;">
 
   <!-- Ambient background blobs — green & gold ONLY (clipped to section) -->
   <div style="position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0;">
@@ -14,15 +14,21 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
   <div class="container-xxl" style="position:relative; z-index:1;">
 
     <!-- Section header -->
-    <div class="row align-items-center mb-10">
+    <div class="row mb-6">
       <div class="col-lg-8 dl-reveal">
         <span class="dl-eyebrow dl-eyebrow-green mb-3">
           <i class="ki-outline ki-people fs-6"></i>
           Departmental &amp; Hobby Channels
         </span>
-        <h2 class="fw-bolder text-gray-900 mb-4" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
+        <h2 class="fw-bolder text-gray-900 mb-0" style="font-size:clamp(1.8rem,3.2vw,2.5rem); line-height:1.18;">
           Find your <span style="color:var(--dc-gold);">people</span>
         </h2>
+      </div>
+    </div>
+
+    <!-- Description & CTA -->
+    <div class="row mb-10 dl-reveal">
+      <div class="col-lg-8">
         <p class="text-gray-500 mb-6" style="font-size:1rem; line-height:1.72; max-width:580px;">
           Specialized channels for hobby guilds, study circles, academic departments, and general campus life — all waiting for you inside Discourse.
         </p>
@@ -31,17 +37,6 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
            style="background:var(--dc-gold); color:#111; font-size:0.9rem; box-shadow: 0 4px 16px rgba(235,187,7,0.35);">
           <i class="ki-outline ki-compass fs-5"></i>Explore Communities
         </a>
-      </div>
-      <div class="col-lg-4 text-lg-end mt-6 mt-lg-0 dl-reveal dl-delay-1 d-flex align-items-center justify-content-lg-end justify-content-start">
-        <!-- Carousel nav buttons -->
-        <div class="d-flex align-items-center gap-2">
-          <button id="comm-prev" class="dl-carousel-nav" aria-label="Previous">
-            <i class="ki-outline ki-arrow-left fs-4"></i>
-          </button>
-          <button id="comm-next" class="dl-carousel-nav" aria-label="Next">
-            <i class="ki-outline ki-arrow-right fs-4"></i>
-          </button>
-        </div>
       </div>
     </div>
 
@@ -202,7 +197,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                       </div>
                     <?php endfor; ?>
                     <?php if ($overflow > 0): ?>
-                      <div class="dl-av dl-av-overflow" style="background:rgba(30,41,59,0.12); color:#475569; font-size:0.58rem; font-weight:800;">
+                      <div class="dl-av dl-av-overflow">
                         +<?php echo $overflow > 999 ? round($overflow/1000,1).'k' : $overflow; ?>
                       </div>
                     <?php endif; ?>
@@ -232,6 +227,14 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
       <!-- Fade edges -->
       <div class="dl-comm-fade dl-comm-fade-left"></div>
       <div class="dl-comm-fade dl-comm-fade-right"></div>
+
+      <!-- Carousel nav buttons -->
+      <button id="comm-prev" class="dl-carousel-nav dl-carousel-nav-prev" aria-label="Previous">
+        <i class="ki-outline ki-arrow-left fs-4"></i>
+      </button>
+      <button id="comm-next" class="dl-carousel-nav dl-carousel-nav-next" aria-label="Next">
+        <i class="ki-outline ki-arrow-right fs-4"></i>
+      </button>
     </div><!-- /dl-comm-carousel-wrap -->
 
     <!-- Dot indicators -->
@@ -245,7 +248,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 
   .dl-comm-carousel-wrap {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 20px;
   }
 
@@ -256,7 +259,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;          /* Firefox */
-    padding: 8px 4px 16px;
+    padding: 16px 12px 16px;
     cursor: grab;
     user-select: none;
   }
@@ -296,9 +299,12 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
   .dl-comm-carousel-wrap.can-scroll-left  .dl-comm-fade-left  { opacity: 1; }
   .dl-comm-carousel-wrap.can-scroll-right .dl-comm-fade-right { opacity: 1; }
 
-  /* Nav buttons */
+  /* Nav buttons (absolute positioned on the sides) */
   .dl-carousel-nav {
-    width: 44px; height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px; height: 46px;
     border-radius: 50%;
     border: 1.5px solid rgba(6,171,98,0.25);
     background: #fff;
@@ -306,19 +312,30 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
     display: inline-flex; align-items: center; justify-content: center;
     cursor: pointer;
     transition: all 0.22s cubic-bezier(.34,1.56,.64,1);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    z-index: 10;
+  }
+  .dl-carousel-nav-prev {
+    left: 20px;
+  }
+  .dl-carousel-nav-next {
+    right: 20px;
   }
   .dl-carousel-nav:hover {
     background: var(--dc-green-light);
     border-color: var(--dc-green-light);
     color: #fff;
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.08);
     box-shadow: 0 6px 20px rgba(6,171,98,0.28);
   }
   .dl-carousel-nav:disabled {
-    opacity: 0.35;
-    cursor: not-allowed;
-    transform: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  @media (max-width: 991px) {
+    .dl-carousel-nav {
+      display: none !important;
+    }
   }
 
   /* Dot indicators */

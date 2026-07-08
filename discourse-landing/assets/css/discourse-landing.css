@@ -612,8 +612,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .dl-avatar-stack .dl-av:first-child { margin-left: 0; }
 .dl-avatar-stack .dl-av-overflow {
-  background: rgba(30,41,59,0.18);
-  color: #1e293b;
+  background: #ffffff;
+  color: #06AB62;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  border: 2px solid #06AB62;
+  min-width: 28px;
 }
 
 /* ════════════════════════════════════════════════════════════

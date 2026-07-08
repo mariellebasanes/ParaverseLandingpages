@@ -32,11 +32,11 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <div class="d-flex justify-content-between align-items-center mb-6">
             <div class="d-flex align-items-center gap-2">
               <span class="badge rounded-2 p-0 d-inline-flex align-items-center justify-content-center"
-                    style="background: #e6f8f0; color: #06AB62; width: 32px; height: 32px; flex-shrink: 0;">
-                <i class="ki-outline ki-eye fs-5" style="color: #06AB62;"></i>
+                    style="background:var(--dc-green-tint); color:var(--dc-green-light); width:32px; height:32px; flex-shrink:0;">
+                <i class="ki-outline ki-eye fs-5" style="color:var(--dc-green-light);"></i>
               </span>
               <span class="badge rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center"
-                    style="font-size: 0.72rem; background: #e6f8f0; color: #06AB62; height: 32px;">
+                    style="font-size:0.72rem; background:var(--dc-green-tint); color:var(--dc-green-light); height:32px;">
                 c/CS Department
               </span>
             </div>
@@ -51,7 +51,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             <div>
               <div class="d-flex align-items-center">
                 <span class="fw-bold text-gray-900 fs-6">Khrysseline Faith R. Tuballa</span>
-                <span class="badge px-3 py-1 fw-bold ms-2" style="font-size: 0.7rem; background: #e6f8f0; color: #06AB62; border-radius: 6px;">Others</span>
+                <span class="badge fw-bold ms-2" style="font-size:0.7rem; background:var(--dc-green-tint); color:var(--dc-green-light); border-radius:6px; padding:4px 10px;">Others</span>
               </div>
               <div class="text-muted mt-0.5" style="font-size: 0.76rem;">29 days ago</div>
             </div>
@@ -62,9 +62,9 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             How do you balance difficult major subjects with general education courses?
           </h2>
 
-          <!-- Content rendered literally as HTML string in text -->
+          <!-- Post content -->
           <p class="text-gray-700 mb-6" style="font-size: 0.95rem; line-height: 1.68;">
-            &lt;p&gt;I'm currently taking several major subjects alongside GE courses, and I'm finding it difficult to manage deadlines and study time effectively. For students who have gone through a similar semester, what strategies helped you stay organized and avoid burnout? Any tips on scheduling, note-taking, or prioritizing requirements would be appreciated.&lt;/p&gt;
+            I'm currently taking several major subjects alongside GE courses, and I'm finding it difficult to manage deadlines and study time effectively. For students who have gone through a similar semester, what strategies helped you stay organized and avoid burnout? Any tips on scheduling, note-taking, or prioritizing requirements would be appreciated.
           </p>
 
           <!-- Reactions Row -->
@@ -104,7 +104,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             <!-- Comment 2 -->
             <div class="d-flex gap-3 align-items-start">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
-                   style="width: 36px; height: 36px; background: #06AB62; font-size: 0.85rem; flex-shrink: 0;">
+                   style="width:36px; height:36px; background:var(--dc-green-light); font-size:0.85rem; flex-shrink:0;">
                 MM
               </div>
               <div>
@@ -118,7 +118,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <form id="dl-single-comment-form" class="mt-4 border-top border-gray-100 pt-5">
             <div class="d-flex align-items-center gap-3">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
-                   style="width: 32px; height: 32px; background: #d4a800; font-size: 0.75rem; flex-shrink: 0;">
+                   style="width:32px; height:32px; background:var(--dc-gold-hover); font-size:0.75rem; flex-shrink:0;">
                 U
               </div>
               <input type="text" id="dl-comment-input-field" class="form-control form-control-sm rounded-pill px-4 bg-light border-0" placeholder="Write a comment…" required style="font-size: 0.82rem; height: 36px;">
@@ -176,8 +176,8 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
             foreach ($stats as $s): ?>
             <div class="dl-stat-item d-flex align-items-center justify-content-between pb-4 mb-4">
               <div class="d-flex align-items-center gap-3">
-                <div class="d-flex align-items-center justify-content-center rounded-2" style="width:36px;height:36px;background:#d0f0e2;flex-shrink:0;">
-                  <i class="<?php echo $s['icon']; ?>" style="color:#06AB62; font-size:1.1rem;"></i>
+                <div class="d-flex align-items-center justify-content-center rounded-2" style="width:36px;height:36px;background:var(--dc-green-muted);flex-shrink:0;">
+                  <i class="<?php echo $s['icon']; ?>" style="color:var(--dc-green-light); font-size:1.1rem;"></i>
                 </div>
                 <span class="fw-bold text-gray-800 fs-8 text-uppercase" style="letter-spacing:0.06em;"><?php echo $s['label']; ?></span>
               </div>
@@ -200,9 +200,9 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
               foreach ($topics as $t): ?>
               <a href="<?php echo $base; ?>topics/index.php?t=<?php echo $t; ?>"
                  class="badge rounded-pill fw-semibold px-3 py-2 text-decoration-none"
-                 style="font-size:0.73rem; background:#d0f0e2; color:#06AB62; transition:background 0.15s, color 0.15s;"
-                 onmouseover="this.style.background='#06AB62';this.style.color='#fff';"
-                 onmouseout="this.style.background='#d0f0e2';this.style.color='#06AB62';">
+                 style="font-size:0.73rem; background:var(--dc-green-muted); color:var(--dc-green-light); transition:background 0.15s, color 0.15s;"
+                 onmouseover="this.style.background='var(--dc-green-light)';this.style.color='#fff';"
+                 onmouseout="this.style.background='var(--dc-green-muted)';this.style.color='var(--dc-green-light)';">
                 <?php echo $t; ?>
               </a>
               <?php endforeach; ?>
@@ -287,7 +287,7 @@ window.addEventListener('DOMContentLoaded', function () {
       commentEl.className = 'd-flex gap-3 align-items-start';
       commentEl.innerHTML = `
         <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
-             style="width: 36px; height: 36px; background: #d4a800; font-size: 0.85rem; flex-shrink: 0;">
+             style="width: 36px; height: 36px; background: var(--dc-gold-hover); font-size: 0.85rem; flex-shrink: 0;">
           U
         </div>
         <div>
