@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# Serve existing files directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# /elicit/event/CODE → event.php?id=CODE
+RewriteRule ^event/(.+)$ event.php?id=$1 [QSA,L]
+
+# /elicit/admin/events/manage/ID/present → admin/events/manage/present.php?id=ID
+RewriteRule ^admin/events/manage/([^/]+)/present/?$ admin/events/manage/present.php?id=$1 [QSA,L]
+
+# /elicit/admin/events/manage/ID/analytics → admin/events/manage/analytics.php?id=ID
+RewriteRule ^admin/events/manage/([^/]+)/analytics/?$ admin/events/manage/analytics.php?id=$1 [QSA,L]
+
+# /elicit/admin/events/manage/ID → admin/events/manage/index.php?id=ID
+RewriteRule ^admin/events/manage/([^/]+)/?$ admin/events/manage/index.php?id=$1 [QSA,L]
+
+# Add .php extension for extensionless URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
