@@ -17,14 +17,7 @@ else {
   define('ICARE_BASE', $script_dir);
 }
 
-$icare_root = __DIR__;
-if (!is_file($icare_root . '/functions-new.php')) {
-  $icare_root = dirname(__DIR__) . '/icare';
-}
-$functions_path = is_file($icare_root . '/functions-new.php') ? $icare_root . '/functions-new.php' : $_SERVER['DOCUMENT_ROOT'] . '/icare/sample/functions-new.php';
-if (!is_file($functions_path)) {
-  $functions_path = $_SERVER['DOCUMENT_ROOT'] . '/sample/functions-new.php';
-}
+$functions_path = __DIR__ . '/functions-new.php';
 if (!is_file($functions_path)) {
   header('Content-Type: text/plain; charset=utf-8');
   die('iCare: functions-new.php not found.');
@@ -34,7 +27,7 @@ require_once $functions_path;
 $META_TITLE = "iCare - Academic Support at FEU Tech";
 $META_DESC = "Free tutoring, study groups, and academic support for FEU Tech students. Your study buddy awaits!";
 $ICARE_HOME = (ICARE_BASE === '' ? '/' : ICARE_BASE . '/');
-$ICARE_PARTIALS = $icare_root . '/partials';
+$ICARE_PARTIALS = __DIR__ . '/partials';
 ?>
 <!DOCTYPE html>
 <html lang="en">

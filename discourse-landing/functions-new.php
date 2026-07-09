@@ -15,7 +15,7 @@ function HEAD_ESSENTIALS()
   $META_LINK = "https://" . $_SERVER['HTTP_HOST'] . parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
   global $DISCOURSE_BASE;
-  $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/ParaverseLandingpages/discourse-landing/";
+  $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/paraverse/discourse-landing/";
 
   echo '
 <title>' . $META_TITLE . '</title>
