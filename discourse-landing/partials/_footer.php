@@ -39,5 +39,3 @@
   </div>
 </footer>
 
-<script src="/discourse-landing/assets/plugins/global/plugins.bundle.js"></script>
-<script src="/discourse-landing/assets/js/scripts.bundle.v2.01.js"></script>

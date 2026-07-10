@@ -15,7 +15,7 @@
       <?php include(__DIR__ . '/../includes/widget-applications-browser.php'); ?>
       <a href="//" onclick="KTApp.showPageLoading()" class="d-flex align-items-center">
         <h1 class="mb-0">
-          <img src="/networkmap/assets/img/logo.png" class="h-20px">
+          <img src="/elicit/assets/img/logo/logo-elicit.svg" class="h-20px" onerror="this.src='/elicit/assets/img/logo.png'">
           <span class="fw-bolder text-primary d-none"></span>
         </h1>
       </a>

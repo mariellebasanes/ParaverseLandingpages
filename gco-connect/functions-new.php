@@ -71,7 +71,7 @@ function HEAD_ESSENTIALS()
 
 <link rel="stylesheet" href="' . $base . 'assets/plugins/global/plugins.bundle.css">
 <link rel="stylesheet" href="' . $base . 'assets/css/style.keenicons.css">
-<link rel="stylesheet" href="' . $base . 'assets/css/style.bundle.v2.full.css">
+<link rel="stylesheet" href="' . $base . 'assets/css/style.bundle.v2.full.css?version=1.1028">
 <link rel="stylesheet" href="' . $base . 'assets/css/fonts/style.css">
 <link rel="stylesheet" href="' . $base . 'assets/css/fontawesome.css">
 
