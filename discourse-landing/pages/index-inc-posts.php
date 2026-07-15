@@ -2,6 +2,21 @@
 global $DISCOURSE_BASE;
 $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 ?>
+<style>
+.dl-post-card-carousel {
+  min-height: 480px;
+}
+@media (min-width: 576px) {
+  .dl-post-card-carousel {
+    min-height: 380px;
+  }
+}
+@media (min-width: 768px) {
+  .dl-post-card-carousel {
+    min-height: 330px;
+  }
+}
+</style>
 <!-- ════════════  POSTS + SIDEBAR (What students are saying)  ════════════ -->
 <section id="posts" class="py-20 dc-bg-light" style="position: relative; overflow: hidden;">
   <!-- Ambient background glow blobs -->
@@ -21,296 +36,175 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
       </h2>
     </div>
 
-    <!-- Two-column layout: feed + sidebar -->
-    <div class="row g-7 align-items-stretch">
+    <!-- Centered Carousel Layout -->
+    <div class="mx-auto position-relative" style="max-width: 860px;">
+      
+      <div id="dl-posts-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="12000">
+        <div class="carousel-inner pb-4">
 
-      <!-- LEFT: post detail view (col-lg-8) -->
-      <div class="col-lg-8 d-flex flex-column">
-        
-        <div class="card border-0 shadow-sm bg-white p-6 p-lg-8 rounded-4 mb-0 flex-grow-1 d-flex flex-column justify-content-between" data-dc="post-card">
-          <!-- Card Header Row -->
-          <div class="d-flex justify-content-between align-items-center mb-6">
-            <div class="d-flex align-items-center gap-2">
-              <span class="badge rounded-2 p-0 d-inline-flex align-items-center justify-content-center"
-                    style="background:var(--dc-green-tint); color:var(--dc-green-light); width:32px; height:32px; flex-shrink:0;">
-                <i class="ki-outline ki-eye fs-5" style="color:var(--dc-green-light);"></i>
-              </span>
-              <span class="badge rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center"
-                    style="font-size:0.72rem; background:var(--dc-green-tint); color:var(--dc-green-light); height:32px;">
-                c/CS Department
-              </span>
-            </div>
-            <button class="dl-post-report btn btn-link text-muted p-0 d-inline-flex align-items-center gap-1.5 text-decoration-none fw-semibold" style="font-size: 0.82rem;">
-              <i class="ki-outline ki-flag fs-6"></i> Report
-            </button>
-          </div>
-
-          <!-- Author Info Row -->
-          <div class="d-flex align-items-center gap-3 mb-6">
-            <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;" alt="Khrysseline Faith R. Tuballa">
-            <div>
-              <div class="d-flex align-items-center">
-                <span class="fw-bold text-gray-900 fs-6">Khrysseline Faith R. Tuballa</span>
-                <span class="badge fw-bold ms-2" style="font-size:0.7rem; background:var(--dc-green-tint); color:var(--dc-green-light); border-radius:6px; padding:4px 10px;">Others</span>
-              </div>
-              <div class="text-muted mt-0.5" style="font-size: 0.76rem;">29 days ago</div>
-            </div>
-          </div>
-
-          <!-- Title -->
-          <h2 class="fw-extrabold text-gray-900 mb-4" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
-            How do you balance difficult major subjects with general education courses?
-          </h2>
-
-          <!-- Post content -->
-          <p class="text-gray-700 mb-6" style="font-size: 0.95rem; line-height: 1.68;">
-            I'm currently taking several major subjects alongside GE courses, and I'm finding it difficult to manage deadlines and study time effectively. For students who have gone through a similar semester, what strategies helped you stay organized and avoid burnout? Any tips on scheduling, note-taking, or prioritizing requirements would be appreciated.
-          </p>
-
-          <!-- Reactions Row -->
-          <div class="d-flex align-items-center gap-6 text-muted fs-7 mb-6" id="dl-reactions-row">
-            <button class="btn p-0 d-inline-flex align-items-center gap-2 text-muted hover-text-success border-0 bg-transparent" id="dl-like-btn">
-              <i class="ki-outline ki-like fs-4"></i> <span id="dl-like-cnt">1</span>
-            </button>
-            <button class="btn p-0 d-inline-flex align-items-center gap-2 text-muted hover-text-danger border-0 bg-transparent" id="dl-dislike-btn">
-              <i class="ki-outline ki-dislike fs-4"></i> <span id="dl-dislike-cnt">2</span>
-            </button>
-            <span class="d-inline-flex align-items-center gap-2 text-muted">
-              <i class="ki-outline ki-message-text-2 fs-4"></i> <span class="dl-comment-total-cnt">5</span>
-            </span>
-            <button class="btn p-0 d-inline-flex align-items-center gap-2 text-muted hover-text-primary border-0 bg-transparent" id="dl-bookmark-btn">
-              <i class="ki-outline ki-bookmark fs-4"></i> <span id="dl-bookmark-cnt">5</span>
-            </button>
-          </div>
-
-          <hr class="text-gray-200 my-6">
-
-          <!-- Comments Heading -->
-          <h3 class="fw-bolder text-gray-900 mb-6" style="font-size: 1.15rem;">
-            Comments <span class="text-muted fw-normal fs-6 ms-1" id="dl-comments-title-cnt">5</span>
-          </h3>
-
-          <!-- Comments List -->
-          <div class="d-flex flex-column gap-5 mb-6" id="dl-comments-list">
-            <!-- Comment 1 -->
-            <div class="d-flex gap-3 align-items-start">
-              <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width: 36px; height: 36px; object-fit: cover;" alt="Khrysseline Faith R. Tuballa">
-              <div>
-                <div class="fw-bold text-gray-900 fs-7">Khrysseline Faith R. Tuballa</div>
-                <p class="text-gray-700 mb-0 mt-1" style="font-size: 0.88rem; line-height: 1.5;">I suggest setting up a weekly planner and dedicating specific blocks of time exclusively to your major subjects. For GE courses, try to skim the readings ahead of time so you can participate actively in class discussions without spending hours on them later.</p>
-              </div>
-            </div>
-
-            <!-- Comment 2 -->
-            <div class="d-flex gap-3 align-items-start">
-              <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
-                   style="width:36px; height:36px; background:var(--dc-green-light); font-size:0.85rem; flex-shrink:0;">
-                MM
-              </div>
-              <div>
-                <div class="fw-bold text-gray-900 fs-7">Marixine Sofia S. Manahan</div>
-                <p class="text-gray-700 mb-0 mt-1" style="font-size: 0.88rem; line-height: 1.5;">Don't underestimate the power of starting early on your programming labs! Leaving CS projects for the last minute while trying to write GE essays is how you get burned out. Try spacing out your deliverables and using tools like Notion to track deadlines.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Add Comment Form -->
-          <form id="dl-single-comment-form" class="mt-4 border-top border-gray-100 pt-5">
-            <div class="d-flex align-items-center gap-3">
-              <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
-                   style="width:32px; height:32px; background:var(--dc-gold-hover); font-size:0.75rem; flex-shrink:0;">
-                U
-              </div>
-              <input type="text" id="dl-comment-input-field" class="form-control form-control-sm rounded-pill px-4 bg-light border-0" placeholder="Write a comment…" required style="font-size: 0.82rem; height: 36px;">
-              <button type="submit" class="btn btn-sm btn-success rounded-pill px-5 fw-bold" style="background: var(--dc-green-light); color: #fff; height: 36px; display: flex; align-items: center; border: none;">Post</button>
-            </div>
-          </form>
-        </div>
-
-      </div>
-
-      <!-- RIGHT: Sidebar (matches sec-sidebar.php widgets) -->
-      <div class="col-lg-4 d-flex flex-column">
-
-        <!-- Widget 1: Discourse info card — dark green (from sec-sidebar.php) -->
-        <div class="dl-sidebar-info-card p-5 mb-5 rounded-4 shadow-sm" style="min-height:220px;">
-          <div class="dl-sidebar-glow"></div>
-          <div style="position:relative;z-index:1;">
-            <img src="<?php echo $base; ?>assets/images/Discourse-logo.png" alt="Discourse Logo" style="height:52px;width:auto;margin-bottom:14px;">
-            <p class="text-white mb-3" style="opacity:0.78; font-size:0.84rem; line-height:1.65;">
-              Ask questions, start debates, post anonymously. No prof. No judgment. Just FEU Tech, Alabang, and Diliman students keeping it real.
-            </p>
-            <hr style="border-color:rgba(255,255,255,0.10); margin:12px 0;">
-            <!-- Trending posts from sec-sidebar.php -->
-            <?php
-            $trending = [
-              ['emoji'=>'🎮','text'=>'E-Sports Tournament sign-ups are OPEN — Valorant & ML squads needed now!','sub'=>'just posted · 12 comments'],
-              ['emoji'=>'📅','text'=>'Capstone Defense Schedule for AY 2025–2026 is now posted in c/FEU TECH DEV','sub'=>'5 comments · most active'],
-              ['emoji'=>'📚','text'=>'Finals study session this Saturday at SM Alabang — who\'s joining?','sub'=>'no replies yet'],
-            ];
-            foreach ($trending as $tr): ?>
-            <a href="<?php echo $base; ?>posts/index.php"
-               class="discourse-info-post-item d-flex align-items-start gap-2 p-2 rounded text-decoration-none mb-1">
-              <span style="margin-top:2px; font-size:0.82rem;"><?php echo $tr['emoji']; ?></span>
-              <div>
-                <div class="text-white fw-semibold" style="font-size:0.78rem; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; line-height:1.4;">
-                  <?php echo htmlspecialchars($tr['text']); ?>
+          <!-- ══ POST 1: CS Department ══ -->
+          <div class="carousel-item active">
+            <div class="card border-0 shadow-sm bg-white p-6 p-lg-8 rounded-4 mb-0 dl-post-card-carousel" data-dc="post-card">
+              <!-- Card Header Row -->
+              <div class="d-flex justify-content-between align-items-center mb-6">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge rounded-2 p-0 d-inline-flex align-items-center justify-content-center"
+                        style="background:var(--dc-green-tint); color:var(--dc-green-light); width:32px; height:32px; flex-shrink:0;">
+                    <i class="ki-outline ki-eye fs-5" style="color:var(--dc-green-light);"></i>
+                  </span>
+                  <span class="badge rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center"
+                        style="font-size:0.72rem; background:var(--dc-green-tint); color:var(--dc-green-light); height:32px;">
+                    c/CS Department
+                  </span>
                 </div>
-                <div style="font-size:0.68rem; color:rgba(255,255,255,0.45);"><?php echo $tr['sub']; ?></div>
+                <button class="dl-post-report btn btn-link text-muted p-0 d-inline-flex align-items-center gap-1.5 text-decoration-none fw-semibold" style="font-size: 0.82rem;">
+                  <i class="ki-outline ki-flag fs-6"></i> Report
+                </button>
               </div>
-            </a>
-            <?php endforeach; ?>
-          </div>
-        </div>
 
-        <!-- Widget 2: Community Stats (from sec-sidebar.php) -->
-        <div class="card border-0 shadow-sm rounded-4 mb-5">
-          <div class="card-body p-5">
-            <h6 class="fw-bold text-gray-800 fs-6 mb-4">Community Stats</h6>
-            <?php
-            $stats = [
-              ['icon'=>'ki-outline ki-people','label'=>'Members','val'=>'4,819','sub'=>'+143 This Week'],
-              ['icon'=>'ki-outline ki-message-text','label'=>'Posts Today','val'=>'390','sub'=>'Across 9 Topics'],
-              ['icon'=>'ki-outline ki-chart-line-up','label'=>'Online Now','val'=>'1,042','sub'=>'Active Users'],
-            ];
-            foreach ($stats as $s): ?>
-            <div class="dl-stat-item d-flex align-items-center justify-content-between pb-4 mb-4">
-              <div class="d-flex align-items-center gap-3">
-                <div class="d-flex align-items-center justify-content-center rounded-2" style="width:36px;height:36px;background:var(--dc-green-muted);flex-shrink:0;">
-                  <i class="<?php echo $s['icon']; ?>" style="color:var(--dc-green-light); font-size:1.1rem;"></i>
+              <!-- Author Info Row -->
+              <div class="d-flex align-items-center gap-3 mb-6">
+                <img src="<?php echo $base; ?>assets/images/catalina.webp" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;" alt="Khrysseline Faith R. Tuballa">
+                <div>
+                  <div class="d-flex align-items-center">
+                    <span class="fw-bold text-gray-900 fs-6">Khrysseline Faith R. Tuballa</span>
+                    <span class="badge fw-bold ms-2" style="font-size:0.7rem; background:var(--dc-green-tint); color:var(--dc-green-light); border-radius:6px; padding:4px 10px;">Others</span>
+                  </div>
+                  <div class="text-muted mt-0.5" style="font-size: 0.76rem;">29 days ago</div>
                 </div>
-                <span class="fw-bold text-gray-800 fs-8 text-uppercase" style="letter-spacing:0.06em;"><?php echo $s['label']; ?></span>
               </div>
-              <div class="text-end">
-                <div class="fw-bolder text-gray-800 fs-5"><?php echo $s['val']; ?></div>
-                <div class="text-muted fs-9 text-uppercase" style="letter-spacing:0.04em;"><?php echo $s['sub']; ?></div>
-              </div>
-            </div>
-            <?php endforeach; ?>
-          </div>
-        </div>
 
-        <!-- Widget 3: Browse Topics (from sec-sidebar.php) -->
-        <div class="card border-0 shadow-sm rounded-4 mb-0 flex-grow-1">
-          <div class="card-body p-5">
-            <h6 class="fw-bold text-gray-800 fs-6 mb-4">Browse Topics</h6>
-            <div class="d-flex flex-wrap gap-2">
-              <?php
-              $topics = ['TECHNOLOGY','GAMING','FEU','AI','CULTURE','SCIENCE','NEWS','SPORTS','ACADEMICS'];
-              foreach ($topics as $t): ?>
-              <a href="<?php echo $base; ?>topics/index.php?t=<?php echo $t; ?>"
-                 class="badge rounded-pill fw-semibold px-3 py-2 text-decoration-none"
-                 style="font-size:0.73rem; background:var(--dc-green-muted); color:var(--dc-green-light); transition:background 0.15s, color 0.15s;"
-                 onmouseover="this.style.background='var(--dc-green-light)';this.style.color='#fff';"
-                 onmouseout="this.style.background='var(--dc-green-muted)';this.style.color='var(--dc-green-light)';">
-                <?php echo $t; ?>
-              </a>
-              <?php endforeach; ?>
+              <!-- Title -->
+              <h2 class="fw-extrabold text-gray-900 mb-4" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
+                How do you balance difficult major subjects with general education courses?
+              </h2>
+
+              <!-- Post content -->
+              <p class="text-gray-700 mb-0" style="font-size: 0.95rem; line-height: 1.68;">
+                I'm currently taking several major subjects alongside GE courses, and I'm finding it difficult to manage deadlines and study time effectively. For students who have gone through a similar semester, what strategies helped you stay organized and avoid burnout? Any tips on scheduling, note-taking, or prioritizing requirements would be appreciated.
+              </p>
             </div>
           </div>
+
+          <!-- ══ POST 2: Freedom Wall (Anonymous) ══ -->
+          <div class="carousel-item">
+            <div class="card border-0 shadow-sm bg-white p-6 p-lg-8 rounded-4 mb-0 dl-post-card-carousel" data-dc="post-card">
+              <!-- Card Header Row -->
+              <div class="d-flex justify-content-between align-items-center mb-6">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge rounded-2 p-0 d-inline-flex align-items-center justify-content-center"
+                        style="background:rgba(114,57,234,0.09); color:#7239ea; width:32px; height:32px; flex-shrink:0;">
+                    <i class="ki-outline ki-eye fs-5" style="color:#7239ea;"></i>
+                  </span>
+                  <span class="badge rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center"
+                        style="font-size:0.72rem; background:rgba(114,57,234,0.09); color:#7239ea; height:32px;">
+                    c/Freedom Wall
+                  </span>
+                </div>
+                <button class="dl-post-report btn btn-link text-muted p-0 d-inline-flex align-items-center gap-1.5 text-decoration-none fw-semibold" style="font-size: 0.82rem;">
+                  <i class="ki-outline ki-flag fs-6"></i> Report
+                </button>
+              </div>
+
+              <!-- Author Info Row -->
+              <div class="d-flex align-items-center gap-3 mb-6">
+                <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white" 
+                     style="width: 44px; height: 44px; background: var(--dc-gold-hover); font-size: 0.95rem; flex-shrink:0;">
+                  A
+                </div>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <span class="fw-bold text-gray-900 fs-6">Anonymous Student</span>
+                    <span class="badge fw-bold ms-2" style="font-size:0.7rem; background:rgba(114,57,234,0.09); color:#7239ea; border-radius:6px; padding:4px 10px;">Freedom Wall</span>
+                  </div>
+                  <div class="text-muted mt-0.5" style="font-size: 0.76rem;">2 days ago</div>
+                </div>
+              </div>
+
+              <!-- Title -->
+              <h2 class="fw-extrabold text-gray-900 mb-4" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
+                Is it really 100% anonymous when posting on the Freedom Wall?
+              </h2>
+
+              <!-- Post content -->
+              <p class="text-gray-700 mb-0" style="font-size: 0.95rem; line-height: 1.68;">
+                I want to share some honest feedback about the enrollment process but I'm worried it might get linked back to my account. Has anyone here posted anonymously before? Does it show any hints of our identity to admins or is it completely hidden?
+              </p>
+            </div>
+          </div>
+
+          <!-- ══ POST 3: FEU TECH DEV (Gabriel Santos) ══ -->
+          <div class="carousel-item">
+            <div class="card border-0 shadow-sm bg-white p-6 p-lg-8 rounded-4 mb-0 dl-post-card-carousel" data-dc="post-card">
+              <!-- Card Header Row -->
+              <div class="d-flex justify-content-between align-items-center mb-6">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge rounded-2 p-0 d-inline-flex align-items-center justify-content-center"
+                        style="background:rgba(235,187,7,0.12); color:var(--dc-gold-hover); width:32px; height:32px; flex-shrink:0;">
+                    <i class="ki-outline ki-eye fs-5" style="color:var(--dc-gold-hover);"></i>
+                  </span>
+                  <span class="badge rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center"
+                        style="font-size:0.72rem; background:rgba(235,187,7,0.12); color:var(--dc-gold-hover); height:32px;">
+                    c/FEU TECH DEV
+                  </span>
+                </div>
+                <button class="dl-post-report btn btn-link text-muted p-0 d-inline-flex align-items-center gap-1.5 text-decoration-none fw-semibold" style="font-size: 0.82rem;">
+                  <i class="ki-outline ki-flag fs-6"></i> Report
+                </button>
+              </div>
+
+              <!-- Author Info Row -->
+              <div class="d-flex align-items-center gap-3 mb-6">
+                <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white" 
+                     style="width: 44px; height: 44px; background: var(--dc-green-light); font-size: 0.95rem; flex-shrink:0;">
+                  GS
+                </div>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <span class="fw-bold text-gray-900 fs-6">Gabriel Santos</span>
+                    <span class="badge fw-bold ms-2" style="font-size:0.7rem; background:var(--dc-green-tint); color:var(--dc-green-light); border-radius:6px; padding:4px 10px;">Tech</span>
+                  </div>
+                  <div class="text-muted mt-0.5" style="font-size: 0.76rem;">5 days ago</div>
+                </div>
+              </div>
+
+              <!-- Title -->
+              <h2 class="fw-extrabold text-gray-900 mb-4" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
+                Looking for Capstone groupmates (web/mobile app development)
+              </h2>
+
+              <!-- Post content -->
+              <p class="text-gray-700 mb-0" style="font-size: 0.95rem; line-height: 1.68;">
+                Hey guys! We are looking for one more developer to join our Capstone team. We plan to build a student productivity app using React Native and Firebase. If you have some experience in JS/TS and want to collaborate, hit me up!
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /carousel-inner -->
+
+        <!-- Dot Indicators -->
+        <div class="carousel-indicators dl-carousel-indicators position-relative mt-6 mb-0">
+          <button type="button" data-bs-target="#dl-posts-carousel" data-bs-slide-to="0"
+                  class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#dl-posts-carousel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#dl-posts-carousel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
         </div>
 
-      </div><!-- /sidebar col -->
+      </div><!-- /carousel -->
 
-    </div><!-- /row -->
-  </div>
-</section>
-
-<script>
-window.addEventListener('DOMContentLoaded', function () {
-  
-  /* Upvote / Like toggle */
-  var likeBtn = document.getElementById('dl-like-btn');
-  var likeCnt = document.getElementById('dl-like-cnt');
-  var dislikeBtn = document.getElementById('dl-dislike-btn');
-  var dislikeCnt = document.getElementById('dl-dislike-cnt');
-  
-  if (likeBtn && likeCnt) {
-    likeBtn.addEventListener('click', function () {
-      var isLiked = likeBtn.classList.toggle('text-success');
-      likeBtn.classList.toggle('fw-bold');
-      var val = parseInt(likeCnt.textContent, 10);
-      likeCnt.textContent = isLiked ? (val + 1) : (val - 1);
-      
-      // If dislike was active, remove it
-      if (isLiked && dislikeBtn && dislikeBtn.classList.contains('text-danger')) {
-        dislikeBtn.classList.remove('text-danger', 'fw-bold');
-        var dval = parseInt(dislikeCnt.textContent, 10);
-        dislikeCnt.textContent = dval - 1;
-      }
-    });
-  }
-
-  /* Downvote / Dislike toggle */
-  if (dislikeBtn && dislikeCnt) {
-    dislikeBtn.addEventListener('click', function () {
-      var isDisliked = dislikeBtn.classList.toggle('text-danger');
-      dislikeBtn.classList.toggle('fw-bold');
-      var val = parseInt(dislikeCnt.textContent, 10);
-      dislikeCnt.textContent = isDisliked ? (val + 1) : (val - 1);
-      
-      // If like was active, remove it
-      if (isDisliked && likeBtn && likeBtn.classList.contains('text-success')) {
-        likeBtn.classList.remove('text-success', 'fw-bold');
-        var lval = parseInt(likeCnt.textContent, 10);
-        likeCnt.textContent = lval - 1;
-      }
-    });
-  }
-
-  /* Bookmark toggle */
-  var bkmkBtn = document.getElementById('dl-bookmark-btn');
-  var bkmkCnt = document.getElementById('dl-bookmark-cnt');
-  if (bkmkBtn && bkmkCnt) {
-    bkmkBtn.addEventListener('click', function () {
-      var isBookmarked = bkmkBtn.classList.toggle('text-primary');
-      bkmkBtn.classList.toggle('fw-bold');
-      var val = parseInt(bkmkCnt.textContent, 10);
-      bkmkCnt.textContent = isBookmarked ? (val + 1) : (val - 1);
-    });
-  }
-
-  /* Comment Form Submit */
-  var commentForm = document.getElementById('dl-single-comment-form');
-  var commentInput = document.getElementById('dl-comment-input-field');
-  var commentsList = document.getElementById('dl-comments-list');
-  var commentTotalSpan = document.querySelectorAll('.dl-comment-total-cnt');
-  var commentTitleSpan = document.getElementById('dl-comments-title-cnt');
-
-  if (commentForm && commentInput && commentsList) {
-    commentForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var text = commentInput.value.trim();
-      if (!text) return;
-      
-      var commentEl = document.createElement('div');
-      commentEl.className = 'd-flex gap-3 align-items-start';
-      commentEl.innerHTML = `
-        <div class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold" 
-             style="width: 36px; height: 36px; background: var(--dc-gold-hover); font-size: 0.85rem; flex-shrink: 0;">
-          U
-        </div>
-        <div>
-          <div class="fw-bold text-gray-900 fs-7">You (Anonymous)</div>
-          <p class="text-gray-700 mb-0 mt-1" style="font-size: 0.88rem; line-height: 1.5;">${text}</p>
-        </div>
-      `;
-      
-      commentsList.appendChild(commentEl);
-      
-      // Update counters
-      if (commentTitleSpan) {
-        var currentTitleCount = parseInt(commentTitleSpan.textContent, 10);
-        commentTitleSpan.textContent = currentTitleCount + 1;
-      }
-      commentTotalSpan.forEach(function (span) {
-        var currentTotalCount = parseInt(span.textContent, 10);
-        span.textContent = currentTotalCount + 1;
-      });
-      
-      // Reset & scroll
-      commentInput.value = '';
-    });
-  }
-});
-</script>
+      <!-- Arrow Controls -->
+      <button class="dl-carousel-control dl-carousel-control-prev d-none d-sm-inline-flex"
+              type="button" data-bs-target="#dl-posts-carousel" data-bs-slide="prev"
+              style="left: -60px;">
+        <i class="ki-outline ki-arrow-left fs-4"></i>
+      </button>
+      <button class="dl-carousel-control dl-carousel-control-next d-none d-sm-inline-flex"
+              type="button" data-bs-target="#dl-posts-carousel" data-bs-slide="next"
+              style="right: -60px;">
+        <i class="ki-outline ki-arrow-right fs-4"></i>
+      </button>
+    </div><!-- /centered wrapper -->
+  </div><!-- /container-xxl -->
+</section><!-- /posts -->

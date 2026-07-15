@@ -44,51 +44,49 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <!-- ══ SLIDE 1: Academic ══ -->
           <div class="carousel-item active">
             <div class="dl-ann-card dl-ann-card--slide mx-auto position-relative overflow-hidden"
-                 style="max-width: 860px; 
-                        background: linear-gradient(145deg, #ffffff 0%, #f2f9f5 100%);">
+                 style="max-width: 1000px; 
+                        background: linear-gradient(145deg, #ffffff 0%, #f2f9f5 100%); padding: 2.5rem; min-height: 290px;">
 
               <!-- Decorative blob -->
               <div style="position:absolute;top:-70px;right:-70px;width:240px;height:240px;border-radius:50%;
                           background:rgba(6,171,98,0.07);pointer-events:none;"></div>
 
-              <div class="row g-0 align-items-center">
-                <!-- Left: Icon + badge -->
-                <div class="col-12 col-md-3 d-flex flex-column align-items-center align-items-md-start mb-6 mb-md-0 pe-md-6"
-                     style="border-right: 1px solid rgba(6,171,98,0.10);">
-                  <div class="dl-ann-icon mb-4" style="background:var(--dc-green-tint); box-shadow:0 6px 20px rgba(6,171,98,0.12);">
-                    <i class="ki-outline ki-book-open fs-2x" style="color:var(--dc-green-light);"></i>
-                  </div>
-                  <span class="dl-ann-badge" style="background:var(--dc-green-tint); color:var(--dc-green-light);">
-                    <i class="ki-outline ki-book fs-7 me-1"></i> Academic
-                  </span>
-                  <div class="dl-ann-date mt-2">July 3, 2026</div>
-                </div>
-
-                <!-- Right: Content -->
-                <div class="col-12 col-md-9 ps-md-8">
-                  <h3 class="fw-bolder text-gray-900 mb-3" style="font-size:1.5rem; line-height:1.25;">
+              <div class="d-flex flex-column h-100 justify-content-between">
+                <div>
+                  <h3 class="fw-bolder text-gray-900 mb-2" style="font-size:1.65rem; line-height:1.25;">
                     Midterm Exams &amp; Study Guides
                   </h3>
-                  <p class="text-gray-600 mb-5" style="font-size:0.96rem; line-height:1.72;">
+                  
+                  <div class="d-flex align-items-center gap-3 mb-5 flex-wrap">
+                    <span class="dl-ann-badge" style="background:var(--dc-green-tint); color:var(--dc-green-light); padding: 5px 14px; font-size: 0.78rem;">
+                      <i class="ki-outline ki-book fs-6 me-1"></i> Academic
+                    </span>
+                    <span class="text-gray-400 d-inline-flex align-items-center gap-1.5" style="font-size:0.88rem; font-weight:500;">
+                      <i class="ki-outline ki-calendar fs-5"></i> July 3, 2026
+                    </span>
+                  </div>
+
+                  <p class="text-gray-600 mb-6" style="font-size:1.02rem; line-height:1.75;">
                     Midterm examinations are scheduled for July 10–15. Boost your preparation by checking out community study guides and past materials shared in the c/Academics forum. Don't go in blind — start early!
                   </p>
-                  <div class="d-flex align-items-center justify-content-between flex-wrap gap-4">
-                    <div class="d-flex align-items-center gap-2">
-                      <img src="<?php echo $base; ?>assets/images/catalina.webp"
-                           class="rounded-circle" style="width:28px;height:28px;object-fit:cover;" alt="EDITH Admin">
-                      <span class="fw-semibold text-gray-700" style="font-size:0.83rem;">EDITH Admin</span>
-                      <span class="text-gray-300 mx-1">•</span>
-                      <span class="text-muted" style="font-size:0.83rem;">5 days ago</span>
-                    </div>
-                    <a href="<?php echo htmlspecialchars($base); ?>"
-                       class="btn fw-bold px-6 py-2 d-inline-flex align-items-center gap-2"
-                       style="background:var(--dc-green-light);color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
-                       onmouseover="this.style.background='var(--dc-green-mid)';"
-                       onmouseout="this.style.background='var(--dc-green-light)';"
-                       onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
-                      Read More <i class="ki-outline ki-arrow-right fs-6"></i>
-                    </a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mt-auto pt-4" style="border-top: 1px solid rgba(0,0,0,0.05);">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="<?php echo $base; ?>assets/images/catalina.webp"
+                         class="rounded-circle" style="width:32px;height:32px;object-fit:cover;" alt="EDITH Admin">
+                    <span class="fw-semibold text-gray-700" style="font-size:0.88rem;">EDITH Admin</span>
+                    <span class="text-gray-300 mx-1">•</span>
+                    <span class="text-muted" style="font-size:0.88rem;">5 days ago</span>
                   </div>
+                  <a href="<?php echo htmlspecialchars($base); ?>"
+                     class="btn fw-bold px-6 py-2.5 d-inline-flex align-items-center gap-2"
+                     style="background:var(--dc-green-light);color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
+                     onmouseover="this.style.background='var(--dc-green-mid)';"
+                     onmouseout="this.style.background='var(--dc-green-light)';"
+                     onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
+                    Read More <i class="ki-outline ki-arrow-right fs-6"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -97,50 +95,48 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <!-- ══ SLIDE 2: E-Sports Event ══ -->
           <div class="carousel-item">
             <div class="dl-ann-card dl-ann-card--slide mx-auto position-relative overflow-hidden"
-                 style="max-width: 860px; 
-                        background: linear-gradient(145deg, #ffffff 0%, #fffdf0 100%);">
+                 style="max-width: 1000px; 
+                        background: linear-gradient(145deg, #ffffff 0%, #fffdf0 100%); padding: 2.5rem; min-height: 290px;">
 
               <div style="position:absolute;top:-70px;right:-70px;width:240px;height:240px;border-radius:50%;
                           background:rgba(200,165,0,0.07);pointer-events:none;"></div>
 
-              <div class="row g-0 align-items-center">
-                <!-- Left: Icon + badge -->
-                <div class="col-12 col-md-3 d-flex flex-column align-items-center align-items-md-start mb-6 mb-md-0 pe-md-6"
-                     style="border-right: 1px solid rgba(200,165,0,0.12);">
-                  <div class="dl-ann-icon mb-4" style="background:rgba(235,187,7,0.12); box-shadow:0 6px 20px rgba(235,187,7,0.14);">
-                    <i class="ki-outline ki-award fs-2x" style="color:var(--dc-gold-hover);"></i>
-                  </div>
-                  <span class="dl-ann-badge" style="background:rgba(235,187,7,0.14); color:var(--dc-gold-hover);">
-                    <i class="ki-outline ki-joystick fs-7 me-1"></i> Event
-                  </span>
-                  <div class="dl-ann-date mt-2">July 2, 2026</div>
-                </div>
-
-                <!-- Right: Content -->
-                <div class="col-12 col-md-9 ps-md-8">
-                  <h3 class="fw-bolder text-gray-900 mb-3" style="font-size:1.5rem; line-height:1.25;">
+              <div class="d-flex flex-column h-100 justify-content-between">
+                <div>
+                  <h3 class="fw-bolder text-gray-900 mb-2" style="font-size:1.65rem; line-height:1.25;">
                     E-Sports Tournament Now Open
                   </h3>
-                  <p class="text-gray-600 mb-5" style="font-size:0.96rem; line-height:1.72;">
+                  
+                  <div class="d-flex align-items-center gap-3 mb-5 flex-wrap">
+                    <span class="dl-ann-badge" style="background:rgba(235,187,7,0.14); color:var(--dc-gold-hover); padding: 5px 14px; font-size: 0.78rem;">
+                      <i class="ki-outline ki-joystick fs-6 me-1"></i> Event
+                    </span>
+                    <span class="text-gray-400 d-inline-flex align-items-center gap-1.5" style="font-size:0.88rem; font-weight:500;">
+                      <i class="ki-outline ki-calendar fs-5"></i> July 2, 2026
+                    </span>
+                  </div>
+
+                  <p class="text-gray-600 mb-6" style="font-size:1.02rem; line-height:1.75;">
                     Registration is now officially live for the upcoming campus Valorant and Mobile Legends tournament! Form your squad, reserve a slot, and compete for a <strong>PHP 25,000 prize pool</strong>. Limited team slots available — don't miss out!
                   </p>
-                  <div class="d-flex align-items-center justify-content-between flex-wrap gap-4">
-                    <div class="d-flex align-items-center gap-2">
-                      <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white"
-                           style="width:28px;height:28px;background:var(--dc-gold-hover);font-size:0.65rem;flex-shrink:0;">MM</div>
-                      <span class="fw-semibold text-gray-700" style="font-size:0.83rem;">Marixine · ESports Comm</span>
-                      <span class="text-gray-300 mx-1">•</span>
-                      <span class="text-muted" style="font-size:0.83rem;">6 days ago</span>
-                    </div>
-                    <a href="<?php echo htmlspecialchars($base); ?>"
-                       class="btn fw-bold px-6 py-2 d-inline-flex align-items-center gap-2"
-                       style="background:var(--dc-gold-hover);color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
-                       onmouseover="this.style.background='#b8900a';"
-                       onmouseout="this.style.background='var(--dc-gold-hover)';"
-                       onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
-                      Read More <i class="ki-outline ki-arrow-right fs-6"></i>
-                    </a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mt-auto pt-4" style="border-top: 1px solid rgba(0,0,0,0.05);">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white"
+                         style="width:32px;height:32px;background:var(--dc-gold-hover);font-size:0.75rem;flex-shrink:0;">MM</div>
+                    <span class="fw-semibold text-gray-700" style="font-size:0.88rem;">Marixine · ESports Comm</span>
+                    <span class="text-gray-300 mx-1">•</span>
+                    <span class="text-muted" style="font-size:0.88rem;">6 days ago</span>
                   </div>
+                  <a href="<?php echo htmlspecialchars($base); ?>"
+                     class="btn fw-bold px-6 py-2.5 d-inline-flex align-items-center gap-2"
+                     style="background:var(--dc-gold-hover);color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
+                     onmouseover="this.style.background='#b8900a';"
+                     onmouseout="this.style.background='var(--dc-gold-hover)';"
+                     onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
+                    Read More <i class="ki-outline ki-arrow-right fs-6"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -149,50 +145,48 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <!-- ══ SLIDE 3: Mobile Beta Launch ══ -->
           <div class="carousel-item">
             <div class="dl-ann-card dl-ann-card--slide mx-auto position-relative overflow-hidden"
-                 style="max-width: 860px;
-                        background: linear-gradient(145deg, #ffffff 0%, #faf8ff 100%);">
+                 style="max-width: 1000px;
+                        background: linear-gradient(145deg, #ffffff 0%, #faf8ff 100%); padding: 2.5rem; min-height: 290px;">
 
               <div style="position:absolute;top:-70px;right:-70px;width:240px;height:240px;border-radius:50%;
                           background:rgba(114,57,234,0.06);pointer-events:none;"></div>
 
-              <div class="row g-0 align-items-center">
-                <!-- Left: Icon + badge -->
-                <div class="col-12 col-md-3 d-flex flex-column align-items-center align-items-md-start mb-6 mb-md-0 pe-md-6"
-                     style="border-right: 1px solid rgba(114,57,234,0.10);">
-                  <div class="dl-ann-icon mb-4" style="background:rgba(114,57,234,0.09); box-shadow:0 6px 20px rgba(114,57,234,0.12);">
-                    <i class="ki-outline ki-devices fs-2x" style="color:#7239ea;"></i>
-                  </div>
-                  <span class="dl-ann-badge" style="background:rgba(114,57,234,0.09); color:#7239ea;">
-                    <i class="ki-outline ki-setting-2 fs-7 me-1"></i> Update
-                  </span>
-                  <div class="dl-ann-date mt-2">July 1, 2026</div>
-                </div>
-
-                <!-- Right: Content -->
-                <div class="col-12 col-md-9 ps-md-8">
-                  <h3 class="fw-bolder text-gray-900 mb-3" style="font-size:1.5rem; line-height:1.25;">
+              <div class="d-flex flex-column h-100 justify-content-between">
+                <div>
+                  <h3 class="fw-bolder text-gray-900 mb-2" style="font-size:1.65rem; line-height:1.25;">
                     Discourse Mobile Beta Launch
                   </h3>
-                  <p class="text-gray-600 mb-5" style="font-size:0.96rem; line-height:1.72;">
+                  
+                  <div class="d-flex align-items-center gap-3 mb-5 flex-wrap">
+                    <span class="dl-ann-badge" style="background:rgba(114,57,234,0.09); color:#7239ea; padding: 5px 14px; font-size: 0.78rem;">
+                      <i class="ki-outline ki-setting-2 fs-6 me-1"></i> Update
+                    </span>
+                    <span class="text-gray-400 d-inline-flex align-items-center gap-1.5" style="font-size:0.88rem; font-weight:500;">
+                      <i class="ki-outline ki-calendar fs-5"></i> July 1, 2026
+                    </span>
+                  </div>
+
+                  <p class="text-gray-600 mb-6" style="font-size:1.02rem; line-height:1.75;">
                     Discourse is coming to your pocket! Participate in our exclusive mobile app beta test on iOS TestFlight and Android Google Play. Get instant notification alerts for tags, replies, and messages — stay connected anywhere.
                   </p>
-                  <div class="d-flex align-items-center justify-content-between flex-wrap gap-4">
-                    <div class="d-flex align-items-center gap-2">
-                      <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white"
-                           style="width:28px;height:28px;background:#7239ea;font-size:0.65rem;flex-shrink:0;">D</div>
-                      <span class="fw-semibold text-gray-700" style="font-size:0.83rem;">Discourse Dev Team</span>
-                      <span class="text-gray-300 mx-1">•</span>
-                      <span class="text-muted" style="font-size:0.83rem;">7 days ago</span>
-                    </div>
-                    <a href="<?php echo htmlspecialchars($base); ?>"
-                       class="btn fw-bold px-6 py-2 d-inline-flex align-items-center gap-2"
-                       style="background:#7239ea;color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
-                       onmouseover="this.style.background='#5a2dc0';"
-                       onmouseout="this.style.background='#7239ea';"
-                       onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
-                      Read More <i class="ki-outline ki-arrow-right fs-6"></i>
-                    </a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mt-auto pt-4" style="border-top: 1px solid rgba(0,0,0,0.05);">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white"
+                         style="width:32px;height:32px;background:#7239ea;font-size:0.75rem;flex-shrink:0;">D</div>
+                    <span class="fw-semibold text-gray-700" style="font-size:0.88rem;">Discourse Dev Team</span>
+                    <span class="text-gray-300 mx-1">•</span>
+                    <span class="text-muted" style="font-size:0.88rem;">7 days ago</span>
                   </div>
+                  <a href="<?php echo htmlspecialchars($base); ?>"
+                     class="btn fw-bold px-6 py-2.5 d-inline-flex align-items-center gap-2"
+                     style="background:#7239ea;color:#fff;border-radius:10px;font-size:0.88rem;border:none;transition:all 0.2s;"
+                     onmouseover="this.style.background='#5a2dc0';"
+                     onmouseout="this.style.background='#7239ea';"
+                     onclick="typeof KTApp!=='undefined'&&KTApp.showPageLoading&&KTApp.showPageLoading()">
+                    Read More <i class="ki-outline ki-arrow-right fs-6"></i>
+                  </a>
                 </div>
               </div>
             </div>
