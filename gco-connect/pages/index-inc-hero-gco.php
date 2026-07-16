@@ -82,7 +82,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
             height: 900px;
             position: absolute;
             right: -210px;
-            bottom: -320px; /* Hits the very end on large screens */
+            bottom: -263px; /* Hits the very end on large screens */
             pointer-events: none;
             z-index: 0;
           }
@@ -92,7 +92,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
               width: 800px;
               height: 800px;
               right: -180px;
-              bottom: -280px;
+              bottom: -230px;
             }
           }
 
@@ -101,7 +101,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
               width: 700px;
               height: 700px;
               right: -150px;
-              bottom: -250px;
+              bottom: -200px;
             }
           }
 
@@ -113,7 +113,7 @@ $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
               height: auto;
               right: 0;
               bottom: 0;
-              margin: 30px auto -150px auto; /* Extreme negative margin to hit the transition edge */
+              margin: 30px auto -120px auto; /* Extreme negative margin to hit the transition edge */
               display: block;
             }
             .min-h-600px { min-height: auto !important; }
