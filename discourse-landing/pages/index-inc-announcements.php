@@ -36,7 +36,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
     </div>
 
     <!-- Carousel wrapper -->
-    <div class="position-relative dl-reveal dl-delay-1">
+    <div class="position-relative dl-announcements-wrapper dl-reveal dl-delay-1">
 
       <div id="dl-announcements-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
         <div class="carousel-inner pb-4">
@@ -44,7 +44,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <!-- ══ SLIDE 1: Academic ══ -->
           <div class="carousel-item active">
             <div class="dl-ann-card dl-ann-card--slide mx-auto position-relative overflow-hidden"
-                 style="max-width: 1000px; 
+                 style="max-width: 100%; 
                         background: linear-gradient(145deg, #ffffff 0%, #f2f9f5 100%); padding: 2.5rem; min-height: 290px;">
 
               <!-- Decorative blob -->
@@ -95,7 +95,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <!-- ══ SLIDE 2: E-Sports Event ══ -->
           <div class="carousel-item">
             <div class="dl-ann-card dl-ann-card--slide mx-auto position-relative overflow-hidden"
-                 style="max-width: 1000px; 
+                 style="max-width: 100%; 
                         background: linear-gradient(145deg, #ffffff 0%, #fffdf0 100%); padding: 2.5rem; min-height: 290px;">
 
               <div style="position:absolute;top:-70px;right:-70px;width:240px;height:240px;border-radius:50%;
@@ -145,7 +145,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
           <!-- ══ SLIDE 3: Mobile Beta Launch ══ -->
           <div class="carousel-item">
             <div class="dl-ann-card dl-ann-card--slide mx-auto position-relative overflow-hidden"
-                 style="max-width: 1000px;
+                 style="max-width: 100%;
                         background: linear-gradient(145deg, #ffffff 0%, #faf8ff 100%); padding: 2.5rem; min-height: 290px;">
 
               <div style="position:absolute;top:-70px;right:-70px;width:240px;height:240px;border-radius:50%;
@@ -195,7 +195,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
         </div><!-- /carousel-inner -->
 
         <!-- Dot Indicators -->
-        <div class="carousel-indicators dl-carousel-indicators">
+        <div class="carousel-indicators dl-announcements-indicators">
           <button type="button" data-bs-target="#dl-announcements-carousel" data-bs-slide-to="0"
                   class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#dl-announcements-carousel" data-bs-slide-to="1"
@@ -230,3 +230,24 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
 
   </div>
 </section>
+
+<!-- Auto-Slide Initialization Script -->
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    var annCarousel = document.getElementById('dl-announcements-carousel');
+    if (annCarousel) {
+      // Force initialize and cycle the Bootstrap carousel
+      var bsCarousel = typeof bootstrap !== 'undefined' && bootstrap.Carousel 
+        ? (bootstrap.Carousel.getInstance(annCarousel) || new bootstrap.Carousel(annCarousel, {
+            interval: 5000,
+            ride: 'carousel',
+            wrap: true
+          })) 
+        : null;
+      if (bsCarousel) {
+        bsCarousel.cycle();
+      }
+    }
+  });
+</script>
+

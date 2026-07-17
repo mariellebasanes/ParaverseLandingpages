@@ -1467,3 +1467,111 @@ body, p, .body-text,
     padding: 1.75rem;
   }
 }
+
+/* Custom announcements carousel styling overrides */
+@media (min-width: 576px) {
+  .dl-announcements-wrapper {
+    padding: 0 60px !important;
+  }
+}
+
+.dl-announcements-indicators {
+  position: absolute !important;
+  bottom: 40px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  z-index: 10 !important;
+}
+
+.dl-announcements-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  background-color: rgba(6, 171, 98, 0.2) !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+  margin: 0 4px !important;
+  text-indent: 0 !important;
+}
+
+.dl-announcements-indicators .active {
+  width: 24px !important;
+  border-radius: 5px !important;
+  background-color: var(--dc-green-light) !important;
+  opacity: 1 !important;
+}
+
+/* Custom posts carousel styling overrides */
+@media (min-width: 576px) {
+  .dl-posts-wrapper {
+    padding: 0 60px !important;
+  }
+}
+
+/* Clamping classes for posts carousel cards */
+.dl-post-title-clamp {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  min-height: 4.25rem !important;
+  max-height: 4.25rem !important;
+}
+
+.dl-post-body-clamp {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  min-height: 3.5rem !important;
+  max-height: 3.5rem !important;
+}
+
+/* Sequential Fade-In Animations for 2x2 posts */
+@keyframes dlPostFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-item .dl-post-grid-1,
+.carousel-item .dl-post-grid-2,
+.carousel-item .dl-post-grid-3,
+.carousel-item .dl-post-grid-4 {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.carousel-item.active .dl-post-grid-1 {
+  animation: dlPostFadeInUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+.carousel-item.active .dl-post-grid-2 {
+  animation: dlPostFadeInUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation-delay: 0.22s;
+}
+
+.carousel-item.active .dl-post-grid-3 {
+  animation: dlPostFadeInUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation-delay: 0.34s;
+}
+
+.carousel-item.active .dl-post-grid-4 {
+  animation: dlPostFadeInUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation-delay: 0.46s;
+}
+
+
