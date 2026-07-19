@@ -78,7 +78,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                   </div>
 
                   <h2 class="fw-extrabold text-gray-900 mb-4 dl-post-title-clamp" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
-                    How do you balance difficult major subjects with general education courses?
+                    How do you balance difficult courses?
                   </h2>
 
                   <p class="text-gray-700 mb-0 dl-post-body-clamp" style="font-size: 0.95rem; line-height: 1.68;">
@@ -121,7 +121,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                   </div>
 
                   <h2 class="fw-extrabold text-gray-900 mb-4 dl-post-title-clamp" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
-                    Is it really 100% anonymous when posting on the Freedom Wall?
+                    Is it really 100% anonymous?
                   </h2>
 
                   <p class="text-gray-700 mb-0 dl-post-body-clamp" style="font-size: 0.95rem; line-height: 1.68;">
@@ -164,7 +164,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                   </div>
 
                   <h2 class="fw-extrabold text-gray-900 mb-4 dl-post-title-clamp" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
-                    Looking for Capstone groupmates (web/mobile app development)
+                    Looking for Capstone groupmates
                   </h2>
 
                   <p class="text-gray-700 mb-0 dl-post-body-clamp" style="font-size: 0.95rem; line-height: 1.68;">
@@ -257,7 +257,7 @@ $base = !empty($DISCOURSE_BASE) ? $DISCOURSE_BASE : "/discourse-landing/";
                   </div>
 
                   <h2 class="fw-extrabold text-gray-900 mb-4 dl-post-title-clamp" style="font-size: 1.45rem; line-height: 1.25; letter-spacing: -0.015em;">
-                    Best quiet study spots on campus? (Library vs Study Lounge)
+                    Best quiet study spots on campus?
                   </h2>
 
                   <p class="text-gray-700 mb-0 dl-post-body-clamp" style="font-size: 0.95rem; line-height: 1.68;">
